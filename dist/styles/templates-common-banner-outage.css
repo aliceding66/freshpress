@@ -1,0 +1,54 @@
+.banner-outage {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: #856404;
+  text-align: center;
+  background-color: #fff3cd;
+  border: 1px solid #f2cd33;
+  border-radius: 0;
+  transition: opacity 0.15s linear;
+}
+.banner-outage__content-mobile {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .banner-outage__content-mobile {
+    display: none;
+  }
+}
+.banner-outage__content-desktop {
+  display: none;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .banner-outage__content-desktop {
+    display: inline-block;
+  }
+}
+.banner-outage > p {
+  color: #001b40;
+  font-size: 1rem;
+}
+.banner-outage > button {
+  display: inline-block;
+  padding: 3px 5px;
+  color: #001b40;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #f2cd33;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/*# sourceMappingURL=templates-common-banner-outage.css.map*/

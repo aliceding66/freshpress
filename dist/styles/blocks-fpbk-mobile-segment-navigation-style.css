@@ -1,0 +1,24 @@
+.mobile-segment-navigation__link {
+  flex-basis: 48%;
+  margin-bottom: 4%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #0075dd;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/arrow-right-white.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px 14px;
+  border: none;
+}
+.mobile-segment-navigation__link:hover {
+  color: #fff;
+  background-color: #002d79;
+}
+@media (min-width: 768px) {
+  .mobile-segment-navigation__link {
+    flex-basis: 24%;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-mobile-segment-navigation-style.css.map*/

@@ -1,0 +1,89 @@
+{
+    "key": "group_609bbc141a635",
+    "title": "CPT - Podcast",
+    "fields": [
+        {
+            "key": "field_609bbc4f3f2d4",
+            "label": "Season Number",
+            "name": "season_number",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_609bbc2a3f2d3",
+            "label": "Episode Number",
+            "name": "episode_number",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_609bbc5f3f2d5",
+            "label": "Nerdisode",
+            "name": "nerdisode",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "podcast"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310451
+}

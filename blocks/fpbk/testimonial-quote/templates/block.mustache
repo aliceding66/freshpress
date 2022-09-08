@@ -1,0 +1,44 @@
+<div class="testimonial-quote__inner d-flex align-items-center">
+	<div class="testimonial-quote__text">
+		<q class="testimonial-quote__quote testimonial-quote__quote_{{ testimonial_quote_font_size }} position-relative mb-4 d-inline-block">
+            {{{ testimonial_quote_quote }}}
+		</q>
+		<div class="testimonial-quote__attribution d-flex align-items-flex-start">
+			{{# testimonial_quote_image }}
+				<div class="testimonial-quote__image-container testimonial-quote__image-container_small d-inline-block d-md-none mr-2">
+					{{{ testimonial_quote_image }}}
+				</div>
+			{{/ testimonial_quote_image }}
+			<div class="testimonial-quote__attribution-text d-inline-block">
+				<cite class="testimonial-quote__author-name text-uppercase">
+                    {{{ testimonial_quote_author_name }}}
+				</cite>
+				<div class="testimonial-quote__author-description text-uppercase">
+					{{{ testimonial_quote_author_description }}}
+				</div>
+				{{# testimonial_quote_author_location }}
+					<div class="testimonial-quote__author-location text-uppercase">
+						{{{ testimonial_quote_author_location }}}
+					</div>
+				{{/testimonial_quote_author_location}}
+			</div>
+		</div>
+	</div>
+
+	{{# testimonial_quote_image }}
+		<div class="testimonial-quote__image-container testimonial-quote__image-container_large d-none d-md-block">
+			{{{ testimonial_quote_image }}}
+		</div>
+	{{/ testimonial_quote_image  }}
+</div>
+
+{{# testimonial_quote_display_rating }}
+	<div class="testimonial-quote__getapp-reviews pt-5 pb-4 pb-md-5 d-flex flex-column flex-md-row align-items-center">
+		<h2 class="testimonial-quote__getapp-reviews-title text-center text-md-left pl-md-2 m-0">
+			{{ getapp_reviews }}
+		</h2>
+		<div class="testimonial-quote__getapp-reviews-widget">
+			{{{ rating_block }}}
+		</div>
+	</div>
+{{/ testimonial_quote_display_rating }}

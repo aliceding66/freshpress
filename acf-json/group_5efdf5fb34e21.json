@@ -1,0 +1,79 @@
+{
+    "key": "group_5efdf5fb34e21",
+    "title": "Page - Header",
+    "fields": [
+        {
+            "key": "field_5f778e0a404c7",
+            "label": "Wide Block",
+            "name": "header_wide_block",
+            "type": "true_false",
+            "instructions": "Check this box if the header should be 1600px wide.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_6076aa64f630c",
+            "label": "No border",
+            "name": "header_no_border",
+            "type": "true_false",
+            "instructions": "Check this box if the header should not have bottom border",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "landing_page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "accounting_software"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310479
+}

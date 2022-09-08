@@ -1,0 +1,106 @@
+form {
+	&.was-validated {
+		.form-control {
+			background-color: transparent;
+
+			&:invalid,
+			&.is-invalid,
+			&:valid,
+			&.is-valid {
+				background-size: calc( 0.35em + 0.375rem ) calc( 0.35em + 0.375rem );
+			}
+
+			&:invalid,
+			&.is-invalid {
+				@include media-breakpoint-up( md ) {
+					background-color: rgba( $form-feedback-invalid-color, 0.3 );
+				}
+
+				&::placeholder {
+					color: $form-feedback-invalid-color;
+				}
+			}
+
+			&:valid,
+			&.is-valid {
+				border-color: $rule-grey;
+
+				@include media-breakpoint-up( md ) {
+					background-color: $white;
+				}
+			}
+		}
+
+		.invalid-tooltip {
+			top: -100%;
+			left: 0;
+			max-width: 100%;
+			font-size: px-to-rem( 18 );
+		}
+	}
+
+	// Arrow-styled tooltips.
+	&.with-arrows {
+		.invalid-tooltip {
+			top: 0;
+			left: 0;
+			max-width: 100%;
+			font-size: px-to-rem( 18 );
+			transform: translateY( -100% ) translateY( -15px );
+
+			&::before {
+				position: absolute;
+				top: 100%;
+				left: 10px;
+				width: 0;
+				border-top: 15px solid rgba( $form-feedback-invalid-color, 0.9 );
+				border-right: 15px solid transparent;
+				border-left: 15px solid transparent;
+				content: '';
+			}
+		}
+
+		.invalid-checkbox-tooltip {
+			top: 0;
+			left: -14px;
+			transform: translateY( -100% ) translateY( -15px );
+		}
+	}
+}
+
+// Only show validation tooltip on focus.
+.was-validated :invalid:not( :focus ) ~ .invalid-feedback,
+.was-validated :invalid:not( :focus ) ~ .invalid-tooltip,
+:invalid:not( :focus ) ~ .invalid-feedback,
+:invalid:not( :focus ) ~ .invalid-tooltip,
+.is-invalid:not( :focus ) ~ .invalid-feedback,
+.is-invalid:not( :focus ) ~ .invalid-tooltip {
+	display: none;
+}
+
+form .form-control {
+	height: 50px;
+	padding: px-to-rem( 10 ) px-to-rem( 12 );
+	color: $midnight-blue;
+	font-size: px-to-rem( 20 );
+	background: transparent;
+	border: 2px solid $rule-grey;
+	border-radius: 5px;
+
+	&,
+	&:focus {
+		text-shadow: none !important;
+		filter: none;
+	}
+
+	&::placeholder {
+		color: $font-grey;
+		text-shadow: none !important;
+		opacity: 1;
+		filter: none;
+	}
+}
+
+.was-validated .invalid-tooltip:empty {
+	display: none !important;
+}

@@ -1,0 +1,24 @@
+<div class="pricing-table_column-features px-2 py-4 px-lg-3">
+	<h5 class="pricing-table_column-features__title text-uppercase text-center">
+		{{ labels.top_features }}
+	</h5>
+	<ul class="pricing-table_column-features__points">
+		{{# top_features }}
+			<li>
+				{{# bold }}<strong>{{/ bold }}
+
+				{{ feature }}
+
+				{{# tooltip }}{{{ tooltip }}}{{/ tooltip }}
+
+				{{# bold }}</strong>{{/ bold }}
+			</li>
+		{{/ top_features }}
+	</ul>
+	<span class="pricing-table_column-features__expand">
+		+
+		<a class="pricing-table_column-features__expand-link" href='/pricing'>
+			{{ labels.see_full_details }}
+		</a>
+	</span>
+</div>

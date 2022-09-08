@@ -1,0 +1,20 @@
+<div class="white-card__inner d-flex flex-column flex-md-row mx-auto justify-content-around">
+	<div class="white-card__text order-2 order-md-1">
+		<h2 class="white-card__title mb-4">{{{ white_card_title }}}</h2>
+		<div class="white-card__description">{{{ white_card_description }}}</div>
+
+		{{# white_card_display_support_contact_info }}
+		<div class="white-card__support-contact-info mt-5">
+			{{# fb_phone_number }}
+				<div class="mb-3">T: {{ fb_phone_number }}</div>
+			{{/fb_phone_number}}
+			<div>E: <a href="mailto:{{ fb_support_email }}">{{ fb_support_email }}</a></div>
+		</div>
+		{{/ white_card_display_support_contact_info }}
+	</div>
+
+	<div class="white-card__image-container order-1 order-md-2">
+		{{{ white_card_image }}}
+	</div>
+
+</div>

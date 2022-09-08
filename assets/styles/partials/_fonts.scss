@@ -1,0 +1,118 @@
+// Fonts.
+
+// IBM Plex Sans
+@font-face {
+	font-weight: $font-weight-normal;
+	font-family: ibm-plex-sans;
+	font-display: swap;
+	src: url( #{$fonts_path}/IBMPlexSans-Regular.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/IBMPlexSans-Regular.woff ) format( 'woff' );
+}
+
+@font-face {
+	font-weight: $font-weight-medium;
+	font-family: ibm-plex-sans;
+	font-display: swap;
+	src: url( #{$fonts_path}/IBMPlexSans-Medium.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/IBMPlexSans-Medium.woff ) format( 'woff' );
+}
+
+@font-face {
+	font-weight: $font-weight-bold;
+	font-family: ibm-plex-sans;
+	font-display: swap;
+	src: url( #{$fonts_path}/IBMPlexSans-Bold.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/IBMPlexSans-Bold.woff ) format( 'woff' );
+}
+
+// Founders Grotesk
+@font-face {
+	font-weight: $font-weight-normal;
+	font-family: founders-grotesk;
+	font-display: swap;
+	src: url( #{$fonts_path}/founders-grotesk-web-regular.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/founders-grotesk-web-regular.woff ) format( 'woff' );
+}
+
+@font-face {
+	font-weight: $font-weight-medium;
+	font-family: founders-grotesk;
+	font-display: swap;
+	src: url( #{$fonts_path}/founders-grotesk-web-medium.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/founders-grotesk-web-medium.woff ) format( 'woff' );
+}
+
+@font-face {
+	font-weight: $font-weight-bold;
+	font-family: founders-grotesk;
+	font-display: swap;
+	src: url( #{$fonts_path}/founders-grotesk-web-bold.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/founders-grotesk-web-bold.woff ) format( 'woff' );
+}
+
+// Moranga Italic
+@font-face {
+	font-weight: $font-weight-normal;
+	font-family: moranga-italic;
+	font-style: italic;
+	font-display: swap;
+	src: url( #{$fonts_path}/Moranga-RegularIt.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/Moranga-RegularIt.woff ) format( 'woff' );
+}
+
+// Franklin Gothic URW
+@font-face {
+	font-weight: $font-weight-normal;
+	font-family: Franklin-Gothic-URW;
+	font-display: swap;
+	src: url( #{$fonts_path}/FranklinGothicURW-Book.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/FranklinGothicURW-Book.woff ) format( 'woff' );
+}
+
+@font-face {
+	font-weight: $font-weight-medium;
+	font-family: Franklin-Gothic-URW;
+	font-display: swap;
+	src: url( #{$fonts_path}/FranklinGothicURW-Med.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/FranklinGothicURW-Med.woff ) format( 'woff' );
+}
+
+@font-face {
+	font-weight: $font-weight-bold;
+	font-family: Franklin-Gothic-URW;
+	font-display: swap;
+	src: url( #{$fonts_path}/FranklinGothicURW-Demi.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/FranklinGothicURW-Demi.woff ) format( 'woff' );
+}
+
+// FreshBooks Script Font
+@font-face {
+	font-weight: $font-weight-normal;
+	font-family: FreshBooksScript;
+	font-display: swap;
+	src: url( #{$fonts_path}/FreshBooksScript-Regular.woff2 ) format( 'woff2' ),
+		url( #{$fonts_path}/FreshBooksScript-Regular.woff ) format( 'woff' );
+}
+
+// FreshBooks Script Regular
+@font-face {
+	font-weight: $font-weight-normal;
+	font-family: FreshBooksScript-Regular;
+	font-style: normal;
+	src: url( #{$fonts_path}/FreshBooksScriptWeb-Regular.eot?#iefix );
+	src: url( #{$fonts_path}/FreshBooksScriptWeb-Regular.eot?#iefix ) format( 'embedded-opentype' ),
+		url( #{$fonts_path}/FreshBooksScriptWeb-Regular.woff ) format( 'woff' ),
+		url( #{$fonts_path}/FreshBooksScript-Regular.otf ) format( 'opentype' );
+}
+
+// Icomoon
+@font-face {
+	font-weight: $font-weight-normal;
+	font-family: icomoon;
+	font-display: swap;
+	src: url( #{$fonts_path}/icomoon.eot?#iefix );
+	src: url( #{$fonts_path}/icomoon.eot?#iefix ) format( 'embedded-opentype' ),
+		url( #{$fonts_path}/icomoon.woff ) format( 'woff' ),
+		url( #{$fonts_path}/icomoon.ttf ) format( 'truetype' ),
+		url( #{$fonts_path}/icomoon.svg ) format( 'svg' );
+}

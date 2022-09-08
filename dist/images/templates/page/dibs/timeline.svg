@@ -1,0 +1,20 @@
+<svg width="1131" height="775" viewBox="0 0 1131 775" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1138_140" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-570" y="0" width="1701" height="1701">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M207.25 0.842651L1130.92 775.892L354.667 1700.99L-569 925.942L207.25 0.842651Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1138_140)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-569.003 925.942L-87.3863 1330.07C201.951 1572.85 456.39 1579.77 740.116 1241.63L1130.92 775.893L649.317 371.781C359.98 128.998 87.2183 143.888 -196.507 482.019L-569.003 925.942Z" fill="#0075DD"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M536.043 504.399L309.08 774.882L494.029 930.072L386.43 1058.3L202.423 903.904L-19.0522 1167.85L-170.792 1040.52L385.244 377.864L536.043 504.399Z" fill="#002D79"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M402.105 663.807L538.687 778.413C608.82 837.261 713.064 828.536 771.499 758.895L799.145 725.948L662.563 611.342C592.43 552.494 488.187 561.219 429.751 630.86L402.105 663.807Z" fill="#002D79"/>
+<circle class="journey-desktop__timeline-dot" cx="182.5" cy="214.5" r="8" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="760.146" cy="467.581" r="8" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="502.5" cy="272.981" r="8" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="404" cy="230" r="7.61905" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="295" cy="207" r="7.61905" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="677.5" cy="398.141" r="8" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="842.5" cy="535.961" r="8" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="932.5" cy="611.961" r="8" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="1025.5" cy="690.961" r="8" fill="#FFC414"/>
+<circle class="journey-desktop__timeline-dot" cx="595.5" cy="332.781" r="8" fill="#FFC414"/>
+</svg>

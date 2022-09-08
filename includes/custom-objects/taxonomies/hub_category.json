@@ -1,0 +1,15 @@
+{
+  "taxonomy": "hub_category",
+  "taxonomy_plural": "hub_categories",
+  "label": "Hub Category",
+  "label_plural": "Hub Categories",
+  "post_types": [
+    "hub_article"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "hub",
+      "with_front": false
+    }
+  }
+}

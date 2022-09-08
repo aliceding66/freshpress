@@ -1,0 +1,15 @@
+{
+  "taxonomy": "integration_availability",
+  "taxonomy_plural": "integration_availabilities",
+  "label": "Integration Availability",
+  "label_plural": "Integration Availability",
+  "post_types": [
+    "integration"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "integrations/availability",
+      "with_front": false
+    }
+  }
+}

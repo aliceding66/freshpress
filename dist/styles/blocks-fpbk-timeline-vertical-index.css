@@ -1,0 +1,46 @@
+.timeline-vertical::before {
+  position: absolute;
+  top: 0;
+  left: 11px;
+  width: 1px;
+  height: 99%;
+  background-color: #cdd4d9;
+  content: "";
+}
+@media (min-width: 768px) {
+  .timeline-vertical::before {
+    left: calc(1.5rem + 11px);
+  }
+}
+.timeline-vertical__stage::before {
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-color: #0075dd;
+  border-radius: 50%;
+  content: "";
+}
+.timeline-vertical__stage:not(:last-child) {
+  /* stylelint-disable-line */
+  margin-bottom: 100px;
+}
+@media (min-width: 1024px) {
+  .timeline-vertical__stage:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+.timeline-vertical__stage-date {
+  color: #8495a2;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+.timeline-vertical__stage-title {
+  color: #0075dd;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.33333;
+}
+
+/*# sourceMappingURL=blocks-fpbk-timeline-vertical-index.css.map*/

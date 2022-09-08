@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/info-tooltip",
+  "title": "Info Tooltip",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

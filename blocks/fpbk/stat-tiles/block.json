@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/stat-tiles",
+  "title": "Stat Tiles",
+  "category": "freshblocks",
+  "description": "A block containing FreshBooks statistics and support card with contact info.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

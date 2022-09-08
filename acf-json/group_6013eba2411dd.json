@@ -1,0 +1,447 @@
+{
+    "key": "group_6013eba2411dd",
+    "title": "Block - Social Share",
+    "fields": [
+        {
+            "key": "field_6013ebaafc75a",
+            "label": "Share Text",
+            "name": "share_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "Share:",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6013fc76fc75b",
+            "label": "Share Text Colour",
+            "name": "share_text_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#8495a2",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_601930cb465be",
+            "label": "Icons Order",
+            "name": "share_icons_order",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "linkedin": "LinkedIn",
+                "instagram": "Instagram",
+                "youtube": "YouTube"
+            },
+            "default_value": [
+                "facebook",
+                "twitter",
+                "linkedin"
+            ],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "array",
+            "placeholder": ""
+        },
+        {
+            "key": "field_601934f608a3e",
+            "label": "Icons Settings",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_6019336108a2a",
+            "label": "Share on Facebook",
+            "name": "share_on_facebook_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6019337908a2b",
+                    "label": "Sharing Title",
+                    "name": "sharing_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Share on Facebook",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_601933b008a2c",
+                    "label": "Share custom Page?",
+                    "name": "share_custom_page",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_601933d508a2d",
+                    "label": "Custom Page URL",
+                    "name": "custom_page_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_601933b008a2c",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60193b22e6a2a",
+                    "label": "Custom Page Title",
+                    "name": "custom_page_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_601933b008a2c",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60193ba3e6a2b",
+            "label": "Share on Twitter",
+            "name": "share_on_twitter_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60193ba3e6a2c",
+                    "label": "Sharing Title",
+                    "name": "sharing_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Tweet",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60193ba3e6a2d",
+                    "label": "Share custom Page?",
+                    "name": "share_custom_page",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_60193ba3e6a2e",
+                    "label": "Custom Page URL",
+                    "name": "custom_page_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60193ba3e6a2d",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60193ba3e6a2f",
+                    "label": "Custom Page Title",
+                    "name": "custom_page_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60193ba3e6a2d",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60193bd6e6a30",
+            "label": "Share on LinkedIn",
+            "name": "share_on_linkedin_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60193bd6e6a31",
+                    "label": "Sharing Title",
+                    "name": "sharing_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Share on LinkedIn",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60193bd6e6a32",
+                    "label": "Share custom Page?",
+                    "name": "share_custom_page",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_60193bd6e6a33",
+                    "label": "Custom Page URL",
+                    "name": "custom_page_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60193bd6e6a32",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60193bd6e6a34",
+                    "label": "Custom Page Title",
+                    "name": "custom_page_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60193bd6e6a32",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/social-share"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643309312
+}

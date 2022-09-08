@@ -1,0 +1,1160 @@
+{
+    "key": "group_603033b32aa51",
+    "title": "Site Wide Settings",
+    "fields": [
+        {
+            "key": "field_603033c6d6ea0",
+            "label": "Taxonomies",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_603033dcd6ea1",
+            "label": "Hub Articles",
+            "name": "hub_articles",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60303461d6ea2",
+                    "label": "Hero Image",
+                    "name": "hero_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        },
+        {
+            "key": "field_60819d1b240c2",
+            "label": "PDF Server",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 0
+        },
+        {
+            "key": "field_60819cb5d39f2",
+            "label": "PDF Generation Server",
+            "name": "pdf_generation_server",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 0,
+            "sub_fields": [
+                {
+                    "key": "field_60819cc3d39f3",
+                    "label": "API_URL",
+                    "name": "API_URL",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_60819cd0d39f4",
+                    "label": "API_KEY",
+                    "name": "API_KEY",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60819ceed39f5",
+                    "label": "API_NAME",
+                    "name": "API_NAME",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60819cf5d39f6",
+                    "label": "API_SECRET",
+                    "name": "API_SECRET",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_608fc335047c3",
+                    "label": "API_HOST",
+                    "name": "API_HOST",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62f14f9d8a005",
+            "label": "Qualified Chatbot",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62f14fd38a006",
+            "label": "Qualified Chatbot Enabled",
+            "name": "qualified_enabled",
+            "type": "true_false",
+            "instructions": "For selected language in topbar",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62f14ffd8a007",
+            "label": "Qualified snippet",
+            "name": "qualified_snippet",
+            "type": "textarea",
+            "instructions": "Insert chat snippet code here",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62f14fd38a006",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "<!-- Qualified -->\r\n<script>\r\n(function(w,q){w['QualifiedObject']=q;w[q]=w[q]||function(){\r\n(w[q].q=w[q].q||[]).push(arguments)};})(window,'qualified')\r\n<\/script>\r\n<script async src=\"https:\/\/js.qualified.com\/qualified.js?token=DtHY5Nh73qQ5jPtj\"><\/script>\r\n<!-- End Qualified -->",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62f150468a008",
+            "label": "Qualified include mode",
+            "name": "qualified_include_mode",
+            "type": "select",
+            "instructions": "Select main logic how chat should be inserted",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62f14fd38a006",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "choices": {
+                "only_on": "Insert only on selected pages",
+                "everywhere_except": "Insert everywhere except selected pages"
+            },
+            "default_value": "only_on",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62f150788a009",
+            "label": "Qualified selected pages",
+            "name": "qualified_selected_pages",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62f14fd38a006",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "post_type": [
+                "page",
+                "landing_page",
+                "press_article",
+                "accounting_template",
+                "hub_article",
+                "invoice_template"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_60828b83f5d45",
+            "label": "Drift Chat",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_6090f4f9c2646",
+            "label": "Drift enabled",
+            "name": "drift_enabled",
+            "type": "true_false",
+            "instructions": "For selected language in topbar",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60828bbb18a4a",
+            "label": "Drift snippet",
+            "name": "drift_snippet",
+            "type": "textarea",
+            "instructions": "Insert Drift chat snippet code here",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6090f4f9c2646",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "<!-- Start of Async Drift Code --><script>\"use strict\";!function() {var t = window.driftt = window.drift = window.driftt || [];if (!t.init) {if (t.invoked) return void (window.console && console.error && console.error(\"Drift snippet included twice.\"));t.invoked = !0, t.methods = [ \"identify\", \"config\", \"track\", \"reset\", \"debug\", \"show\", \"ping\", \"page\", \"hide\", \"off\", \"on\" ],t.factory = function(e) {return function() {var n = Array.prototype.slice.call(arguments);return n.unshift(e), t.push(n), t;};}, t.methods.forEach(function(e) {t[e] = t.factory(e);}), t.load = function(t) {var e = 3e5, n = Math.ceil(new Date() \/ e) * e, o = document.createElement(\"script\");o.type = \"text\/javascript\", o.async = !0, o.crossorigin = \"anonymous\", o.src = \"https:\/\/js.driftt.com\/include\/\" + n + \"\/\" + t + \".js\";var i = document.getElementsByTagName(\"script\")[0];i.parentNode.insertBefore(o, i);};}}();drift.SNIPPET_VERSION = '0.3.1';drift.load('teib2knaa89w');\r\n<\/script><!-- End of Async Drift Code -->",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6082956163bc4",
+            "label": "Drift include mode",
+            "name": "drift_include_mode",
+            "type": "select",
+            "instructions": "Select main logic how Drift chat should be inserted",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6090f4f9c2646",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "choices": {
+                "only_on": "Insert Drift only on selected pages",
+                "everywhere_except": "Insert Drift everywhere except selected pages"
+            },
+            "default_value": "only_on",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60828c01b8478",
+            "label": "Drift selected pages",
+            "name": "drift_selected_pages",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6090f4f9c2646",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "post_type": [
+                "page",
+                "landing_page",
+                "press_article",
+                "accounting_template",
+                "hub_article",
+                "invoice_template"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_63032c011eac9",
+            "label": "Hub categories",
+            "name": "drift_hub_categories",
+            "type": "taxonomy",
+            "instructions": "Choose hub categories you want to apply rules to.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6090f4f9c2646",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "taxonomy": "hub_category",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_6284f3619bff3",
+            "label": "Mutiny",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6284f36f9bff4",
+            "label": "Mutiny enabled",
+            "name": "mutiny_enabled",
+            "type": "true_false",
+            "instructions": "For selected language in topbar",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6284f3879bff5",
+            "label": "Mutiny snippet",
+            "name": "mutiny_snippet",
+            "type": "textarea",
+            "instructions": "Mutiny chat snippet code here",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6284f36f9bff4",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "<script>\r\n(function(){var a=window.mutiny=window.mutiny||{};if(!window.mutiny.client){a.client={_queue:{}};var b=[\"identify\",\"trackConversion\"];var c=[].concat(b,[\"defaultOptOut\",\"optOut\",\"optIn\"]);var d=function factory(c){return function(){for(var d=arguments.length,e=new Array(d),f=0;f<d;f++){e[f]=arguments[f]}a.client._queue[c]=a.client._queue[c]||[];if(b.includes(c)){return new Promise(function(b,d){a.client._queue[c].push({args:e,resolve:b,reject:d});setTimeout(d,500)})}else{a.client._queue[c].push({args:e})}}};c.forEach(function(b){a.client[b]=d(b)})}})();\r\n<\/script>\r\n<script data-cfasync=\"false\" src=\"https:\/\/client-registry.mutinycdn.com\/personalize\/client\/8c7fc473c2542904.js\"><\/script>",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6284f3b19bff6",
+            "label": "Mutiny include mode",
+            "name": "mutiny_include_mode",
+            "type": "select",
+            "instructions": "Select main logic how Mutiny should be inserted",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6284f36f9bff4",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "choices": {
+                "only_on": "Insert Mutiny only on selected pages",
+                "everywhere_except": "Insert Mutiny everywhere except selected pages"
+            },
+            "default_value": "only_on",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6284f3e79bff7",
+            "label": "Mutiny selected pages",
+            "name": "mutiny_selected_pages",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6284f36f9bff4",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "post_type": [
+                "page",
+                "landing_page",
+                "press_article",
+                "accounting_template",
+                "hub_article",
+                "invoice_template"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_6305fd90252eb",
+            "label": "Mutiny on Hub CPT",
+            "name": "mutiny_on_hub_cpt",
+            "type": "true_false",
+            "instructions": "Show mutiny snippet on all hub CPT-related pages: archive, categories, articles.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6284f36f9bff4",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60a2c7b8babb8",
+            "label": "Nicereply",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 0
+        },
+        {
+            "key": "field_60a2c7c3babb9",
+            "label": "Nicereply",
+            "name": "nicereply",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_60a2c7d9babba",
+                    "label": "API Secret",
+                    "name": "api_secret",
+                    "type": "text",
+                    "instructions": "Ensure this is pasted correctly.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60a2c7e9babbb",
+                    "label": "Survey ID",
+                    "name": "survey_id",
+                    "type": "number",
+                    "instructions": "Numerical ID of the feedback survey.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": 1
+                }
+            ]
+        },
+        {
+            "key": "field_619b6a862cd16",
+            "label": "Users with access to page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_619bae3366a83",
+            "label": "Enable Security Gate",
+            "name": "enable_security_gate",
+            "type": "true_false",
+            "instructions": "Enabled\/disable gate that prevent unauthorized users access page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "wpml_cf_preferences": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_619b6a9b2cd17",
+            "label": "Allowed users",
+            "name": "allowed_users",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_619bae3366a83",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "all": "All users have access on production"
+            },
+            "default_value": "all",
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": "",
+            "disabled": true
+        },
+        {
+            "key": "field_61dd68f1ccece",
+            "label": "Temporarily allow bots",
+            "name": "temporarily_allow_bots",
+            "type": "true_false",
+            "instructions": "This option will automatically uncheck after 10 minutes.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "wpml_cf_preferences": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_61dd692fccecf",
+            "label": "Allowed bots",
+            "name": "allowed_bots",
+            "type": "textarea",
+            "instructions": "Fill in bot User Agent phrase that will identify bot.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61dd68f1ccece",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "Google Page Speed Insights\r\nGTmetrix",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_619e460e82440",
+            "label": "Accounting Partners Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 0
+        },
+        {
+            "key": "field_619e463e82441",
+            "label": "SendGrid API Key",
+            "name": "sendgrid_api_key",
+            "type": "text",
+            "instructions": "This field contains API key for sendgrid that you can get at https:\/\/app.sendgrid.com\/settings\/api_keys",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_619e465a82442",
+            "label": "SendGrid Template ID",
+            "name": "sendgrid_template_id",
+            "type": "text",
+            "instructions": "E-mail template that should be sent to the partner obtained from https:\/\/mc.sendgrid.com\/dynamic-templates\/new",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_619e4960ce9dc",
+            "label": "From Name",
+            "name": "sendgrid_from_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_619e497bce9dd",
+            "label": "From Email",
+            "name": "sendgrid_from_email",
+            "type": "email",
+            "instructions": "Sender email should be added here https:\/\/app.sendgrid.com\/settings\/sender_auth\/senders and verified afterwards by clicking confirming link.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6229f98a60c51",
+            "label": "Site Wide Variables",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 1
+        },
+        {
+            "key": "field_6229f9aa60c52",
+            "label": "Clients amount",
+            "name": "sws_clients_amount",
+            "type": "text",
+            "instructions": "This field should amount of Freshbooks clients, for example: \"41.5 Million\" (without quotes).\r\nTo place this variable inside text use this token: {%SWS.CLIENTS_AMOUNT%}\r\nFor lowercase conversion use {%LC:SWS.CLIENTS_AMOUNT%}",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_629724c4dbee9",
+            "label": "Countries amount",
+            "name": "sws_countries_amount",
+            "type": "text",
+            "instructions": "This field should amount of Freshbooks countries, for example: \"160+\" (without quotes).\r\nTo place this variable inside text use this token: {%SWS.COUNTRIES_AMOUNT%}\r\nFor lowercase conversion use {%LC:SWS.COUNTRIES_AMOUNT%}",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_627b7fdc9dd62",
+            "label": "Tokens",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_627b85e89dd63",
+            "label": "Tokens",
+            "name": "fb_tokens",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Token",
+            "sub_fields": [
+                {
+                    "key": "field_627b860a9dd64",
+                    "label": "Token",
+                    "name": "fb_token",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_627b86889dd65",
+                    "label": "Domain",
+                    "name": "fb_token_domain",
+                    "type": "text",
+                    "instructions": "Domain that will be using this token. JS authorization function must be called from corresponding domain to be authorized.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "freshbooks.com",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_627b86dd9dd66",
+                    "label": "Expiry date",
+                    "name": "fb_token_expiry_date",
+                    "type": "date_time_picker",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "display_format": "Y-m-d H:i:s",
+                    "return_format": "U",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_627b87576828e",
+                    "label": "Authorization example code",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_627b860a9dd64",
+                                "operator": "!=empty"
+                            },
+                            {
+                                "field": "field_627b86889dd65",
+                                "operator": "!=empty"
+                            },
+                            {
+                                "field": "field_627b86dd9dd66",
+                                "operator": "!=empty"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "message": "<pre>fetch( 'https:\/\/www.freshbooks.com\/wp-json\/fp\/v1\/authorize-token', {\r\n  method: 'POST',\r\n  body: new URLSearchParams( { token: '[TOKEN]' } ),\r\n} )\r\n  .then( ( response ) => response.json() )\r\n  .then( ( json ) => {\r\n    if ( json.valid ) {\r\n      \/\/ Validated authorization.\r\n    } else {\r\n      \/\/ Not validated authorization.\r\n      \/\/ json.error contans reason of rejection.\r\n    }\r\n  } );<\/pre>",
+                    "new_lines": "",
+                    "esc_html": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site-wide-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661338139
+}

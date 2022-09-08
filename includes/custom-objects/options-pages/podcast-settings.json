@@ -1,0 +1,7 @@
+{
+  "type": "sub_page",
+  "page_title": "Podcast Settings",
+  "menu_title": "Edit Podcast Settings",
+  "menu_slug": "podcast-settings",
+  "parent_slug": "edit.php?post_type=podcast"
+}

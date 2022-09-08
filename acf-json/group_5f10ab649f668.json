@@ -1,0 +1,85 @@
+{
+    "key": "group_5f10ab649f668",
+    "title": "Block - Subnav",
+    "fields": [
+        {
+            "key": "field_5f10aec38c40d",
+            "label": "Menu",
+            "name": "subnav_menu",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "primary-navigation": "Primary Navigation",
+                "subnav-menu": "Subnav Menu",
+                "about-subnav-menu": "About Subnav Menu",
+                "footer": "Footer",
+                "primary-navigation-fr": "Primary Navigation (FR)",
+                "subnav-menu-fr": "Subnav Menu (FR)",
+                "subnav-about-menu-fr": "Subnav About Menu (FR)",
+                "footer-fr": "Footer (FR)",
+                "primary-navigation-au": "Primary Navigation (AU)",
+                "footer-au": "Footer (AU)",
+                "about-subnav-au": "About Subnav (AU)",
+                "subnav-menu-au": "Subnav Menu (AU)",
+                "about-subnav-uk": "About Subnav (UK)",
+                "subnav-menu-uk": "Subnav Menu (UK)",
+                "primary-navigation-uk": "Primary Navigation (UK)",
+                "footer-uk": "Footer (UK)",
+                "about-subnav-ie": "About Subnav (IE)",
+                "subnav-menu-ie": "Subnav Menu (IE)",
+                "primary-navigation-ie": "Primary Navigation (IE)",
+                "footer-ie": "Footer (IE)",
+                "primary-navigation-za": "Primary Navigation (ZA)",
+                "subnav-menu-za": "Subnav Menu (ZA)",
+                "about-subnav-menu-za": "About Subnav Menu (ZA)",
+                "footer-za": "Footer (ZA)",
+                "about-subnav-ca": "About Subnav (CA)",
+                "subnav-menu-ca": "Subnav Menu (CA)",
+                "primary-navigation-ca": "Primary Navigation (CA)",
+                "footer-ca": "Footer (CA)",
+                "footer-eu": "Footer (EU)",
+                "footer-sg": "Footer (SG)",
+                "about-subnav-eu": "About Subnav (EU)",
+                "subnav-menu-eu": "Subnav Menu (EU)",
+                "primary-navigation-eu": "Primary Navigation (EU)",
+                "primary-navigation-sg": "Primary Navigation (SG)",
+                "subnav-menu-sg": "Subnav Menu (SG)",
+                "about-subnav-menu-sg": "About Subnav Menu (SG)"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "array",
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/subnav"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643309910
+}

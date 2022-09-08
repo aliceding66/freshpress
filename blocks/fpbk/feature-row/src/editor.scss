@@ -1,0 +1,11 @@
+@import '~styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	.feature-row {
+		min-height: px-to-rem( 50 );
+	}
+
+	.feature-row__cta {
+		pointer-events: none;
+	}
+}

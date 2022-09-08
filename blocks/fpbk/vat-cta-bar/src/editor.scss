@@ -1,0 +1,16 @@
+@import '~styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	.wp-block-fpbk-vat-cta-bar {
+		min-height: 415px;
+		.vat-cta-bar__content {
+			pointer-events: none;
+			* {
+				pointer-events: all;
+			}
+		}
+		.vat-cta-bar__title {
+			color: $white !important;
+		}
+	}
+}

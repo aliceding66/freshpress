@@ -1,0 +1,115 @@
+{{^ is_centered_with_sso_theme }}
+<div class="row my-3 {{ content_position }} d-none {{ signup_form.visibility }}">
+    <div class="hero__form-content col">
+{{/ is_centered_with_sso_theme }}
+        <form method="post" class="hero__signup-form needs-validation with-arrows position-relative" data-form-handler="handleSignup" data-action="{{ signup_form.action }}" novalidate>
+            <div class="form-group hero__signup-form-group hero__signup-form-email position-relative {{ email_group_classes }}">
+                <label class="sr-only" for="{{ id }}__hero_signup_email">{{ signup_form.email_placeholder_text }}</label>
+                <input
+                        required
+                        type="email"
+                        name="email"
+                        class="form-control shadow-none"
+                        id="{{ id }}__hero_signup_email"
+                        placeholder="{{ signup_form.email_placeholder_text }}"
+                />
+                <div class="invalid-tooltip py-2 px-3">{{ signup_form.invalid_email }}</div>
+            </div>
+			{{# is_centered_with_sso_theme }}
+			<div class="expandable px-2 px-md-4">
+			{{/ is_centered_with_sso_theme }}
+				<div class="form-group hero__signup-form-group hero__signup-form-password position-relative">
+					<label class="sr-only" for="{{ id }}__signup_password">{{ signup_form.password_placeholder_text }}</label>
+					<input
+							required
+							minlength="8"
+							type="password"
+							name="password"
+							class="form-control shadow-none"
+							id="{{ id }}__signup_password"
+							placeholder="{{ signup_form.password_placeholder_text }}"
+					/>
+					<div class="invalid-tooltip py-2 px-3">{{ signup_form.invalid_password }}</div>
+				</div>
+				{{^ is_centered_with_sso_theme }}
+					<div class="form-group hero__signup-form-group hero__signup-form-btn mb-5 mb-md-2 pb-4 pb-md-0">
+						<button type="submit" name="submit" class="btn btn-cta-green btn-block btn-lg">{{ signup_form.submit_button_text }}</button>
+					</div>
+				{{/ is_centered_with_sso_theme }}
+				<div class="hero__terms {{ terms_group_classes }} position-relative" {{ signup_form.terms_of_service_inline_styles }}>
+					<label for="tos-accepted">
+						<input
+								required
+								type="checkbox"
+								id="tos-accepted"
+								name="tos-accepted"
+								class="float-left form-control-checkbox"
+						/>
+						<div class="invalid-tooltip invalid-checkbox-tooltip py-2 px-3">{{ signup_form.field_required }}</div>
+						{{# signup_form.include_default_terms_of_service }}
+							{{{ signup_form.default_terms }}}
+						{{/ signup_form.include_default_terms_of_service }}
+						{{^ signup_form.include_default_terms_of_service }}
+							{{{ signup_form.custom_terms_of_service }}}
+						{{/ signup_form.include_default_terms_of_service }}
+					</label>
+				</div>
+			{{# is_centered_with_sso_theme }}
+			</div>
+			{{/ is_centered_with_sso_theme }}
+			{{# is_centered_with_sso_theme }}
+				<div class="form-group hero__signup-form-group hero__signup-form-btn mb-2 pb-0 px-2 px-md-4">
+					<button type="submit" name="submit" class="btn btn-cta-green btn-block btn-lg">{{ signup_form.submit_button_text }}</button>
+				</div>
+			{{/ is_centered_with_sso_theme }}
+			{{# is_centered_with_sso_theme }}
+				<p class="hero__signup-form__btn-text text-center mb-4 mb-md-5 px-2 px-md-4" {{ signup_form.terms_of_service_inline_styles }}>{{ try_it_free_text }}</p>
+				<div class="expandable sso expanded mb-5 mb-md-0 px-2 px-md-4">
+					<div class="hero__signup-form__sso d-flex flex-wrap">
+						<a
+								href="#"
+								data-href="{{ apple_login_link }}"
+								class="sso-signup_apple btn btn-outline-grey bg-white hero__signup-form__ghost-btn d-flex align-items-center position-relative justify-content-center w-100 mb-2"
+						>
+							{{{ apple_logo }}}{{ apple_button_text }}
+						</a>
+
+						<!-- Google SSO -->
+						<a
+								href="#"
+								data-href="{{ google_login_link }}"
+								class="sso-signup_google btn btn-outline-grey bg-white hero__signup-form__ghost-btn d-flex align-items-center position-relative justify-content-center w-100 mb-3"
+						>
+							{{{ google_logo }}}{{ google_button_text }}
+						</a>
+					</div>
+					<div class="hero__signup-form__terms sso text-left position-relative pb-2 pb-3" {{ signup_form.terms_of_service_inline_styles }}>
+						<label for="tos-accepted-sso" class="d-flex align-items-start checkbox-sso">
+							<input
+									required
+									type="checkbox"
+									id="tos-accepted-sso"
+									name="tos-accepted-sso"
+									class="form-control-checkbox checkbox-sso"
+							/>
+							<div class="invalid-tooltip invalid-checkbox-tooltip py-2 px-3">
+								{{ signup_form.field_required }}
+							</div>
+							<div>
+								{{# signup_form.include_default_terms_of_service }}
+									{{{ signup_form.default_terms }}}
+								{{/ signup_form.include_default_terms_of_service }}
+								{{^ signup_form.include_default_terms_of_service }}
+									{{{ signup_form.custom_terms_of_service }}}
+								{{/ signup_form.include_default_terms_of_service }}
+							</div>
+						</label>
+					</div>
+				</div>
+				<span id="close-form" class="close-form position-absolute text-uppercase">{{ close_form_text }}</span>
+			{{/ is_centered_with_sso_theme }}
+        </form>
+{{^ is_centered_with_sso_theme }}
+    </div>
+</div>
+{{/ is_centered_with_sso_theme }}

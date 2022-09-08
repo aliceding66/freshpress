@@ -1,0 +1,65 @@
+<div class="modal__dialog modal-dialog modal-dialog-centered {{^ is_with_stages_theme }}modal-lg{{/ is_with_stages_theme }}{{# is_with_stages_theme }}modal-md{{/ is_with_stages_theme }}" role="document">
+	<div class="modal__content modal-content text-center">
+		{{^ is_with_stages_theme }}
+			{{# modal_title }}
+				<div class="modal__header modal-header">
+					<h2 class="modal-title w-100 pt-4">{{ modal_title }}</h2>
+				</div>
+			{{/ modal_title }}
+		{{/ is_with_stages_theme }}
+		<div class="modal__body modal-body position-static mx-auto text-center py-5 {{^ is_with_stages_theme }}px-3 px-sm-5{{/ is_with_stages_theme }}">
+			{{# is_with_stages_theme }}
+				<div class="modal__stages d-flex flex-column justify-content-center">
+					{{# modal_stages }}
+						{{> partial__stage }}
+					{{/ modal_stages }}
+				</div>
+			{{/ is_with_stages_theme }}
+			{{^ is_with_stages_theme }}
+				{{# modal_content_heading }}
+					<h3 class="modal__content-heading px-0 px-sm-5 px-lg-0 mb-3">{{ modal_content_heading }}</h3>
+				{{/ modal_content_heading }}
+
+				{{# modal_description }}
+					<p class="mt-3">{{ modal_description }}</p>
+				{{/ modal_description }}
+
+				{{# modal_cta.html }}
+					{{{ modal_cta.html }}}
+				{{/ modal_cta.html }}
+				{{^ modal_cta.html }}
+					{{{ modal_cta }}}
+				{{/ modal_cta.html }}
+
+				{{# modal_form_include }}
+					{{{ pardot_form }}}
+				{{/ modal_form_include }}
+
+				{{# modal_bottom_text }}
+					<p class="mb-4 modal__bottom-text">{{{ modal_bottom_text }}}</p>
+				{{/ modal_bottom_text }}
+			{{/ is_with_stages_theme }}
+			{{# modal_close_link_text }}
+				<a data-dismiss="modal" href="#"
+				   class="modal__close-link d-inline-block mt-3">{{ modal_close_link_text }}</a>
+			{{/ modal_close_link_text }}
+		</div>
+		<button
+				data-dismiss="modal"
+				class="modal__close-button position-absolute"
+				style="{{# modal_close_button_colour }}color: {{ modal_close_button_colour.hex }};{{/ modal_close_button_colour }}"
+		>
+			{{^ is_with_stages_theme }}
+				{{ close_label }}
+			{{/ is_with_stages_theme }}
+			<span
+					class="position-absolute"
+					style="{{# modal_close_button_colour }}background-color: {{ modal_close_button_colour.hex }};{{/ modal_close_button_colour }}"
+			></span>
+			<span
+					class="position-absolute"
+					style="{{# modal_close_button_colour }}background-color: {{ modal_close_button_colour.hex }};{{/ modal_close_button_colour }}"
+			></span>
+		</button>
+	</div>
+</div>

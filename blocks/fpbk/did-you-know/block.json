@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/did-you-know",
+  "title": "Did You Know",
+  "category": "freshblocks",
+  "description": "A block containing \"Did You Know\" card with Try It Free CTA.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

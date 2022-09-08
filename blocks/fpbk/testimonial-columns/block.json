@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/testimonial-columns",
+  "title": "Testimonial Columns",
+  "category": "freshblocks",
+  "description": "Wrappable columns featuring a rounded photo, italicised quote, quote author, and author company/association.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

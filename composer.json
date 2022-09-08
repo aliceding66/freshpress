@@ -1,0 +1,11 @@
+{
+  "name": "freshpress-website/php-dependencies",
+  "license": "GPL-2.0-or-later",
+  "description": "PHP dependencies for the freshpress-website theme",
+  "prefer-stable": true,
+  "require": {
+    "firebase/php-jwt": "^5.2",
+    "nesbot/carbon": "^2.47",
+    "mustache/mustache": "~2.5"
+  }
+}

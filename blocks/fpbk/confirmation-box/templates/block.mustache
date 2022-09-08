@@ -1,0 +1,14 @@
+<div class="confirmation-box__primary-message px-5">
+	<h2 class="confirmation-box__title mb-4">{{ confirmation_box_title }}</h2>
+	<div class="confirmation-box__primary-message-text">{{ confirmation_box_primary_message }}</div>
+</div>
+
+<div class="confirmation-box__secondary-message px-5">
+	<div class="confirmation-box__secondary-message-text px-4">{{{ confirmation_box_secondary_message }}}</div>
+	{{# confirmation_box_cta.html }}
+		{{{ confirmation_box_cta.html }}}
+	{{/ confirmation_box_cta.html }}
+	{{^ confirmation_box_cta.html }}
+		{{{ confirmation_box_cta }}}
+	{{/ confirmation_box_cta.html }}
+</div>

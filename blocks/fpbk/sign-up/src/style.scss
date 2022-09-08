@@ -1,0 +1,422 @@
+// Sign Up.
+
+@import '~styles/freshpress-includes';
+
+.sign-up {
+	background-color: $fresh-blue-light;
+
+	&__inline {
+		background: #d5ecff !important;
+	}
+
+	&__wrapper {
+		max-width: 514px !important; // from the design
+		padding: 0 1rem;
+
+		@include media-breakpoint-up( md ) {
+			padding: 2.5rem;
+			background-color: $white;
+			border-radius: 8px;
+			box-shadow: 4px 4px rgba( 6, 41, 66, 0.1 );
+		}
+	}
+
+	&__wrapper_inline {
+		max-width: 560px !important; // from the design
+		padding: 0 1rem;
+		border-radius: 8px;
+		box-shadow: 4px 4px rgba( 6, 41, 66, 0.1 );
+
+		.sign-up__divider {
+			display: none;
+		}
+
+		.sign-up__ghost-btn {
+			display: none !important;
+		}
+
+		@include media-breakpoint-up( md ) {
+			background-color: $white;
+		}
+	}
+
+	&__logo-image {
+		max-width: 175px;
+		height: auto;
+	}
+
+	&__heading {
+		color: $white;
+		font-weight: $font-weight-book;
+		font-size: px-to-rem( 26 );
+
+		@include media-breakpoint-up( md ) {
+			color: $fresh-new;
+		}
+	}
+
+	&__heading__inline {
+		color: $pre-midnight-blue;
+		font-weight: 500;
+		font-size: px-to-rem( 36 );
+		line-height: 39px;
+	}
+
+	&__sub-heading {
+		color: $pale-blue;
+		font-weight: $font-weight-book;
+		font-size: px-to-rem( 16 );
+
+		@include media-breakpoint-up( md ) {
+			color: $midnight-blue;
+		}
+	}
+
+	&__form-group {
+		input {
+			padding-right: 0;
+			padding-left: 0;
+			color: $white;
+			font-size: px-to-rem( 18 );
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid $pale-blue;
+			border-radius: 0;
+
+			&,
+			&:focus {
+				filter: none;
+			}
+
+			@include media-breakpoint-up( md ) {
+				height: 50px;
+				padding: px-to-rem( 10 ) px-to-rem( 12 );
+				color: $midnight-blue;
+				font-size: px-to-rem( 20 );
+				border: 2px solid $rule-grey;
+				border-radius: 5px;
+			}
+
+			&:focus {
+				color: $white;
+				background: transparent;
+
+				@include media-breakpoint-up( md ) {
+					color: $midnight-blue;
+					border-color: $rule-grey;
+				}
+			}
+
+			&::placeholder {
+				color: $pale-blue;
+
+				@include media-breakpoint-up( md ) {
+					color: $rule-grey;
+				}
+			}
+		}
+	}
+	&__form-btn {
+		button {
+			border-radius: 5px;
+		}
+	}
+
+	&__divider {
+		color: $white;
+		font-size: px-to-rem( 16 );
+
+		@include media-breakpoint-up( md ) {
+			color: $midnight-blue;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			top: 50%;
+			width: 30%;
+			height: 1px;
+			background-color: $rule-grey;
+			transform: translateY( -50% );
+			content: '';
+		}
+
+		&::before {
+			left: 0;
+		}
+
+		&::after {
+			right: 0;
+		}
+	}
+
+	&__ghost-btn {
+		height: 45px;
+		border-radius: 5px;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		img {
+			top: 50%;
+			left: 18px;
+			width: 20px; // from the design
+			max-height: 48px;
+			transform: translateY( -50% );
+		}
+	}
+
+	&__already-registered {
+		color: $pale-blue;
+		font-size: px-to-rem( 16 );
+
+		@include media-breakpoint-up( md ) {
+			color: $midnight-blue;
+		}
+
+		a {
+			color: $white;
+			text-decoration: none;
+
+			@include media-breakpoint-up( md ) {
+				color: $fresh-new;
+			}
+
+			&:hover {
+				color: $soft-blue;
+			}
+		}
+	}
+
+	&__policy-privacy {
+		margin-top: px-to-rem( 52px );
+		color: $soft-blue;
+		font-size: px-to-rem( 12 );
+		border: 2px solid transparent;
+		border-radius: 5px;
+
+		&__inline {
+			color: $pre-midnight-blue !important;
+			font-size: px-to-rem( 12 ) !important;
+		}
+
+		@include media-breakpoint-up( md ) {
+			color: $dark-grey;
+		}
+
+		a {
+			color: $soft-blue;
+			text-decoration: underline;
+
+			@include media-breakpoint-up( md ) {
+				color: $dark-grey;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		input[type='checkbox'] {
+			margin: 1px 4px;
+		}
+
+		&__inline input[type='checkbox'] {
+			position: relative;
+			top: 2px;
+		}
+
+		.invalid-checkbox-tooltip {
+			display: none;
+		}
+
+		&.is-invalid {
+			background: rgba( $form-feedback-invalid-color, 0.05 );
+			border: 2px solid $form-feedback-invalid-color;
+		}
+	}
+
+	&__security-link {
+		color: $soft-blue;
+		font-size: px-to-rem( 12 );
+		text-decoration: underline;
+
+		&:hover {
+			color: $soft-blue;
+			text-decoration: none;
+		}
+
+		img {
+			width: 8px;
+			margin: 0 3px 1px 0;
+			opacity: 0.5;
+		}
+	}
+
+	&__promo-banner {
+		&_desktop {
+			top: 0;
+			right: 0;
+			left: 0;
+			padding: 10px 20px;
+			background: $fresh-new;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+
+		&_desktop-header {
+			color: $white;
+			font-weight: $font-weight-bold;
+			font-size: px-to-rem( 22 );
+			line-height: calc( 20 / 22 );
+			letter-spacing: -0.2px;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		&_desktop-cta {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			max-width: 120px;
+			padding: 8px 15px;
+			font-weight: $font-weight-bold;
+			font-size: px-to-rem( 16 );
+			line-height: calc( 12 / 16 );
+		}
+
+		&_mobile {
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 2;
+			padding: 10px 8px;
+			background: $fresh-new;
+
+			+ .sign-up__wrapper {
+				margin-top: 52px;
+			}
+		}
+
+		&_mobile-header {
+			color: $white;
+			font-size: px-to-rem( 18 );
+			line-height: calc( 20 / 18 );
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		&_mobile-cta {
+			width: 100%;
+			max-width: 80px;
+			padding: 8px 5px;
+			font-size: px-to-rem( 16 );
+			line-height: calc( 12 / 16 );
+		}
+	}
+
+	&[data-promo='false'] {
+		.sign-up__promo-banner_mobile {
+			display: none !important;
+		}
+
+		.sign-up__promo-banner_desktop {
+			display: none !important;
+		}
+	}
+
+	&[data-promo='true'] {
+		.sign-up__wrapper {
+			@include media-breakpoint-up( md ) {
+				&.pt-promo {
+					padding-top: calc( 2.5rem + 52px );
+				}
+			}
+		}
+	}
+}
+
+.modal-cookies {
+	a {
+		cursor: pointer;
+	}
+
+	p {
+		font-size: 1rem;
+
+		@include media-breakpoint-up( md ) {
+			font-size: 1.125rem;
+		}
+	}
+}
+
+.tos-validated {
+	.sign-up__policy-privacy {
+		.invalid-checkbox-tooltip {
+			display: none;
+		}
+
+		&.is-invalid {
+			.invalid-checkbox-tooltip {
+				display: block;
+			}
+		}
+	}
+}
+
+@media ( max-width: 767px ) {
+	.sign-up {
+		&__inline {
+			min-height: 330px !important;
+			padding: 10px !important;
+			background-color: $pale-blue !important;
+		}
+
+		&__wrapper_inline {
+			padding-top: 10px;
+			padding-bottom: 46px;
+			background: $white;
+		}
+
+		&__heading__inline {
+			font-size: px-to-rem( 26 );
+			line-height: px-to-rem( 33 );
+			letter-spacing: -0.15px;
+		}
+
+		&__sub-heading__inline {
+			color: $dark-grey;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 26 );
+		}
+	}
+}
+
+.is-style-inline {
+	background-color: $pale-blue;
+
+	.sign-up {
+		&__form-group {
+			input {
+				padding: px-to-rem( 10 ) px-to-rem( 12 );
+				color: $midnight-blue;
+				border: 2px solid $rule-grey;
+				border-radius: 5px;
+
+				&::placeholder {
+					color: $rule-grey;
+				}
+			}
+		}
+
+		&__policy-privacy {
+			color: $dark-grey !important;
+		}
+	}
+}

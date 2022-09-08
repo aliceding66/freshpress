@@ -1,0 +1,150 @@
+{
+    "key": "group_613a5545e024e",
+    "title": "Block - Accounting Partners Hero for Service Location page",
+    "fields": [
+        {
+            "key": "field_613a55ebee8e3",
+            "label": "Content",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_613a55b4ee8e2",
+            "label": "Certified | Text",
+            "name": "accounting-partners-hero-service-location-service-location_certified",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_613a55faee8e4",
+            "label": "Title 1",
+            "name": "accounting-partners-hero-service-location-service-location_title_1",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_613a561aee8e5",
+            "label": "Title 2",
+            "name": "accounting-partners-hero-service-location-service-location_title_2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_613a561fee8e6",
+            "label": "Title 3",
+            "name": "accounting-partners-hero-service-location-service-location_title_3",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_613a562aee8e7",
+            "label": "Description",
+            "name": "accounting-partners-hero-service-location-service-location_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/accounting-partners-hero-service-location"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "accounting_partners_location"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645197018
+}

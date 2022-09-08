@@ -1,0 +1,183 @@
+{
+    "key": "group_5f3bb6635b852",
+    "title": "Block - Resellers Commission",
+    "fields": [
+        {
+            "key": "field_5f3bb673796a9",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5f3bb68e796aa",
+            "label": "Shape",
+            "name": "shape",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "rectangle": "Rectangle",
+                "circle": "Circle"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f3bb6fe796ab",
+            "label": "Up To Text",
+            "name": "up_to_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "UP TO",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f3bb70c796ac",
+            "label": "Up To Text Color",
+            "name": "up_to_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5f3bb7f3796af",
+            "label": "Highlighted Text",
+            "name": "highlighted_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "25%",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f3bb809796b0",
+            "label": "Highlighted Text Color",
+            "name": "highlighted_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5f3bb758796ad",
+            "label": "Off Text",
+            "name": "off_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Off MSRP",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f3bb769796ae",
+            "label": "Off Text Color",
+            "name": "off_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/resellers-commission"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643309247
+}

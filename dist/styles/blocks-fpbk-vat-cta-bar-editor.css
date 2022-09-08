@@ -1,0 +1,14 @@
+.editor-styles-wrapper .wp-block-fpbk-vat-cta-bar {
+  min-height: 415px;
+}
+.editor-styles-wrapper .wp-block-fpbk-vat-cta-bar .vat-cta-bar__content {
+  pointer-events: none;
+}
+.editor-styles-wrapper .wp-block-fpbk-vat-cta-bar .vat-cta-bar__content * {
+  pointer-events: all;
+}
+.editor-styles-wrapper .wp-block-fpbk-vat-cta-bar .vat-cta-bar__title {
+  color: #fff !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-vat-cta-bar-editor.css.map*/

@@ -1,0 +1,19 @@
+.contact {
+  padding-bottom: 140px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 360px auto;
+}
+@media (min-width: 768px) {
+  .contact {
+    padding-bottom: 200px;
+    background-size: 55%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact .dibs__text {
+    max-width: 650px;
+  }
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-contact.css.map*/

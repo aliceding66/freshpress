@@ -1,0 +1,170 @@
+// Logo Group.
+@use "sass:math";
+@import '~styles/freshpress-includes';
+
+$background-colors: (
+	single-line: transparent,
+	multiline: transparent,
+	above-the-fold: $mobile-sub-menu,
+);
+
+$logo-height: px-to-rem( 32 );
+$logo-margin: px-to-rem( 32 );
+$logo-spacing: px-to-rem( 64 );
+
+/**
+  Logo Sizing
+  @author FreshBooks Website Services Team
+  @param {number} $logo-height - The height that an unaltered logo will occupy
+  @param {number} $logo-margin - The margin that will be applied to the top
+         AND bottom of logos. Often wise to make this _at least_ as large
+         as `$logo-height`
+  @param {number} $logo-spacing - The Spacing that should occur between logos.
+		 Half of this width will be applied to the left and right of each logo
+  @output {*} - Logo styles that will position the default sizing
+          and allow for increasing or decreasing the relative size of logos
+*/
+
+@mixin logo-sizing(
+	$logo-height: $logo-height,
+	$logo-margin: $logo-margin,
+	$logo-spacing: $logo-spacing
+) {
+	.logo-group__logo {
+		height: $logo-height;
+		margin: $logo-margin 0;
+		padding: 0 math.div( $logo-spacing, 2 );
+	}
+	$i: 5;
+
+	@while $i <= 100 {
+		$change: math.div( $logo-height, 100 ) * $i;
+		.logo-group__logo_decrease_#{$i} {
+			height: $logo-height - $change;
+			margin: $logo-margin + ( math.div( $change, 2 ) ) 0;
+		}
+		.logo-group__logo_increase_#{$i} {
+			height: $logo-height + $change;
+			margin: $logo-margin - ( math.div( $change, 2 ) ) 0;
+		}
+		$i: $i + 5;
+	}
+}
+
+.logo-group {
+	display: flex;
+	justify-content: center;
+	padding: 0 math.div( $logo-spacing, 2 );
+
+	@include logo-sizing( $logo-height, $logo-margin, px-to-rem( 24 ) );
+
+	@include media-breakpoint-up( md ) {
+		@include logo-sizing( $logo-height, $logo-margin, px-to-rem( 40 ) );
+	}
+
+	@each $layout, $bgc in $background-colors {
+		&_#{$layout} {
+			background-color: $bgc;
+		}
+	}
+
+	&:not( .hide-lines ) {
+		border-top: 2px solid $rule-grey;
+		border-bottom: 2px solid $rule-grey;
+	}
+
+	h3.logo_group__headline {
+		flex: 0 0 auto;
+		margin: $logo-margin 0;
+		padding: 0 math.div( px-to-rem( 24 ), 2 );
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 20 );
+		line-height: calc( 20 / 30 );
+		white-space: nowrap;
+		text-transform: uppercase;
+
+		@include media-breakpoint-up( md ) {
+			padding: 0 math.div( px-to-rem( 40 ), 2 );
+		}
+	}
+
+	&__logos {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		height: $logo-height + ( $logo-margin * 2 );
+		overflow: hidden;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 100%;
+
+		img {
+			display: inline-block;
+			max-width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+.is-style-logo-group {
+	@each $layout, $bgc in $background-colors {
+		&_#{$layout} {
+			background-color: $bgc;
+		}
+	}
+
+	&_above-the-fold {
+		border-top: none !important;
+		border-bottom: none !important;
+
+		h3.logo_group__headline {
+			font-weight: $font-weight-normal;
+			font-size: px-to-rem( 18 );
+			line-height: calc( 18 / 22 );
+			text-transform: none;
+		}
+	}
+
+	&_multiline {
+		border-top: none !important;
+		border-bottom: none !important;
+
+		h3.logo_group__headline {
+			flex: 0 0 100%;
+			width: 100%;
+			font-weight: $font-weight-medium;
+			font-size: px-to-rem( 28 );
+			line-height: calc( 28 / 32 );
+			text-align: center;
+			text-transform: none;
+
+			// Responsive Typography.
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 32 );
+				line-height: calc( 32 / 44 );
+			}
+
+			@include media-breakpoint-up( xl ) {
+				font-size: px-to-rem( 40 );
+				line-height: calc( 40 / 44 );
+			}
+		}
+
+		.logo-group__logos {
+			height: auto;
+			overflow: visible;
+		}
+
+		@include logo-sizing( px-to-rem( 48 ), px-to-rem( 48 ), px-to-rem( 64 ) );
+
+		@include media-breakpoint-up( md ) {
+			@include logo-sizing( px-to-rem( 64 ), px-to-rem( 64 ), px-to-rem( 96 ) );
+		}
+	}
+}

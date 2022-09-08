@@ -1,0 +1,59 @@
+{
+    "key": "group_5f5a6d74e54b0",
+    "title": "Page - Schema Markup",
+    "fields": [
+        {
+            "key": "field_5f5a6d7a9977e",
+            "label": "Schema Markup",
+            "name": "schema_markup",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "<script type=\"application\/ld+json\">\r\n{\r\n  \"@context\": \"https:\/\/schema.org\",\r\n  \"@type\": \"Organization\",\r\n  \"name\": \"FreshBooks\",\r\n  \"foundingDate\": 2003,\r\n  \"url\": \"https:\/\/www.freshbooks.com\",\r\n  \"logo\": \"https:\/\/www.freshbooks.com\/wp-content\/themes\/freshpress\/dist\/images\/logos\/freshbooks-logo.svg\",\r\n  \"sameAs\": [\r\n    \"https:\/\/www.wikidata.org\/wiki\/Q5502916\",\r\n    \"https:\/\/en.wikipedia.org\/wiki\/FreshBooks\",\r\n    \"https:\/\/www.youtube.com\/user\/freshbooks\",\r\n    \"https:\/\/ca.linkedin.com\/company\/freshbooks\",\r\n    \"https:\/\/www.facebook.com\/FreshBooks\",\r\n    \"https:\/\/twitter.com\/freshbooks\",\r\n    \"https:\/\/www.instagram.com\/freshbooks\"\r\n  ],\r\n  \"owns\": {\r\n    \"name\": \"FreshBooks\",\r\n    \"url\": \"https:\/\/www.freshbooks.com\"\r\n  }\r\n}\r\n<\/script>",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 15,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "invoice_template"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "hub_article"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1649334757
+}

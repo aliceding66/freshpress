@@ -1,0 +1,25 @@
+<div
+	class="product-tour__item position-relative justify-content-between align-items-start flex-column flex-lg-row{{# mobile_carousel }} swiper-slide{{/ mobile_carousel }} {{ item_active_class }}"
+	data-id="{{ nav_title_id }}"
+>
+	<div class="product-tour__item-text mx-auto mx-lg-0 text-center text-lg-left pb-4 pb-lg-0">
+		<h2 class="product-tour__item-title mb-4 mb-lg-3">
+			{{{ product_tour_item_title }}}
+		</h2>
+
+		<div class="product-tour__item-description mb-4">
+			{{{ product_tour_item_description }}}
+		</div>
+
+		{{# product_tour_item_link.html }}
+			{{{ product_tour_item_link.html }}}
+		{{/ product_tour_item_link.html }}
+		{{^ product_tour_item_link.html }}
+			{{{ product_tour_item_link }}}
+		{{/ product_tour_item_link.html }}
+	</div>
+
+	<div class="product-tour__item-image-container position-relative mx-auto text-center">
+		{{{ product_tour_item_image }}}
+	</div>
+</div>

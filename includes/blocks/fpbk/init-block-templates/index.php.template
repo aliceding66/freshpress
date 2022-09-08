@@ -1,0 +1,22 @@
+<?php
+/**
+ * {{ pascal }} block.
+ *
+ * @package FreshPress\{{ pascal }}
+ * @subpackage {{ pascal }}
+ */
+
+/**
+ * Register block and initialise block assets.
+ */
+function fpbk_{{ snake }}_block_init() {
+{{# detailedComments }}
+	/**
+	 * Minimalistic block registration call.
+	 */
+{{/ detailedComments }}
+	$block = new \FreshpressBlocks\{{ pascal }}Block( __DIR__ );
+	$block->register();
+}
+
+add_action( 'init', 'fpbk_{{ snake }}_block_init' );

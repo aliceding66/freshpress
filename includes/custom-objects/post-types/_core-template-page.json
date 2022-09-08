@@ -1,0 +1,12 @@
+{
+  "post_type": "template_page",
+  "post_type_plural": "template_pages",
+  "label": "Template Page",
+  "label_plural": "Template Pages",
+  "args": {
+    "description": "Editable templates for category/archive pages",
+    "hierarchical": false,
+    "public": false,
+    "rewrite": false
+  }
+}

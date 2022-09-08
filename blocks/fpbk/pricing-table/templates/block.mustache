@@ -1,0 +1,28 @@
+{{> partial__switch }}
+
+<div
+    class="pricing-table__price-disclaimer mx-auto pr-2 text-center text-md-{{# price_disclaimer_left }}left{{/ price_disclaimer_left }}{{^ price_disclaimer_left }}right{{/ price_disclaimer_left }}"
+>
+    <span class="d-block d-md-none">{{ labels.pricing_grid_disclaimer }}</span>
+</div>
+
+{{# mobile_carousel }}
+	<div class="pricing-table__swiper-container swiper-container">
+		<div class="pricing-table_grid row mx-auto justify-content-md-center swiper-wrapper{{# enable_compact_view }} compact{{/ enable_compact_view }}">
+			{{# plans }}
+				{{> partial__column }}
+			{{/ plans }}
+		</div>
+		<div class="pricing-table__swiper-pagination swiper-pagination d-md-none"></div>
+		<div class="pricing-table__swiper-button pricing-table__swiper-button--prev swiper-button-prev d-md-none"></div>
+		<div class="pricing-table__swiper-button pricing-table__swiper-button--next swiper-button-next d-md-none"></div>
+	</div>
+{{/ mobile_carousel }}
+{{^ mobile_carousel }}
+	<div class="pricing-table_grid row mx-auto justify-content-md-center{{# enable_compact_view }} compact{{/ enable_compact_view }}">
+		{{# plans }}
+			{{> partial__column }}
+		{{/ plans }}
+	</div>
+{{/ mobile_carousel }}
+

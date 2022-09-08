@@ -1,0 +1,23 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/sticky-footer",
+  "title": "Sticky Footer",
+  "category": "freshblocks",
+  "description": "Footer that sticks to the bottom of the screen until scrolled into view.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "styles": [
+    {
+      "name": "standard",
+      "label": "Standard",
+      "isDefault": true
+    },
+    {
+      "name": "newsletter",
+      "label": "Newsletter"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+.modal {
+  z-index: 10000;
+  background-color: rgba(0, 27, 64, 0.9);
+}
+.modal__header {
+  color: #fff;
+  background-color: #0075dd;
+}
+.modal__body {
+  max-width: 480px;
+}
+.modal__cta {
+  max-width: 290px;
+  font-size: 1.2rem;
+}
+.modal__bottom-text {
+  font-size: 0.875rem;
+}
+.modal__close-button {
+  top: 10px;
+  right: 10px;
+  padding-right: 30px;
+  color: #8495a2;
+  background: none;
+  border: none;
+}
+.modal__close-button span {
+  top: 12px;
+  right: 6px;
+  width: 20px;
+  height: 4px;
+  border-radius: 1px;
+}
+.modal__close-button span:first-child {
+  transform: rotate(-45deg);
+}
+.modal__close-button span:last-child {
+  transform: rotate(45deg);
+}
+.modal__content-heading_stages {
+  font-size: 2.125rem;
+  line-height: 1.0625;
+}
+.modal__stage {
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  pointer-events: none;
+}
+.modal__stage:not(.active) {
+  max-height: 0;
+  overflow: hidden;
+}
+.modal__stage.active {
+  z-index: 1;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.3s 0.2s ease-in;
+  pointer-events: auto;
+}
+.modal__description {
+  font-size: 1rem;
+}
+.modal__list {
+  padding: 0 0 0 24px;
+  font-size: 1rem;
+  text-align: left;
+  list-style-type: none;
+}
+.modal__list li {
+  position: relative;
+}
+.modal__list li::before {
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/checkmark-green.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  content: "";
+}
+.modal__next-stage {
+  padding: 7px 22px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  pointer-events: auto;
+}
+.modal__close {
+  padding: 7px 30px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border-color: #001b40;
+  pointer-events: auto;
+}
+.modal__close:hover {
+  border-color: #001b40;
+}
+.modal__close-link {
+  color: #001b40;
+  font-size: 1rem;
+  text-decoration: none;
+  pointer-events: auto;
+}
+.modal__close-link:hover {
+  color: #001b40;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=blocks-fpbk-modal-style.css.map*/

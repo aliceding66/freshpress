@@ -1,0 +1,1102 @@
+@import '../../freshpress-includes';
+
+/*
+* Accounting Partners Templates Archive styles
+*/
+
+$white: #fff;
+$black: #000;
+@mixin optionsActiveState() {
+	display: block;
+}
+
+body.unmoved {
+	overflow: hidden;
+}
+
+header.header {
+	position: relative;
+	z-index: 3;
+	background-color: $white;
+}
+.accounting-partners-filter {
+	position: relative;
+	z-index: 5;
+	margin: 0 -15px 30px;
+	@include media-breakpoint-up( md ) {
+		margin: -46px -15px 22px;
+	}
+	@include media-breakpoint-up( lg ) {
+		margin: -46px -15px 40px;
+	}
+
+	.br-8 {
+		border-radius: 8px !important;
+	}
+
+	&__container {
+		position: relative;
+		width: 714px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 22px;
+		background-color: $white;
+		border-bottom: 1px solid rgba( $outline-grey, 0.6 );
+		border-radius: 8px 8px 0 0;
+		box-shadow: 3px 3px 0 0 rgba( 0, 27, 64, 0.07 );
+		@include media-breakpoint-up( md ) {
+			padding: 20px 18px 18px;
+		}
+		@include media-breakpoint-up( lg ) {
+			width: 1008px;
+			padding: 22px 36px 24px;
+			border-radius: 7px 7px 0 0;
+		}
+		&::after {
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: rgba( $outline-grey, 0.6 );
+			content: none;
+			@include media-breakpoint-up( md ) {
+				margin-top: 8px;
+				content: '';
+			}
+			@include media-breakpoint-up( lg ) {
+				margin-top: 0;
+			}
+		}
+	}
+	&__select {
+		display: none;
+		height: auto;
+		@include media-breakpoint-up( md ) {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+			height: 69px;
+		}
+		@include media-breakpoint-up( lg ) {
+			justify-content: space-between;
+			height: 44px;
+		}
+		@include media-breakpoint-down( md ) {
+			&.active {
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100vh;
+				padding: 0 22px 100px;
+				overflow-y: auto;
+				background-color: $white;
+				.accounting-partners-filter__button {
+					height: 70px;
+					&_location {
+						@include media-breakpoint-down( md ) {
+							height: auto;
+							padding: 13px 6px 0 0;
+							border-bottom: none;
+						}
+					}
+				}
+				.accounting-partners-filter__label {
+					margin-bottom: -15px;
+					background-image: url( ./../../../images/accounting-partners/close.svg );
+					background-repeat: no-repeat;
+					background-position: 100% 17px;
+					background-size: 11px 11px;
+				}
+			}
+		}
+	}
+	&__options {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: none;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0;
+		padding: 0 25px 21px;
+		background-color: $white;
+		border-bottom: 1px solid rgba( $outline-grey, 0.3 );
+		@include media-breakpoint-up( md ) {
+			position: absolute;
+			top: calc( 100% - 23px );
+			padding: 20px 30px 21px;
+			border: none;
+			border-radius: 0 0 8px 8px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			top: calc( 100% - 31px );
+		}
+		&::before {
+			position: relative;
+			top: -15px;
+			left: -30px;
+			display: block;
+			width: calc( 100% + 60px );
+			border-top: 1px solid rgba( $outline-grey, 0.6 );
+			content: none;
+			@include media-breakpoint-up( md ) {
+				content: '';
+			}
+		}
+
+		&:hover {
+			@include optionsActiveState;
+		}
+	}
+	&__button {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding: 0 25px;
+		color: $tile-blue;
+		font-weight: 500;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 44 );
+		text-align: left;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid rgba( $outline-grey, 0.3 );
+		@include media-breakpoint-up( md ) {
+			display: inline;
+			flex: 1;
+			width: auto;
+			padding: 0;
+			text-align: center;
+			border: none;
+		}
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 20 );
+			line-height: px-to-rem( 24 );
+		}
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 21px;
+			height: 21px;
+			margin-left: 6px;
+			color: $fresh-new;
+			font-weight: 400;
+			font-size: px-to-rem( 14 );
+			line-height: px-to-rem( 16 );
+			background-color: rgba( $fresh-new, 0.1 );
+			border-radius: 4px;
+			@include media-breakpoint-up( md ) {
+				display: none;
+			}
+		}
+		&::after {
+			position: absolute;
+			top: 50%;
+			right: 40px;
+			display: inline-block;
+			width: 10px;
+			height: 6px;
+			margin-top: -3px;
+			margin-left: 8px;
+			vertical-align: middle;
+			background-image: url( ./../../../images/accounting-partners/tile-chevron-down.svg );
+			background-repeat: no-repeat;
+			background-size: 10px 6px;
+			content: '';
+			@include media-breakpoint-up( md ) {
+				position: relative;
+				top: 0;
+				right: auto;
+				margin-top: 0;
+			}
+		}
+		&_location {
+			&.opc-trans {
+				opacity: 0;
+				animation: back-in-opacity 0.4s forwards;
+				animation-delay: 0.1s;
+			}
+			&::after {
+				top: 34px;
+				right: 13px;
+				display: inline-block;
+				width: 11px;
+				height: 12px;
+				margin-left: 8px;
+				vertical-align: middle;
+				background-image: url( ./../../../images/accounting-partners/tile-magnifier.svg );
+				background-repeat: no-repeat;
+				background-size: 11px 12px;
+				content: '';
+				@include media-breakpoint-up( md ) {
+					top: 0;
+					right: 0;
+				}
+			}
+		}
+		&.active + .accounting-partners-filter__options {
+			@include optionsActiveState;
+		}
+		&.selected {
+			position: relative;
+
+			&:not( .active )::before {
+				position: absolute;
+				top: calc( 100% - 7px );
+				left: 50%;
+				z-index: 6;
+				display: block;
+				width: 4px;
+				height: 4px;
+				margin-left: -2px;
+				background-color: $bright-blue;
+				border-radius: 50%;
+				content: none;
+				@include media-breakpoint-up( md ) {
+					content: '';
+				}
+				@include media-breakpoint-up( lg ) {
+					top: 100%;
+				}
+			}
+		}
+		&.active {
+			position: relative;
+			border: none;
+			@include media-breakpoint-up( md ) {
+				color: $fresh-new;
+			}
+			&::before {
+				position: absolute;
+				top: calc( 100% - 1px );
+				left: 50%;
+				z-index: 6;
+				display: block;
+				width: 16px;
+				height: 11px;
+				margin-left: -8px;
+				background-image: url( ./../../../images/accounting-partners/arrow-image.svg );
+				background-repeat: no-repeat;
+				background-size: 16px 12px;
+				content: none;
+
+				@include media-breakpoint-up( md ) {
+					top: calc( 100% - 9px );
+					content: '';
+				}
+				@include media-breakpoint-up( lg ) {
+					top: calc( 100% - 1px );
+				}
+			}
+			&::after {
+				background-image: url( ./../../../images/accounting-partners/tile-chevron-up.svg );
+			}
+		}
+	}
+	&__location {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 0 25px 14px;
+		border-bottom: 1px solid rgba( $outline-grey, 0.3 );
+		@include media-breakpoint-up( md ) {
+			display: flex;
+			justify-content: center;
+			width: 180px;
+			padding: 0;
+			border: none;
+		}
+		@include media-breakpoint-up( lg ) {
+			justify-content: flex-start;
+			width: 250px;
+		}
+
+		&-submit {
+			position: absolute;
+			top: 50%;
+			right: 40px;
+			width: 16px;
+			height: 16px;
+			margin-top: -12px;
+			background-color: transparent;
+			background-image: url( ./../../../images/accounting-partners/blue-magnifier.svg );
+			background-repeat: no-repeat;
+			background-size: 16px 16px;
+			border: none;
+			visibility: visible;
+			cursor: default !important;
+			opacity: 0;
+			transition: none;
+			@include media-breakpoint-up( md ) {
+				right: 10px;
+				margin-top: -5px;
+			}
+		}
+
+		&-input,
+		&-input:focus {
+			position: absolute;
+			top: 1px;
+			display: block;
+			width: 0;
+			height: 44px;
+			margin-top: 14px;
+			padding: 0 41px 0 15px;
+			color: $tile-blue;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 24 );
+			border: 1px solid rgba( $outline-grey, 0.6 );
+			border-radius: 8px 8px 0 0;
+			outline: none;
+			visibility: hidden;
+			opacity: 0;
+			transition: width 0.4s ease;
+			@include media-breakpoint-up( md ) {
+				position: relative;
+				margin-top: 0;
+			}
+			&::-webkit-input-placeholder {
+				opacity: 0.5;
+			}
+			&::-moz-placeholder {
+				opacity: 0.5;
+			}
+			&:-ms-input-placeholder {
+				opacity: 0.5;
+			}
+			&:-moz-placeholder {
+				opacity: 0.5;
+			}
+			&::-ms-clear {
+				display: none;
+			}
+
+			&.active {
+				position: relative;
+				width: 100%;
+				visibility: visible;
+				opacity: 1;
+			}
+			&.active + .accounting-partners-filter__location-submit {
+				visibility: visible;
+				opacity: 1;
+				transition: opacity 0.4s ease;
+				transition-delay: 0.4s;
+			}
+		}
+		&-input:placeholder-shown {
+			border-radius: 8px;
+		}
+	}
+	&__label {
+		position: relative;
+		display: block;
+		width: 100%;
+		margin-bottom: 0;
+		padding: 32px 0 35px;
+		color: $midnight-blue;
+		font-weight: 400;
+		font-size: px-to-rem( 16 );
+		font-family: $font-freshbooks-script;
+		line-height: px-to-rem( 20 );
+		text-align: center;
+		background-color: transparent;
+		border: none;
+		&::before {
+			position: absolute;
+			bottom: 18px;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: rgba( $outline-grey, 0.6 );
+			content: '';
+		}
+		@include media-breakpoint-up( md ) {
+			display: inline;
+			margin-bottom: 12px;
+			padding: 0;
+			border: none;
+			&::before {
+				content: none;
+			}
+		}
+		@include media-breakpoint-up( lg ) {
+			width: auto;
+			margin-bottom: 0;
+			text-align: left;
+		}
+		&::after {
+			display: inline-block;
+			width: 10px;
+			height: 6px;
+			margin-left: 8px;
+			vertical-align: middle;
+			background-image: url( ./../../../images/accounting-partners/tile-chevron-down.svg );
+			background-repeat: no-repeat;
+			background-size: 10px 6px;
+			content: '';
+			@include media-breakpoint-up( md ) {
+				width: auto;
+				height: auto;
+				margin: 0;
+				background: none;
+				content: ':';
+			}
+		}
+		&.active {
+			&::after {
+				background-image: url( ./../../../images/accounting-partners/tile-chevron-up.svg );
+			}
+		}
+	}
+	&__term {
+		position: relative;
+		display: block;
+		min-height: 32px;
+		margin-bottom: 12px;
+		padding: 0;
+		color: $midnight-blue;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 18 );
+		text-align: left;
+		background-color: transparent;
+		border: none;
+		@include media-breakpoint-up( md ) {
+			margin-right: 11px;
+		}
+		&_gray {
+			display: inline-block;
+			margin-left: 4px;
+			color: $light-grey;
+			font-size: px-to-rem( 12 );
+			line-height: px-to-rem( 18 );
+			vertical-align: middle;
+		}
+		&-name {
+			&::before {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				margin-top: -4px;
+				margin-right: 13px;
+				vertical-align: middle;
+				border: 1px solid $outline-grey;
+				border-radius: 4px;
+				content: '';
+			}
+			&::after {
+				position: absolute;
+				top: 12px;
+				left: 1px;
+				display: inline-block;
+				width: 14px;
+				height: 12px;
+				margin-top: -3px;
+				vertical-align: middle;
+				background-image: url( ./../../../images/accounting-partners/white-check.svg );
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 14px 12px;
+				content: none;
+			}
+		}
+		&.active {
+			.accounting-partners-filter__term-name::before {
+				background-color: $fresh-new;
+				border: none;
+			}
+			.accounting-partners-filter__term-name::after {
+				content: '';
+			}
+		}
+
+		&.disabled {
+			color: $light-grey;
+			background: rgba( $light-grey, 0.05 );
+			cursor: default;
+		}
+		@include media-breakpoint-up( md ) {
+			display: inline-block;
+			padding: 0 12px;
+			background: linear-gradient(
+				to right,
+				rgba( $fresh-new, 0.04 ) 0%,
+				rgba( $fresh-new, 0.04 ) 50%,
+				$white 50%,
+				$white 100%
+			);
+			background-position: 100% 0;
+			background-size: 200% 100%;
+			border: 1px solid rgba( 179, 187, 197, 0.6 );
+			border-radius: 8px;
+			transition: background-position 2s;
+			&:last-of-type {
+				margin-right: 0;
+			}
+			&:hover:not( .disabled ) {
+				color: $fresh-new;
+			}
+			&.active {
+				color: $fresh-new;
+				background-position: 0 0;
+			}
+			&-name {
+				&::before,
+				&::after {
+					content: none !important;
+				}
+			}
+		}
+	}
+	&__back-hover {
+		position: absolute;
+		top: 72px;
+		left: 50%;
+		width: 100vw;
+		height: 200vh;
+		background-color: rgba( $black, 0.5 );
+		transform: translateX( -50% );
+		opacity: 0;
+		animation: back-in-opacity 0.5s forwards;
+		&-out {
+			animation: back-out-opacity 0.5s forwards;
+		}
+		@include media-breakpoint-up( lg ) {
+			top: 88px;
+		}
+		@include media-breakpoint-up( xl ) {
+			top: 90px;
+		}
+	}
+
+	.autocomplete-items {
+		position: absolute;
+		top: calc( 100% - 14px );
+		right: 0;
+		left: 0;
+		z-index: 99;
+		@include media-breakpoint-up( md ) {
+			top: 100%;
+		}
+	}
+	.autocomplete-items div {
+		width: calc( 100% - 50px );
+		margin: 0 auto;
+		padding: 10px;
+		background-color: $white;
+		border: 1px solid rgba( $outline-grey, 0.6 );
+		border-top: none;
+		border-bottom: none;
+		cursor: pointer;
+		@include media-breakpoint-up( md ) {
+			width: 100%;
+		}
+		&:last-of-type {
+			border-bottom: 1px solid rgba( $outline-grey, 0.6 );
+			border-radius: 0 0 8px 8px;
+		}
+	}
+
+	.autocomplete-items div:hover {
+		color: $fresh-new;
+	}
+	.autocomplete-items div.no-results {
+		cursor: default;
+		&:hover {
+			color: inherit;
+		}
+	}
+
+	.autocomplete-active {
+		color: $white;
+		background-color: $fresh-new !important;
+	}
+	&__trigger {
+		justify-content: center;
+		padding: 16px 46px;
+		background-color: $white;
+		box-shadow: 0 -4px 5px rgba( $black, 0.08 );
+
+		&-button {
+			width: 100%;
+			height: 46px;
+			color: $white;
+			font-weight: 500;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 20 );
+		}
+	}
+}
+
+.accounting-partners-filter-elements {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 714px;
+	max-width: 100%;
+	margin: 0 auto 25px;
+
+	@include media-breakpoint-up( lg ) {
+		width: 1008px;
+		margin-top: -15px;
+	}
+
+	&:empty {
+		display: none;
+	}
+
+	&__button {
+		height: 32px;
+		margin: 0 10px 10px 0;
+		padding: 0 12px;
+		color: $fresh-new;
+		font-weight: 400;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 18 );
+		background-color: transparent;
+		border: 1px solid rgba( $outline-grey, 0.6 );
+		border-radius: 8px;
+		&::after {
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			margin-left: 4px;
+			vertical-align: revert;
+			background-image: url( ./../../../images/accounting-partners/close.svg );
+			background-size: 8px 8px;
+			content: '';
+		}
+		span {
+			color: rgba( $midnight-blue, 0.6 );
+		}
+	}
+	&__clear-all {
+		margin-bottom: 10px;
+		padding: 0;
+		color: $midnight-blue;
+		font-weight: 400;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 18 );
+		background-color: transparent;
+		border: none;
+	}
+}
+
+.accounting-partners-content {
+	position: relative;
+	width: 714px;
+	max-width: 100%;
+	margin: 0 auto;
+	@include media-breakpoint-up( lg ) {
+		width: 1008px;
+	}
+
+	&__container {
+		margin-bottom: 64px;
+	}
+	&__single {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 24px;
+		padding: 24px;
+		border: 1px solid $outline-grey;
+		border-radius: 8px;
+		@include media-breakpoint-up( md ) {
+			padding: 24px 36px 24px;
+		}
+		@include media-breakpoint-up( lg ) {
+			align-items: flex-start;
+			padding: 36px 36px 42px;
+		}
+		&.hovered {
+			box-shadow: 6px 6px 0 rgba( $border-yellow, 0.3 );
+		}
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	&__profile-image {
+		position: relative;
+		order: 1;
+		width: 110px;
+		height: 88px;
+		border: 1px solid $outline-grey;
+		border-radius: 8px;
+		box-shadow: 6px 6px 0 rgba( $outline-grey, 0.3 );
+
+		@include media-breakpoint-up( md ) {
+			width: 140px;
+			height: 112px;
+		}
+		@include media-breakpoint-up( lg ) {
+			height: 120px;
+		}
+
+		img {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			width: calc( 100% - 16px );
+			height: calc( 100% - 16px );
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+	&__profile-info {
+		order: 3;
+		width: 100%;
+		margin-top: 26px;
+		@include media-breakpoint-up( md ) {
+			margin-top: 24px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			order: 2;
+			width: 626px;
+			margin-top: 0;
+		}
+
+		h2 {
+			color: $midnight-blue;
+			font-weight: 500;
+			font-size: px-to-rem( 24 );
+			line-height: px-to-rem( 22 );
+			letter-spacing: normal;
+
+			@include media-breakpoint-up( lg ) {
+				font-size: px-to-rem( 26 );
+				line-height: px-to-rem( 28 );
+			}
+			a {
+				color: $midnight-blue;
+			}
+		}
+		address {
+			display: block;
+			margin-bottom: 18px;
+			color: rgba( $midnight-blue, 0.6 );
+			font-weight: 400;
+			font-size: px-to-rem( 14 );
+			line-height: px-to-rem( 16 );
+			@include media-breakpoint-up( lg ) {
+				font-size: px-to-rem( 16 );
+				line-height: px-to-rem( 18 );
+			}
+			&::before {
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				margin-right: px-to-rem( 4.5 );
+				background-image: url( ./../../../images/accounting-partners/map-pin.svg );
+				background-repeat: no-repeat;
+				background-size: 12px 12px;
+				content: '';
+				@include media-breakpoint-up( lg ) {
+					margin-right: 3px;
+				}
+			}
+		}
+	}
+	&__description {
+		margin-bottom: 18px;
+		color: $midnight-blue;
+		font-weight: 400;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 24 );
+		}
+	}
+	&__button {
+		order: 2;
+		padding: 10px 12px 10px;
+		color: $midnight-blue;
+		font-size: px-to-rem( 14 );
+		line-height: px-to-rem( 16 );
+		border: 2px solid $rule-grey;
+		border-radius: 8px;
+
+		@include media-breakpoint-up( lg ) {
+			order: 3;
+		}
+
+		&:hover {
+			color: $midnight-blue;
+		}
+	}
+	&__term {
+		margin: 0 8px 8px 0;
+		padding: 6px 12px;
+		color: $fresh-new;
+		font-weight: 400;
+		font-size: px-to-rem( 14 );
+		line-height: px-to-rem( 16 );
+		background-color: rgba( $fresh-new, 0.08 );
+		border-radius: 8px;
+
+		&s,
+		&s .terms-hidden {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: flex-start;
+
+			.show-terms {
+				margin-bottom: 10px;
+				padding: 0;
+				color: $midnight-blue;
+				font-weight: 400;
+				font-size: px-to-rem( 14 );
+				line-height: px-to-rem( 16 );
+				background-color: transparent;
+				border: none;
+			}
+		}
+		&s .terms-hidden {
+			display: none;
+		}
+	}
+	&__pagination,
+	&__pagination .nav-links {
+		display: flex;
+		gap: 2px;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+
+		.page-numbers {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 38px;
+			height: 40px;
+			color: $midnight-blue;
+			border-radius: 8px;
+
+			&:hover:not( .dots ),
+			&.current {
+				color: $white;
+				background-color: $fresh-new;
+			}
+			&.prev,
+			&.next {
+				width: auto;
+				padding: 0 16px;
+			}
+		}
+		&_disabled {
+			.page-numbers {
+				cursor: progress;
+				opacity: 0.5;
+			}
+		}
+	}
+}
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
+	clip: rect( $black, 0 );
+}
+.post-type-archive-accounting_partners {
+	.new-cta-bar .btn {
+		margin-bottom: 32px;
+		padding: 11px 25px;
+		font-weight: 500;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 20 );
+			line-height: px-to-rem( 24 );
+		}
+	}
+	.faq {
+		&__headline {
+			margin-bottom: 32px;
+			font-size: px-to-rem( 30 );
+			line-height: px-to-rem( 28 );
+			letter-spacing: normal;
+			@include media-breakpoint-up( lg ) {
+				margin-bottom: 24px;
+				font-size: px-to-rem( 36 );
+				line-height: px-to-rem( 36 );
+			}
+		}
+		&__question {
+			h3 {
+				font-size: px-to-rem( 18 );
+				line-height: px-to-rem( 20 );
+				letter-spacing: normal;
+				@include media-breakpoint-up( lg ) {
+					margin-bottom: 24px;
+					font-size: px-to-rem( 20 );
+					line-height: px-to-rem( 24 );
+				}
+			}
+		}
+		&__answer {
+			p,
+			ul,
+			a {
+				font-size: px-to-rem( 16 );
+				line-height: px-to-rem( 20 );
+				letter-spacing: normal;
+				@include media-breakpoint-up( lg ) {
+					margin-bottom: 24px;
+					font-size: px-to-rem( 18 );
+					line-height: px-to-rem( 24 );
+				}
+			}
+		}
+		&__arrow {
+			width: px-to-rem( 10 );
+			height: px-to-rem( 5.56 );
+		}
+	}
+}
+.accounting-partners {
+	&__top {
+		position: relative;
+		left: calc( 50% - 50vw );
+		display: none;
+		width: 100vw;
+		background-color: $light-cream;
+		&::before {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 160px;
+			background-color: $light-cream;
+			content: '';
+		}
+		@include media-breakpoint-up( md ) {
+			display: block;
+		}
+		@media ( min-width: 1600px ) {
+			left: calc( ( 100% - 1600px ) / 2 );
+			width: 1600px;
+		}
+	}
+	&__breadcrumbs {
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 16px 0;
+		color: $midnight-blue;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( lg ) {
+			width: 980px;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 24 );
+		}
+		@media ( min-width: 1251px ) {
+			width: 1166px;
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 1216px;
+		}
+		&-divider {
+			display: none;
+			margin: 0 8px;
+			color: $light-grey;
+			@include media-breakpoint-up( sm ) {
+				display: inline-block;
+			}
+		}
+		a {
+			display: none;
+			color: $fresh-new;
+			text-decoration: underline;
+			&:last-of-type {
+				display: inline-block;
+				&::before {
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					margin-right: 6px;
+					background-image: url( ./../../../images/accounting-partners/right-arrow-blue.svg );
+					background-repeat: no-repeat;
+					background-size: 8px 8px;
+					content: '';
+					@include media-breakpoint-up( sm ) {
+						content: none;
+					}
+				}
+			}
+			@include media-breakpoint-up( sm ) {
+				display: inline-block;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+@keyframes back-in-opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes back-out-opacity {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.accounting-partners-loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	transform: translateZ( 1px );
+}
+.accounting-partners-loader > div {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin: 8px;
+	background-image: url( ./../../../images/accounting-partners/icon-fb.svg );
+	background-size: 35px 35px;
+	animation: accounting-partners-loader 10s cubic-bezier( 0, 0.2, 0.8, 1 ) infinite;
+}
+@keyframes accounting-partners-loader {
+	0%,
+	100% {
+		animation-timing-function: cubic-bezier( 0.5, 0, 1, 0.5 );
+	}
+	0% {
+		transform: rotateY( 0deg );
+	}
+	50% {
+		transform: rotateY( 1800deg );
+		animation-timing-function: cubic-bezier( 0, 0.5, 0.5, 1 );
+	}
+	100% {
+		transform: rotateY( 3600deg );
+	}
+}

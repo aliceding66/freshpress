@@ -1,0 +1,157 @@
+{
+    "key": "group_6138bb8a50243",
+    "title": "Block - Accounting Partners CTA",
+    "fields": [
+        {
+            "key": "field_6138bba672320",
+            "label": "Content",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_6138bbbc72321",
+            "label": "Pre Heading",
+            "name": "accounting-partners-cta_pre_head",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6138bc4972322",
+            "label": "Heading",
+            "name": "accounting-partners-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6138bc6072323",
+            "label": "Description",
+            "name": "accounting-partners-cta_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_6138bc7d72324",
+            "label": "CTA",
+            "name": "accounting-partners-cta_button",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6138bc9c72325",
+                    "label": "Button Link",
+                    "name": "button_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_6138bccc72327",
+                    "label": "Button Max Width",
+                    "name": "max_width",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/accounting-partners-cta"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645197308
+}

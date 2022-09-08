@@ -1,0 +1,177 @@
+// Countdown Timer.
+
+@import '~styles/freshpress-includes';
+
+.countdown-timer {
+	$block: &;
+
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	&__title {
+		display: none;
+	}
+
+	&__text {
+		display: inline;
+	}
+
+	&__days,
+	&__hours,
+	&__minutes,
+	&__seconds {
+		span {
+			font-weight: $font-weight-medium;
+		}
+	}
+
+	&__days-tens,
+	&__hours-tens,
+	&__minutes-tens,
+	&__seconds-tens {
+		letter-spacing: -0.3rem;
+	}
+
+	&__lto {
+		display: none;
+	}
+
+	&.themed {
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+
+		@include media-breakpoint-up( md ) {
+			margin-left: 0;
+			text-align: left;
+		}
+
+		#{ $block }__lto {
+			display: inline-block;
+			width: auto;
+			max-height: 26px;
+		}
+
+		#{ $block }__title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 124px;
+			height: 28px;
+			margin: 0 auto 20px;
+			color: $white;
+			font-weight: $font-weight-medium;
+			font-size: px-to-rem( 12px );
+			line-height: calc( 18 / 16 );
+			letter-spacing: -0.07px;
+			text-transform: uppercase;
+			background-image: url( ./../../../../assets/images/homepage/hero-label-freshblue.svg );
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			@include media-breakpoint-up( md ) {
+				margin: 0 0 20px;
+			}
+		}
+
+		#{ $block }__text {
+			display: flex;
+			flex-wrap: nowrap;
+			width: fit-content;
+		}
+
+		#{ $block }__days-tens,
+		#{ $block }__hours-tens,
+		#{ $block }__minutes-tens,
+		#{ $block }__seconds-tens {
+			margin-right: 3px;
+		}
+
+		#{ $block }__days-tens,
+		#{ $block }__days-ones,
+		#{ $block }__hours-tens,
+		#{ $block }__hours-ones,
+		#{ $block }__minutes-tens,
+		#{ $block }__minutes-ones,
+		#{ $block }__seconds-tens,
+		#{ $block }__seconds-ones {
+			width: calc( 50% - 3px );
+			padding: 3px 2px;
+			color: $white;
+			font-size: px-to-rem( 21.5 );
+			line-height: calc( 29 / 23 );
+			letter-spacing: -0.1px;
+			background-color: $midnight-blue;
+			border-radius: 5px;
+
+			@include media-breakpoint-up( sm ) {
+				padding: 4px 5px;
+				font-size: px-to-rem( 23 );
+			}
+		}
+
+		#{ $block }__days-ones,
+		#{ $block }__hours-ones,
+		#{ $block }__minutes-ones,
+		#{ $block }__seconds-ones {
+			margin-left: 3px;
+		}
+
+		#{ $block }__days,
+		#{ $block }__hours,
+		#{ $block }__minutes,
+		#{ $block }__seconds {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			max-width: 65px;
+			color: $midnight-blue;
+			font-weight: $font-weight-light;
+			font-size: px-to-rem( 10 );
+			line-height: calc( 18 / 10 );
+			letter-spacing: -0.05px;
+			text-align: center;
+
+			@include media-breakpoint-up( sm ) {
+				max-width: 60px;
+				font-size: px-to-rem( 11 );
+				line-height: calc( 20 / 11 );
+			}
+		}
+
+		#{ $block }__colon {
+			width: 17px;
+			height: 34px;
+			color: $midnight-blue;
+			font-weight: $font-weight-medium;
+			font-size: px-to-rem( 21 );
+			letter-spacing: -0.1px;
+			text-align: center;
+
+			@include media-breakpoint-up( sm ) {
+				width: 20px;
+				height: 37px;
+				font-size: px-to-rem( 23 );
+			}
+		}
+	}
+}
+
+.for-countdown {
+	display: none;
+}
+
+[data-has-countdown='true'] {
+	.countdown-timer {
+		display: inline;
+	}
+
+	.for-countdown {
+		display: block;
+	}
+
+	.non-countdown {
+		display: none;
+	}
+}

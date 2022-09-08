@@ -1,0 +1,25 @@
+<div class="pricing-table_column col-12 col-md-3 border px-0{{# most_popular }} pricing-table_column--most-popular{{/ most_popular }}{{# mobile_carousel }} swiper-slide{{/ mobile_carousel }}">
+    {{# show_column_price_disclaimer }}
+        <div
+            class="pricing-table__price-disclaimer position-absolute d-none d-md-block"
+            style="{{# price_disclaimer_left }}left{{/ price_disclaimer_left }}{{^ price_disclaimer_left }}right{{/ price_disclaimer_left }}: 0;"
+        >
+            {{ labels.pricing_grid_disclaimer }}
+        </div>
+    {{/ show_column_price_disclaimer }}
+
+	{{> partial__column-heading }}
+	{{> partial__column-pricing }}
+
+	{{^ enable_compact_view }}
+		{{> partial__column-top-features }}
+
+		<div class="pricing-table_column-footer w-100">
+			{{> partial__column-add-ons }}
+
+			<div class="pricing-table_column-footer-buttons text-center py-4 px-2 px-lg-3">
+				{{> partial__column-links }}
+			</div>
+		</div>
+	{{/ enable_compact_view }}
+</div>

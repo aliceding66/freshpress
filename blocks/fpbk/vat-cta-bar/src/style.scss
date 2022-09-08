@@ -1,0 +1,34 @@
+// VAT CTA Bar.
+
+@import '~styles/freshpress-includes';
+
+.vat-cta-bar {
+	&__container {
+		padding: px-to-rem( 50 ) px-to-rem( 10 );
+		background: $fresh-new;
+
+		@include media-breakpoint-up( sm ) {
+			padding: px-to-rem( 70 ) px-to-rem( 10 ) px-to-rem( 60 );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			padding: px-to-rem( 100 ) px-to-rem( 10 ) px-to-rem( 80 );
+		}
+	}
+
+	&__content {
+		z-index: 10;
+	}
+
+	&__cta-button {
+		padding: px-to-rem( 10 ) px-to-rem( 30 ) px-to-rem( 15 );
+		font-size: px-to-rem( 24 );
+	}
+
+	&__title {
+		width: 690px;
+		max-width: 100%;
+		color: $white;
+		text-align: center;
+	}
+}

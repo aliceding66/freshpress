@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/partner-feature",
+  "title": "Partner Feature",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

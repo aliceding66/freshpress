@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/comparison-table",
+  "title": "Comparison Table",
+  "category": "freshblocks",
+  "description": "A table to compare points across multiple options.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

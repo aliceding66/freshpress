@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/freshbooks-careers",
+  "title": "FreshBooks Careers",
+  "category": "freshblocks",
+  "description": "A block containing FreshBooks Jobs list with pagination and filtering.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

@@ -1,0 +1,91 @@
+// Feature Grid.
+
+@import '~styles/freshpress-includes';
+
+.feature-grid {
+	&__container {
+		padding: px-to-rem( 50 ) px-to-rem( 10 );
+		background-color: $fresh-new;
+
+		@include media-breakpoint-up( lg ) {
+			padding: px-to-rem( 100 ) px-to-rem( 10 );
+		}
+	}
+
+	&__cta-box {
+		&__cta-button {
+			font-size: px-to-rem( 16 );
+
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 20 );
+			}
+		}
+
+		&__after-cta-button {
+			font-size: px-to-rem( 15 );
+
+			a {
+				color: inherit;
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&__grid {
+		margin: 0 auto;
+
+		@include media-breakpoint-up( md ) {
+			display: grid !important;
+			grid-gap: 1px;
+			grid-template-rows: repeat( 2, 1fr );
+			grid-template-columns: repeat( 3, 1fr );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			grid-template-columns: repeat( 4, 1fr );
+		}
+	}
+
+	&__tile {
+		order: 1;
+		padding: px-to-rem( 20 ) px-to-rem( 10 );
+
+		@include media-breakpoint-up( md ) {
+			padding: px-to-rem( 40 ) px-to-rem( 28 );
+			background-color: $tile-blue;
+			transition: background-color 0.8s linear;
+
+			&:hover {
+				background-color: $tile-highlight-blue;
+			}
+		}
+
+		&--main-tile {
+			grid-row-end: span 2;
+			grid-column-end: span 2;
+			order: 0;
+		}
+
+		&--image-tile {
+			grid-column-end: span 1;
+
+			@include media-breakpoint-up( lg ) {
+				grid-column-end: span 2;
+			}
+		}
+
+		&-description {
+			font-size: px-to-rem( 16 );
+			line-height: 1.2;
+		}
+
+		&-image {
+			max-width: 100%;
+			object-fit: contain;
+		}
+	}
+}

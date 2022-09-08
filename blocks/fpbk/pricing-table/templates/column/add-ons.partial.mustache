@@ -1,0 +1,18 @@
+<div class="pricing-table_column-addons pt-4 px-2 px-lg-3 pb-3">
+	<h5 class="pricing-table_column-addons__title text-uppercase text-center ">
+		{{ labels.add_ons }}
+	</h5>
+	<ul class="pricing-table_column-addons__points">
+		{{# addons }}
+			<li>
+				{{# bold }}<strong>{{/ bold }}
+
+				{{ feature }}
+
+				{{# tooltip }}{{{ tooltip }}}{{/ tooltip }}
+
+				{{# bold }}</strong>{{/ bold }}
+			</li>
+		{{/ addons }}
+	</ul>
+</div>

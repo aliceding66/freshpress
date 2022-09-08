@@ -1,0 +1,71 @@
+@import '~styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	.editor-styles-wrapper {
+		.icons-list__topic > div {
+			margin: 0 10px 25px;
+		}
+
+		// The block.
+		.icons-list {
+			&__topic {
+				align-items: start;
+
+				button {
+					height: auto;
+				}
+			}
+
+			&__title {
+				margin-bottom: 80px;
+				font-size: 2.25rem;
+				line-height: calc( 44 / 36 );
+			}
+
+			// Sizes from mocks
+			&__topic-image {
+				width: 40px;
+				height: 40px;
+
+				@include media-breakpoint-up( md ) {
+					width: 60px;
+					height: 60px;
+				}
+			}
+
+			&__topic-number {
+				top: 0;
+				left: 0;
+				width: 22px;
+				height: 22px;
+				background: $green;
+				border-radius: 22px;
+
+				@include media-breakpoint-up( md ) {
+					top: -0.27rem;
+					left: -1rem;
+					width: 28px;
+					height: 28px;
+				}
+
+				~ .icons-list__topic-info {
+					flex-direction: column;
+				}
+			}
+
+			&__topic-title {
+				font-size: 1rem;
+			}
+
+			&__topic-text {
+				line-height: calc( 27 / 16 );
+			}
+
+			@for $i from 1 through 4 {
+				&_#{$i}-col {
+					max-width: calc( 360px * #{$i} );
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,603 @@
+@charset "UTF-8";
+.accounting-partners-form {
+  position: relative;
+  left: calc(50% - 50vw);
+  width: 100vw;
+  padding: 0 22px 88px;
+  background-color: #001b40;
+}
+@media (min-width: 768px) {
+  .accounting-partners-form {
+    padding: 15px 22px 88px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form {
+    padding: 35px 22px 88px;
+  }
+}
+.accounting-partners-form .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form .container {
+    max-width: 1246px;
+  }
+}
+.accounting-partners-form__top {
+  padding: 25px 0;
+}
+.accounting-partners-form__breadcrumbs a {
+  text-decoration: underline;
+}
+.accounting-partners-form__breadcrumbs a:hover {
+  text-decoration: none;
+}
+.accounting-partners-form__breadcrumbs a, .accounting-partners-form__breadcrumbs-divider {
+  display: none;
+  color: #fff;
+  vertical-align: middle;
+}
+.accounting-partners-form__breadcrumbs a:last-of-type {
+  display: inline-block;
+}
+.accounting-partners-form__breadcrumbs a:last-of-type::before {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/right-arrow-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  filter: grayscale(100%) brightness(1000%);
+  content: "";
+}
+.accounting-partners-form__breadcrumbs-divider {
+  display: none;
+  margin: 0 8px;
+}
+@media (min-width: 480px) {
+  .accounting-partners-form__breadcrumbs-divider {
+    display: inline-block;
+  }
+}
+@media (min-width: 480px) {
+  .accounting-partners-form__breadcrumbs a {
+    display: inline-block;
+  }
+  .accounting-partners-form__breadcrumbs a:last-of-type::before {
+    content: none;
+  }
+}
+.accounting-partners-form__error-message {
+  margin: 20px 0;
+  padding: 10px;
+  color: #fa405c;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgba(250, 64, 92, 0.1);
+  border: 1px solid #fa405c;
+  border-radius: 8px;
+}
+.accounting-partners-form__left-side {
+  padding: 40px 25px 40px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .accounting-partners-form__left-side {
+    padding: 48px 71px 44px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form__left-side {
+    padding: 52px 110px 44px;
+  }
+}
+.accounting-partners-form__certified {
+  margin-bottom: 11px;
+  color: #0075dd;
+  font-size: 1rem;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+  line-height: 1.25rem;
+}
+.accounting-partners-form h1 {
+  margin-bottom: 28px;
+  font-size: 1.875rem;
+  line-height: 1.75rem;
+  letter-spacing: normal;
+}
+.accounting-partners-form h1 span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form h1 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+  .accounting-partners-form h1 span {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+}
+.accounting-partners-form .invalid-feedback {
+  order: 3;
+  margin-top: 0;
+}
+.accounting-partners-form .invalid-feedback-format {
+  display: none;
+}
+.accounting-partners-form .was-validated .accounting-partners-form__field .form-control:valid,
+.accounting-partners-form .was-validated .accounting-partners-form__field .form-control.is-valid {
+  background-image: none;
+  border-color: rgba(0, 27, 64, 0.3);
+}
+.accounting-partners-form .was-validated .accounting-partners-form__field .form-control:invalid,
+.accounting-partners-form .was-validated .accounting-partners-form__field .form-control.is-invalid {
+  background-color: rgba(250, 64, 92, 0.04) !important;
+  background-image: none;
+}
+.accounting-partners-form .was-validated .accounting-partners-form__field .form-control:invalid:not(:focus) ~ .invalid-feedback {
+  display: block;
+}
+.accounting-partners-form__field {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.accounting-partners-form__field .g-recaptcha {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.accounting-partners-form__field sup {
+  top: 0;
+  font-size: 1em;
+}
+.accounting-partners-form__field label,
+.accounting-partners-form__field input,
+.accounting-partners-form__field select,
+.accounting-partners-form__field textarea {
+  display: block;
+  order: 2;
+  color: #001b40;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  background-color: #fff;
+}
+.accounting-partners-form__field label {
+  order: 1;
+  margin-bottom: 5px;
+}
+.accounting-partners-form__field input,
+.accounting-partners-form__field select,
+.accounting-partners-form__field textarea {
+  width: 100%;
+  height: 46px;
+  padding: 0 15px;
+  border: 1px solid rgba(0, 27, 64, 0.3);
+  border-radius: 8px;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form__field input,
+.accounting-partners-form__field select,
+.accounting-partners-form__field textarea {
+    height: 50px;
+  }
+}
+.accounting-partners-form__field input.service-other,
+.accounting-partners-form__field select.service-other,
+.accounting-partners-form__field textarea.service-other {
+  height: 35px;
+}
+.accounting-partners-form__field input::-moz-placeholder, .accounting-partners-form__field select::-moz-placeholder, .accounting-partners-form__field textarea::-moz-placeholder {
+  color: rgba(0, 27, 64, 0.3);
+  opacity: 1;
+}
+.accounting-partners-form__field input::placeholder,
+.accounting-partners-form__field select::placeholder,
+.accounting-partners-form__field textarea::placeholder {
+  color: rgba(0, 27, 64, 0.3);
+  opacity: 1;
+}
+.accounting-partners-form__field input:focus,
+.accounting-partners-form__field select:focus,
+.accounting-partners-form__field textarea:focus {
+  border-color: #0075dd;
+  box-shadow: none !important;
+}
+.accounting-partners-form__field input:focus + label,
+.accounting-partners-form__field select:focus + label,
+.accounting-partners-form__field textarea:focus + label {
+  color: #0075dd;
+}
+.accounting-partners-form__field input.is_invalid,
+.accounting-partners-form__field select.is_invalid,
+.accounting-partners-form__field textarea.is_invalid {
+  border-color: #fa405c;
+}
+.accounting-partners-form__field input.is_invalid + label,
+.accounting-partners-form__field select.is_invalid + label,
+.accounting-partners-form__field textarea.is_invalid + label {
+  color: #001b40;
+}
+.accounting-partners-form__field select {
+  padding: 0 35px 0 15px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-chevron-down.svg) !important;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center !important;
+  background-size: 9px 5px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.accounting-partners-form__field select::-ms-expand {
+  display: none;
+}
+.accounting-partners-form__field select:invalid,
+.accounting-partners-form__field select option[value=""] {
+  color: rgba(0, 27, 64, 0.3);
+}
+.accounting-partners-form__field textarea {
+  height: 140px;
+  padding: 15px;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form__field textarea {
+    height: 130px;
+  }
+}
+.accounting-partners-form__checkbox {
+  margin-bottom: 10px;
+  color: #001b40;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.accounting-partners-form__checkbox input {
+  display: none;
+}
+.accounting-partners-form__checkbox label {
+  position: relative;
+  padding-left: 26px;
+}
+.accounting-partners-form__checkbox label::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 27, 64, 0.3);
+  border-radius: 4px;
+  content: "";
+}
+.accounting-partners-form__checkbox label::after {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/white-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 11px;
+  content: none;
+}
+.accounting-partners-form__checkbox input:checked + label::before {
+  background-color: #0075dd;
+}
+.accounting-partners-form__checkbox input:checked + label::after {
+  content: "";
+}
+.accounting-partners-form__confirm {
+  margin-top: 24px;
+  color: rgba(0, 27, 64, 0.6);
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+.accounting-partners-form__confirm a {
+  color: rgba(0, 27, 64, 0.6);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.accounting-partners-form__disclaimer {
+  margin-top: 11px;
+}
+.accounting-partners-form__submit {
+  width: 100%;
+  min-height: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  background-color: #36a900;
+  border: none;
+  border-radius: 8px;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form__submit {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+.accounting-partners-form__submit:hover {
+  background-color: #35a600;
+}
+.accounting-partners-form__submit.loading {
+  text-indent: -9999px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/loader-circle-white.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
+}
+.accounting-partners-form__right-side {
+  margin-top: 68px;
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form__right-side {
+    margin-top: 0;
+    padding-left: 63px;
+  }
+}
+.accounting-partners-form__side-title {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
+  letter-spacing: normal;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form__side-title {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+}
+.accounting-partners-form ul {
+  margin-bottom: 48px;
+  padding: 0;
+}
+.accounting-partners-form ul li {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 28px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  list-style-type: none;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form ul li {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.accounting-partners-form ul li::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  display: block;
+  width: 14px;
+  height: 12px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/green-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 12px;
+  content: "";
+}
+.accounting-partners-form blockquote {
+  position: relative;
+  color: #d5ecff;
+  font-size: 1.375rem;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+  line-height: 1.875rem;
+}
+.accounting-partners-form blockquote::before {
+  position: absolute;
+  top: -50px;
+  left: -25px;
+  z-index: 1;
+  display: block;
+  color: rgba(0, 45, 121, 0.5);
+  font-size: 8.25rem;
+  line-height: 12.0625rem;
+  content: "“";
+}
+@media (min-width: 1024px) {
+  .accounting-partners-form blockquote::before {
+    top: -45px;
+    left: -58px;
+  }
+}
+.accounting-partners-form blockquote span {
+  position: relative;
+  z-index: 2;
+}
+.accounting-partners-form blockquote cite {
+  display: block;
+  margin-top: 16px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: founders-grotesk, helvetica, arial, sans-serif;
+  line-height: 1.125rem;
+}
+.accounting-partners-form blockquote cite::before {
+  display: inline-block;
+  width: 18px;
+  height: 1px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: #fff;
+  content: "";
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade + input {
+  padding: 0 35px 0 15px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  background-size: 9px 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade + input::-ms-expand {
+  display: none;
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade {
+  position: absolute;
+  top: calc(100% - 12px);
+  left: 0;
+  z-index: 3;
+  display: none;
+  width: 100%;
+  padding: 5px 15px !important;
+  background: #fff;
+  border: 1px solid #0075dd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade::before {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto 13px;
+  background-color: rgba(0, 27, 64, 0.3);
+  content: "";
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade li {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade li::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid rgba(0, 27, 64, 0.3);
+  border-radius: 4px;
+  content: "";
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade li.active-item::before {
+  background-color: #0075dd;
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade li.active-item::after {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/white-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 11px;
+  content: "";
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade.active {
+  display: block;
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade.active + input {
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-chevron-up.svg);
+  border-color: #0075dd;
+  box-shadow: none !important;
+}
+.accounting-partners-form .accounting-partners-form__checkbox-facade.active + input + label {
+  color: #0075dd;
+}
+
+.accounting-partners-thank-you {
+  padding: 125px 0 88px;
+}
+.accounting-partners-thank-you h1 {
+  margin-bottom: 12px;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-thank-you h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+.accounting-partners-thank-you__header {
+  margin-bottom: 88px;
+}
+.accounting-partners-thank-you__header p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-thank-you__header p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.accounting-partners-thank-you__resources h2 {
+  margin-bottom: 32px;
+  font-size: 1.875rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-thank-you__resources h2 {
+    margin-bottom: 44px;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+}
+.accounting-partners-thank-you__resources-image {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-bottom: 56%;
+}
+.accounting-partners-thank-you__resources-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.accounting-partners-thank-you__resources-single {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accounting-partners-thank-you__resources-single {
+    margin-bottom: 0;
+  }
+}
+.accounting-partners-thank-you__resources-single h3 {
+  width: 100%;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-thank-you__resources-single h3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.accounting-partners-thank-you__resources-single a.btn {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=blocks-acf-accounting-partners-form-accounting-partners-form.css.map*/

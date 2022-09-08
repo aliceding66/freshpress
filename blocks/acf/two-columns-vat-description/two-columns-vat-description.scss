@@ -1,0 +1,206 @@
+// Two Columns VAT Description.
+
+@import '~styles/freshpress-includes';
+
+.two-columns-vat-description {
+	position: relative;
+	margin: 80px -15px 80px;
+
+	@include media-breakpoint-up( md ) {
+		margin: 85px -15px 97px;
+	}
+	@include media-breakpoint-up( lg ) {
+		margin: 150px -15px;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 3;
+		width: 1216px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 22px;
+		text-align: left;
+
+		@include media-breakpoint-up( lg ) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__reverse {
+			@include media-breakpoint-up( md ) {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+	&__left {
+		@include media-breakpoint-up( md ) {
+			width: 75%;
+			margin: 0 auto;
+		}
+		@include media-breakpoint-up( lg ) {
+			width: 54%;
+			margin: 0;
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 536px;
+		}
+	}
+	&__right {
+		@include media-breakpoint-up( md ) {
+			width: 75%;
+			margin: 0 auto;
+		}
+		@include media-breakpoint-up( lg ) {
+			width: 40%;
+			margin: 0;
+			margin-left: 25px;
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 497px;
+		}
+		img {
+			width: 100% !important;
+			max-width: 100%;
+			height: auto !important;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			@include media-breakpoint-up( md ) {
+				max-width: 381px;
+				margin-bottom: 15px;
+			}
+			@include media-breakpoint-up( lg ) {
+				max-width: 418px;
+				margin-bottom: 40px;
+			}
+			@include media-breakpoint-up( xl ) {
+				max-width: 497px;
+			}
+		}
+	}
+	&__container__reverse &__left {
+		@include media-breakpoint-up( md ) {
+			width: 75%;
+		}
+		@include media-breakpoint-between( lg, xl ) {
+			width: 54%;
+		}
+		@include media-breakpoint-between( md, xl ) {
+			padding-right: 22px;
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 536px;
+		}
+	}
+	&__container__reverse &__right {
+		@include media-breakpoint-between( lg, xl ) {
+			width: 40%;
+		}
+		@include media-breakpoint-up( lg ) {
+			margin-left: 0;
+		}
+	}
+	h2 {
+		margin-bottom: 20px;
+		font-weight: 500;
+		font-size: px-to-rem( 26 );
+		line-height: px-to-rem( 30.94 );
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 36 );
+			line-height: px-to-rem( 42.84 );
+		}
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 38 );
+			line-height: px-to-rem( 45.22 );
+		}
+	}
+	p {
+		margin-bottom: 20px;
+		font-weight: 400;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 20 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 26 );
+		}
+		strong {
+			font-weight: 500;
+		}
+	}
+	&__description_1 {
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 20 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 26 );
+		}
+	}
+
+	&__gray p {
+		margin: 20px 0;
+		color: $light-grey;
+		font-weight: 400;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 21.42 );
+	}
+	&__rates {
+		max-width: 100%;
+		@include media-breakpoint-up( lg ) {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+			width: 555px;
+		}
+	}
+	&__rate {
+		@include media-breakpoint-up( lg ) {
+			width: 48%;
+		}
+
+		h3 {
+			margin-bottom: 0;
+			font-weight: 600;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 26 );
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 25 );
+			}
+			@include media-breakpoint-up( xl ) {
+				margin-bottom: 20px;
+			}
+		}
+		p {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 20 );
+		}
+	}
+	&__under-image {
+		@include media-breakpoint-up( md ) {
+			padding: 0 30px 0 25px;
+		}
+	}
+	.btn {
+		margin-top: 20px;
+		padding: 8px 22px 9px 23px;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 19.04 );
+		&-cta-blue {
+			@include button-variant( $fresh-new, $fresh-new, #0064bc, #0064bc, #0064bc, #0064bc );
+			color: $white;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+	&__below-cta {
+		display: block;
+		margin-top: 10px;
+		color: $midnight-blue;
+		font-size: px-to-rem( 13 );
+		line-height: px-to-rem( 14 );
+		letter-spacing: 0.05em;
+	}
+}

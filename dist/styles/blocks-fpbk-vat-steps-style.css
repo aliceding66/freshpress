@@ -1,0 +1,75 @@
+.wp-block-fpbk-vat-steps {
+  border: none;
+}
+
+.vat-steps {
+  margin: 50px 0 25px;
+}
+@media (min-width: 1280px) {
+  .vat-steps {
+    margin: 90px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .vat-steps {
+    margin: 150px 0;
+  }
+}
+.vat-steps__container {
+  padding-left: 70px;
+}
+.vat-steps__main-title {
+  margin-bottom: 64px;
+  color: #0075dd;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+}
+.vat-steps__steps {
+  width: 420px;
+  max-width: 100%;
+  padding: 0;
+}
+.vat-steps__steps li {
+  position: relative;
+  display: block;
+  margin-bottom: 80px;
+  list-style-type: none;
+}
+.vat-steps__steps li::before {
+  position: absolute;
+  top: -15px;
+  left: -60px;
+  display: block;
+  width: 1px;
+  height: calc(100% + 80px);
+  background-color: #0075dd;
+  content: "";
+}
+.vat-steps__steps li::after {
+  position: absolute;
+  top: 3px;
+  left: -70px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: #0075dd;
+  border-radius: 50%;
+  content: "";
+}
+.vat-steps__title, .vat-steps__description {
+  display: block;
+  color: #001b40;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  white-space: pre-wrap;
+}
+.vat-steps__description {
+  font-weight: 400;
+}
+.vat-steps__description span {
+  display: block;
+}
+
+/*# sourceMappingURL=blocks-fpbk-vat-steps-style.css.map*/

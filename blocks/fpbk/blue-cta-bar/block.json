@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/blue-cta-bar",
+  "title": "Blue CTA Bar",
+  "category": "freshblocks",
+  "description": "Blue CTA callout bar",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

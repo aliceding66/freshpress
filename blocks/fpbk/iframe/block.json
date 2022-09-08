@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/iframe",
+  "title": "iframe",
+  "category": "freshblocks",
+  "description": "Adds an iFrame block to the page.",
+  "textdomain": "fpbk",
+  "supports": {
+    "align": true,
+    "anchor": true
+  }
+}

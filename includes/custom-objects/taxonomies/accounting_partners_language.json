@@ -1,0 +1,16 @@
+{
+  "taxonomy": "accounting_partners_language",
+  "taxonomy_plural": "accounting_partners_languages",
+  "label": "Language",
+  "label_plural": "Languages",
+  "post_types": [
+    "accounting_partners"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "accounting-partners/language",
+      "with_front": false
+    },
+    "publicly_queryable": false
+  }
+}

@@ -1,0 +1,76 @@
+{{{ images_style_tag }}}
+<div class="row no-gutters {{ wrapper_child_classes }} {{{ content_position }}}">
+    <div {{{ content_inline_styles }}} class="hero__main-section text-center col col-12 {{ main_section_classes }}">
+        <div class="hero__content mx-auto {{ content_paddings }}">
+            {{# hero_label }}
+                <span class="hero__label mx-auto mx-lg-0 py-2 py-lg-0 {{ text_align }}" {{{ label_inline_styles }}}>{{ hero_label }}</span>
+            {{/ hero_label }}
+            {{# hero_label_star_review }}
+                <div class="text-md-left text-sm-center rating__top mb-1 mr-3 d-none d-lg-table-cell pr-2">
+	                <div class="rating__category mr-2 position-relative d-inline-block">
+		                {{ get_app_rating_text }}
+	                </div>
+	                {{{ rating_image2 }}}
+                </div>
+                <div class="text-md-left text-sm-center rating__description position-relative d-none d-lg-table-cell">
+	                {{{ rating_link }}}
+                </div>
+            {{/ hero_label_star_review }}
+            {{# hero_label_colour_copy }}
+                <div class="hero__image-labels d-flex mb-3 mb-sm-4 {{ content_position }}">
+                    {{# hero_labels_with_icons }}
+                        {{> hero_image_label }}
+                    {{/ hero_labels_with_icons }}
+                </div>
+            {{/ hero_label_colour_copy }}
+			{{# is_centered_with_sso_theme }}
+				<div class="hero__rating1 d-none d-md-flex align-items-center justify-content-center">
+					<span class="hero__rating1-text">{{ get_app_rating_text }}</span>
+					{{{ rating_image1 }}}
+					<span class="hero__rating1-getapp">{{{ rating_link }}}</span>
+				</div>
+			{{/ is_centered_with_sso_theme }}
+            {{# headline }}
+                <h1 class="hero__headline mb-2 {{ text_align }} {{ headline_font_sizes }} {{ headline_classes }}" {{{ headline_inline_styles }}}>{{{ headline }}}</h1>
+            {{/ headline }}
+			{{# hero_label_star_review }}
+				<div class="text-lg-left text-md-center rating__top mb-1 mr-3 d-lg-none d-editor-none">
+					<div class="rating__category mr-2 position-relative d-inline-block">
+						{{ get_app_rating_text }}
+					</div>
+					{{{ rating_image2 }}}
+				</div>
+				<div class="text-lg-left text-md-centers rating__description position-relative d-lg-none d-editor-none pb-4">
+					{{{ rating_link }}}
+				</div>
+			{{/ hero_label_star_review }}
+			{{# is_centered_with_sso_theme }}
+				<div class="hero__rating2 d-flex align-items-center flex-wrap justify-content-center d-md-none">
+					<span class="hero__rating2-score">{{ get_app_rating_text }}</span>
+					{{{ rating_image2 }}}
+					<span class="hero__rating2-getapp">{{{ rating_link }}}</span>
+				</div>
+			{{/ is_centered_with_sso_theme }}
+            {{# text }}
+                <div class="hero__text mb-md-4 {{ text_align }} {{ text_display_class }}" {{{ text_inline_styles }}}>{{{ text }}}</div>
+            {{/ text }}
+            {{# include_signup_form }}
+                {{> hero_signup_form }}
+            {{/ include_signup_form }}
+            {{# include_cta_button }}
+                {{> hero_ctas }}
+            {{/ include_cta_button }}
+            {{# hero_include_pardot_form }}
+                <div class="hero__pardot-form-container d-flex {{ content_position }}">
+                    {{{ pardot_form }}}
+                </div>
+            {{/ hero_include_pardot_form }}
+            {{# hero_include_hero_search }}
+                {{> hero_search }}
+            {{/ hero_include_hero_search }}
+        </div>
+    </div>
+</div>
+{{# is_centered_with_sso_theme }}
+	<div class="reversed-corner reversed-corner_down-right reversed-corner_light-blue d-none d-lg-block"><div></div></div>
+{{/ is_centered_with_sso_theme }}

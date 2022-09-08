@@ -1,0 +1,170 @@
+<div class="freshpress-tools--wrapper">
+	<div class="freshpress-tools--wrapper-border">
+		<form class="markup-calculator--form">
+			<div class="markup-calculator--form-container">
+				<div class="freshpress-tools--heading">{{ labels.title }}</div>
+				<div class="markup-calculator--subtitle">{{ labels.subtitle }}</div>
+
+				<div class="freshpress-tools--input-wrapper">
+					<label class="freshpress-tools--input-container">
+						<h5 class="freshpress-tools--input-label">{{ labels.input_cost_label }}</h5>
+						<div class="position-relative">
+							<span id="fbtoolsMcIconCost" class="freshpress-tools--input-icon">
+								{{{ icons.dollar }}}
+							</span>
+							<div id="fbtoolsMcTooltipCost" class="markup-calculator--tooltip d-none d-editor-none">{{ labels.tooltip_content }}</div>
+							<input
+									id="fbtoolsMcCost"
+									class="freshpress-tools--input-field"
+									placeholder="$0.00"
+									autocomplete="off"
+									inputmode="numeric"
+									name="cost"
+									value=""
+							>
+							<div id="fbtoolsMcErrorCost" class="freshpress-tools--input--error-message"></div>
+						</div>
+					</label>
+					<button
+							id="fbtoolsMcTooltipButtonCost"
+							type="button"
+							class="markup-calculator--icon-point-wrapper d-none d-editor-none"
+							data-fbtools-tooltip="fbtoolsMcTooltipCost"
+					>
+						<span class="markup-calculator--icon-point-mask"></span>
+						{{{ icons.point }}}
+					</button>
+				</div>
+
+				<div class="freshpress-tools--input-wrapper">
+					<label class="freshpress-tools--input-container">
+						<h5 class="freshpress-tools--input-label">{{ labels.input_markup_label }}</h5>
+						<div class="position-relative">
+							<span id="fbtoolsMcIconMarkup" class="freshpress-tools--input-icon">
+								{{{ icons.rate }}}
+							</span>
+							<div id="fbtoolsMcTooltipMarkup" class="markup-calculator--tooltip d-none d-editor-none">{{ labels.tooltip_content }}</div>
+							<input
+									id="fbtoolsMcMarkup"
+									class="freshpress-tools--input-field"
+									placeholder="0%"
+									autocomplete="off"
+									inputmode="numeric"
+									name="markup"
+									value=""
+							>
+							<div id="fbtoolsMcErrorMarkup" class="freshpress-tools--input--error-message"></div>
+						</div>
+					</label>
+					<button
+							id="fbtoolsMcTooltipButtonMarkup"
+							type="button"
+							class="markup-calculator--icon-point-wrapper d-none d-editor-none"
+							data-fbtools-tooltip="fbtoolsMcTooltipMarkup"
+					>
+						<span class="markup-calculator--icon-point-mask"></span>
+						{{{ icons.point }}}
+					</button>
+				</div>
+
+				<div class="freshpress-tools--input-wrapper">
+					<label class="freshpress-tools--input-container">
+						<h5 class="freshpress-tools--input-label">{{ labels.input_margin_label }}</h5>
+						<div class="position-relative">
+							<span id="fbtoolsMcIconMargin" class="freshpress-tools--input-icon">
+								{{{ icons.rate }}}
+							</span>
+							<div id="fbtoolsMcTooltipMargin" class="markup-calculator--tooltip d-none d-editor-none">{{ labels.tooltip_content }}</div>
+							<input
+									id="fbtoolsMcMargin"
+									class="freshpress-tools--input-field"
+									placeholder="0%"
+									autocomplete="off"
+									inputmode="numeric"
+									name="margin"
+									value=""
+							>
+							<div id="fbtoolsMcErrorMargin" class="freshpress-tools--input--error-message"></div>
+						</div>
+					</label>
+					<button
+							id="fbtoolsMcTooltipButtonMargin"
+							type="button"
+							class="markup-calculator--icon-point-wrapper d-none d-editor-none"
+							data-fbtools-tooltip="fbtoolsMcTooltipMargin"
+					>
+						<span class="markup-calculator--icon-point-mask"></span>
+						{{{ icons.point }}}
+					</button>
+				</div>
+
+				<div class="freshpress-tools--input-wrapper">
+					<label class="freshpress-tools--input-container">
+						<h5 class="freshpress-tools--input-label">{{ labels.input_revenue_label }}</h5>
+						<div class="position-relative">
+							<span id="fbtoolsMcIconRevenue" class="freshpress-tools--input-icon">
+								{{{ icons.dollar }}}
+							</span>
+							<div id="fbtoolsMcTooltipRevenue" class="markup-calculator--tooltip d-none d-editor-none">{{ labels.tooltip_content }}</div>
+							<input
+									id="fbtoolsMcRevenue"
+									class="freshpress-tools--input-field"
+									placeholder="$0.00"
+									autocomplete="off"
+									inputmode="numeric"
+									name="revenue"
+									value=""
+							>
+							<div id="fbtoolsMcErrorRevenue" class="freshpress-tools--input--error-message"></div>
+						</div>
+					</label>
+					<button
+							id="fbtoolsMcTooltipButtonRevenue"
+							type="button"
+							class="markup-calculator--icon-point-wrapper d-none d-editor-none"
+							data-fbtools-tooltip="fbtoolsMcTooltipRevenue"
+					>
+						<span class="markup-calculator--icon-point-mask"></span>
+						{{{ icons.point }}}
+					</button>
+				</div>
+
+				<div class="freshpress-tools--input-wrapper">
+					<label class="freshpress-tools--input-container">
+						<h5 class="freshpress-tools--input-label">{{ labels.input_profit_label }}</h5>
+						<div class="position-relative">
+							<span id="fbtoolsMcIconProfit" class="freshpress-tools--input-icon">
+								{{{ icons.dollar }}}
+							</span>
+							<div id="fbtoolsMcTooltipProfit" class="markup-calculator--tooltip d-none d-editor-none">{{ labels.tooltip_content }}</div>
+							<input
+									id="fbtoolsMcProfit"
+									class="freshpress-tools--input-field"
+									placeholder="$0.00"
+									autocomplete="off"
+									inputmode="numeric"
+									name="revenue"
+									value=""
+							>
+							<div id="fbtoolsMcErrorProfit" class="freshpress-tools--input--error-message"></div>
+						</div>
+					</label>
+					<button
+							id="fbtoolsMcTooltipButtonProfit"
+							type="button"
+							class="markup-calculator--icon-point-wrapper d-none d-editor-none"
+							data-fbtools-tooltip="fbtoolsMcTooltipProfit"
+					>
+						<span class="markup-calculator--icon-point-mask"></span>
+						{{{ icons.point }}}
+					</button>
+				</div>
+
+				<button id="fbtoolsMcRefresh" class="freshpress-tools--button freshpress-tools--button-inline"
+						type="button">
+					{{{ icons.refresh }}}&nbsp;{{ labels.refresh }}
+				</button>
+			</div>
+		</form>
+	</div>
+</div>

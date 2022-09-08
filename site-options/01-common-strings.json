@@ -1,0 +1,29 @@
+{
+  "fb_phone_number": {
+    "en-au": "1800 218 731",
+    "en-eu": "+31 20 323 2420",
+    "en-gb": "0808 101 3408",
+    "en-ie": "1800 949 046",
+    "en-nz": "",
+    "en-sg": "+66 800 321 1413",
+    "en-us": "1.866.303.6061",
+    "en-za": "",
+    "fr-fr": false
+  },
+  "fb_non_customer_phone_number": {
+    "en-au": "61 (1800) 595452",
+    "en-eu": "+44 (800) 047 8164",
+    "en-gb": "+44 (0)800 047 8164",
+    "en-ie": "+44 800 047 8164",
+    "en-nz": false,
+    "en-sg": "+44 (800) 047 8164",
+    "en-us": "1.888.674.3175",
+    "en-za": "+27 (80) 0010314",
+    "fr-fr": false
+  },
+  "fb_support_email": {
+    "en-us": "support@freshbooks.com",
+    "fr-fr": "bonjour@freshbooks.com"
+  },
+  "getapp_reviews": 3457
+}

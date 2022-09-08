@@ -1,0 +1,441 @@
+{
+  "post_type": "invoice_template",
+  "post_type_plural": "invoice_templates",
+  "label": "Invoice Template",
+  "label_plural": "Invoice Templates",
+  "args": {
+    "description": "User templates for invoicing",
+    "has_archive": false,
+    "hierarchical": true,
+    "menu_icon": "dashicons-networking",
+    "rewrite": {
+      "slug": "invoice-templates"
+    },
+    "taxonomies": [
+      "invoice_template_category"
+    ],
+    "template": [
+      [
+        "fpbk/feature-row",
+        {
+          "block_settings_tracking_section": "feature-row-1"
+        }
+      ],
+      [
+        "fpbk/feature-row",
+        {
+          "block_settings_tracking_section": "feature-row-2"
+        }
+      ],
+      [
+        "fpbk/columns",
+        {
+          "className": "mt-5",
+          "block_settings_tracking_section": "columns-1"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "bootstrap_class": "col-12 col-md-8",
+              "className": "mx-auto",
+              "data": {
+                "block_settings_tracking_section": "columns-1-column"
+              }
+            },
+            [
+              [
+                "core/heading",
+                {
+                  "content": "This is the heading",
+                  "align": "center",
+                  "className": "mb-4 has-text-align-center"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+                  "align": "center",
+                  "className": "has-text-align-center"
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "core/heading",
+        {
+          "content": "Download PDF Invoice Templates",
+          "align": "center",
+          "className": "mb-4 has-text-align-center"
+        }
+      ],
+      [
+        "fpbk/columns",
+        {
+          "align": "center",
+          "className": "m-0 p-0 align-items-start"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "align": "center",
+              "bootstrap_class": "col-12 col-lg-4",
+              "className": "m-0 p-0"
+            },
+            [
+              [
+                "fpbk/flexible-colour-background",
+                {
+                  "background_colour": {
+                    "hex": "#f0f2f4"
+                  },
+                  "block_settings_tracking_section": "download-invoice-templates",
+                  "align": "center",
+                  "className": "py-5 p-lg-5 m-auto grey"
+                },
+                [
+                  [
+                    "core/heading",
+                    {
+                      "content": "Invoice With Freshbooks",
+                      "level": 3,
+                      "align": "center",
+                      "className": "has-text-align-center has-text-align-center"
+                    }
+                  ],
+                  [
+                    "core/image",
+                    {
+                      "align": "center"
+                    }
+                  ],
+                  [
+                    "fpbk/button",
+                    {
+                      "align": "center",
+                      "button_link": {
+                        "url": "/signup",
+                        "title": "Create My Free Invoice"
+                      },
+                      "button_style": "green",
+                      "block_settings_tracking_section": "download-invoice-templates",
+                      "className": "is-style-btn-cta-green"
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "fpbk/column",
+            {
+              "align": "center",
+              "bootstrap_class": "col-12 col-lg-4",
+              "className": "m-0 p-0"
+            },
+            [
+              [
+                "fpbk/flexible-colour-background",
+                {
+                  "align": "center",
+                  "background_colour": {
+                    "hex": "#ffffff"
+                  },
+                  "block_settings_tracking_section": "download-invoice-templates",
+                  "className": "py-5 p-lg-5 m-auto white"
+                },
+                [
+                  [
+                    "core/heading",
+                    {
+                      "content": "Template Name",
+                      "level": 3,
+                      "align": "center",
+                      "className": "has-text-align-center"
+                    }
+                  ],
+                  [
+                    "core/image",
+                    {
+                      "align": "center"
+                    }
+                  ],
+                  [
+                    "core/paragraph",
+                    {
+                      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+                      "align": "center",
+                      "className": "has-text-align-center"
+                    }
+                  ],
+                  [
+                    "fpbk/file-download",
+                    {
+                      "align": "center",
+                      "block_settings_tracking_section": "file-download"
+                    }
+                  ],
+                  [
+                    "fpbk/button",
+                    {
+                      "align": "center",
+                      "block_settings_tracking_section": "view-more-formats",
+                      "button_link": {
+                        "url": "/invoice-templates-gallery?template_category=all",
+                        "title": "View More Formats"
+                      },
+                      "className": "is-style-btn-white"
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "fpbk/column",
+            {
+              "align": "center",
+              "bootstrap_class": "col-12 col-lg-4",
+              "className": "m-0 4 p-0"
+            },
+            [
+              [
+                "fpbk/flexible-colour-background",
+                {
+                  "align": "center",
+                  "background_colour": {
+                    "hex": "#ffffff"
+                  },
+                  "block_settings_tracking_section": "download-invoice-templates",
+                  "className": "py-5 p-lg-5 m-auto white"
+                },
+                [
+                  [
+                    "core/heading",
+                    {
+                      "content": "Template Name",
+                      "level": 3,
+                      "align": "center",
+                      "className": "has-text-align-center"
+                    }
+                  ],
+                  [
+                    "core/image",
+                    {
+                      "align": "center"
+                    }
+                  ],
+                  [
+                    "core/paragraph",
+                    {
+                      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+                      "align": "center",
+                      "className": "has-text-align-center"
+                    }
+                  ],
+                  [
+                    "fpbk/file-download",
+                    {
+                      "align": "center",
+                      "block_settings_tracking_section": "file-download"
+                    }
+                  ],
+                  [
+                    "fpbk/button",
+                    {
+                      "align": "center",
+                      "button_link": {
+                        "url": "/invoice-templates-gallery?template_category=all",
+                        "title": "View More Formats"
+                      },
+                      "block_settings_tracking_section": "view-more-formats",
+                      "className": "is-style-btn-white"
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "fpbk/feature-row",
+        {
+          "block_settings_tracking_section": "feature-row-3"
+        }
+      ],
+      [
+        "fpbk/columns",
+        {
+          "block_settings_tracking_section": "columns-2",
+          "className": "mt-5"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "bootstrap_class": "col-12 col-md-8",
+              "className": "mx-auto"
+            },
+            [
+              [
+                "core/heading",
+                {
+                  "content": "This is the heading",
+                  "className": "mb-4"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis."
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "fpbk/columns",
+        {
+          "block_settings_tracking_section": "columns-3",
+          "className": "mt-5"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "boostrap_class": "col-12 col-md-8",
+              "className": "mx-auto"
+            },
+            [
+              [
+                "core/heading",
+                {
+                  "content": "This is the heading",
+                  "className": "mb-4"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis."
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "fpbk/feature-row",
+        {
+          "block_settings_tracking_section": "feature-row-4",
+          "mode": "edit"
+        }
+      ],
+      [
+        "fpbk/columns",
+        {
+          "block_settings_tracking_section": "columns-4",
+          "className": "mt-5"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "bootstrap_class": "col-12 col-md-8",
+              "className": "mx-auto"
+            },
+            [
+              [
+                "core/heading",
+                {
+                  "content": "This is the heading",
+                  "className": "mb-4"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis."
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "fpbk/columns",
+        {
+          "block_settings_tracking_section": "columns-5",
+          "className": "mt-5"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "bootstrap_class": "col-12 col-md-8",
+              "className": "mx-auto"
+            },
+            [
+              [
+                "core/heading",
+                {
+                  "content": "This is the heading",
+                  "className": "mb-4"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis."
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "fpbk/columns",
+        {
+          "className": "mt-5 text-center"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "bootstrap_class": "col-12 col-md-8",
+              "className": "mx-auto"
+            },
+            [
+              [
+                "core/heading",
+                {
+                  "content": "This is the heading",
+                  "align": "center",
+                  "className": "mb-4 has-text-align-center"
+                }
+              ],
+              [
+                "fpbk/button",
+                {
+                  "align": "center",
+                  "button_link": {
+                    "url": "/signup",
+                    "title": "Start My Free Trial"
+                  },
+                  "block_settings_tracking_section": "upgrade-your-invoice-template",
+                  "className": "is-style-btn-cta-green"
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  }
+}

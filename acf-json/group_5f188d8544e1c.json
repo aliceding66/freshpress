@@ -1,0 +1,168 @@
+{
+    "key": "group_5f188d8544e1c",
+    "title": "Block - Icon Tiles",
+    "fields": [
+        {
+            "key": "field_5f188daccb761",
+            "label": "Title",
+            "name": "icon_tiles_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f188dc49669d",
+            "label": "Tile",
+            "name": "icon_tiles_tile",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "table",
+            "button_label": "",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f188df8966a0",
+                    "label": "Tile Image",
+                    "name": "icon_tiles_tile_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f188dda9669e",
+                    "label": "Tile Title",
+                    "name": "icon_tiles_tile_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f188de79669f",
+                    "label": "Tile Description",
+                    "name": "icon_tiles_tile_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        },
+        {
+            "key": "field_5f188e2c4259a",
+            "label": "CTA",
+            "name": "icon_tiles_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f188e354259b",
+            "label": "Subtext",
+            "name": "icon_tiles_subtext",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/icon-tiles"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308008
+}

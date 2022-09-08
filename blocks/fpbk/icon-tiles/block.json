@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/icon-tiles",
+  "title": "Icon Tiles",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "sub_page",
+  "page_title": "News Coverage",
+  "menu_title": "Edit News Coverage",
+  "menu_slug": "news-coverage",
+  "parent_slug": "edit.php?post_type=press_article"
+}

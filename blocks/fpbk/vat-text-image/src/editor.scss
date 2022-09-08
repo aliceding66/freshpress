@@ -1,0 +1,21 @@
+.editor-styles-wrapper {
+	.wp-block-fpbk-vat-text-image {
+		border: none;
+		.vat-text-image {
+			&__right {
+				.block-editor__editor-controls__file-wrapper,
+				.components-base-control {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&__image {
+				z-index: 0;
+			}
+		}
+	}
+}

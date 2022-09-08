@@ -1,0 +1,268 @@
+@import '../../freshpress-includes';
+
+html {
+	margin: 0 !important;
+}
+
+body {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: $fresh-blue-light;
+}
+
+.signup-page {
+	&__content-expander {
+		position: fixed;
+		top: calc( 100% - 40px );
+		left: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 250px;
+		height: 40px;
+		font-size: px-to-rem( 20px );
+		background-color: $tile-blue;
+		border-radius: 8px 8px 0 0;
+		transform: translateX( -50% );
+		cursor: pointer;
+		transition: top 0.3s;
+
+		&::after {
+			display: block;
+			width: 16px;
+			height: 16px;
+			margin-left: 10px;
+			background-image: url( ./../../../images/icons/button-arrow-right-white.svg );
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			transform: rotate( -90deg ) translateX( -1px );
+			content: '';
+		}
+
+		&.expanded {
+			top: calc( 19% - 40px );
+
+			@include media-breakpoint-up( md ) {
+				top: calc( 30% - 40px );
+			}
+
+			&::after {
+				transform: rotate( 90deg ) translateX( 2px );
+			}
+		}
+	}
+
+	&__content-button {
+		font-size: px-to-rem( 20px );
+		border-color: $light-grey;
+		border-radius: 5px;
+	}
+
+	&__content-wrapper {
+		position: fixed !important;
+		top: 100%;
+		left: 0;
+		height: 85%;
+		background-color: $tile-blue;
+		transition: top 0.3s;
+
+		@include media-breakpoint-up( lg ) {
+			position: static !important;
+			max-width: 500px;
+			height: auto;
+			background-color: transparent;
+			transition: none;
+		}
+
+		&.shown {
+			top: 19%;
+
+			@include media-breakpoint-up( md ) {
+				top: 30%;
+			}
+
+			&.has-banner {
+				top: 25%;
+
+				@include media-breakpoint-up( md ) {
+					top: 29%;
+				}
+
+				.signup-page {
+					&__content-expander {
+						&.expanded {
+							top: calc( 25% - 40px );
+
+							@include media-breakpoint-up( md ) {
+								top: calc( 29% - 40px );
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__content {
+		height: calc( 100% - 3rem );
+		overflow: auto;
+		color: $white;
+
+		@include media-breakpoint-up( lg ) {
+			height: auto;
+			background-color: transparent;
+		}
+
+		> *:not( .signup-page__content-expander ) {
+			max-width: 350px;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 0 15px;
+
+			@include media-breakpoint-up( lg ) {
+				max-width: 100%;
+				margin-right: 0;
+				margin-left: 0;
+				padding: 0;
+			}
+		}
+
+		h2 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: px-to-rem( 34px );
+			text-align: center;
+
+			@include media-breakpoint-up( lg ) {
+				margin-top: 0;
+				font-size: px-to-rem( 28px );
+				text-align: left;
+			}
+		}
+
+		> p {
+			margin-bottom: 10px;
+			font-size: px-to-rem( 18px );
+			text-align: center;
+
+			@include media-breakpoint-up( lg ) {
+				font-size: px-to-rem( 16px );
+				text-align: left;
+			}
+		}
+
+		ul {
+			margin-top: 20px;
+			padding-left: 0;
+			list-style-type: none;
+
+			@include media-breakpoint-up( lg ) {
+				margin-top: 0;
+			}
+
+			li {
+				display: flex;
+				align-items: flex-start;
+				margin-bottom: 20px;
+				font-size: px-to-rem( 18px );
+
+				@include media-breakpoint-up( lg ) {
+					margin-bottom: 10px;
+					font-size: px-to-rem( 16px );
+				}
+
+				/* prettier-ignore */
+				&::before {
+					display: inline-block;
+					flex: 0 0 24px;
+					width: 24px;
+					height: 24px;
+					margin-right: 5px;
+					background-image: url( ./../../../images/icons/checkmark-white.svg );
+					background-repeat: no-repeat;
+					background-position: center top +6px;
+					background-size: 60%;
+					filter: brightness( 100 );
+					content: '';
+
+					@include media-breakpoint-up( lg ) {
+						background-image: url( ./../../../images/icons/checkmark.svg );
+						background-size: 72%;
+						filter: brightness( 1 );
+					}
+				}
+			}
+		}
+
+		.wp-block-separator {
+			width: 100%;
+			margin-bottom: 35px;
+			background-color: $white;
+			opacity: 0.3;
+		}
+
+		.testimonial-quote {
+			display: none !important; // override bd class
+			margin-top: 0;
+			margin-bottom: 0;
+			padding: 0 !important; // override bd class
+
+			@include media-breakpoint-up( lg ) {
+				display: flex !important;
+			}
+
+			&__text {
+				flex-basis: 100%;
+				padding: 0;
+			}
+
+			&__quote {
+				margin-bottom: 10px !important; // override bd class
+				font-size: px-to-rem( 16px );
+
+				&::before {
+					display: none;
+				}
+			}
+
+			&__author-name {
+				margin-bottom: 5px;
+				font-size: px-to-rem( 12px );
+			}
+
+			&__author-description,
+			&__author-location {
+				font-size: px-to-rem( 12px );
+				opacity: 0.6;
+			}
+
+			&__attribution-text {
+				display: inline-flex !important; // override bd class
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			&__image-container {
+				display: none !important;
+
+				&_small {
+					display: inline-block !important; // override bd class
+					flex-basis: 25%;
+					margin-right: 15px !important; // override bd class
+				}
+			}
+		}
+	}
+
+	&__submit-arrow {
+		top: -35px;
+		right: -105px;
+	}
+}
+
+.wp-block-separator {
+	border-right: 0;
+	border-left: 0;
+}

@@ -1,0 +1,163 @@
+{
+    "key": "group_6059bc0073c02",
+    "title": "Block - Border Box",
+    "fields": [
+        {
+            "key": "field_6059bc1ce6111",
+            "label": "Background Colour",
+            "name": "background_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6059bc6ce6112",
+            "label": "Max Width",
+            "name": "max_width",
+            "type": "text",
+            "instructions": "100% if empty. You can use any of the unit (e.g. 100px, 50% etc.).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6059bc8ae6113",
+            "label": "Border Radius",
+            "name": "border_radius",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "rounded": "Rounded"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6059bcaae6114",
+            "label": "Negative Margin",
+            "name": "negative_margin",
+            "type": "number",
+            "instructions": "In pixels, set the negative margin to lift up the block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "-",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_6059bcd4e6115",
+            "label": "Border Type",
+            "name": "border_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "51",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "solid": "Solid"
+            },
+            "default_value": "none",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6059bcf2e6116",
+            "label": "Border Colour",
+            "name": "border_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6059bcd4e6115",
+                        "operator": "!=",
+                        "value": "none"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "49",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#c5c7ce",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/border-box"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643306159
+}

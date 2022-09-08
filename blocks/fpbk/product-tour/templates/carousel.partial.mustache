@@ -1,0 +1,22 @@
+{{# mobile_carousel }}<div class="product-tour__swiper-container swiper-container">{{/ mobile_carousel }}
+	<div class="product-tour__content-container d-flex {{# mobile_carousel }}swiper-wrapper{{/ mobile_carousel }}">
+		<a class="product-tour__item-nav-link product-tour__item-nav-link_previous" href="#" title="Previous"></a>
+
+		{{# product_tour_items }}
+			{{# is_with_video_theme }}
+				{{> partials__carousel-item--with-video }}
+			{{/ is_with_video_theme }}
+			{{^ is_with_video_theme }}
+				{{> partials__carousel-item--default }}
+			{{/ is_with_video_theme }}
+		{{/ product_tour_items }}
+
+		<a class="product-tour__item-nav-link product-tour__item-nav-link_active product-tour__item-nav-link_next" href="#" title="Next"></a>
+	</div>
+{{# mobile_carousel}}</div>{{/ mobile_carousel }}
+
+{{# mobile_carousel}}
+	<div class="product-tour__swiper-pagination swiper-pagination d-lg-none"></div>
+	<div class="product-tour__swiper-button product-tour__swiper-button--prev swiper-button-prev d-lg-none"></div>
+	<div class="product-tour__swiper-button product-tour__swiper-button--next swiper-button-next d-lg-none"></div>
+{{/ mobile_carousel }}

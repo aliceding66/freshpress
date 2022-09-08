@@ -1,0 +1,14 @@
+.file-download__icon {
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+}
+.file-download__name {
+  margin-top: 5px;
+  color: #8294a0;
+  font-weight: bolder;
+  font-size: 0.6875rem;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=blocks-fpbk-file-download-style.css.map*/

@@ -1,0 +1,16 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/column",
+  "title": "Column",
+  "category": "freshblocks",
+  "description": "Column housed in our Columns block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "__experimental_jsx": true,
+    "align": false,
+    "defaultStylePicker": false,
+    "html": false,
+    "anchor": false,
+    "inserter": false
+  }
+}

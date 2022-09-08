@@ -1,0 +1,21 @@
+// Button.
+
+@import '~styles/freshpress-includes';
+
+.button {
+	&.aligncenter {
+		text-align: center;
+	}
+
+	&.alignleft {
+		text-align: left;
+	}
+
+	&.alignright {
+		text-align: right;
+	}
+
+	&--cta-padding {
+		padding: px-to-rem( 13 ) px-to-rem( 39 ) !important;
+	}
+}

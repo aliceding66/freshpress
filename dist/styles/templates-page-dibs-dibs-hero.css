@@ -1,0 +1,67 @@
+.hero__title-container {
+  display: flex;
+  width: 360px;
+  height: 380px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-hero-360.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 768px) {
+  .hero__title-container {
+    width: 768px;
+    height: 424px;
+    background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-hero-768.svg);
+  }
+}
+@media (min-width: 1024px) {
+  .hero__title-container {
+    width: 1024px;
+    height: 454px;
+    background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-hero-1024.svg);
+  }
+}
+@media (min-width: 1280px) {
+  .hero__title-container {
+    width: 1280px;
+    height: 568px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero__title-container {
+    width: 1600px;
+    height: 457px;
+    background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-hero-1600.svg);
+  }
+}
+.hero__title {
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3.375rem;
+  line-height: 3.375rem;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3.875rem;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__title {
+    position: relative;
+    top: -50px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero__title {
+    font-size: 5.125rem;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__text-container {
+    max-width: 650px;
+  }
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-hero.css.map*/

@@ -1,0 +1,88 @@
+@import '../../freshpress-includes';
+
+@import '~swiper/swiper';
+@import '~swiper/components/navigation/navigation';
+@import '~swiper/components/pagination/pagination';
+
+@import 'dibs/dibs-hero.scss';
+@import 'dibs/dibs-welcome.scss';
+@import 'dibs/dibs-framework.scss';
+@import 'dibs/dibs-culture.scss';
+@import 'dibs/dibs-journey-mobile.scss';
+@import 'dibs/dibs-journey-desktop.scss';
+@import 'dibs/dibs-stand.scss';
+@import 'dibs/dibs-graph.scss';
+@import 'dibs/dibs-categories.scss';
+@import 'dibs/dibs-champions.scss';
+@import 'dibs/dibs-join.scss';
+@import 'dibs/dibs-contact.scss';
+
+.main {
+	max-width: 1600px !important;
+}
+
+.dibs {
+	margin: 0 -15px;
+	overflow-x: hidden;
+	border-bottom: 1px solid $rule-grey;
+
+	&__title {
+		font-weight: 500;
+		font-size: px-to-rem( 46 );
+		line-height: 1;
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 48 );
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			font-size: px-to-rem( 58 );
+		}
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: px-to-rem( 20 );
+		line-height: px-to-rem( 28 );
+	}
+
+	&-block {
+		margin: auto;
+	}
+
+	&-block_padded {
+		margin: auto 0;
+
+		@include media-breakpoint-up( lg ) {
+			margin-left: 80px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			margin-left: 220px;
+		}
+	}
+
+	.journey__today-container {
+		z-index: 999;
+		transition: all 0.5s;
+	}
+
+	.journey__today_hidden {
+		opacity: 0;
+		&.journey_mobile__today-container {
+			top: 30px;
+		}
+		&.journey_desktop__today-container {
+			bottom: 35px;
+		}
+	}
+
+	.journey__today_visible {
+		opacity: 1;
+		filter: drop-shadow( 8px 8px 11px rgba( 0, 27, 64, 0.25 ) );
+
+		&.journey_mobile__today-container {
+			top: 0;
+		}
+	}
+}

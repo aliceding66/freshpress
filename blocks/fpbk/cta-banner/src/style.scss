@@ -1,0 +1,153 @@
+@import '~styles/freshpress-includes';
+
+.cta-banner {
+	max-width: 716.66px;
+	background-image: url( ./../../../../assets/images/cta-banner/background-standard.svg );
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+
+	a {
+		color: #000 !important;
+	}
+
+	a:hover {
+		color: #000 !important;
+		text-decoration: none !important;
+	}
+
+	&.is-style-standard-blue {
+		background-image: url( ./../../../../assets/images/cta-banner/background-standard-blue.svg );
+	}
+
+	&.is-style-navigation {
+		background-image: url( ./../../../../assets/images/cta-banner/background-navigation.svg );
+		background-position: top left;
+		background-size: cover;
+	}
+
+	&.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&.alignleft {
+		margin-right: auto;
+		margin-left: 0;
+	}
+
+	&.alignright {
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	.btn {
+		@include media-breakpoint-down( md ) {
+			font-size: 10px;
+			line-height: 11.7px;
+			border-radius: 5px;
+		}
+	}
+
+	.btn-midnight-blue {
+		padding: px-to-rem( 10 ) px-to-rem( 34 );
+		color: #fff !important;
+		font-weight: 500;
+		font-size: px-to-rem( 20 );
+
+		@include media-breakpoint-down( md ) {
+			padding: px-to-rem( 5 ) px-to-rem( 18 );
+			font-size: px-to-rem( 13 );
+		}
+	}
+
+	.banner-heading {
+		padding: px-to-rem( 37 ) px-to-rem( 34 );
+		font-size: px-to-rem( 32 );
+
+		@include media-breakpoint-down( md ) {
+			margin: 0 !important;
+			padding: px-to-rem( 17 ) px-to-rem( 17 );
+			font-size: px-to-rem( 16 );
+		}
+	}
+
+	.l-50 {
+		position: relative;
+		left: -50px;
+
+		@include media-breakpoint-down( lg ) {
+			left: -2vw;
+		}
+
+		@include media-breakpoint-down( md ) {
+			left: -4vw;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			left: 4vw;
+			max-width: 40vw;
+		}
+	}
+	.columns {
+		max-width: 100%;
+	}
+}
+.is-style-navigation {
+	.column {
+		align-items: flex-start !important;
+		max-width: 100% !important;
+	}
+	.columns {
+		display: block !important;
+	}
+	.l-50 {
+		left: 35px !important;
+		padding-bottom: 35px;
+		padding-left: 0;
+	}
+	.banner-heading {
+		padding: 27px 2.125rem 0.5rem 22px;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 1;
+
+		@include media-breakpoint-down( sm ) {
+			position: relative;
+			left: 35px;
+			font-size: 20px !important;
+		}
+	}
+	.btn-midnight-blue {
+		padding: 12px 59px;
+		font-size: 16px;
+	}
+}
+.sticky-top {
+	.flexible-colour-background {
+		flex: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.btn-midnight-blue {
+		position: relative;
+		left: -9px !important;
+	}
+
+	.column {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+.hub__mobile-cta-banner {
+	.columns {
+		margin-right: 0;
+	}
+
+	.cta-banner {
+		width: calc( 100vw - 30px );
+		min-width: calc( 100% - 30px );
+		margin: auto !important;
+	}
+}

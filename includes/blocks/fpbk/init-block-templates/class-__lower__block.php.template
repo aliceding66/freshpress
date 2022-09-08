@@ -1,0 +1,149 @@
+<?php
+/**
+ * {{ pascal }} class.
+ *
+ * @package FreshpressBlocks\{{ pascal }}
+ * @subpackage {{ pascal }}
+ */
+
+namespace FreshpressBlocks;
+
+/**
+ * Class {{ pascal }}
+
+ * @package FreshpressBlocks
+ */
+class {{ pascal }}Block extends ABlock {
+{{# enableRestRenderEndpoint }}
+	/**
+	 * Flag that indicated if REST endpoint used by ServerSideRender must be enabled.
+	 *
+	 * @var bool
+	 */
+	protected $enable_rest_render_endpoint = true;
+
+{{/ enableRestRenderEndpoint }}
+	/**
+	 * {{ pascal }}Block constructor.
+	 *
+	 * @param string $dir __DIR__ value.
+	 */
+	public function __construct( $dir ) {
+		parent::__construct( $dir );
+
+		$this->enqueue_editor_script();
+		{{# frontendJs }}
+		$this->enqueue_script( '{{ name }}-block' );{{# detailedComments }}   // Enqueue script on frontend that is named "{{ name }}-block.js" in "src/frontend" directory. Remove this line if not used.{{/ detailedComments }}
+		{{/ frontendJs }}
+		{{# editorStyles }}
+		$this->enqueue_editor_style();{{# detailedComments }}              // Enqueue styles on Editor. Remove this line if not used.{{/ detailedComments }}
+		{{/editorStyles }}
+		$this->enqueue_style(); {{# detailedComments }}                    // Enqueue styles on frontend. Remove this line if not used.{{/ detailedComments }}
+
+{{# templateData }}
+		$this->initiate_template_data();
+{{/ templateData }}
+	}
+{{# mustachePartial }}
+
+	/**
+	 * Return evaluated Mustache template
+	 *
+	 * @param string $local_path Local path to template.
+	 * @param array  $template_data Data to be passed to Mustache template.
+	 *
+	 * @return string
+	 */
+	public function load_template( $local_path, $template_data ) {
+		$this->set_template_partials(
+			[
+				'partial' => 'templates/block.partial.mustache',
+			]
+		);
+
+		return parent::load_template( $local_path, $template_data );
+	}
+{{/ mustachePartial }}
+
+	/**
+	 * Returns values that are used in Mustache template.
+	 *
+	 * @param array $additional_template_data Usually $attributes passed from render() function.
+	 *
+	 * @return array
+	 */
+	public function get_template_data( $additional_template_data = [] ) {
+{{# detailedComments }}
+		/**
+		 * You can manipulate here with data that depends on $additional_template_data passed here (for now those are $attributes from render())
+		 * e.g. format images data as proper <img /> when passing those values to Mustache template
+		 * $additional_template_data['image'] = fp_render_img( $additional_template_data['image'] )
+		 */
+{{/ detailedComments }}
+		return parent::get_template_data( $additional_template_data );
+	}
+
+	/**
+	 * Function passed to "render_callback".
+	 *
+	 * @param array  $attributes Block's attributes.
+	 * @param string $inner_blocks_content <InnerBlocks.Content /> passed from index.js.
+	 *
+	 * @return string
+	 */
+	public function render( $attributes, $inner_blocks_content ) {
+{{# detailedComments }}
+		/**
+		 * Generate proper attributes for wrapper node.
+		 */
+{{/ detailedComments }}
+		$wrapper_properties = $this->get_wrapper_properties(
+			$attributes,
+			[
+				'class' => '',
+			]
+		);
+
+{{# detailedComments }}
+		/**
+		 * If You don't need to pass all $attributes to Mustache template or only part of this, adjust passed value to $this->get_template_data().
+		 */
+{{/ detailedComments }}
+		$block_template = $this->load_template( 'templates/block.mustache', $this->get_template_data( $attributes ) );
+
+{{# detailedComments }}
+		/**
+		 * And here is returned block content.
+		 * If You don't use <InnerBlocks />, You can delete $inner_blocks_content from returned value.
+		 */
+{{/ detailedComments }}
+		return <<< HTML
+<div {$wrapper_properties}>
+	{$block_template}
+{{# innerBlocks }}
+	{$inner_blocks_content}
+{{/ innerBlocks }}
+</div>
+HTML;
+	}
+{{# templateData }}
+
+	/**
+	 * Initiate template data.
+	 */
+	private function initiate_template_data() {
+{{# detailedComments }}
+		/**
+		 * Define some static values that should be passed to templates like translated strings or assets.
+		 */
+{{/ detailedComments }}
+		$data_name_in_js = '{{ camel }}TemplateData';{{# detailedComments }} // This is the name of variable that will be available in JS side to access those.{{/ detailedComments }}
+		$this->set_static_template_data(
+			[
+				'key' => 'value',
+			],
+			$data_name_in_js
+		);
+	}
+{{/ templateData }}
+}

@@ -1,0 +1,132 @@
+{
+    "key": "group_5f2a723d7a323",
+    "title": "Block - Team Members",
+    "fields": [
+        {
+            "key": "field_5f2a729e9512b",
+            "label": "Team Members",
+            "name": "team_members",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f2a73b19512f",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f2a72bf9512c",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f2a72d39512d",
+                    "label": "Position",
+                    "name": "position",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f2a72e39512e",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/team-members"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643309929
+}

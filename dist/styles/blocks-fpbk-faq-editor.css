@@ -1,0 +1,33 @@
+.editor-styles-wrapper .wp-block-fpbk-faq {
+  border: none;
+}
+.editor-styles-wrapper .wp-block-fpbk-faq.faq {
+  display: block;
+  margin-bottom: 1rem;
+}
+.editor-styles-wrapper .wp-block-fpbk-faq .faq__headline {
+  margin-bottom: 1rem;
+}
+.editor-styles-wrapper .wp-block-fpbk-faq .faq__item_buttons {
+  top: 1rem;
+  right: 1rem;
+}
+.editor-styles-wrapper .wp-block-fpbk-faq .faq__question .faq__arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+.editor-styles-wrapper .wp-block-fpbk-faq .faq__answer {
+  max-height: 200vh;
+  margin-bottom: 2.1875rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+.editor-styles-wrapper .wp-block-fpbk-faq.is-style-new {
+  display: flex !important;
+  flex-direction: column !important;
+}
+@media (min-width: 1024px) {
+  .editor-styles-wrapper .wp-block-fpbk-faq.is-style-new {
+    flex-direction: row !important;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-faq-editor.css.map*/

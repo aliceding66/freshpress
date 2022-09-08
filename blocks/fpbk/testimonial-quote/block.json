@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/testimonial-quote",
+  "title": "Testimonial Quote",
+  "category": "freshblocks",
+  "description": "A block containing a testimonial quote and, optionally, displaying the rating widget.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

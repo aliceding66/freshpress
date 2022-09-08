@@ -1,0 +1,142 @@
+<div class="pricing-table_column-price w-100 text-center position-relative pt-4 pb-5">
+	<div class="pricing-table_column-standard flex-column position-absolute w-100">
+		{{^ custom_pricing }}
+			<span class="pricing-table_column-standard__ribbon-subtext position-absolute my-1 text-uppercase w-100 monthly">
+				{{ standard_monthly_banner_subtext }}
+			</span>
+
+			<span class="pricing-table_column-standard__ribbon-subtext position-absolute my-1 text-uppercase w-100 yearly">
+				{{ standard_yearly_banner_subtext }}
+			</span>
+		{{/ custom_pricing }}
+	</div>
+
+	{{# enable_promo }}
+		<div class="pricing-table_column-promo flex-column position-absolute w-100">
+			{{{ monthly_banner_image }}}
+			<span class="pricing-table_column-promo__ribbon-subtext my-1 text-uppercase monthly">
+				{{ promo_monthly_banner_subtext }}
+			</span>
+
+			{{{ yearly_banner_image }}}
+			<span class="pricing-table_column-promo__ribbon-subtext my-1 text-uppercase yearly">
+				{{ promo_yearly_banner_subtext }}
+			</span>
+		</div>
+	{{/ enable_promo }}
+
+	<div class="pricing-table_column-price__value d-flex justify-content-center {{ align_items }}">
+		{{# custom_pricing }}
+			<div class="pricing-table_column-price__custom-wrapper">
+				<div class="pricing-table_column-price__custom py-2">
+					<span>{{ labels.custom_pricing }}</span>
+				</div>
+			</div>
+		{{/ custom_pricing }}
+
+		{{^ custom_pricing }}
+			<div class="w-100{{^ exclude_plan }} standard{{/ exclude_plan }}">
+				<div class="pricing-table_column-price__numerical position-relative w-100 monthly">
+					<sup class="pricing-table_column-price__currency">{{{ labels.currency_symbol }}}</sup>
+
+					{{# price_monthly }}
+						<span class="pricing-table_column-price__dollar">
+							{{ price_monthly.whole }}
+							<sup class="pricing-table_column-price__cents">{{ labels.decimal_separator }}{{ price_monthly.decimal }}</sup>
+						</span>
+					{{/ price_monthly }}
+
+					<sub class="pricing-table_column-price__term">
+						{{ price_monthly_suffix }}
+					</sub>
+				</div>
+
+				<div class="pricing-table_column-price__numerical position-relative w-100 yearly">
+					<sup class="pricing-table_column-price__currency">{{{ labels.currency_symbol }}}</sup>
+					{{# price_yearly }}
+						<span class="pricing-table_column-price__dollar">
+							{{ price_yearly.whole }}
+							<sup class="pricing-table_column-price__cents">{{ labels.decimal_separator }}{{ price_yearly.decimal }}</sup>
+						</span>
+					{{/ price_yearly }}
+					<sub class="pricing-table_column-price__term">
+						{{ price_yearly_suffix }}
+					</sub>
+				</div>
+			</div>
+
+			{{# enable_promo }}
+				<div class="w-100{{^ exclude_plan }} promo{{/ exclude_plan }}">
+					<div class="pricing-table_column-price__numerical position-relative w-100 monthly">
+
+						<sup class="pricing-table_column-price__currency">{{{ labels.currency_symbol }}}</sup>
+
+						{{# promo_price_monthly }}
+							<span class="pricing-table_column-price__dollar">
+								{{ promo_price_monthly.whole }}
+								<sup class="pricing-table_column-price__cents">{{ labels.decimal_separator }}{{ promo_price_monthly.decimal }}</sup>
+								</span>
+						{{/ promo_price_monthly }}
+
+						<sub class="pricing-table_column-price__term">
+							{{ promo_price_monthly_suffix }}
+						</sub>
+
+						{{# promo_price_monthly_include_asterisk }}
+							<sup class="pricing-table_column-price__asterisk">
+								{{{ labels.asterisk }}}
+							</sup>
+						{{/ promo_price_monthly_include_asterisk }}
+
+						{{# enable_promo }}
+							<div class="pricing-table_column-price__subtext position-absolute w-100">
+								{{# promo_price_monthly_subtext }}
+									{{{ promo_price_monthly_subtext }}}
+								{{/ promo_price_monthly_subtext }}
+							</div>
+						{{/ enable_promo }}
+					</div>
+
+					<div class="pricing-table_column-price__numerical position-relative w-100 yearly">
+
+						<sup class="pricing-table_column-price__currency">{{{ labels.currency_symbol }}}</sup>
+
+						{{# promo_price_yearly }}
+							<span class="pricing-table_column-price__dollar">
+								{{ promo_price_yearly.whole }}
+								<sup class="pricing-table_column-price__cents">{{ labels.decimal_separator }}{{ promo_price_yearly.decimal }}</sup>
+								</span>
+						{{/ promo_price_yearly }}
+
+						<sub class="pricing-table_column-price__term">
+							{{{ promo_price_yearly_suffix }}}
+						</sub>
+
+						{{# promo_price_yearly_include_asterisk }}
+							<sup class="pricing-table_column-price__asterisk">
+								{{{ labels.asterisk }}}
+							</sup>
+						{{/ promo_price_yearly_include_asterisk }}
+
+						{{# enable_promo }}
+							<div class="pricing-table_column-price__subtext position-absolute w-100">
+								{{# promo_price_yearly_subtext }}
+									{{{ promo_price_yearly_subtext }}}
+								{{/ promo_price_yearly_subtext }}
+							</div>
+						{{/ enable_promo }}
+					</div>
+				</div>
+			{{/ enable_promo }}
+
+		{{/ custom_pricing }}
+	</div>
+
+	{{# billable_clients }}
+		<div class="pricing-table_column-clients my-4">
+			{{ billable_clients }}
+		</div>
+	{{/ billable_clients }}
+
+	{{> partial__column-links }}
+</div>

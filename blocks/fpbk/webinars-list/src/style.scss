@@ -1,0 +1,44 @@
+// Webinars List.
+
+@import '~styles/freshpress-includes';
+
+.webinars-list {
+	margin: 0 -15px;
+
+	&__list {
+		background-color: #eaf6fe;
+
+		@include media-breakpoint-up( sm ) {
+			padding: 1.25rem 2rem 0.75rem;
+		}
+
+		@include media-breakpoint-up( md ) {
+			background-color: #fff;
+		}
+	}
+
+	&__item {
+		&:first-child {
+			border-top: 1px solid $rule-grey;
+		}
+	}
+
+	&__item-time,
+	&__item-date {
+		font-size: px-to-rem( 16 );
+	}
+
+	&__item-time {
+		color: $dark-grey;
+	}
+
+	&__item-title {
+		@include media-breakpoint-up( md ) {
+			max-width: 150px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 300px;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+<div class="related-links__list-dropdown-wrapper d-flex justify-content-center justify-content-md-start ml-3 py-1 pl-1 pr-4 overflow-hidden">
+	<select class="related-links__list-dropdown p-2 overflow-hidden align-bottom border-0">
+		{{# links }}
+			{{# show_multidimensional }}
+				<!-- Option Groups (multidimensional options). -->
+				<optgroup label="{{ key }}">
+					{{# children }}
+						<option
+							class="related-links__list-item related-links__list-item_taxonomy m-0 {{ active }}"
+							value="{{ url }}"
+							{{ selected }}
+						>
+							{{ title }}
+						</option>
+					{{/ children }}
+				</optgroup>
+			{{/ show_multidimensional }}
+		{{/ links}}
+	</select>
+</div>

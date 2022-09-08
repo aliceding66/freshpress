@@ -1,0 +1,45 @@
+{
+    "key": "group_5f88426d55693",
+    "title": "Block - Boxes",
+    "fields": [
+        {
+            "key": "field_5f8844a58faae",
+            "label": "Max Width",
+            "name": "boxes_max_width",
+            "type": "text",
+            "instructions": "100% if empty.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/boxes"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643306210
+}

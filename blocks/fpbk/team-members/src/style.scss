@@ -1,0 +1,55 @@
+@import '~styles/freshpress-includes';
+
+.team-members {
+	&__member {
+		margin-bottom: 3rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__image-container {
+		flex: 0 0 126px; // from the mocks
+		max-width: 126px;
+		min-height: 126px;
+		overflow: hidden;
+
+		@include media-breakpoint-up( lg ) {
+			flex: 0 0 210px; // from the mocks
+			max-width: 210px;
+			min-height: 210px;
+		}
+	}
+
+	&__image {
+		object-fit: contain;
+		border-radius: 50%;
+	}
+
+	&__name {
+		color: $fresh-blue;
+		font-weight: $font-weight-book;
+		font-size: px-to-rem( 24 );
+		line-height: calc( 24 / 18 );
+	}
+
+	&__position {
+		color: $light-grey;
+		font-weight: $font-weight-book;
+		font-size: px-to-rem( 14 );
+		line-height: calc( 24 / 18 );
+	}
+
+	&__description {
+		max-width: 560px; // not from the mocks, looks better with max-width between 580px - md
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 600px; // looks better up to xl
+		}
+
+		@include media-breakpoint-up( xl ) {
+			max-width: 680px; // looks better above xl
+		}
+	}
+}

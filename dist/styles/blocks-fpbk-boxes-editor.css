@@ -1,0 +1,8 @@
+.editor-styles-wrapper .wp-block.box-media__image {
+  height: auto;
+}
+.editor-styles-wrapper .wp-block.box-media__image img {
+  height: 21px;
+}
+
+/*# sourceMappingURL=blocks-fpbk-boxes-editor.css.map*/

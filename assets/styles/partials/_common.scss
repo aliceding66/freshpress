@@ -1,0 +1,241 @@
+/// This file is to be used for common structural site styles only. Anything placed here will be included site wide.
+/// if you are able to add styles in any other location please do.  ANY of these locations are preferable:
+///
+/// * themes/freshpress/assets/styles/partials/partials/_fonts.scss
+/// * themes/freshpress/assets/styles/partials/partials/_typography.scss
+/// * themes/freshpress/assets/styles/partials/partials/_footer.scss
+/// * themes/freshpress/assets/styles/partials/partials/_flag-icons.scss
+/// * themes/freshpress/assets/styles/partials/partials/_variants.scss
+
+a {
+	cursor: pointer;
+}
+
+cite {
+	font-style: normal;
+}
+
+.main,
+.footer {
+	max-width: map_get( $grid-breakpoints, 'xl' );
+}
+
+// Modify default Button width
+.btn {
+	border-width: 2px;
+	border-radius: 8px;
+}
+
+// Lists.
+ul {
+	padding-top: 10px;
+	padding-left: 20px;
+	font-size: px-to-rem( 18px );
+	letter-spacing: 0;
+	list-style-type: disc;
+
+	li {
+		margin-bottom: 10px;
+	}
+
+	&.list_checkmarks,
+	&.list_checkmarks-new {
+		margin-left: -20px;
+
+		li {
+			padding-left: 38px;
+			list-style-type: none;
+			background-image: url( #{$global_images_path}/icons/checkmark.svg );
+			background-repeat: no-repeat;
+			background-position: left 4px;
+			background-size: 26px 24px;
+		}
+	}
+
+	&.list_checkmarks-new {
+		li {
+			padding-left: 32px;
+			background-image: url( #{$global_images_path}/icons/checkmark-green.svg );
+			background-position: left 6px;
+			background-size: 13px 12px;
+		}
+	}
+
+	ul {
+		list-style-type: circle;
+
+		ul {
+			list-style-type: square;
+		}
+	}
+}
+
+// Content visibility based on user login status.
+body {
+	&.fbcustomer {
+		.show-fbprospect,
+		.hide-fbcustomer {
+			display: none;
+		}
+	}
+
+	&.fbprospect {
+		.show-fbcustomer,
+		.hide-fbprospect {
+			display: none;
+		}
+	}
+}
+
+// Class used for Optimizely experiments.
+.optimizely-show {
+	display: none;
+}
+
+// Fix WordPress Image block to maintain aspect ratio.
+.wp-block-image {
+	> figure {
+		> img {
+			object-fit: contain;
+		}
+	}
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+.pagination {
+	.prev > img,
+	.next > img {
+		height: 1em;
+	}
+}
+
+.mw-220 {
+	max-width: 220px;
+}
+
+.mw-300 {
+	max-width: 300px;
+}
+
+.mw-380 {
+	max-width: 380px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-400 {
+	max-width: 400px;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.mw-450 {
+	max-width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-480 {
+	max-width: 480px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-540 {
+	max-width: 540px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-580 {
+	max-width: 580px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-600 {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-620 {
+	max-width: 620px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-680 {
+	max-width: 680px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-850 {
+	max-width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-980 {
+	max-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mw-1180 {
+	max-width: 1180px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media screen and ( min-width: 1024px ) {
+	.push-right {
+		margin-right: 0 !important;
+		margin-left: auto !important;
+	}
+
+	.push-left {
+		margin-right: auto !important;
+		margin-left: 0 !important;
+	}
+
+	.push-center {
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+}
+
+.separator-small {
+	max-width: 70px;
+	border-top-width: 3px;
+}
+
+.check-list {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.check-list li {
+	position: relative;
+	padding-left: 26px;
+}
+
+.check-list li::before {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	display: block;
+	width: 21px;
+	height: 16px;
+	background-image: url( #{$global_images_path}/icons/checkmark.svg );
+	background-size: contain;
+	content: '';
+}
+
+.image-no-margin figure {
+	margin: 0;
+}

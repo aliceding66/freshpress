@@ -1,0 +1,68 @@
+{
+    "key": "group_606242cde5206",
+    "title": "Category - Invoice Templates",
+    "fields": [
+        {
+            "key": "field_6062433d2fbe4",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_606243502fbe5",
+            "label": "Colour",
+            "name": "colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "invoice_template_category"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310225
+}

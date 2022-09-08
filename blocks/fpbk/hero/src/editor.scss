@@ -1,0 +1,17 @@
+@import '~styles/freshpress-includes';
+
+.hero {
+	&__image-labels {
+		align-items: center;
+	}
+
+	&__image-label {
+		img {
+			height: 40px;
+		}
+	}
+}
+
+.color-button {
+	border-radius: 50%;
+}

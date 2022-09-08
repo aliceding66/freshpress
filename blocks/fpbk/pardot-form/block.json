@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/pardot-form",
+  "title": "Pardot Form",
+  "category": "freshblocks",
+  "description": "Adds a Pardot Form to the page.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

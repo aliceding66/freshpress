@@ -1,0 +1,25 @@
+{
+  "post_type": "glossary",
+  "post_type_plural": "glossary_terms",
+  "label": "Glossary Term",
+  "label_plural": "Glossary Terms",
+  "args": {
+    "description": "Glossary",
+    "hierarchical": true,
+    "labels": {
+      "menu_name": "Glossary"
+    },
+    "menu_icon": "dashicons-book-alt",
+    "rewrite": {
+      "slug": "glossary/%glossary_category%"
+    },
+    "supports": [
+      "editor",
+      "page-attributes",
+      "revisions",
+      "thumbnail",
+      "title",
+      "excerpt"
+    ]
+  }
+}

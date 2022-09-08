@@ -1,0 +1,41 @@
+.tooltip-blue {
+	@include media-breakpoint-up( md ) {
+		position: absolute;
+		bottom: 60px;
+		left: 50%;
+		z-index: 2;
+		width: calc( 100% + 30px );
+		padding: 1rem;
+		color: $white;
+		font-size: px-to-rem( 15px );
+		background-color: $fresh-blue;
+		border-radius: $border-radius-sm;
+		transform: translateX( -50% );
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	&::after {
+		@include media-breakpoint-up( md ) {
+			position: absolute;
+			top: 98%;
+			left: 50%;
+			width: 14px;
+			height: 14px;
+			background-color: $fresh-blue;
+			transform: rotate( 45deg ) translateX( -50% );
+			content: '';
+		}
+	}
+}
+
+.show-tooltip {
+	&:hover {
+		> .tooltip-blue,
+		~ .tooltip-blue {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}

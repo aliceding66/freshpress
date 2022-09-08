@@ -1,0 +1,195 @@
+.champions {
+  color: #001b40;
+  background-color: #fff9e8;
+}
+@media (min-width: 1024px) {
+  .champions__text-container {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1600px) {
+  .champions__text-container {
+    max-width: 430px;
+  }
+}
+.champions__slides-container {
+  width: 360px;
+  margin: 80px 0 -150px;
+  padding-top: 100px;
+  transform: translate(-28%, 20%);
+}
+@media (min-width: 768px) {
+  .champions__slides-container {
+    width: 768px;
+    transform: translate(-6%, 20%);
+  }
+}
+@media (min-width: 1024px) {
+  .champions__slides-container {
+    width: 1024px;
+    transform: translate(13%, 20%);
+  }
+}
+@media (min-width: 1280px) {
+  .champions__slides-container {
+    width: 1280px;
+  }
+}
+@media (min-width: 1600px) {
+  .champions__slides-container {
+    width: 1600px;
+  }
+}
+.champions__slide.swiper-slide-active {
+  position: relative;
+  z-index: 9;
+  width: 300px !important;
+  box-shadow: 3px 4px 19px 3px rgba(0, 27, 64, 0.08);
+  transform: translate(0, -24%);
+}
+@media (min-width: 768px) {
+  .champions__slide.swiper-slide-active {
+    transform: translate(-7%, -23%);
+  }
+}
+@media (min-width: 1024px) {
+  .champions__slide.swiper-slide-active {
+    width: 413px !important;
+    transform: translate(-11%, -50%);
+  }
+}
+@media (min-width: 1600px) {
+  .champions__slide.swiper-slide-active {
+    transform: translate(-2%, -50%);
+  }
+}
+.champions__slide.swiper-slide-active .champions__slide-content-container {
+  display: block;
+}
+.champions__slide.swiper-slide-active .champions__image {
+  width: 100%;
+  height: auto;
+}
+.champions__slide-content-container {
+  display: none;
+  height: 364px;
+  margin-top: -215px;
+  padding: 155px 25px 50px;
+  background-color: #fff;
+}
+.champions__image {
+  position: relative;
+  top: -100px;
+  width: 132px;
+  height: 132px;
+}
+.champions__name {
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+@media (min-width: 1024px) {
+  .champions__name {
+    font-size: 1.75rem;
+  }
+}
+.champions__pronouns {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  .champions__pronouns {
+    font-size: 1.125rem;
+  }
+}
+.champions__role {
+  width: 70%;
+  margin-bottom: 20px;
+}
+.champions__location {
+  padding: 0 0 0 20px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/pin.svg);
+  background-repeat: no-repeat;
+  background-position: left middle;
+}
+.champions__nav-arrows-container {
+  position: relative;
+  width: 360px;
+  height: 300px;
+  transform: translate(-6%, -61%);
+}
+@media (min-width: 768px) {
+  .champions__nav-arrows-container {
+    width: 768px;
+    transform: translate(-7%, -61%);
+  }
+}
+@media (min-width: 1024px) {
+  .champions__nav-arrows-container {
+    left: -340px;
+    width: 1024px;
+    height: 197px;
+    transform: translate(13%, 53%);
+  }
+}
+@media (min-width: 1280px) {
+  .champions__nav-arrows-container {
+    left: -210px;
+    width: 1280px;
+  }
+}
+@media (min-width: 1600px) {
+  .champions__nav-arrows-container {
+    left: -9px;
+    width: 1600px;
+  }
+}
+.champions__nav-arrows-container .swiper-button-prev,
+.champions__nav-arrows-container .swiper-button-next {
+  color: #001b40;
+  transform: scale(0.8);
+}
+@media (min-width: 1024px) {
+  .champions__nav-arrows-container .swiper-button-prev,
+.champions__nav-arrows-container .swiper-button-next {
+    top: -280px;
+  }
+}
+.champions__nav-arrows-container .swiper-button-prev {
+  left: -3px;
+}
+@media (min-width: 768px) {
+  .champions__nav-arrows-container .swiper-button-prev {
+    left: 233px;
+  }
+}
+@media (min-width: 1024px) {
+  .champions__nav-arrows-container .swiper-button-prev {
+    left: 625px;
+  }
+}
+@media (min-width: 1600px) {
+  .champions__nav-arrows-container .swiper-button-prev {
+    left: 665px;
+  }
+}
+.champions__nav-arrows-container .swiper-button-next {
+  right: 2px;
+}
+@media (min-width: 768px) {
+  .champions__nav-arrows-container .swiper-button-next {
+    left: 588px;
+  }
+}
+@media (min-width: 1024px) {
+  .champions__nav-arrows-container .swiper-button-next {
+    left: 1135px;
+  }
+}
+@media (min-width: 1600px) {
+  .champions__nav-arrows-container .swiper-button-next {
+    left: 1169px;
+  }
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-champions.css.map*/

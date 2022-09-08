@@ -1,0 +1,46 @@
+@import '../../../freshpress-includes';
+
+.join {
+	top: -50px;
+	background-color: $white;
+
+	@include media-breakpoint-up( lg ) {
+		top: -100px;
+		background-image: url( #{$dibs_images_path}/templates/page/dibs/global-offices.svg );
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: contain;
+
+		@include media-breakpoint-up( lg ) {
+			background-position: right -54px;
+			background-size: 50%;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			background-size: 45%;
+		}
+	}
+
+	&__content {
+		@include media-breakpoint-up( lg ) {
+			max-width: 344px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			max-width: 440px;
+		}
+
+		.join__logo {
+			width: 75px;
+			height: auto;
+		}
+	}
+
+	&__logos {
+		max-width: 330px;
+
+		@include media-breakpoint-up( lg ) {
+			max-width: none;
+		}
+	}
+}

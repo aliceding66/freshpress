@@ -1,0 +1,55 @@
+<th class="text-center px-0">
+	<div class="cell-content d-flex flex-column align-items-center justify-content-center">
+
+		<div class="comparison-table__header-text d-flex flex-wrap flex-xl-nowrap mb-lg-2 justify-content-center">
+			<span class="comparison-table__header-row_cell-title mr-lg-1">{{{ title }}}</span>
+
+			<div class="comparison-table__header-row_cell-price-wrapper w-100 w-lg-auto standard">
+				<span
+						class="comparison-table__header-row_cell-price d-none d-md-block"
+						{{# admin }}
+							title="{{ edit_on_sidebar_label }}"
+						{{/ admin }}
+				>
+					({{ price }})
+				</span>
+			</div>
+			{{# enable_promo }}
+				{{# promo_price }}
+					<div class="comparison-table__header-row_cell-price-wrapper w-100 w-lg-auto promo">
+						<span
+								class="comparison-table__header-row_cell-price d-none d-md-block"
+								{{# admin }}
+									title="{{ edit_on_sidebar_label }}"
+								{{/ admin }}
+						>
+							({{ promo_price }})
+						</span>
+					</div>
+				{{/ promo_price }}
+			{{/ enable_promo }}
+		</div>
+
+		<div class="standard">
+			{{# cta.html }}
+				{{{ cta.html }}}
+			{{/ cta.html }}
+            {{^ cta.html }}
+                <a
+                    href="#"
+                    title="{{ edit_on_sidebar_label }}"
+                    class="comparison-table__header-row_cell-cta btn btn-cta-green d-none d-xl-block"
+                >
+                    {{ cta.title }}
+                </a>
+            {{/ cta.html }}
+		</div>
+		{{# enable_promo }}
+			{{# promo_cta.html }}
+				<div class="promo">
+					{{{ promo_cta.html }}}
+				</div>
+			{{/ promo_cta.html }}
+		{{/ enable_promo }}
+	</div>
+</th>

@@ -1,0 +1,82 @@
+// Sticky Footer.
+
+@import '~styles/freshpress-includes';
+
+.sticky-footer {
+	margin: 0 -15px;
+	background: $fresh-blue;
+
+	&__newsletter {
+		background: #001b40;
+	}
+
+	&__text {
+		color: $white;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 14 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 20 );
+		}
+	}
+
+	&__cta {
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 16 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 20 );
+		}
+	}
+
+	&__link {
+		color: $white;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 16 );
+		text-decoration: underline;
+		background: none;
+		border: none;
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 20 );
+		}
+	}
+
+	&.sticky-bottom {
+		&.stuck {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1030;
+			width: auto;
+		}
+	}
+}
+
+.is-style-newsletter {
+	background: $midnight-blue;
+
+	.sticky-footer__newsletter-content {
+		max-width: 1280px;
+	}
+
+	.sticky-footer__text {
+		font-size: px-to-rem( 20 );
+		line-height: px-to-rem( 24 );
+
+		@include media-breakpoint-down( md ) {
+			text-align: center;
+		}
+	}
+
+	@include media-breakpoint-down( md ) {
+		background: $fresh-blue;
+
+		&.sticky-bottom {
+			&.stuck {
+				position: relative !important;
+			}
+		}
+	}
+}

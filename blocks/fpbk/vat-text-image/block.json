@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/vat-text-image",
+  "title": "VAT Text Image",
+  "category": "freshblocks",
+  "description": "This block contains title, description and image.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

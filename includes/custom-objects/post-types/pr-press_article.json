@@ -1,0 +1,17 @@
+{
+  "post_type": "press_article",
+  "post_type_plural": "press_articles",
+  "label": "Press Article",
+  "label_plural": "Press Articles",
+  "args": {
+    "description": "Press articles, including press releases and data/research",
+    "has_archive": false,
+    "menu_icon": "dashicons-megaphone",
+    "rewrite": {
+      "slug": "press/%press_category%"
+    },
+    "taxonomies": [
+      "press_category"
+    ]
+  }
+}

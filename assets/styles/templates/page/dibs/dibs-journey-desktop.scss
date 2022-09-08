@@ -1,0 +1,129 @@
+@import '../../../freshpress-includes';
+
+.journey_desktop {
+	height: 874px;
+	padding-bottom: 100px;
+	overflow: visible;
+	color: $white;
+	background-color: $tile-blue;
+
+	@include media-breakpoint-up( xxl ) {
+		border-top-right-radius: 236px;
+	}
+
+	&__text-container {
+		top: 150px;
+		right: 50px;
+		width: 343px;
+		color: $white;
+
+		@include media-breakpoint-up( xxl ) {
+			top: 200px;
+			right: 240px;
+			width: 443px;
+		}
+	}
+
+	&__timeline-container {
+		bottom: 0;
+		width: 936px;
+	}
+
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+
+	&__timeline-year {
+		position: absolute;
+		font-weight: 500;
+		font-size: px-to-rem( 18 );
+	}
+
+	&__timeline-dot {
+		cursor: pointer;
+	}
+
+	&__tooltip {
+		position: relative;
+		z-index: 9999;
+		display: none;
+		width: 270px;
+		padding: 10px 25px 25px;
+		color: $white;
+		background-color: #002057;
+		border-radius: 10px 10px 10px 0;
+		filter: drop-shadow( 8px 8px 11px rgba( 0, 27, 64, 0.25 ) );
+
+		&::after {
+			position: absolute;
+			bottom: -26px;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-color: #002057 transparent transparent transparent;
+			border-style: solid;
+			border-width: 36px 36px 0 0;
+			filter: drop-shadow( 8px 8px 11px rgba( 0, 27, 64, 0.25 ) );
+			content: '';
+		}
+	}
+
+	&__tooltip_active {
+		display: block;
+	}
+
+	&__tooltip-year {
+		position: relative;
+		font-weight: 500;
+		font-size: px-to-rem( 30 );
+	}
+
+	&__today-container {
+		right: -267px;
+		bottom: 65px;
+		width: 360px;
+	}
+
+	&__today {
+		width: 150px;
+		padding: 10px 25px 15px;
+		color: $white;
+		background-color: #002057;
+		border-radius: 10px 10px 10px 0;
+
+		&::after {
+			position: absolute;
+			bottom: -26px;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-color: #002057 transparent transparent transparent;
+			border-style: solid;
+			border-width: 36px 36px 0 0;
+			content: '';
+		}
+	}
+
+	&__today-title {
+		font-weight: 500;
+		font-size: px-to-rem( 30 );
+
+		&::after {
+			position: relative;
+			display: block;
+			width: 16px;
+			height: 16px;
+			margin: 10px auto;
+			background-color: $border-yellow;
+			border-radius: 50px;
+			content: '';
+		}
+	}
+
+	&__today-text {
+		margin-bottom: 0;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 19 );
+	}
+}

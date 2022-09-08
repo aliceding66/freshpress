@@ -1,0 +1,637 @@
+{
+    "key": "group_5f620efc6d708",
+    "title": "Block - Modal",
+    "fields": [
+        {
+            "key": "field_5f856a4cb0c72",
+            "label": "Content",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_62133d7e2c4b8",
+            "label": "Modal Stages",
+            "name": "modal_stages",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "wpml_cf_preferences": 0,
+            "sub_fields": [
+                {
+                    "key": "field_62133da02c4b9",
+                    "label": "Heading",
+                    "name": "heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_621343432c4ba",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_621350af63578",
+                    "label": "List",
+                    "name": "list_text",
+                    "type": "textarea",
+                    "instructions": "Use semicolon to separate items. \r\ne.g. 'List item1; List item2'",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_621345cc2c4bd",
+                    "label": "Include Form?",
+                    "name": "include_form",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_621345db2c4be",
+                    "label": "Form",
+                    "name": "pardot_form",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_621345cc2c4bd",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "clone": [
+                        "group_5f74e9373e96c"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_621346792c4bf",
+                    "label": "Next Stage Button Text",
+                    "name": "next_stage_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_621346912c4c0",
+                    "label": "Close Modal Button text",
+                    "name": "close_modal_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6213469c2c4c1",
+                    "label": "Close Modal Text",
+                    "name": "close_modal_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5f620f0955898",
+            "label": "Title",
+            "name": "modal_title",
+            "type": "text",
+            "instructions": "The modal's title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f856bd1b0c74",
+            "label": "Content Heading",
+            "name": "modal_content_heading",
+            "type": "text",
+            "instructions": "The modal's title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f620f2955899",
+            "label": "Description",
+            "name": "modal_description",
+            "type": "textarea",
+            "instructions": "The modal's description.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f856befb0c75",
+            "label": "CTA",
+            "name": "modal_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f929157ef947",
+            "label": "Include Form?",
+            "name": "modal_form_include",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f929194ef948",
+            "label": "Form",
+            "name": "modal_form",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f929157ef947",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "clone": [
+                "group_5f74e9373e96c"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_60741bb615813",
+            "label": "Bottom Text",
+            "name": "modal_bottom_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f856c09b0c76",
+            "label": "Close Link Text",
+            "name": "modal_close_link_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f85697ab0c71",
+            "label": "Visibility & Behaviour",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_6218a6cafe5a7",
+            "label": "Show Modal only when Cookies are Accepted",
+            "name": "modal_show_when_cookies_accepted",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_602ffbec61a0c",
+            "label": "Pardot modal?",
+            "name": "modal_pardot",
+            "type": "true_false",
+            "instructions": "Choose 'yes' if this modal refers to a pardot form submission confirmation.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_620e34510082d",
+            "label": "Use Pardot Thank You?",
+            "name": "modal_pardot_thank_you",
+            "type": "true_false",
+            "instructions": "Choose 'yes' if you want to use Pardot's Thank You message.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_602ffbec61a0c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f856d02d941f",
+            "label": "Modal Visibility",
+            "name": "modal_visibility",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "everyone": "Show to Everyone",
+                "not_nfb_customers": "Hide from NFB Customers",
+                "nfb_customers": "Show ONLY to NFB Customers",
+                "location": "Based on Location"
+            },
+            "default_value": "everyone",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f86d307a4538",
+            "label": "Open on page load",
+            "name": "modal_open_on_page_load",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f86d326a4539",
+            "label": "Delay",
+            "name": "modal_delay",
+            "type": "number",
+            "instructions": "In seconds.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f86d307a4538",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "0.1",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_6215fe3d13758",
+            "label": "Open only once",
+            "name": "modal_open_once",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60741c1815814",
+            "label": "User's action",
+            "name": "modal_user_action",
+            "type": "select",
+            "instructions": "Trigger modal when user has performed selected action.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f86d307a4538",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "page_leave": "User wants to leave the page"
+            },
+            "default_value": "none",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f856c38b0c77",
+            "label": "Close Button Colour",
+            "name": "modal_close_button_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/modal"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645782837
+}

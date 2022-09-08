@@ -1,0 +1,52 @@
+.categories {
+  color: #fff;
+  background-color: #002d79;
+  border-top-right-radius: 88px;
+}
+@media (min-width: 1024px) {
+  .categories {
+    border-top-left-radius: 236px;
+    border-top-right-radius: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .categories__title, .categories__text {
+    max-width: 650px;
+  }
+}
+.categories__stats-container {
+  max-width: 414px;
+}
+@media (min-width: 1024px) {
+  .categories__stats-container {
+    max-width: none;
+    max-width: 700px;
+  }
+}
+.categories__stat {
+  width: 141px;
+}
+.categories__stat-value {
+  width: 100%;
+  height: 141px;
+  font-weight: 500;
+  font-size: 2.9375rem;
+  background-size: cover;
+}
+.categories__stat-value_1 {
+  background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-stat-1.svg);
+}
+.categories__stat-value_2 {
+  background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-stat-2.svg);
+}
+.categories__stat-value_3 {
+  background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-stat-3.svg);
+}
+.categories__stat-value_4 {
+  background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/dibs-stat-4.svg);
+}
+.categories__stat-description {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-categories.css.map*/

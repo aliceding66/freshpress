@@ -1,0 +1,60 @@
+{
+  "post_type": "podcast",
+  "post_type_plural": "podcasts",
+  "label": "Podcast Episode",
+  "label_plural": "Podcast Episodes",
+  "args": {
+    "description": "Podcast episodes",
+    "labels": {
+      "all_items": "All Episodes",
+      "menu_name": "Podcast"
+    },
+    "has_archive": false,
+    "menu_icon": "dashicons-megaphone",
+    "supports": [
+      "editor",
+      "page-attributes",
+      "revisions",
+      "title",
+      "excerpt",
+      "thumbnail"
+    ],
+    "template": [
+      [
+        "fpbk/iframe",
+        {
+          "className": "mt-0 mb-4 mb-lg-5",
+          "iframe_url": "https://player.simplecast.com"
+        }
+      ],
+      [
+        "core/heading",
+        {
+          "content": "Episode Summary",
+          "className": "text-primary",
+          "level": 3
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis."
+        }
+      ],
+      [
+        "core/heading",
+        {
+          "content": "Episode Notes",
+          "className": "text-primary",
+          "level": 3
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis."
+        }
+      ]
+    ]
+  }
+}

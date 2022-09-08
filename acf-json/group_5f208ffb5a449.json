@@ -1,0 +1,180 @@
+{
+    "key": "group_5f208ffb5a449",
+    "title": "Block - Testimonial Columns",
+    "fields": [
+        {
+            "key": "field_5f2090b297a37",
+            "label": "Include Header?",
+            "name": "include_header",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f2090be97a38",
+            "label": "Header",
+            "name": "header",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f2090b297a37",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f20900997a33",
+            "label": "Columns",
+            "name": "columns",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 3,
+            "layout": "block",
+            "button_label": "",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f20902097a34",
+                    "label": "Author Photo",
+                    "name": "author_photo",
+                    "type": "image",
+                    "instructions": "Photo of quote author.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f20905d97a35",
+                    "label": "Author Name",
+                    "name": "author_name",
+                    "type": "text",
+                    "instructions": "First and last name of the quote author.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f20906c97a36",
+                    "label": "Author Title",
+                    "name": "author_title",
+                    "type": "text",
+                    "instructions": "Title, position, and associated company or oranisation of the quote author.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f2098ad08636",
+                    "label": "Testimonial Quote",
+                    "name": "testimonial_quote",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/testimonial-columns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643309949
+}

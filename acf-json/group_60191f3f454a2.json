@@ -1,0 +1,140 @@
+{
+    "key": "group_60191f3f454a2",
+    "title": "Block - Partner Feature",
+    "fields": [
+        {
+            "key": "field_60191f47ea532",
+            "label": "Text",
+            "name": "partner_feature_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60191f8dea533",
+            "label": "Image",
+            "name": "partner_feature_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60191fc9ea534",
+            "label": "Design Settings",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60191fefea535",
+            "label": "Font Size",
+            "name": "partner_feature_font_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "big": "Big"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6019202aea536",
+            "label": "Block Position",
+            "name": "partner_feature_block_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "lifted": "Lifted",
+                "natural": "Natural"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/partner-feature"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308070
+}

@@ -1,0 +1,53 @@
+{
+    "key": "group_62e276d83346c",
+    "title": "CPT - Glossary Guide",
+    "fields": [
+        {
+            "key": "field_62e276e13e65c",
+            "label": "Glossary Terms",
+            "name": "glossary_terms",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "glossary"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object",
+            "wpml_cf_preferences": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "glossary_guide"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1659009359
+}

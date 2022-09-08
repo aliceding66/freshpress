@@ -1,0 +1,34 @@
+<div class="row my-3 {{ content_position }} {{ cta_button_wrapper_classname }} flex-wrap">
+    <div {{{ cta_button_inline_style }}} class="hero__cta-content col col-12 d-none {{ cta_button_visibility_classname }} flex-wrap justify-content-center">
+        {{# cta_button_link.html }}
+            {{{ cta_button_link.html }}}
+        {{/ cta_button_link.html }}
+        <div class="hero__sub-text hero__sub-text text-center mt-2 {{ cta_button_subtext_classname }}" {{{ cta_button_mice_inline_styles }}}>
+            {{{ cta_button_mice_type }}}
+        </div>
+        {{# cta_button_offer_details_text }}
+            <div class="hero__offer-details position-absolute text-center text-md-left">
+                <h4 class="mb-2">
+                    {{ cta_button_offer_terms_text }}
+                </h4>
+                {{{ cta_button_offer_details_text }}}
+            </div>
+        {{/ cta_button_offer_details_text }}
+    </div>
+    {{# hero_include_second_cta }}
+        <div {{{ second_cta_inline_style }}} class="hero__cta-content col col-12 mt-2 mt-lg-0 d-none {{ second_cta_visibility_classname }} flex-wrap justify-content-center">
+        <a data-scroll-target="{{ hero_second_cta_anchor }}" class="btn btn-outline-light btn-block btn-lg text-nowrap px-2">
+            {{ hero_second_cta_text }}
+        </a>
+        <div class="hero__sub-text hero__sub-text text-center mt-2 {{ second_cta_subtext_classname }}" {{{ second_cta_mice_inline_styles }}}>
+        {{{ hero_second_cta_mice_type }}}
+        </div>
+        {{# hero_second_cta_offer_details_text }}
+        <div class="hero__offer-details position-absolute text-center text-md-left">
+            <h4 class="mb-2">{{ cta_button_offer_terms_text }}</h4>
+            {{{ hero_second_cta_offer_details_text }}}
+        </div>
+        {{/ hero_second_cta_offer_details_text }}
+        </div>
+    {{/ hero_include_second_cta }}
+</div>

@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/countdown-timer",
+  "title": "Countdown Timer",
+  "category": "freshblocks",
+  "description": "Countdown Timer.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

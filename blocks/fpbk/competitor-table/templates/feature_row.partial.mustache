@@ -1,0 +1,21 @@
+<tr class="competitor-table__feature-row">
+	<td class="position-relative">
+		{{ admin_controls }}
+		<div class="cell-wrapper feature">
+			{{{ name }}}
+		</div>
+	</td>
+	{{# competitors }}
+		<td>
+			<div class="cell-wrapper text-center">
+				{{# checkmark }}
+					{{{ icons.checkmark }}}
+				{{/ checkmark }}
+				{{# crossmark }}
+					{{{ icons.crossmark }}}
+				{{/ crossmark }}
+				<span>{{{ text }}}</span>
+			</div>
+		</td>
+	{{/ competitors }}
+</tr>

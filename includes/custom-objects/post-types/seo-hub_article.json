@@ -1,0 +1,28 @@
+{
+  "post_type": "hub_article",
+  "post_type_plural": "hub_articles",
+  "label": "Hub Article",
+  "label_plural": "Hub Articles",
+  "args": {
+    "description": "Grouped informational articles",
+    "has_archive": false,
+    "labels": {
+      "all_items": "All Articles"
+    },
+    "menu_icon": "dashicons-networking",
+    "rewrite": {
+      "slug": "hub/%hub_category%"
+    },
+    "supports": [
+      "editor",
+      "page-attributes",
+      "revisions",
+      "thumbnail",
+      "title",
+      "author"
+    ],
+    "taxonomies": [
+      "hub_category"
+    ]
+  }
+}

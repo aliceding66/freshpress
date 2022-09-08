@@ -1,0 +1,87 @@
+@import '../../../../assets/styles/freshpress-tools';
+
+.markup-calculator {
+	&--form {
+		display: flex;
+		margin: 0;
+		color: $fbtools-text-colour;
+		font-size: 24px;
+		text-align: center;
+
+		&-container {
+			position: relative;
+			width: 475px;
+			padding: 52px 5% 59px;
+		}
+	}
+
+	&--subtitle {
+		margin: 0;
+		padding: 0 0 20px;
+		color: rgba( 6, 41, 65, 0.7 );
+		font-weight: 400;
+		font-size: 14px;
+		font-family: inherit;
+		line-height: 18px;
+		text-align: left;
+	}
+
+	&--icon-point {
+		&-wrapper {
+			position: absolute;
+			top: 33px;
+			right: 4px;
+			z-index: 1;
+			display: flex;
+			height: 32px;
+			margin: 0;
+			padding: 7px;
+			color: #86c332;
+
+			&,
+			&:focus,
+			&:hover {
+				background: transparent;
+				border-style: none;
+				outline: none;
+			}
+		}
+
+		&-mask {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 100;
+			background-color: initial;
+		}
+	}
+
+	&--tooltip {
+		position: absolute;
+		top: -45px;
+		right: -18px;
+		padding: 10px 15px;
+		color: #fff;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		background-color: $fbtools-text-colour;
+		border-radius: 5px;
+		filter: drop-shadow( 3px 3px 0 hsla( 205, 83%, 14%, 0.15 ) );
+
+		&::after {
+			position: absolute;
+			right: 24px;
+			bottom: -10px;
+			width: 21px;
+			height: 21px;
+			background-color: $fbtools-text-colour;
+			border-top-left-radius: 50%;
+			transform: rotate( 45deg );
+			transform-origin: center center;
+			content: '';
+		}
+	}
+}

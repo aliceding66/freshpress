@@ -1,0 +1,152 @@
+// Two Columns CTA.
+
+@import '~styles/freshpress-includes';
+
+$white: #fff;
+$button-blue: #0064bc;
+.two-columns-cta {
+	position: relative;
+	margin: 0 -15px;
+	padding: 52px 0;
+	color: $white;
+	background-color: $midnight-blue;
+
+	@include media-breakpoint-up( md ) {
+		padding: 86px 0 87px;
+	}
+
+	@include media-breakpoint-up( lg ) {
+		padding: 100px 0 94px;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 3;
+		width: 1209px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 22px;
+		@include media-breakpoint-up( md ) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	&__content {
+		&_left,
+		&_right {
+			text-align: center;
+			@include media-breakpoint-up( md ) {
+				text-align: left;
+			}
+		}
+		&_left {
+			@include media-breakpoint-up( md ) {
+				width: 361px;
+			}
+			@include media-breakpoint-up( lg ) {
+				width: 643px;
+			}
+		}
+		&_right {
+			@include media-breakpoint-up( md ) {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				width: 380px;
+			}
+			@include media-breakpoint-up( lg ) {
+				width: 438px;
+			}
+		}
+	}
+	&__hightlighed {
+		@include media-breakpoint-up( lg ) {
+			display: flex;
+			width: 100%;
+		}
+
+		h2,
+		p {
+			color: $white;
+			font-weight: 400;
+			@include media-breakpoint-up( md ) {
+				display: inline;
+			}
+			@include media-breakpoint-up( lg ) {
+				display: block;
+				margin-bottom: 0;
+			}
+		}
+		h2 {
+			font-size: px-to-rem( 36 );
+			line-height: px-to-rem( 26 );
+			@include media-breakpoint-up( lg ) {
+				width: 248px;
+				font-size: px-to-rem( 54 );
+				line-height: px-to-rem( 51 );
+			}
+		}
+		p {
+			margin-bottom: 56px;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 26 );
+			@include media-breakpoint-up( lg ) {
+				width: 367px;
+				margin-right: 10px;
+				margin-bottom: 0;
+				margin-left: 10px;
+			}
+			@include media-breakpoint-up( xl ) {
+				width: 367px;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 30px;
+			}
+		}
+	}
+	&__cta-description {
+		margin-top: 8px;
+		color: $new-light-blue;
+		font-size: px-to-rem( 13 );
+		line-height: px-to-rem( 14 );
+		letter-spacing: 0.05em;
+		@include media-breakpoint-up( md ) {
+			width: 141px;
+			margin-top: 0;
+			margin-left: 20px;
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.btn {
+		max-width: 219px;
+		padding: 11px;
+		font-weight: 500;
+		font-size: px-to-rem( 20 );
+		line-height: px-to-rem( 23.8 );
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 280px;
+			padding: 13px 28px;
+			font-size: px-to-rem( 24 );
+			line-height: px-to-rem( 26 );
+		}
+		&-cta-blue {
+			@include button-variant(
+				$fresh-new,
+				$fresh-new,
+				$button-blue,
+				$button-blue,
+				$button-blue,
+				$button-blue
+			);
+			color: $white;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}

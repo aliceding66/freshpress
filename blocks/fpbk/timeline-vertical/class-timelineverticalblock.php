@@ -1,0 +1,70 @@
+<?php
+/**
+ * TimelineVertical class.
+ *
+ * @package FreshpressBlocks\TimelineVertical
+ * @subpackage TimelineVertical
+ */
+
+namespace FreshpressBlocks;
+
+/**
+ * Class TimelineVertical
+
+ * @package FreshpressBlocks
+ */
+class TimelineVerticalBlock extends ABlock {
+	/**
+	 * TimelineVerticalBlock constructor.
+	 *
+	 * @param string $dir __DIR__ value.
+	 */
+	public function __construct( $dir ) {
+		parent::__construct( $dir );
+
+		$this->enqueue_editor_script();
+		$this->enqueue_style();
+	}
+	/**
+	 * Return evaluated Mustache template
+	 *
+	 * @param string $local_path Local path to template.
+	 * @param array  $template_data Data to be passed to Mustache template.
+	 *
+	 * @return string
+	 */
+	public function load_template( $local_path, $template_data ) {
+		$this->set_template_partials(
+			[
+				'stage' => 'templates/stage.partial.mustache',
+			]
+		);
+
+		return parent::load_template( $local_path, $template_data );
+	}
+
+	/**
+	 * Function passed to "render_callback".
+	 *
+	 * @param array  $attributes Block's attributes.
+	 * @param string $inner_blocks_content <InnerBlocks.Content /> passed from index.js.
+	 *
+	 * @return string
+	 */
+	public function render( $attributes, $inner_blocks_content ) {
+		$wrapper_properties = $this->get_wrapper_properties(
+			$attributes,
+			[
+				'class' => 'position-relative my-0 pr-5 pr-lg-2 pr-xl-0 pl-0 pl-md-4 h-100 d-flex flex-column justify-content-between',
+			]
+		);
+
+		$block_template = $this->load_template( 'templates/block.mustache', $this->get_template_data( $attributes ) );
+
+		return <<< HTML
+<div {$wrapper_properties}>
+	{$block_template}
+</div>
+HTML;
+	}
+}

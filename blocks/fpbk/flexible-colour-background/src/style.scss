@@ -1,0 +1,25 @@
+@import '~styles/freshpress-includes';
+
+.flexible-colour-background {
+	&__background-wrapper {
+		top: 0;
+		left: 0;
+		z-index: $zindex-background;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__background-image {
+		top: 0;
+		left: 0;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		pointer-events: none;
+	}
+
+	.reversed-corner {
+		z-index: $zindex-background;
+	}
+}

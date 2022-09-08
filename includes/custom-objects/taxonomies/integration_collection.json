@@ -1,0 +1,15 @@
+{
+  "taxonomy": "integration_collection",
+  "taxonomy_plural": "integration_collections",
+  "label": "Integration Collection",
+  "label_plural": "Integration Collections",
+  "post_types": [
+    "integration"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "integrations/collection",
+      "with_front": false
+    }
+  }
+}

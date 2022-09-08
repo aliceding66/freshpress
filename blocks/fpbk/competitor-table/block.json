@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/competitor-table",
+  "title": "Competitor Table",
+  "category": "freshblocks",
+  "description": "A table to compare Freshbooks against a competitor.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

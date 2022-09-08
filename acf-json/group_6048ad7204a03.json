@@ -1,0 +1,197 @@
+{
+    "key": "group_6048ad7204a03",
+    "title": "Block - New CTA Bar",
+    "fields": [
+        {
+            "key": "field_6048bf7656472",
+            "label": "Background color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6048b12e8927b",
+            "label": "CTA",
+            "name": "cta",
+            "type": "group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_6048b13f8927c",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_6048b1868927d",
+                    "label": "After CTA",
+                    "name": "after",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6048b1a68927e",
+            "label": "Images",
+            "name": "images",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_6048be228927f",
+                    "label": "Left",
+                    "name": "left",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_6048be8089280",
+                    "label": "Top right",
+                    "name": "top_right",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_6048be8d89281",
+                    "label": "Bottom right",
+                    "name": "bottom_right",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-new-cta-bar"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/new-cta-bar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308057
+}

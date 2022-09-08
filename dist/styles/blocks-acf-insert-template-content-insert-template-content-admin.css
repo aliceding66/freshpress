@@ -1,0 +1,9 @@
+.editor-styles-wrapper [data-type="acf/insert-template-content"] .acf-block-preview::before {
+  display: block;
+  font-style: italic;
+  text-align: center;
+  border: 2px #000 dashed;
+  content: "Block will be replaced with dynamic content";
+}
+
+/*# sourceMappingURL=blocks-acf-insert-template-content-insert-template-content-admin.css.map*/

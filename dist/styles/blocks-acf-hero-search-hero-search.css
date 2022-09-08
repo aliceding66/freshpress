@@ -1,0 +1,59 @@
+.hero-search {
+  padding: 55px 30px;
+  background-color: #eff8fe;
+  background-image: none;
+}
+@media (min-width: 768px) {
+  .hero-search {
+    padding: 110px 90px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+.hero-search__content {
+  max-width: 346px;
+}
+.hero-search__header {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.21429;
+}
+@media (min-width: 768px) {
+  .hero-search__header {
+    font-size: 2.375rem;
+    line-height: 1.21053;
+  }
+}
+.hero-search__input-container::before {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 18px;
+  height: 100%;
+  margin: 0 1rem;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  content: "";
+}
+.hero-search .st-default-search-input {
+  width: calc(100% - 40px);
+  height: auto;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+  font-size: 1.0625rem;
+  line-height: 0.94118;
+  background-image: none;
+  border-width: 2px;
+  border-radius: 30px;
+}
+.hero-search .st-default-search-input:focus {
+  border-color: #8495a2;
+  box-shadow: none;
+}
+
+div.st-ui-autocomplete div.st-query-present {
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=blocks-acf-hero-search-hero-search.css.map*/

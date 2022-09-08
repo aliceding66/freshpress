@@ -1,0 +1,242 @@
+@import '../../freshpress-includes';
+
+.integrations {
+	&__hero {
+		margin-right: -15px;
+		margin-left: -15px;
+		padding: 20px 40px 62px;
+		background-color: $light-blue;
+
+		@include media-breakpoint-up( md ) {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+
+	&__breadcrumb {
+		margin-bottom: 50px;
+
+		img {
+			width: 8px;
+			height: 15px;
+			margin: 0 5px 3px;
+		}
+	}
+
+	&__back-link {
+		color: $dark-grey;
+		font-size: px-to-rem( 14 );
+		background-image: url( ./../../../images/icons/arrow-left.svg );
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 12px 12px;
+	}
+
+	&__category-link {
+		color: $dark-grey;
+	}
+
+	&__info {
+		padding: 0;
+
+		@include media-breakpoint-up( md ) {
+			padding: 0 37px;
+		}
+	}
+
+	&__logo-wrapper {
+		position: relative;
+		max-width: 244px;
+		padding: 20px;
+		background-color: $white;
+		border: 1px solid $outline-grey;
+		border-radius: 8px;
+
+		@include media-breakpoint-up( md ) {
+			max-width: 168px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 215px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			max-width: 244px;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__freshbooks-tested {
+		color: $fresh-blue-light;
+		font-weight: $font-weight-demi;
+		font-size: px-to-rem( 14 );
+		background-image: url( ./../../../images/single/integrations/checkmark-blue.svg );
+		background-repeat: no-repeat;
+		background-position: center left;
+	}
+
+	&__top-pick {
+		right: -27px;
+		bottom: -18px;
+		width: 49px;
+		height: 44px;
+		background-image: url( ./../../../images/taxonomy/integrations/top-pick.svg );
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: cover;
+	}
+
+	&__text-container {
+		max-width: 575px;
+
+		@include media-breakpoint-up( md ) {
+			align-items: flex-start;
+		}
+
+		.btn-cta-green {
+			padding: 8px 20px;
+
+			.integrations__cta-title {
+				margin: 0 15px;
+				padding-right: 25px;
+				background-image: url( ./../../../images/single/integrations/cta-icon.svg );
+				background-repeat: no-repeat;
+				background-position: center right;
+			}
+		}
+	}
+
+	&__title {
+		font-size: px-to-rem( 42 );
+
+		@include media-breakpoint-up( md ) {
+			line-height: 0.8;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 48 );
+		}
+	}
+
+	&__built-by {
+		font-size: px-to-rem( 14 );
+	}
+
+	&__developers-banner {
+		.flexible-colour-background {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+		.btn {
+			padding: 10px 24px;
+			color: $white;
+			background-color: transparent;
+
+			&:hover {
+				background-color: $fresh-blue-light;
+				border-color: $fresh-blue-light;
+			}
+		}
+
+		&-title {
+			color: $white;
+		}
+
+		&-subtitle {
+			min-height: 54px;
+			font-size: px-to-rem( 24 );
+
+			@include media-breakpoint-up( xl ) {
+				min-height: auto;
+			}
+		}
+
+		&-text {
+			@include media-breakpoint-up( md ) {
+				min-height: 150px;
+			}
+
+			@include media-breakpoint-up( lg ) {
+				min-height: 100px;
+			}
+		}
+	}
+
+	&__sidebar {
+		position: sticky;
+		top: 0;
+		align-self: flex-start;
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		.related-links__list-item {
+			a {
+				color: $midnight-blue;
+			}
+		}
+	}
+
+	&__sidebar-subtitle {
+		font-size: px-to-rem( 24 );
+		border-bottom: 1px solid $outline-grey;
+	}
+
+	&__sidebar-contact-info {
+		a {
+			padding-left: 25px;
+			background-repeat: no-repeat;
+			background-position: left 2px;
+		}
+
+		&_email {
+			a {
+				background-image: url( ./../../../images/icons/email.svg );
+				background-position: left 6px;
+			}
+		}
+
+		&_phone {
+			a {
+				background-image: url( ./../../../images/icons/phone.svg );
+			}
+		}
+
+		&_link {
+			a {
+				background-image: url( ./../../../images/icons/link.svg );
+			}
+		}
+	}
+
+	&__main-content {
+		li,
+		p,
+		span {
+			line-height: 1.55556;
+		}
+	}
+}
+
+.related-links {
+	margin-left: 0 !important; // need to override BS class.
+
+	&__list-item {
+		margin-bottom: 4px;
+		padding: 4px 10px;
+
+		&.current {
+			background-color: $light-blue;
+
+			a {
+				color: $fresh-blue-light;
+			}
+		}
+	}
+}

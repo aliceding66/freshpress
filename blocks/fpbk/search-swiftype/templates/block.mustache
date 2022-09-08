@@ -1,0 +1,28 @@
+<div class="w-100">
+	{{# admin_search_input }}
+		{{{ admin_search_input }}}
+	{{/ admin_search_input }}
+	{{^ admin_search_input }}
+		<input
+				class="search-swiftype__input st-default-search-input form-control mb-2"
+				aria-label="search"
+				type="text"
+				placeholder="{{ placeholder }}"
+				autocomplete="off"
+				autocorrect="off"
+				autocapitalize="off"
+		>
+	{{/ admin_search_input }}
+</div>
+
+<div class="st-search-container"></div>
+{{# admin_no_results }}
+	{{{ admin_no_results }}}
+{{/ admin_no_results }}
+{{^ admin_no_results }}
+	{{# no_result_content }}
+		<div class="search-swiftype__no-results d-none">
+			{{ no_result_content }}
+		</div>
+	{{/ no_result_content }}
+{{/ admin_no_results }}

@@ -1,0 +1,88 @@
+.alpha-nav {
+	&__wrapper {
+		width: 100%;
+		max-width: 1280px;
+	}
+
+	&__items-container {
+		width: calc( 100% - 36px );
+		overflow-x: auto;
+		white-space: nowrap;
+
+		@include media-breakpoint-up( md ) {
+			width: calc( 100% - 40px );
+			overflow: hidden;
+		}
+	}
+
+	&__home {
+		svg {
+			width: 24px;
+			height: 25px;
+
+			path {
+				&:not( :nth-child( 2 ) ) {
+					stroke: $fresh-blue;
+					stroke-width: 2px;
+				}
+
+				&:nth-child( 2 ) {
+					fill: $fresh-blue;
+					stroke-width: 1px;
+					stroke: $fresh-blue;
+				}
+			}
+		}
+
+		&:hover {
+			background-color: $fresh-blue;
+
+			svg {
+				path {
+					&:not( :nth-child( 2 ) ) {
+						stroke: $white;
+					}
+
+					&:nth-child( 2 ) {
+						fill: $white;
+						stroke: $white;
+					}
+				}
+			}
+		}
+	}
+
+	&__item {
+		margin-left: 4px;
+		padding-bottom: 2px;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 18px );
+		text-transform: uppercase;
+		text-decoration: none;
+
+		@include media-breakpoint-up( md ) {
+			margin-left: 6px;
+			font-size: px-to-rem( 20px );
+		}
+
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: $fresh-blue;
+		}
+	}
+
+	&__item,
+	&__home {
+		display: flex;
+		flex: 0 0 36px;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+
+		@include media-breakpoint-up( md ) {
+			flex: auto;
+		}
+	}
+}

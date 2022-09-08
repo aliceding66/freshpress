@@ -1,0 +1,121 @@
+.white-card__inner {
+  padding: 0 35px 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .white-card__inner {
+    width: 730px;
+    padding: 80px 46px 80px;
+    border: 1px solid #ced5da;
+    border-radius: 8px;
+    box-shadow: 4px 4px 13px 0 rgba(132, 149, 162, 0.1);
+  }
+}
+@media (min-width: 1024px) {
+  .white-card__inner {
+    width: 982px;
+    padding: 80px 63px 80px 95px;
+  }
+}
+@media (min-width: 1280px) {
+  .white-card__inner {
+    width: 1130px;
+  }
+}
+.white-card__text {
+  flex-basis: 65%;
+}
+@media (min-width: 768px) {
+  .white-card__text {
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .white-card__text {
+    padding-right: 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .white-card__text {
+    padding-right: 120px;
+  }
+}
+.white-card__title {
+  font-size: 1.75rem;
+  line-height: 1.14286;
+}
+@media (min-width: 768px) {
+  .white-card__title {
+    font-size: 2rem;
+    line-height: 1.1875;
+  }
+}
+@media (min-width: 1024px) {
+  .white-card__title {
+    font-size: 2.125rem;
+    line-height: 1.23529;
+  }
+}
+@media (min-width: 1280px) {
+  .white-card__title {
+    font-size: 2.5rem;
+    line-height: 1.15;
+  }
+}
+@media (min-width: 1280px) {
+  .white-card__description {
+    line-height: 1.5;
+  }
+}
+.white-card__description p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .white-card__image-container {
+    flex-basis: 35%;
+  }
+}
+.white-card__image {
+  max-width: 243px;
+}
+@media (min-width: 768px) {
+  .white-card__image {
+    max-width: 280px;
+  }
+}
+@media (min-width: 1024px) {
+  .white-card__image {
+    max-width: 328px;
+  }
+}
+.white-card__support-contact-info {
+  color: #0075dd;
+}
+.white-card__secondary-content {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #eff8fe;
+}
+@media (min-width: 768px) {
+  .white-card__secondary-content {
+    min-height: 371px;
+    margin-bottom: -230px;
+    padding-bottom: 245px;
+  }
+}
+@media (min-width: 1024px) {
+  .white-card__secondary-content {
+    padding-top: 85px;
+    padding-bottom: 235px;
+  }
+}
+.white-card.white-card-with-secondary-content .white-card__inner {
+  padding: 80px 35px 0;
+}
+@media (min-width: 768px) {
+  .white-card.white-card-with-secondary-content .white-card__inner {
+    padding: 80px 46px 80px;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-white-card-index.css.map*/

@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/feature-grid",
+  "title": "Feature Grid",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/confirmation-box",
+  "title": "Confirmation Box",
+  "category": "freshblocks",
+  "description": "A box with a confirmation message, to be used after successful interactions.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

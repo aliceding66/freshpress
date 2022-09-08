@@ -1,0 +1,34 @@
+<div class="icons-list__topic d-flex {{ columns_class }} justify-content-md-start flex-md-row mb-{{ block_settings_topic_bottom_margin }}">
+	{{# block_settings_numbered_topics }}
+		<span class="icons-list__topic-number {{ topic_icon_class }} mx-md-0 mb-2 mr-md-4 position-absolute position-md-relative d-flex align-items-center justify-content-center text-white p-2">
+			<p class="mx-auto mb-1 m-md-0">{{ index }}</p>
+		</span>
+	{{/ block_settings_numbered_topics }}
+
+	{{# show_icons }}
+		{{# icons_list_topic_icon }}
+			{{{ icons_list_topic_icon }}}
+		{{/ icons_list_topic_icon }}
+	{{/ show_icons }}
+
+	<div class="icons-list__topic-info d-flex flex-wrap w-100">
+		{{# icons_list_topic_title }}
+			<h3 class="icons-list__topic-title mb-2 {{ numbered_topic_info_class }} {{ mobile_align_class }} text-md-left w-100 {{ title_vertical_align_class }}">
+				{{ icons_list_topic_title }}
+			</h3>
+		{{/ icons_list_topic_title }}
+		<!-- /.icons-list__topic-title -->
+
+		{{# icons_list_topic_text }}
+			<div class="icons-list__topic-text {{ mobile_align_class }} ml-md-0 text-md-left {{ numbered_topic_info_class }}">
+                {{{ icons_list_topic_text }}}
+			</div>
+		{{/ icons_list_topic_text }}
+	</div>
+	<!-- /.icons-list__topic-info -->
+
+	{{{ admin_controls }}}
+
+</div>
+<!-- /.icons-list__topic -->
+

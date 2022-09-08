@@ -1,0 +1,107 @@
+{
+    "key": "group_6092e646111af",
+    "title": "Block - Webinars List",
+    "fields": [
+        {
+            "key": "field_6092e660df967",
+            "label": "User ID",
+            "name": "user_id",
+            "type": "text",
+            "instructions": "Email used as User ID for Webinar API.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6092e670df968",
+            "label": "API Key",
+            "name": "api_key",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6092e678df969",
+            "label": "API Secret",
+            "name": "api_secret",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6092e683df96a",
+            "label": "Visible Count",
+            "name": "visible_count",
+            "type": "number",
+            "instructions": "Numerical limit of how many webinars can be visible at once.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": 6,
+            "placeholder": "",
+            "prepend": "Show up to",
+            "append": "webinars",
+            "min": "",
+            "max": 1,
+            "step": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/webinars-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310186
+}

@@ -1,0 +1,19 @@
+/* stylelint-disable selector-type-no-unknown */
+lite-youtube {
+	background-position: center;
+	background-size: cover;
+
+	&.lyt-activated {
+		background: none !important;
+	}
+
+	.lty-playbtn {
+		display: none;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+}

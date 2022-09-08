@@ -1,0 +1,100 @@
+{
+    "key": "group_5f46b80b54b23",
+    "title": "DMA - Informational Banner",
+    "fields": [
+        {
+            "key": "field_5f46b811ad316",
+            "label": "Content Desktop",
+            "name": "content_desktop",
+            "type": "wysiwyg",
+            "instructions": "Content intended to show up on larger sized screens, such as desktops.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5f46bc755be7d",
+            "label": "Mobile",
+            "name": "mobile",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5f46b849ad317",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "Content intended to show up on only mobile devices.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f46bc8b5be7e",
+                    "label": "Click Overlay URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "If a URL is provided in this field, the entire banner will become clickable\/tappable on mobile devices, and will link to the specified URL.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/banner-informational"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310474
+}

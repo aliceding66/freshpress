@@ -1,0 +1,46 @@
+// Subnav.
+@import '~styles/freshpress-includes';
+
+.subnav {
+	.subnav__desktop {
+		background: $mobile-sub-menu;
+
+		.subnav_menu {
+			.menu-item {
+				span {
+					font-size: px-to-rem( 20 );
+				}
+			}
+
+			.current-menu-item {
+				background: $white !important;
+
+				a {
+					:hover {
+						text-decoration: none;
+					}
+
+					span {
+						color: $midnight-blue;
+						border-bottom: 6px solid $cta-green;
+					}
+				}
+			}
+		}
+	}
+
+	.subnav__mobile {
+		.custom-select,
+		select.form-control {
+			width: 100%;
+			max-width: 340px;
+			font-size: px-to-rem( 18 );
+			background-image: url( ./../../../../assets/images/icons/chevron-down.svg );
+			background-repeat: no-repeat;
+			background-position: calc( 100% - 0.9rem ) 50%;
+			background-size: 17px 17px;
+			border: 2px solid rgba( $midnight-blue, 0.2 );
+			border-radius: 5px;
+		}
+	}
+}

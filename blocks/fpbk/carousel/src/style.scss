@@ -1,0 +1,67 @@
+// Carousel.
+
+@import '~styles/freshpress-includes';
+@import '~swiper/swiper';
+@import '~swiper/components/navigation/navigation';
+@import '~swiper/components/pagination/pagination';
+
+.carousel {
+	&__swiper-container {
+		overflow: visible;
+	}
+
+	&__swiper-wrapper {
+		overflow: visible;
+	}
+
+	&__swiper-button {
+		top: 50%;
+		width: 45px;
+		height: 75px;
+		background-color: $fresh-blue;
+		transform: translateY( -50% );
+
+		&--prev {
+			left: 0;
+			border-radius: 0 8px 8px 0;
+		}
+
+		&--next {
+			right: 0;
+			border-radius: 8px 0 0 8px;
+
+			&::after {
+				transform: rotate( 180deg );
+			}
+		}
+
+		&::after {
+			width: 16px;
+			height: 20px;
+			background: url( ./../../../../assets/images/icons/arrow-left-light.svg ) no-repeat
+				center;
+			background-size: contain;
+			opacity: 0.5;
+			content: '';
+		}
+	}
+
+	&__swiper-pagination {
+		margin-top: 25px;
+
+		.swiper-pagination-bullet {
+			width: 9px;
+			height: 9px;
+			margin: 0 5px;
+
+			&-active {
+				background-color: $fresh-blue;
+			}
+		}
+	}
+
+	.swiper-slide {
+		max-width: 100%;
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,177 @@
+{
+    "key": "group_5f184135209bb",
+    "title": "Block - Testimonial Quote",
+    "fields": [
+        {
+            "key": "field_5f18414662609",
+            "label": "Quote",
+            "name": "testimonial_quote_quote",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f882de98296e",
+            "label": "Font Size",
+            "name": "testimonial_quote_font_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sm": "Small",
+                "md": "Medium",
+                "lg": "Large"
+            },
+            "default_value": "lg",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f18417c6260a",
+            "label": "Author Name",
+            "name": "testimonial_quote_author_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f18419a6260b",
+            "label": "Author Description",
+            "name": "testimonial_quote_author_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_62bd57512a971",
+            "label": "Author Location",
+            "name": "testimonial_quote_author_location",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f1841a56260c",
+            "label": "Image",
+            "name": "testimonial_quote_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f184227d8921",
+            "label": "Display Rating Widget",
+            "name": "testimonial_quote_display_rating",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/testimonial-quote"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1656575843
+}

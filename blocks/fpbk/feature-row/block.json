@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/feature-row",
+  "title": "Feature Row",
+  "category": "freshblocks",
+  "description": "Two column feature row block, with an image and content column in any order.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

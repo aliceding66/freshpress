@@ -1,0 +1,13 @@
+{{# show_mobile_banner }}
+	<div class="sign-up__promo-banner_mobile w-100 position-absolute justify-content-center align-content-center mx-auto d-flex d-md-none">
+		<h3 class="sign-up__promo-banner_mobile-header text-left align-self-center mb-0 mr-2">
+			{{{ mobile_content }}}
+		</h3>
+		{{# cta_title }}
+			<a class="sign-up__promo-banner_mobile-cta btn btn-cta-green ml-2" href="{{ cta_url }}"
+			   target="{{ cta_target }}">
+				{{ cta_title }}
+			</a>
+		{{/ cta_title }}
+	</div>
+{{/ show_mobile_banner }}

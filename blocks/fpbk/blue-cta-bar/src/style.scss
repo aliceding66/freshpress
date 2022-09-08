@@ -1,0 +1,56 @@
+// Blue CTA Bar.
+
+@import '~styles/freshpress-includes';
+
+.blue-cta-bar {
+	padding: ( $spacer * 2 ) map-get( $spacers, 3 );
+	background-color: $fresh-blue;
+
+	@include media-breakpoint-up( lg ) {
+		padding-right: map-get( $spacers, 5 );
+		padding-left: map-get( $spacers, 5 );
+	}
+
+	&__inner {
+		max-width: map-get( $grid-breakpoints, md ) - 240px;
+
+		@include media-breakpoint-up( lg ) {
+			max-width: map-get( $grid-breakpoints, xl ) - 240px;
+		}
+	}
+
+	&__image {
+		width: auto;
+		max-width: 100%;
+		max-height: 200px;
+
+		@include media-breakpoint-up( lg ) {
+			max-height: 250px;
+		}
+	}
+
+	&__text-container {
+		color: $white;
+		font-size: 0.9375rem;
+
+		p {
+			margin-bottom: 4px;
+		}
+	}
+
+	&__title {
+		color: $white;
+		font-weight: $font-weight-normal;
+		font-size: 2.25rem;
+
+		@include media-breakpoint-up( xl ) {
+			font-size: 2.5rem;
+		}
+	}
+
+	&__cta-button {
+		padding-right: 15px;
+		padding-left: 15px;
+		font-size: 1.5rem;
+	}
+}

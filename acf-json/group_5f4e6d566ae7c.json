@@ -1,0 +1,229 @@
+{
+    "key": "group_5f4e6d566ae7c",
+    "title": "Page Settings",
+    "fields": [
+        {
+            "key": "field_5f4e6d5fabca4",
+            "label": "Inline Scripts",
+            "name": "inline_scripts",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Script",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f4e6db4abca6",
+                    "label": "Code",
+                    "name": "code",
+                    "type": "textarea",
+                    "instructions": "Script code including the surrounding <script> tags.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f4e9a5c8b6ae",
+                    "label": "Location",
+                    "name": "location",
+                    "type": "select",
+                    "instructions": "Select at which point in the DOM the script should be loaded.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "head": "Head",
+                        "body": "Body Open",
+                        "footer": "Footer"
+                    },
+                    "default_value": "head",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                }
+            ]
+        },
+        {
+            "key": "field_5f7240481c4fc",
+            "label": "Custom Regional Paths",
+            "name": "custom_language_translation",
+            "type": "repeater",
+            "instructions": "Add a custom path if this page needs a non-standard regional link.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f7247c9bf39b",
+                    "label": "Region",
+                    "name": "custom_language_translation_region",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "en-au": "en-au",
+                        "en-eu": "en-eu",
+                        "en-gb": "en-gb",
+                        "en-ie": "en-ie",
+                        "en-nz": "en-nz",
+                        "en-sg": "en-sg",
+                        "en-us": "en-us",
+                        "en-za": "en-za",
+                        "fr-fr": "fr-fr"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f7240a81c4fe",
+                    "label": "Path",
+                    "name": "custom_language_translation_path",
+                    "type": "text",
+                    "instructions": "Examples: \/path or https:\/\/www.example.com\/path",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        },
+        {
+            "key": "field_60508357abf5e",
+            "label": "Trial Length",
+            "name": "trial_length",
+            "type": "select",
+            "instructions": "Set the FreshBooks trial length. Once the user visits the page the cookie will be set.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "not_set": "Not set",
+                "30": "30",
+                "60": "60",
+                "90": "90",
+                "120": "120",
+                "150": "150",
+                "180": "180",
+                "365": "365"
+            },
+            "default_value": "not_set",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "landing_page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "accounting_software"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "accounting_template"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "education"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1650543386
+}

@@ -1,0 +1,82 @@
+{
+    "key": "group_6012b49063fb0",
+    "title": "Block - iframe",
+    "fields": [
+        {
+            "key": "field_6012b4a221650",
+            "label": "iframe URL",
+            "name": "iframe_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6012b4b821651",
+            "label": "iframe width",
+            "name": "iframe_width",
+            "type": "text",
+            "instructions": "Fill this only if the iframe requires size restrictions, otherwise leave blank to the iframe takes 100% of the available container width.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "50%, 220px etc.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6013da31770b3",
+            "label": "iframe height",
+            "name": "iframe_height",
+            "type": "text",
+            "instructions": "Fill this to change the iframe's height.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/iframe"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308025
+}

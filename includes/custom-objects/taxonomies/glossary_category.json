@@ -1,0 +1,13 @@
+{
+  "taxonomy": "glossary_category",
+  "label": "Glossary Category",
+  "post_types": [
+    "glossary"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "glossary",
+      "with_front": true
+    }
+  }
+}

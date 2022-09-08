@@ -1,0 +1,46 @@
+import { nanoid } from 'nanoid';
+import * as actions from './_actions';
+
+export default ( state, action ) => {
+	const editAtIndex = ( fieldName ) => {
+		return state.map( ( item, i ) =>
+			i === action.index ? { ...item, [ fieldName ]: action.value } : item
+		);
+	};
+
+	switch ( action.type ) {
+		case actions.ADD:
+			return [
+				...state,
+				{
+					/** other fields */
+					key: `topic_${ nanoid() }`,
+				},
+			];
+
+		case actions.REMOVE:
+			const stateWithRemoved = [ ...state ];
+			stateWithRemoved.splice( action.index, 1 );
+			return stateWithRemoved;
+
+		case actions.EDIT:
+			return editAtIndex( 'field_to_edit_inside_repeater_array' );
+
+		case actions.MOVE_LEFT:
+			const movedLeftState = [ ...state ];
+			const previousItem = movedLeftState[ action.index - 1 ];
+			movedLeftState[ action.index - 1 ] = movedLeftState[ action.index ];
+			movedLeftState[ action.index ] = previousItem;
+			return movedLeftState;
+
+		case actions.MOVE_RIGHT:
+			const movedRightState = [ ...state ];
+			const nextItem = movedRightState[ action.index + 1 ];
+			movedRightState[ action.index + 1 ] = movedRightState[ action.index ];
+			movedRightState[ action.index ] = nextItem;
+			return movedRightState;
+
+		default:
+			return state;
+	}
+};

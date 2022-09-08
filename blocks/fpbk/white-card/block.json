@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/white-card",
+  "title": "White Card",
+  "category": "freshblocks",
+  "description": "A white card with content and an optional overlapping area containing another block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

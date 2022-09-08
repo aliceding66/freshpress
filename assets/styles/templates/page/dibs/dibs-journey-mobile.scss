@@ -1,0 +1,139 @@
+@import '../../../freshpress-includes';
+
+.journey_mobile {
+	padding-bottom: 100px;
+	color: $white;
+	background-color: $tile-blue;
+	border-top-right-radius: 88px;
+
+	&__slides-outer-container {
+		width: 360px;
+	}
+
+	.swiper {
+		overflow: hidden;
+	}
+
+	.swiper-wrapper {
+		height: 300px;
+	}
+
+	&__slide-title {
+		font-weight: 500;
+		font-size: px-to-rem( 30 );
+	}
+
+	&__slide-text {
+		margin-bottom: 0;
+		font-size: px-to-rem( 16 );
+	}
+
+	&__slide {
+		position: relative;
+		width: 50%;
+		border-color: $fresh-blue;
+		border-style: solid;
+		border-width: 0;
+
+		&::before {
+			position: absolute;
+			top: 10px;
+			display: block;
+			width: 16px;
+			height: 16px;
+			background-color: $border-yellow;
+			border-radius: 50px;
+			content: '';
+		}
+
+		.journey_mobile__slide-text {
+			opacity: 0.3;
+		}
+	}
+
+	.swiper-slide-active {
+		.journey_mobile__slide-text {
+			opacity: 1;
+		}
+	}
+
+	&__slide_left {
+		align-self: flex-start;
+		padding-right: 20px;
+		border-right-width: 1px;
+
+		&::before {
+			right: -8px;
+		}
+	}
+
+	&__slide_right {
+		left: -1px;
+		align-self: flex-end;
+		padding-left: 20px;
+		border-left-width: 1px;
+
+		&::before {
+			left: -8px;
+		}
+	}
+
+	&__slide_first {
+		&::before {
+			top: 0;
+		}
+	}
+
+	&__slide_last {
+		height: 300px !important;
+	}
+
+	&__today-container {
+		width: 360px;
+	}
+
+	&__today {
+		bottom: -90px;
+		left: 29%;
+		z-index: 99;
+		width: 150px;
+		padding: 10px 25px 15px;
+		color: $white;
+		background-color: #002057;
+		border-radius: 10px 10px 10px 0;
+
+		&::after {
+			position: absolute;
+			bottom: -26px;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-color: #002057 transparent transparent transparent;
+			border-style: solid;
+			border-width: 36px 36px 0 0;
+			content: '';
+		}
+	}
+
+	&__today-title {
+		font-weight: 500;
+		font-size: px-to-rem( 30 );
+
+		&::after {
+			position: relative;
+			display: block;
+			width: 16px;
+			height: 16px;
+			margin: 10px auto;
+			background-color: $border-yellow;
+			border-radius: 50px;
+			content: '';
+		}
+	}
+
+	&__today-text {
+		margin-bottom: 0;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 19 );
+	}
+}

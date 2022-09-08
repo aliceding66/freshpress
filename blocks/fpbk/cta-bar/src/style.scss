@@ -1,0 +1,54 @@
+@import '~styles/freshpress-includes';
+
+.cta-bar {
+	padding: 0 5px;
+
+	.box__bordered {
+		padding: 17px 22px 17px;
+		background: $white;
+
+		@include media-breakpoint-up( md ) {
+			padding: 33px 20px 15px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			padding: 18px;
+		}
+	}
+
+	.box__copy {
+		width: 100%;
+
+		@include media-breakpoint-up( lg ) {
+			width: auto;
+		}
+
+		p {
+			margin: auto 0;
+			font-size: px-to-rem( 22 );
+
+			@include media-breakpoint-up( lg ) {
+				margin: 0 15px 0 0;
+			}
+
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.box__cta {
+		min-width: 173px;
+		margin: 26px auto 16px;
+		padding: 5px 20px;
+		font-size: 1.3rem;
+
+		@include media-breakpoint-up( md ) {
+			margin: 15px auto 18px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			margin: 0;
+		}
+	}
+}

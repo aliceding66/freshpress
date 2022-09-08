@@ -1,0 +1,57 @@
+.wp-block-fpbk-vat-table {
+  border: none;
+}
+
+.vat-table__title {
+  display: inline-block;
+  padding: 15px 28px;
+  color: #002d79;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.33875rem;
+  letter-spacing: 5%;
+  background-color: #fff;
+  border: 1px solid #002d79;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+.vat-table__cell {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.vat-table__cell__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .vat-table__cell__wrapper {
+    width: calc(33.33% - 1px);
+  }
+}
+.vat-table__cell__title {
+  display: flex;
+  align-items: center;
+  min-height: 125px;
+  padding: 22px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+  background-color: #002d79;
+}
+.vat-table__cell__description {
+  display: block;
+  min-height: 125px;
+  padding: 22px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  white-space: pre-wrap;
+  background-color: #0069c7;
+}
+
+/*# sourceMappingURL=blocks-fpbk-vat-table-style.css.map*/

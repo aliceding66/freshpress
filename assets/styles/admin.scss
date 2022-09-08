@@ -1,0 +1,49 @@
+@import './freshpress-includes';
+
+/* stylelint-disable selector-id-pattern */
+
+// Fix super annoying extra height on block editor.
+.block-editor-writing-flow__click-redirect[aria-hidden='true'] {
+	min-height: 0;
+}
+
+// Make sure these changes are scoped to the blocks in the editor.
+.editor-styles-wrapper {
+	// Import all global styles (scoped).
+	@import 'global';
+
+	.wp-block {
+		// Define a more usable max-width for block editing.
+		max-width: map-get( $grid-breakpoints, xl );
+
+		// Allow our body font to show in blocks as intended.
+		font-family: $fb-font-family;
+	}
+
+	// Make all hidden elements visible in the editor.
+	[class*='d-'][class*='-none'] {
+		display: block !important;
+
+		// Add class to force display:none in Editor.
+		&.d-editor-none {
+			display: none !important;
+		}
+	}
+
+	// Add class to force display:none in Editor.
+	.acf-block-preview {
+		.d-editor-none {
+			display: none !important;
+		}
+	}
+}
+
+// Hide ACF groups that are just placeholders for calculated values.
+#acf-group_6257f37593e3f,
+#acf-group_625fc857481f8 {
+	display: none !important;
+}
+
+.block-editor-default-block-appender {
+	z-index: 99;
+}

@@ -1,0 +1,26 @@
+@import '~styles/freshpress-includes';
+@import '~styles/partials/animations/animations';
+
+.editor-styles-wrapper {
+	.wp-block-fpbk-animate {
+		box-shadow: 0 0 0 1px $admin_black;
+
+		&__playback-control {
+			right: 0;
+			bottom: 0;
+
+			button:focus {
+				box-shadow: none !important;
+			}
+
+			.dashicon {
+				margin-right: 2px !important;
+			}
+		}
+	}
+}
+
+.no-animations {
+	transition: none !important;
+	animation: none !important;
+}

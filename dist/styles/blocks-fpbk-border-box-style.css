@@ -1,0 +1,11 @@
+.career-box {
+  position: relative;
+  max-width: 270px;
+}
+@media (min-width: 768px) {
+  .career-box {
+    max-width: 220px;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-border-box-style.css.map*/

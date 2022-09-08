@@ -1,0 +1,33 @@
+@import '~styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	.feature-grid {
+		&__tile {
+			@include media-breakpoint-up( md ) {
+				&:hover {
+					background-color: $tile-blue !important;
+				}
+			}
+		}
+	}
+
+	.wp-block-fpbk-feature-grid {
+		.block-editor {
+			&__editor-controls__image {
+				&-wrapper {
+					transform: scale( 0.5 );
+				}
+
+				&--inline {
+					transform: scale( 2 );
+				}
+			}
+
+			&__block-controls {
+				top: 10px;
+				left: 50%;
+				transform: translateX( -50% );
+			}
+		}
+	}
+}

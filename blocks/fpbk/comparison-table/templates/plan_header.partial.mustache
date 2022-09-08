@@ -1,0 +1,40 @@
+{{# plan_header_trial_cell_title }}
+    <th>
+        <div class="cell-content d-flex flex-column align-items-center text-center">
+			<span class="comparison-table__header-row_trial-title mb-2 d-none d-sm-block">
+                {{ plan_header_trial_cell_title }}
+            </span>
+
+            <div class="comparison-table__header-row_button-wrapper w-100 d-flex justify-content-center">
+                {{# plan_header_trial_cell_buy_cta.html }}
+                    <div class="standard d-none d-xl-none">
+                        {{{ plan_header_trial_cell_buy_cta.html }}}
+                    </div>
+                {{/ plan_header_trial_cell_buy_cta.html }}
+                {{^ plan_header_trial_cell_buy_cta.html }}
+                    {{{ plan_header_trial_cell_buy_cta }}}
+                {{/ plan_header_trial_cell_buy_cta.html }}
+
+                {{# enable_promo }}
+                    {{# plan_header_trial_cell_promo_buy_cta.html }}
+                        <div class="promo d-none d-xl-none">
+                            {{{ plan_header_trial_cell_promo_buy_cta.html }}}
+                        </div>
+                    {{/ plan_header_trial_cell_promo_buy_cta.html }}
+                    {{^ plan_header_trial_cell_promo_buy_cta.html }}
+                        {{{ plan_header_trial_cell_promo_buy_cta }}}
+                    {{/ plan_header_trial_cell_promo_buy_cta.html }}
+                {{/ enable_promo }}
+
+                <span>
+					{{# plan_header_trial_cell_trial_cta.html }}
+                        {{{ plan_header_trial_cell_trial_cta.html }}}
+                    {{/ plan_header_trial_cell_trial_cta.html }}
+                    {{^ plan_header_trial_cell_trial_cta.html }}
+                        {{{ plan_header_trial_cell_trial_cta }}}
+                    {{/ plan_header_trial_cell_trial_cta.html }}
+				</span>
+            </div>
+        </div>
+    </th>
+{{/ plan_header_trial_cell_title }}

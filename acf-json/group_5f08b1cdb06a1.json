@@ -1,0 +1,502 @@
+{
+    "key": "group_5f08b1cdb06a1",
+    "title": "Block - Feature Row",
+    "fields": [
+        {
+            "key": "field_5f08b1d96a06f",
+            "label": "Columns",
+            "name": "columns",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 2,
+            "max": 2,
+            "layout": "block",
+            "button_label": "Add Column",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f08b1fe6a070",
+                    "label": "Type",
+                    "name": "type",
+                    "type": "select",
+                    "instructions": "Is this column for an image, or for copy content?",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "image": "Image",
+                        "content": "Content",
+                        "tabs": "Tabbed Cards"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f08b8dd6a071",
+                    "label": "Header",
+                    "name": "header",
+                    "type": "text",
+                    "instructions": "Header for the copy column.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f08b91e6a072",
+                    "label": "Body",
+                    "name": "body",
+                    "type": "wysiwyg",
+                    "instructions": "Main body copy content.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_5f08b9486a073",
+                    "label": "Include CTA?",
+                    "name": "include_cta",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5f08b9856a074",
+                    "label": "CTA",
+                    "name": "cta",
+                    "type": "link",
+                    "instructions": "Text and URL for included CTA.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            },
+                            {
+                                "field": "field_5f08b9486a073",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5f08b9b06a076",
+                    "label": "Include Secondary CTA?",
+                    "name": "include_secondary_cta",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5f08b9c96a077",
+                    "label": "Secondary CTA",
+                    "name": "secondary_cta",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            },
+                            {
+                                "field": "field_5f08b9b06a076",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5f0ca9af8544d",
+                    "label": "Include Subtext?",
+                    "name": "include_subtext",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5f0ca9d08544e",
+                    "label": "Subtext",
+                    "name": "subtext",
+                    "type": "text",
+                    "instructions": "Small text about conditions, legal, exclusions, or anything else to note in addition to the main content.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "content"
+                            },
+                            {
+                                "field": "field_5f0ca9af8544d",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f08bb2f6a07e",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f8dbcb073998",
+                    "label": "Mobile Max Width",
+                    "name": "image_mobile_max_width",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f08bb4d6a07f",
+                    "label": "Align to Gutter?",
+                    "name": "align_to_gutter",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f3570eeeb325",
+                    "label": "Cards",
+                    "name": "cards",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f08b1fe6a070",
+                                "operator": "==",
+                                "value": "tabs"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_5f357100eb326",
+                    "min": 1,
+                    "max": 3,
+                    "layout": "block",
+                    "button_label": "Add Tabbed Card",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f357100eb326",
+                            "label": "Tab Title",
+                            "name": "tab_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f35710ceb327",
+                            "label": "Card Content",
+                            "name": "card_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "wpml_cf_preferences": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5f8d880d8f97a",
+            "label": "Block Settings",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f8d7a940c95f",
+            "label": "Reverse Stack",
+            "name": "reverse_stack",
+            "type": "true_false",
+            "instructions": "Reverse stacking order on mobile\/tablet",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/feature-row"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643306264
+}

@@ -1,0 +1,105 @@
+// Informational Banner.
+
+@import '../../freshpress-includes';
+
+.banner-informational {
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0.25rem 1.25rem;
+	color: $white;
+	font-weight: $font-weight-medium;
+	text-align: center;
+	background-color: $fresh-blue;
+	border: 1px solid transparent;
+	border-color: $fresh-blue;
+	border-radius: 0;
+
+	&__content-mobile,
+	&__content-desktop {
+		> p {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 0;
+
+			img {
+				width: auto;
+				max-height: 26px;
+				margin: 0 6px;
+			}
+
+			> a {
+				text-decoration: underline;
+			}
+
+			span,
+			a,
+			p,
+			strong {
+				margin-right: 0.5rem;
+				margin-bottom: 0;
+				margin-left: 0.5rem;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			strong {
+				font-weight: $font-weight-bold;
+			}
+		}
+	}
+
+	&__content-mobile {
+		margin: 0;
+		font-size: px-to-rem( 18 );
+
+		@include media-breakpoint-up( md ) {
+			display: none;
+		}
+	}
+
+	&__content-desktop {
+		display: none;
+		margin: 0;
+		font-size: px-to-rem( 18 );
+
+		@include media-breakpoint-up( md ) {
+			display: block;
+		}
+	}
+
+	&_mobile-clickable {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+
+		@include media-breakpoint-up( md ) {
+			display: none;
+		}
+	}
+}
+
+// Ensure the editor styles don't break the editor layout.
+.editor-styles-wrapper {
+	.banner-informational {
+		&.fixed-top {
+			top: 57px; // Height of editor top bar.
+			z-index: 15;
+			max-width: calc( 100% - 280px ); // Width of editor side bar.
+		}
+	}
+}

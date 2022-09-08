@@ -1,0 +1,130 @@
+@media (min-width: 1600px) {
+  .culture__4e-outter-container {
+    top: 20px;
+    right: -150px;
+  }
+}
+.culture__4e-container {
+  max-width: 360px;
+  height: 415px;
+}
+@media (min-width: 1024px) {
+  .culture__4e-container {
+    max-width: 645px;
+    height: 453px;
+  }
+}
+@media (min-width: 1600px) {
+  .culture__4e-container {
+    height: 200px;
+  }
+}
+.culture__label {
+  right: 45px;
+  width: 147px;
+  height: 147px;
+  background-color: #ffc414;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+@media (min-width: 1024px) {
+  .culture__label {
+    width: 174px;
+    height: 174px;
+  }
+}
+@media (min-width: 1600px) {
+  .culture__label {
+    top: 42px;
+    right: -60px;
+  }
+}
+.culture__label-title {
+  font-size: 1.4375rem;
+  line-height: 1.75rem;
+}
+@media (min-width: 1024px) {
+  .culture__label-title {
+    font-size: 1.75rem;
+    line-height: 2.0625rem;
+  }
+}
+.culture__label-text {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+}
+@media (min-width: 1024px) {
+  .culture__label-text {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+.culture__4e {
+  top: 157px;
+}
+@media (min-width: 1024px) {
+  .culture__4e {
+    top: 100px;
+  }
+}
+.culture__4e-title {
+  display: inline-block;
+  color: #001b40;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4.25rem;
+  letter-spacing: -0.7px;
+}
+@media (min-width: 1024px) {
+  .culture__4e-title {
+    font-size: 6.5rem;
+    line-height: 5.6875rem;
+  }
+}
+@media (min-width: 1600px) {
+  .culture__4e-title {
+    font-size: 8.125rem;
+    line-height: 7rem;
+  }
+}
+.culture__4e-title_1 {
+  left: 40px;
+}
+.culture__4e-title_2 {
+  left: -3px;
+}
+.culture__4e-title_3 {
+  left: 38px;
+}
+.culture__4e-title_4 {
+  left: 116px;
+}
+@media (min-width: 1024px) {
+  .culture__4e-title_4 {
+    left: 215px;
+  }
+}
+@media (min-width: 1600px) {
+  .culture__4e-title_4 {
+    left: 315px;
+  }
+}
+.culture__4e-decoration {
+  color: #ffc414;
+}
+.culture__content-container {
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  .culture__content-container {
+    max-width: 650px;
+  }
+}
+@media (min-width: 1600px) {
+  .culture__content-container {
+    max-width: 440px;
+    margin-left: 220px;
+  }
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-culture.css.map*/

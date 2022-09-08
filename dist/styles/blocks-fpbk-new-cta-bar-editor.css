@@ -1,0 +1,14 @@
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar {
+  min-height: 415px;
+}
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar .new-cta-bar__content {
+  pointer-events: none;
+}
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar .new-cta-bar__content * {
+  pointer-events: all;
+}
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar .new-cta-bar__image-left {
+  right: unset !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-new-cta-bar-editor.css.map*/

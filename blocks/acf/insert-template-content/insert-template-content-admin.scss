@@ -1,0 +1,13 @@
+// Insert Template Content.
+
+@import '~styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	[data-type='acf/insert-template-content'] .acf-block-preview::before {
+		display: block;
+		font-style: italic;
+		text-align: center;
+		border: 2px $black dashed;
+		content: 'Block will be replaced with dynamic content';
+	}
+}

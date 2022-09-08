@@ -1,0 +1,262 @@
+@import '../../freshpress-includes';
+
+$white: #fff;
+
+$left-side-width-tablet: 140px;
+$left-side-width-desktop: 178px;
+
+.accounting-partners-single {
+	position: relative;
+	left: calc( 50% - 50vw );
+	width: 100vw;
+	background-color: $light-cream;
+	&__container {
+		max-width: 100%;
+		margin: 0 auto;
+		@include media-breakpoint-up( lg ) {
+			width: 980px;
+		}
+		@media ( min-width: 1251px ) {
+			width: 1166px;
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 1216px;
+		}
+	}
+	&__breadcrumbs {
+		padding: 16px 0;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 24 );
+		}
+		&-divider {
+			display: none;
+			margin: 0 8px;
+			color: $light-grey;
+			@include media-breakpoint-up( sm ) {
+				display: inline-block;
+			}
+		}
+		a {
+			display: none;
+			color: $fresh-new;
+			text-decoration: underline;
+			&:last-of-type {
+				display: inline-block;
+				&::before {
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					margin-right: 6px;
+					background-image: url( ./../../../images/accounting-partners/right-arrow-blue.svg );
+					background-repeat: no-repeat;
+					background-size: 8px 8px;
+					content: '';
+					@include media-breakpoint-up( sm ) {
+						content: none;
+					}
+				}
+			}
+			@include media-breakpoint-up( sm ) {
+				display: inline-block;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&__white-container {
+		padding: 32px 22px 64px;
+		background-color: $white;
+		@include media-breakpoint-up( md ) {
+			display: flex;
+			align-items: flex-start;
+			padding: 56px 79px 64px;
+			border-radius: 140px 0 0 0;
+		}
+		@include media-breakpoint-up( xl ) {
+			padding: 74px 143px 67px;
+			border-radius: 140px 0 0 0;
+		}
+	}
+	&__left-side {
+		width: 110px;
+
+		@include media-breakpoint-up( md ) {
+			width: 140px;
+			max-width: 100%;
+			margin-right: 32px;
+			.btn {
+				width: 100%;
+			}
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 178px;
+			margin-right: 56px;
+
+			.btn-cta-green.btn {
+				padding: 11px 5px;
+			}
+		}
+	}
+	&__right-side {
+		width: 100%;
+		max-width: 100%;
+		@include media-breakpoint-up( md ) {
+			width: calc( 100% - #{$left-side-width-tablet} );
+		}
+		@include media-breakpoint-up( xl ) {
+			width: calc( 100% - #{$left-side-width-desktop} );
+		}
+	}
+	&__profile-image {
+		position: relative;
+		order: 1;
+		width: 110px;
+		height: 88px;
+		margin-bottom: 24px;
+		border: 1px solid $outline-grey;
+		border-radius: 8px;
+		box-shadow: 6px 6px 0 rgba( $outline-grey, 0.3 );
+
+		@include media-breakpoint-up( md ) {
+			width: 140px;
+			height: 112px;
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 100%;
+			height: 142px;
+			margin-bottom: 22px;
+		}
+
+		img {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			width: calc( 100% - 16px );
+			height: calc( 100% - 16px );
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+	&__certified {
+		margin-bottom: 10px;
+		color: $fresh-new;
+		font-size: px-to-rem( 16 );
+		font-family: $font-freshbooks-script;
+		font-style: italic;
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( xl ) {
+			margin-bottom: 12px;
+		}
+	}
+	&__title {
+		margin-bottom: 8px;
+		color: $midnight-blue;
+		font-size: px-to-rem( 36 );
+		line-height: px-to-rem( 36 );
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 40 );
+			line-height: px-to-rem( 40 );
+		}
+	}
+	&__address {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 24px;
+		color: rgba( $midnight-blue, 0.6 );
+		font-size: px-to-rem( 14 );
+		line-height: px-to-rem( 16 );
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 16 );
+			line-height: px-to-rem( 18 );
+		}
+
+		&::before {
+			display: block;
+			width: 12px;
+			height: 12px;
+			margin-right: 6px;
+			background-image: url( ./../../../images/accounting-partners/map-pin.svg );
+			background-repeat: no-repeat;
+			background-size: 11px 12px;
+			content: '';
+		}
+	}
+	&__about,
+	&__services ul li {
+		margin-bottom: 32px;
+		color: $midnight-blue;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 24 );
+		}
+	}
+	&__services {
+		margin-bottom: 32px;
+		h2 {
+			margin-bottom: 16px;
+			color: $midnight-blue;
+			font-size: px-to-rem( 24 );
+			line-height: px-to-rem( 22 );
+
+			@include media-breakpoint-between( md, xl ) {
+				margin-bottom: 8px;
+			}
+			@include media-breakpoint-up( xl ) {
+				font-size: px-to-rem( 26 );
+				line-height: px-to-rem( 28 );
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				margin-bottom: 4px;
+				list-style-type: none;
+				&::before {
+					display: inline-block;
+					width: px-to-rem( 12.73 );
+					height: px-to-rem( 10.37 );
+					margin-right: 15px;
+					background-image: url( ./../../../images/accounting-partners/green-check.svg );
+					background-repeat: no-repeat;
+					background-size: px-to-rem( 12.73 ) px-to-rem( 10.37 );
+					content: '';
+					@include media-breakpoint-between( md, xl ) {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	.btn {
+		margin-bottom: 32px;
+		padding: 11px 25px;
+		font-weight: 500;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 20 );
+			line-height: px-to-rem( 24 );
+		}
+	}
+}
+.accounting-partners-single .new-cta-bar {
+	margin-top: 0 !important;
+	margin-right: 0;
+	margin-left: 0;
+	@media ( min-width: 1280px ) {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	@media ( min-width: 1600px ) {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}

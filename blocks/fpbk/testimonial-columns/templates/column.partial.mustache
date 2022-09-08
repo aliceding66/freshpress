@@ -1,0 +1,31 @@
+<div class="testimonial {{ column_classes }} text-center d-flex flex-wrap flex-column justify-content-between">
+	{{{ admin_controls }}}
+
+	{{# testimonial_quote }}
+		<div class="testimonial__quote">
+			{{# author_photo_html }}
+				{{{ author_photo_html }}}
+			{{/ author_photo_html }}
+
+			<div class="py-4">
+				<p class="testimonial__quote-text mx-auto font-italic">
+					{{ testimonial_quote }}
+				</p>
+			</div>
+		</div>
+	{{/ testimonial_quote}}
+
+	<div class="testimonial__author">
+		<div class="row divider_blue mx-auto"></div>
+
+		<div class="testimonial__author-details mt-4">
+			{{# author_name }}
+				<p class="testimonial__author-name text-uppercase w-100 mb-1">{{ author_name }}</p>
+			{{/ author_name }}
+
+			{{# author_title }}
+				<p class="testimonial__author-title text-uppercase w-100">{{ author_title }}</p>
+			{{/ author_title }}
+		</div>
+	</div>
+</div>

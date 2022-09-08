@@ -1,0 +1,27 @@
+<table class="w-100"{{# table_min_width }} style="min-width: {{ table_min_width }}"{{/ table_min_width }}>
+    <caption class="d-none d-editor-none">Features table header</caption>
+    <thead>
+        <tr>
+            <th
+                {{# title_column_width }} style="width: {{ title_column_width }};"{{/ title_column_width }}
+                class="mw-100"
+                scope="col"
+            ></th>
+            {{# columns }}
+                {{> partials__column-header }}
+            {{/ columns }}
+        </tr>
+    </thead>
+    <tbody>
+        {{# row_titles }}
+            <tr>
+                <td class="text-uppercase text-left font-{{ font_size }} padding-{{ padding }}">
+                    {{ title }}
+                </td>
+                {{# row_columns }}
+                    {{> partials__column-row-item }}
+                {{/ row_columns }}
+            </tr>
+        {{/ row_titles }}
+    </tbody>
+</table>

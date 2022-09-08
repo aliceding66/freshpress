@@ -1,0 +1,13 @@
+<label for="tos-accepted" class="sign-up__policy-privacy position-relative mb-2 pt-1 pb-1 mt-{{# is_inline_theme }}2{{/ is_inline_theme }}{{^ is_inline_theme }}4{{/ is_inline_theme }}">
+	<input
+			required
+			type="checkbox"
+			id="tos-accepted"
+			name="tos-accepted"
+			class="form-control-checkbox float-left"
+	/>
+	<div class="invalid-tooltip invalid-checkbox-tooltip py-2 px-3">
+		{{ labels.field_required }}
+	</div>
+	{{{ privacy_policy_text }}}
+</label>

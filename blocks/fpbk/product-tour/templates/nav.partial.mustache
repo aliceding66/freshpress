@@ -1,0 +1,10 @@
+<div class="product-tour__nav-container d-none d-lg-flex justify-content-between mb-5 mb-xl-0 mx-auto">
+	{{# product_tour_items }}
+		<a class="product-tour__nav-link{{^ is_with_video_theme }} pb-2{{/ is_with_video_theme }} text-decoration-none {{ nav_active_class }}"
+		   data-id="{{ nav_title_id }}"
+		   title="{{ product_tour_item_nav_title }}"
+		>
+			{{ product_tour_item_nav_title }}
+		</a>
+	{{/ product_tour_items }}
+</div>

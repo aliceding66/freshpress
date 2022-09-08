@@ -1,0 +1,21 @@
+.acf-block-preview .lottie-animation {
+  padding: 50px 0 !important;
+  background: #ced5da;
+  border-radius: 4px;
+}
+.acf-block-preview .lottie-animation::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #8495a2;
+  font-size: 2rem;
+  text-transform: uppercase;
+  content: "Lottie animation";
+}
+
+/*# sourceMappingURL=blocks-acf-lottie-animation-lottie-animation-admin.css.map*/

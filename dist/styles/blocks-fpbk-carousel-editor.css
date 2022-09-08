@@ -1,0 +1,29 @@
+.editor-styles-wrapper .carousel__swiper-container {
+  max-width: unset !important;
+}
+.editor-styles-wrapper .carousel__swiper-wrapper {
+  height: auto !important;
+}
+.editor-styles-wrapper .carousel__swiper-wrapper > .block-editor-inner-blocks {
+  width: 100%;
+}
+.editor-styles-wrapper .carousel__swiper-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: flex;
+  overflow-x: scroll;
+}
+.editor-styles-wrapper .carousel__swiper-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+  min-width: 300px;
+  margin: 0 10px;
+}
+.editor-styles-wrapper .carousel__swiper-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:first-child {
+  margin-left: 0;
+}
+.editor-styles-wrapper .carousel__swiper-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:last-child {
+  margin-right: 20px;
+}
+.editor-styles-wrapper .carousel__swiper-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block.block-list-appender {
+  align-self: center;
+  min-width: 38px !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-carousel-editor.css.map*/

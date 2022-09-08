@@ -1,0 +1,110 @@
+{
+    "key": "group_62474f5ea5255",
+    "title": "Meta Tags AMP - Location + Service",
+    "fields": [
+        {
+            "key": "field_62474f9e8f145",
+            "label": "Meta Tags",
+            "name": "ap_meta_tags",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "collapsed": "field_62474fba8f146",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Service Combination",
+            "sub_fields": [
+                {
+                    "key": "field_62474fba8f146",
+                    "label": "Service",
+                    "name": "service",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "accounting_partners_service",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "wpml_cf_preferences": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_6247502c8f147",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_624750338f148",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "wpml_cf_preferences": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "accounting_partners_location"
+            }
+        ]
+    ],
+    "menu_order": 100,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1649768621
+}

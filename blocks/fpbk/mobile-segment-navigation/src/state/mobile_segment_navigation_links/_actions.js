@@ -1,0 +1,9 @@
+export const ADD_MOBILE_SEGMENT_NAVIGATION_LINK = 'amsnl';
+
+export const REMOVE_MOBILE_SEGMENT_NAVIGATION_LINK = 'rmsnl';
+
+export const EDIT_MOBILE_SEGMENT_NAVIGATION_LINK = 'emsnl';
+
+export const MOVE_MOBILE_SEGMENT_NAVIGATION_LINK_UP = 'mmsnlu';
+
+export const MOVE_MOBILE_SEGMENT_NAVIGATION_LINK_DOWN = 'mmsnld';

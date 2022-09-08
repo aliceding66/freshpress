@@ -1,0 +1,10 @@
+<span {{ image_label_inline_styles }} class="hero__image-label align-items-center {{ hide_on_mobile_class }}">
+    {{# icon.url }}
+		<img src="{{ icon.url }}" />
+     {{/ icon.url }}
+	{{^ icon.url }}
+		{{{ icon }}}
+	{{/ icon.url }}
+    {{ label }}
+    {{ admin_controls }}
+</span>

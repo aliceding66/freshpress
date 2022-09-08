@@ -1,0 +1,25 @@
+<div class="form-group sign-up__form-group sign-up__form-email mb-md-2 position-relative">
+	<input
+			required
+			name="email"
+			type="email"
+			class="form-control shadow-none{{# is_inline_theme }} w-100{{/ is_inline_theme }}"
+			id="email"
+			placeholder="{{ sign_up_form_email_placeholder_text }}"
+			aria-label="{{ email_field_label }}"
+	/>
+	<div class="invalid-tooltip py-2 px-3">{{ labels.invalid_email }}</div>
+</div>
+<div class="form-group sign-up__form-group sign-up__form-password mb-md-2 position-relative">
+	<input
+			required
+			minlength="8"
+			name="password"
+			type="password"
+			class="form-control shadow-none{{# is_inline_theme }} w-100{{/ is_inline_theme }}"
+			id="password"
+			placeholder="{{ sign_up_form_password_placeholder_text }}"
+			aria-label="{{ password_field_label }}"
+	/>
+	<div class="invalid-tooltip py-2 px-3">{{ labels.invalid_password }}</div>
+</div>

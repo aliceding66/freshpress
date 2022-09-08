@@ -1,0 +1,36 @@
+.competitor-table img {
+  max-height: 200px;
+}
+.competitor-table th,
+.competitor-table td {
+  padding: 1rem;
+  vertical-align: baseline;
+}
+.competitor-table__feature-row td:first-child {
+  padding: 1.5rem 0.5rem;
+}
+.competitor-table__feature-row-label img {
+  filter: grayscale(1);
+}
+.competitor-table__feature-row-label input[type=checkbox] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.competitor-table__feature-row-label input[type=checkbox]:checked ~ img {
+  filter: grayscale(0);
+}
+.competitor-table .components-toggle-control > div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.competitor-table .components-toggle-control > div .components-form-toggle {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=blocks-fpbk-competitor-table-editor.css.map*/

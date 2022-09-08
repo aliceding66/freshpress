@@ -1,0 +1,171 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/columns",
+  "title": "Columns",
+  "category": "freshblocks",
+  "description": "Columns block to house Column blocks.",
+  "textdomain": "fpbk",
+  "supports": {
+    "align": false,
+    "defaultStylePicker": false,
+    "html": false,
+    "anchor": false
+  },
+  "styles": [
+    {
+      "name": "default-gutters",
+      "label": "Default Gutters",
+      "isDefault": true
+    },
+    {
+      "name": " no-gutters",
+      "label": "No Gutters"
+    }
+  ],
+  "variations": [
+    {
+      "name": "two-columns",
+      "isDefault": true,
+      "title": "2 Columns",
+      "description": "Two columns where both widths are equal",
+      "attributes": {
+        "data": {
+          "data-column-layout": "equal"
+        }
+      },
+      "scope": "transform",
+      "innerBlocks": [
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-6"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-6"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "three-columns",
+      "title": "3 Columns",
+      "description": "Three columns where all widths are equal",
+      "attributes": {
+        "data": {
+          "data-column-layout": "equal"
+        }
+      },
+      "scope": "transform",
+      "innerBlocks": [
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-4"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-4"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-4"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "four-columns",
+      "title": "4 Columns",
+      "description": "Four columns where all widths are equal",
+      "attributes": {
+        "data": {
+          "data-column-layout": "equal"
+        }
+      },
+      "scope": "transform",
+      "innerBlocks": [
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-3"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-3"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-3"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-3"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "two-columns-wide-left",
+      "title": "2 Columns - Wide Left",
+      "description": "Two columns where the leftmost column will be wider by 2:1 ratio",
+      "attributes": {
+        "data": {
+          "data-column-layout": "wide-left"
+        }
+      },
+      "scope": "transform",
+      "innerBlocks": [
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-8"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-4"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "two-columns-wide-right",
+      "title": "2 Columns - Wide Right",
+      "attributes": {
+        "data": {
+          "data-column-layout": "wide-right"
+        }
+      },
+      "description": "Two columns where the rightmost column will be wider by 2:1 ratio",
+      "scope": "transform",
+      "innerBlocks": [
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-4"
+          }
+        ],
+        [
+          "fpbk/column",
+          {
+            "bootstrap_class": "col col-12 col-md-8"
+          }
+        ]
+      ]
+    }
+  ]
+}

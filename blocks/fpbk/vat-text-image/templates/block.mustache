@@ -1,0 +1,22 @@
+<div class="vat-text-image__bg" style="{{# background_attribute }}{{ background_attribute }}{{/ background_attribute }}">
+	<div class="vat-text-image__container">
+		<div class="vat-text-image__left">
+			{{# vat_text_image__title}}
+				<h2>{{{ vat_text_image__title }}}</h2>
+			{{/ vat_text_image__title}}
+			{{# vat_text_image__description}}
+				{{{ vat_text_image__description }}}
+			{{/ vat_text_image__description}}
+		</div>
+		{{# vat_text_image_crop}}
+			<div class="vat-text-image__right vat-text-image__right__nocrop">
+		{{/ vat_text_image_crop}}
+		{{^ vat_text_image_crop}}
+			<div class="vat-text-image__right">
+		{{/ vat_text_image_crop}}
+			{{# vat_text_image__image}}
+				{{{vat_text_image__image}}}
+			{{/ vat_text_image__image}}
+		</div>
+	</div>
+</div>

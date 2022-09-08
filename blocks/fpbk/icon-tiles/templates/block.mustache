@@ -1,0 +1,15 @@
+<h2 class="icon-tiles__title text-center">{{ icon_tiles_title }}</h2>
+
+{{# has_tiles }}
+    <div class="icon-tiles__tiles_container d-flex flex-column flex-md-row">
+    {{# icon_tiles_tile }}
+        {{> tile }}
+    {{/ icon_tiles_tile }}
+    </div>
+{{/ has_tiles }}
+{{# icon_tiles_cta.html }}
+    {{{ icon_tiles_cta.html }}}
+{{/ icon_tiles_cta.html }}
+{{# icon_tiles_subtext }}
+    <div class="icon-tiles__subtext">{{ icon_tiles_subtext }}</div>
+{{/ icon_tiles_subtext }}

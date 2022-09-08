@@ -1,0 +1,797 @@
+@import '../../freshpress-includes';
+@import '../common/animations';
+
+.header-wide {
+	&__wrapper {
+		position: relative;
+		z-index: 1000;
+		width: 100%;
+		color: $white;
+		background-color: $fresh-blue-light;
+	}
+
+	&__banner {
+		display: block;
+		padding: 11px;
+		color: $white;
+		text-align: center;
+		background: $dark-blue;
+	}
+
+	&__responsive {
+		max-width: 990px;
+		margin: 0 auto;
+		padding: 20px 15px;
+		text-align: left;
+	}
+
+	&__phone {
+		a::before {
+			position: relative;
+			top: -1px;
+			display: inline-block;
+			margin: 0 5px;
+			font-size: 11px;
+			font-family: $font-icon;
+			line-height: 22px;
+			content: '\e601';
+		}
+
+		a {
+			color: $white;
+		}
+	}
+}
+
+.button-primary {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 14px 18px;
+	color: $white;
+	font-size: px-to-rem( 20px );
+	text-decoration: none;
+	background-color: #85c51f;
+	background-image: url( ./../../../images/loaders/loader-green.gif );
+	background-repeat: no-repeat;
+	background-position: -120%;
+	background-size: 34px 34px;
+	border: 1px solid #659c17;
+	border-radius: 4px;
+	transition: 0.2s all;
+
+	@include media-breakpoint-down( md ) {
+		font-size: px-to-rem( 18.8px );
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		background-color: #8ed221;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:active {
+		text-decoration: none;
+		background-color: #77b318;
+		border: 1px solid #598b13;
+	}
+
+	&.button-disabled {
+		background-color: #6ba312;
+		background-position: center;
+		cursor: default;
+	}
+
+	// Solution for texts in button that are long
+	&.long-cta-text {
+		@include media-breakpoint-down( md ) {
+			padding: 14px 5px;
+			font-size: 20px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			padding: 14px 5px;
+			font-size: 20px;
+		}
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	.button-primary-text {
+		&.is-transparent {
+			opacity: 0;
+		}
+	}
+}
+
+section {
+	position: relative;
+	clear: both;
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+h1,
+h2,
+.heading-sub,
+.section-heading-secondary,
+.feature-link,
+.benefit-title,
+.feature-title {
+	max-width: 94%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.hero-background {
+	position: relative;
+	left: 50%;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: $fresh-blue-light;
+	transform: translateX( -50% );
+
+	img {
+		max-height: unset;
+		padding: 0;
+	}
+}
+
+.hero {
+	z-index: 5;
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 0;
+		color: $white;
+		font-size: px-to-rem( 40px );
+		line-height: 1;
+
+		@include media-breakpoint-down( md ) {
+			font-size: px-to-rem( 37.6px );
+		}
+	}
+
+	&__subtitle {
+		width: 50%;
+		margin-top: 9px;
+		margin-right: auto;
+		margin-left: auto;
+		color: $additional-blue;
+		font-size: 18px;
+		line-height: 1.2;
+
+		@include media-breakpoint-down( md ) {
+			font-size: 16.92px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			font-size: 16.2px;
+		}
+
+		&_bng-start {
+			margin-bottom: 35.75px;
+		}
+
+		&_blog-lead-in {
+			margin: 20px auto 0;
+			font-size: 18px;
+			opacity: 0;
+
+			@include media-breakpoint-up( md ) {
+				width: 50%;
+			}
+
+			@include media-breakpoint-down( md ) {
+				width: 90%;
+				font-size: 16.92px;
+			}
+		}
+
+		&_bng-select-industry {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__bng-start-button {
+		padding-right: 100px;
+		padding-left: 100px;
+
+		@include media-breakpoint-down( sm ) {
+			padding-right: 22.2125%;
+			padding-left: 22.2125%;
+		}
+	}
+
+	&__vertical-options {
+		max-width: 650px;
+		margin: 0 auto;
+
+		@include media-breakpoint-down( sm ) {
+			width: 100%;
+		}
+	}
+
+	&__four-industry {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		// width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+
+	&__industry {
+		float: none;
+		box-sizing: border-box;
+		width: 21%;
+		margin-right: 2%;
+		margin-left: 2%;
+		color: $white;
+		text-decoration: none;
+		background: transparent;
+		border: none;
+		outline: none;
+
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+
+			.vertical-svg {
+				.background {
+					fill: $white;
+				}
+
+				.icon {
+					fill: $fresh-blue-light;
+				}
+			}
+		}
+
+		@include media-breakpoint-down( md ) {
+			// float: left;
+			box-sizing: border-box;
+			width: 46%;
+			margin-right: 2%;
+			margin-bottom: 10px;
+			margin-left: 2%;
+		}
+
+		&:nth-child( 3 ),
+		&:nth-child( 4 ) {
+			@include media-breakpoint-down( md ) {
+				margin-bottom: 0;
+			}
+		}
+
+		.industry-name {
+			margin-bottom: 0;
+			color: #fff;
+			font-size: 20px;
+			font-family: $font-script-regular;
+
+			@include media-breakpoint-down( md ) {
+				font-size: 18.8px;
+			}
+
+			@include media-breakpoint-down( sm ) {
+				font-size: 17.5px;
+			}
+		}
+
+		.vertical-svg {
+			width: 125px;
+
+			@include media-breakpoint-down( sm ) {
+				width: 75px;
+			}
+		}
+
+		.vertical-icon {
+			margin-bottom: 12px;
+		}
+
+		.background,
+		.icon {
+			transition: 0.5s ease all;
+		}
+
+		.background {
+			fill: $fresh-blue-light;
+		}
+
+		.border,
+		.icon {
+			fill: $white;
+		}
+	}
+
+	&__bng-start,
+	&__bng-industry,
+	&__bng-keyword,
+	&__bng-options,
+	&__bng-result {
+		padding-top: 12px;
+		-webkit-animation-duration: 0.4s;
+		-webkit-animation-delay: 0s;
+
+		@include media-breakpoint-up( md ) {
+			min-height: 430px;
+		}
+
+		@include media-breakpoint-down( md ) {
+			padding-bottom: 50px;
+		}
+	}
+
+	&__name-container {
+		display: inline-block;
+		text-align: center;
+		opacity: 0;
+
+		@include media-breakpoint-down( sm ) {
+			width: inherit !important;
+		}
+
+		.center-content {
+			display: table;
+			width: 100%;
+		}
+	}
+
+	&__regenerate-word {
+		margin-top: 16px;
+		margin-bottom: 0;
+		color: $additional-blue;
+		font-size: 16px;
+
+		@include media-breakpoint-down( md ) {
+			font-size: 15.04px;
+		}
+	}
+
+	&__return-options {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin-top: 15px;
+		margin-right: auto;
+		margin-left: auto;
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 613px;
+		}
+	}
+
+	&__paragraph-link {
+		color: $additional-blue;
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+// Industy section - end
+// Keyword - start
+.keyword-form {
+	margin-top: 34px;
+}
+
+.keyword-input,
+.keyword-submit {
+	float: none;
+	width: 300px;
+	margin-right: 0;
+
+	@include media-breakpoint-down( md ) {
+		width: 100%;
+		font-size: 18.8px;
+	}
+}
+
+.keyword-submit {
+	@include media-breakpoint-down( md ) {
+		margin-top: 5px;
+	}
+}
+
+.hidden-name {
+	display: none;
+}
+
+.name-option {
+	display: inline-block;
+	margin: 5px;
+	padding: 20px 32.5px;
+	color: $white;
+	font-size: 20px;
+	text-decoration: none;
+	background: transparent;
+	border: 2px solid $white;
+	border-radius: 4px;
+	transition: all 0.5s ease;
+
+	@include media-breakpoint-down( md ) {
+		font-size: 18.8px;
+	}
+
+	&:hover {
+		color: $fresh-blue;
+		background: $white;
+		cursor: pointer;
+	}
+}
+
+.lights-row {
+	width: 100%;
+	height: 40px;
+}
+
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.lights-left,
+.lights-right {
+	width: 40px;
+}
+
+.business-name-result {
+	padding: 40px 20px;
+	color: #fff;
+	font-size: 40px;
+}
+
+.lights-row,
+.lights-col {
+	@include media-breakpoint-down( sm ) {
+		display: none;
+	}
+}
+
+.magic-wand {
+	// z-index: -10;
+	display: none;
+
+	@include media-breakpoint-up( lg ) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: block;
+	}
+}
+
+.hidden-wand {
+	display: none;
+}
+
+// Options - end
+// Result - start
+.business-name-lead-off {
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+
+.building-left,
+.building-right {
+	bottom: 0;
+	display: none;
+}
+
+.look-sign {
+	display: none;
+
+	@include media-breakpoint-up( lg ) {
+		right: 180px;
+		bottom: -60px;
+	}
+}
+
+.building-left,
+.building-right,
+.look-sign {
+	@include media-breakpoint-up( lg ) {
+		position: absolute;
+		display: block;
+		// z-index: -10;
+		opacity: 0;
+	}
+}
+
+.building-left {
+	left: 0;
+}
+
+.building-right {
+	right: 0;
+}
+
+.tile {
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 0;
+	padding: 0;
+	background-image: none, url( ./../../../images/business-name-generator/lights.svg );
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-size: 160px 160px;
+	border: none;
+	border-radius: none;
+	box-shadow: none;
+}
+
+// Result - end
+// How to Start a Small Business Section - start
+.blog {
+	&__heading {
+		margin-top: 0;
+		margin-bottom: 4.6875%;
+		padding-top: 9.5%;
+		color: $fresh-blue;
+		font-size: 36px;
+		text-align: center;
+
+		@include media-breakpoint-up( lg ) {
+			margin-bottom: 45px;
+			padding-top: 70px;
+		}
+
+		@include media-breakpoint-down( md ) {
+			font-size: 33.12px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			padding-top: 38.906px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 990px;
+		margin: 0 auto;
+		padding-bottom: 9.498%;
+
+		@include media-breakpoint-up( lg ) {
+			padding-bottom: 75px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			padding-bottom: 42.727px;
+		}
+	}
+
+	&__post {
+		box-sizing: border-box;
+		width: 29.33333333%;
+		margin-right: 2%;
+		margin-left: 2%;
+		padding-right: 29.5px;
+		padding-left: 29.5px;
+
+		@include media-breakpoint-down( md ) {
+			width: 96%;
+			margin-bottom: 40px;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+
+		&:last-child {
+			@include media-breakpoint-down( md ) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__image {
+		display: block;
+		max-width: 100%;
+		margin-bottom: 25px;
+
+		@include media-breakpoint-down( sm ) {
+			margin-right: auto;
+			margin-bottom: 10px;
+			margin-left: auto;
+		}
+	}
+
+	&__title {
+		margin-bottom: 12px;
+		color: $fresh-blue;
+		font-size: 22px;
+
+		@include media-breakpoint-down( md ) {
+			margin-bottom: 6px;
+			font-size: 20.24px;
+			text-align: center;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			text-align: left;
+		}
+	}
+
+	&__excerpt {
+		margin-bottom: 16px;
+		font-size: 16px;
+
+		@include media-breakpoint-down( md ) {
+			font-size: 15.04px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			margin-bottom: 8px;
+			font-size: 14.4px;
+			line-height: 1.2;
+		}
+	}
+
+	&__read-more {
+		margin: 0;
+		color: $fresh-blue;
+		//font-weight: normal;
+		font-size: 14px;
+
+		@include media-breakpoint-down( md ) {
+			text-align: center;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			font-size: 12.6px;
+			text-align: left;
+		}
+	}
+
+	&__title-link {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.starting-small-business {
+	background: $white;
+}
+
+// How to Start a Small Business Section - end
+// Email Sign-Up - start
+.email-signup {
+	&__title {
+		margin-top: 0;
+		margin-bottom: 10px;
+		padding-top: 50px;
+		color: $white;
+		font-size: 40px;
+		line-height: 1;
+		text-align: center;
+
+		@include media-breakpoint-down( md ) {
+			font-size: 36.8px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			font-size: 36px;
+		}
+	}
+
+	&__info {
+		max-width: 766px;
+		margin: 0 auto 3.75%;
+		color: $additional-blue;
+		font-size: 18px;
+		line-height: 1.2;
+		text-align: left;
+
+		@include media-breakpoint-up( md ) {
+			text-align: center;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			margin-bottom: 36px;
+		}
+
+		@include media-breakpoint-down( md ) {
+			font-size: 16.92px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			font-size: 16.2px;
+		}
+	}
+
+	&__form {
+		padding-bottom: 6.772%;
+
+		@include media-breakpoint-up( lg ) {
+			padding-bottom: 65px;
+		}
+
+		@include media-breakpoint-down( sm ) {
+			padding-bottom: 30.469px;
+		}
+	}
+
+	&__form-container {
+		display: block;
+		width: 510px;
+		max-width: 100%;
+		margin: 0 auto;
+
+		@include media-breakpoint-down( sm ) {
+			width: inherit;
+		}
+	}
+
+	iframe {
+		height: 230px;
+	}
+}
+
+.form-input {
+	box-sizing: border-box;
+	padding: 14px 18px;
+	color: #222;
+	font-size: 20px;
+	border: 1px solid #bac9d4;
+	border-radius: 4px;
+	box-shadow: 0 0 0 2px transparent;
+
+	&.has-error {
+		background-color: #feecee;
+		border: 2px solid $form-feedback-invalid-color;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		box-shadow: none;
+
+		@include media-breakpoint-up( md ) {
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+	}
+}
+
+// Email Sign-Up - end
+.hidden-step {
+	display: none;
+}
+
+.classic-footer {
+	border-top: 1px solid #bfbfbf;
+
+	&__wrapper {
+		max-width: 990px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 20px 15px;
+
+		p {
+			margin: 0;
+			padding: 0;
+			color: $accessible-grey;
+			font-size: px-to-rem( 13px );
+			line-height: 20px;
+		}
+	}
+}

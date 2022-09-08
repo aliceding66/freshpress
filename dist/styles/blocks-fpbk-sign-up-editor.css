@@ -1,0 +1,17 @@
+.editor-styles-wrapper .sso-signup_apple,
+.editor-styles-wrapper .sso-signup_google {
+  pointer-events: none;
+}
+.editor-styles-wrapper .sign-up__security-link {
+  margin-top: 1rem;
+}
+.editor-styles-wrapper .sign-up__security-link .position-absolute {
+  left: -15px;
+}
+.editor-styles-wrapper .sign-up__policy-privacy .form-control-checkbox {
+  top: 8px;
+  left: -24px;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=blocks-fpbk-sign-up-editor.css.map*/

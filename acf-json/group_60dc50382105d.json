@@ -1,0 +1,63 @@
+{
+    "key": "group_60dc50382105d",
+    "title": "Block - Mobile Segment Navigation",
+    "fields": [
+        {
+            "key": "field_60dc505b4c661",
+            "label": "Links",
+            "name": "mobile_segment_navigation_links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_60dc50c74c662",
+                    "label": "Link",
+                    "name": "mobile_segment_navigation_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/mobile-segment-navigation"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308042
+}

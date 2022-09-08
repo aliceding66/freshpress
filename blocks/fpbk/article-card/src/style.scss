@@ -1,0 +1,74 @@
+// Article Card.
+
+@import '~styles/freshpress-includes';
+
+.article-card {
+	background-color: $white;
+	border: solid 1px $rule-grey;
+	border-radius: 10px;
+	box-shadow: 4px 4px 0 0 rgba( $midnight-blue, 0.1 );
+
+	&__top {
+		border-radius: 9px 9px 0 0;
+	}
+
+	&__image {
+		height: 0;
+		padding-top: 56.25%;
+		background-color: $rule-grey;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__bottom {
+		padding: 30px 22px 50px;
+	}
+
+	&__category {
+		top: 0;
+		width: calc( 100% - 2rem );
+		max-width: 180px;
+		color: $white;
+		font-weight: $font-weight-bold;
+		font-size: px-to-rem( 12 );
+		background: $midnight-blue;
+		box-shadow: 2px 2px 2px 0 rgba( $midnight-blue, 0.1 );
+		transform: translateY( -50% );
+	}
+
+	&__info {
+		border-radius: 0 0 10px 10px;
+
+		h3 {
+			font-size: px-to-rem( 16 );
+			line-height: calc( 22 / 16 );
+		}
+	}
+
+	&__interaction {
+		right: 1.5rem;
+		bottom: 1.5rem;
+		left: 1.5rem;
+		width: calc( 100% - 3rem );
+	}
+
+	&__read-time {
+		color: $midnight-blue;
+		font-size: px-to-rem( 10 );
+		font-style: italic;
+	}
+
+	&__cta {
+		background-color: $white;
+
+		.btn {
+			font-size: px-to-rem( 13 );
+
+			&:hover {
+				color: $white;
+				background-color: $fresh-blue;
+				border-color: $fresh-blue;
+			}
+		}
+	}
+}

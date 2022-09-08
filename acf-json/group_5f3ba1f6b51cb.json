@@ -1,0 +1,445 @@
+{
+    "key": "group_5f3ba1f6b51cb",
+    "title": "Block - Flexible Background",
+    "fields": [
+        {
+            "key": "field_5f3ba203b6904",
+            "label": "Background Colour",
+            "name": "background_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60e441bec0c69",
+            "label": "Background Images",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60e4390af24fb",
+            "label": "Background Images",
+            "name": "background_images",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Breakpoint",
+            "sub_fields": [
+                {
+                    "key": "field_60e43939f24fc",
+                    "label": "Screen Size",
+                    "name": "screen_size",
+                    "type": "select",
+                    "instructions": "Image visible since breakpoint",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "0": "Mobile Small",
+                        "480": "Mobile Large",
+                        "768": "Tablet",
+                        "1024": "Desktop Small",
+                        "1200": "Desktop Large",
+                        "1600": "Desktop Extra Large"
+                    },
+                    "default_value": 0,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60e439a1f24fd",
+                    "label": "Background Image",
+                    "name": "background_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_60e439b4f24fe",
+                    "label": "Background Colour",
+                    "name": "background_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "wpml_cf_preferences": 3,
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_60e439ebf24ff",
+                    "label": "Background Size",
+                    "name": "background_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "auto 100%": "Normal",
+                        "cover": "Cover",
+                        "custom": "Custom"
+                    },
+                    "default_value": "auto 100%",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60e43a21f2500",
+                    "label": "Background Position",
+                    "name": "background_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "center": "Center",
+                        "center top": "Center Top",
+                        "center bottom": "Center Bottom",
+                        "left center": "Left Center",
+                        "right center": "Right Center",
+                        "custom": "Custom"
+                    },
+                    "default_value": "center",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60e43a7ff2502",
+                    "label": "Custom Background Size",
+                    "name": "custom_background_size",
+                    "type": "text",
+                    "instructions": "e. g. \"80% 90%\", \"auto 400px\" etc.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60e439ebf24ff",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60ec1acd6ecd8",
+                    "label": "Custom Background Position",
+                    "name": "custom_background_position",
+                    "type": "text",
+                    "instructions": "e. g. \"top center\", \"40px left\" etc.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60e43a21f2500",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60e44739dc76e",
+                    "label": "Block Max Width",
+                    "name": "max_width",
+                    "type": "text",
+                    "instructions": "e. g. : \"400px\", \"50%\". Leave \"none\" to reset.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "none",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60e4474cdc76f",
+                    "label": "Block Min Height",
+                    "name": "min_height",
+                    "type": "text",
+                    "instructions": "e. g. : \"400px\". Leave \"auto\" to reset.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "auto",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6273c32f6d9d5",
+                    "label": "Offset",
+                    "name": "offset",
+                    "type": "text",
+                    "instructions": "Vertical offset for background. Negative value to move up and positive value to move down.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6275139ea49b7",
+                    "label": "Content responsive padding",
+                    "name": "content_responsive_padding",
+                    "type": "range",
+                    "instructions": "Vertical padding applied based on screen width. Useful for mobile background images that has to be stuck to top\/bottom.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": 0,
+                    "min": 0,
+                    "max": 100,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6273a41d76060",
+            "label": "Reversed Corners",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 1
+        },
+        {
+            "key": "field_6273a12351db1",
+            "label": "Reversed Corners",
+            "name": "reversed_corners",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "table",
+            "button_label": "Add Reversed Corner",
+            "sub_fields": [
+                {
+                    "key": "field_6273a14551db2",
+                    "label": "Placement",
+                    "name": "placement",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "up-left": "Top left",
+                        "up": "Top right",
+                        "down": "Bottom left",
+                        "down-right": "Bottom right"
+                    },
+                    "default_value": "up-left",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6273a1c751db3",
+                    "label": "Colour",
+                    "name": "colour",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "white": "White",
+                        "blue": "Blue",
+                        "light-blue": "Light Blue"
+                    },
+                    "default_value": "white",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/flexible-colour-background"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651840348
+}

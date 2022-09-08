@@ -1,0 +1,12 @@
+{
+  "taxonomy": "media_category",
+  "taxonomy_plural": "media_categories",
+  "label": "Media Category",
+  "label_plural": "Media Categories",
+  "post_types": [
+    "attachment"
+  ],
+  "args": {
+    "public": false
+  }
+}

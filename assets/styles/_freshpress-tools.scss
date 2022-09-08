@@ -1,0 +1,193 @@
+@import './freshpress-includes';
+
+$fbtools-text-colour: #062941;
+$fbtools-label-text-colour: rgba( 6, 41, 65, 0.8 );
+$fbtools-blue-accent-colour: #0d83dd;
+$fbtools-error-colour: #fa425e;
+$fbtools-input-border-colour: rgba( 6, 41, 65, 0.2 );
+$fbtools-button-main-colour: #86c332;
+$fbtools-button-inline-colour: #639f0f;
+$fbtools-result-background-colour: #f1f9fe;
+$fbtools-result-text-muted-colour: #0d83de;
+
+.freshpress-tools {
+	&--wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	&--wrapper-border {
+		overflow: hidden;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		box-shadow: 4px 4px 0 0 hsla( 205, 83%, 14%, 7% );
+	}
+
+	&--heading {
+		padding-bottom: 27px;
+		color: $fbtools-text-colour;
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 32px;
+		text-align: left;
+	}
+
+	&--input {
+		&-wrapper {
+			position: relative;
+			margin: 0;
+			padding: 0;
+		}
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			margin: 0;
+			padding-bottom: 27px;
+			line-height: 18px;
+		}
+
+		&-label {
+			margin: 0;
+			padding-bottom: 7px;
+			color: $fbtools-label-text-colour;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 18px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		&-icon {
+			position: absolute;
+			top: 13px;
+			left: 9px;
+			display: flex;
+			height: 17px;
+			color: $fbtools-blue-accent-colour;
+		}
+
+		&-field {
+			box-sizing: border-box;
+			width: 100%;
+			height: 44px;
+			padding: 7px 7px 7px 36px;
+			color: $fbtools-text-colour;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 18px;
+			border: 2px solid $fbtools-input-border-colour;
+			border-radius: 5px;
+
+			&::placeholder {
+				opacity: 0.5;
+			}
+
+			&--has-error {
+				color: $fbtools-error-colour;
+				background-color: rgba( 250, 66, 94, 0.1 );
+				border: 2px solid $fbtools-error-colour;
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+
+				&::placeholder {
+					color: $fbtools-error-colour;
+					opacity: 0.5;
+				}
+			}
+		}
+
+		&--error-message {
+			padding: 5px;
+			color: #fff;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 24px;
+			background-color: $fbtools-error-colour;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+
+			&:empty {
+				display: none !important;
+			}
+		}
+	}
+
+	&--icon {
+		&--has-error {
+			&,
+			svg {
+				color: $fbtools-error-colour;
+			}
+		}
+	}
+
+	&--button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 51px;
+		padding: 12px 20px 10px;
+		color: #fff;
+		font-weight: 400;
+		font-size: 18px;
+		background-color: $fbtools-button-main-colour;
+		border-style: none;
+		border-radius: 5px;
+		cursor: pointer;
+
+		&:focus {
+			background-color: $fbtools-button-main-colour;
+		}
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+		}
+
+		&-inline {
+			width: auto;
+			margin: 0 auto;
+			color: $fbtools-button-inline-colour;
+			background-color: #fff;
+			border-style: none;
+
+			@supports ( background-color: transparent ) {
+				&,
+				&:focus,
+				&:hover {
+					background-color: initial;
+				}
+			}
+
+			&:focus,
+			&:hover {
+				background-color: #fff;
+			}
+		}
+
+		&:not( :last-child ),
+		&-inline:not( :last-child ) {
+			margin-bottom: 18px;
+		}
+	}
+}
+
+.editor-styles-wrapper {
+	.freshpress-tools {
+		&--wrapper {
+			&,
+			* {
+				cursor: default !important;
+				user-select: none !important;
+				pointer-events: none !important;
+			}
+		}
+	}
+}

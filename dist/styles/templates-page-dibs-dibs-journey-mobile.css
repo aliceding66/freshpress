@@ -1,0 +1,114 @@
+.journey_mobile {
+  padding-bottom: 100px;
+  color: #fff;
+  background-color: #002d79;
+  border-top-right-radius: 88px;
+}
+.journey_mobile__slides-outer-container {
+  width: 360px;
+}
+.journey_mobile .swiper {
+  overflow: hidden;
+}
+.journey_mobile .swiper-wrapper {
+  height: 300px;
+}
+.journey_mobile__slide-title {
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+.journey_mobile__slide-text {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.journey_mobile__slide {
+  position: relative;
+  width: 50%;
+  border-color: #0075dd;
+  border-style: solid;
+  border-width: 0;
+}
+.journey_mobile__slide::before {
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #ffc414;
+  border-radius: 50px;
+  content: "";
+}
+.journey_mobile__slide .journey_mobile__slide-text {
+  opacity: 0.3;
+}
+.journey_mobile .swiper-slide-active .journey_mobile__slide-text {
+  opacity: 1;
+}
+.journey_mobile__slide_left {
+  align-self: flex-start;
+  padding-right: 20px;
+  border-right-width: 1px;
+}
+.journey_mobile__slide_left::before {
+  right: -8px;
+}
+.journey_mobile__slide_right {
+  left: -1px;
+  align-self: flex-end;
+  padding-left: 20px;
+  border-left-width: 1px;
+}
+.journey_mobile__slide_right::before {
+  left: -8px;
+}
+.journey_mobile__slide_first::before {
+  top: 0;
+}
+.journey_mobile__slide_last {
+  height: 300px !important;
+}
+.journey_mobile__today-container {
+  width: 360px;
+}
+.journey_mobile__today {
+  bottom: -90px;
+  left: 29%;
+  z-index: 99;
+  width: 150px;
+  padding: 10px 25px 15px;
+  color: #fff;
+  background-color: #002057;
+  border-radius: 10px 10px 10px 0;
+}
+.journey_mobile__today::after {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-color: #002057 transparent transparent transparent;
+  border-style: solid;
+  border-width: 36px 36px 0 0;
+  content: "";
+}
+.journey_mobile__today-title {
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+.journey_mobile__today-title::after {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 10px auto;
+  background-color: #ffc414;
+  border-radius: 50px;
+  content: "";
+}
+.journey_mobile__today-text {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-journey-mobile.css.map*/

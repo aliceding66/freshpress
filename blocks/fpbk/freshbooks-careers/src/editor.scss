@@ -1,0 +1,10 @@
+.editor-styles-wrapper {
+	[class*='d-'][class*='-none'] {
+		&.freshbooks-careers {
+			&__headings,
+			&__item {
+				display: flex !important;
+			}
+		}
+	}
+}

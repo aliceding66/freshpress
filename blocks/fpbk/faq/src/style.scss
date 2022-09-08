@@ -1,0 +1,127 @@
+@import '~styles/freshpress-includes';
+
+// FAQ.
+
+// Helper Vars
+$spacer-3: map-get( $spacers, 3 );
+$spacer-4: map-get( $spacers, 4 );
+$spacer-5: map-get( $spacers, 5 );
+
+$headline-margin: px-to-rem( 40 );
+$answer-margin: px-to-rem( 35 );
+
+.faq {
+	display: block;
+	margin-bottom: $spacer-3;
+
+	&__headline {
+		margin-bottom: $headline-margin;
+	}
+
+	&__items {
+		border-top: 1px solid $rule-grey;
+	}
+
+	&__item {
+		border-bottom: 1px solid $rule-grey;
+	}
+
+	&__question {
+		position: relative;
+
+		h3 {
+			padding: 0 $spacer-5 0 $spacer-3;
+			color: $fresh-blue;
+			font-weight: $font-weight-book;
+			font-size: px-to-rem( 20 );
+			line-height: calc( 26 / 20 );
+			letter-spacing: -0.01px;
+			cursor: pointer;
+
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 24 );
+				line-height: calc( 32 / 24 );
+			}
+		}
+
+		.faq__arrow {
+			position: absolute;
+			top: 50%;
+			right: $spacer-3;
+			transform: translateY( -50% );
+			transition: transform 0.2s ease-in-out;
+
+			path {
+				fill: $rule-grey;
+			}
+		}
+	}
+
+	&__answer {
+		max-height: 0;
+		padding: 0 $spacer-5 0 $spacer-3;
+		overflow: hidden !important;
+		font-size: px-to-rem( 18 );
+		line-height: calc( 26 / 18 );
+		transition: max-height 0.2s ease-in-out;
+	}
+
+	&__answer-content {
+		padding-right: 15px;
+		padding-left: 15px;
+
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__items-revealed {
+		.faq__answer {
+			max-height: 200vh;
+			margin-bottom: $answer-margin;
+		}
+
+		.faq__arrow {
+			transform: translateY( -50% ) rotate( 180deg );
+		}
+	}
+
+	&.is-style-new {
+		display: flex !important;
+		flex-direction: column;
+		margin-bottom: 3rem;
+
+		@include media-breakpoint-up( lg ) {
+			flex-direction: row;
+		}
+
+		.faq__headline {
+			display: flex;
+			flex: 2;
+			margin: 0.5rem 1rem;
+			font-size: px-to-rem( 25 ) !important;
+			text-align: left !important;
+
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 32 ) !important;
+			}
+		}
+
+		.faq__items {
+			display: flex;
+			flex: 3;
+			flex-direction: column;
+			border-top: none !important;
+		}
+
+		.faq__question {
+			h3 {
+				font-size: px-to-rem( 20 ) !important;
+
+				@include media-breakpoint-up( lg ) {
+					font-size: px-to-rem( 22 ) !important;
+				}
+			}
+		}
+	}
+}

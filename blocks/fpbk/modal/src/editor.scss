@@ -1,0 +1,19 @@
+.editor-styles-wrapper {
+	.modal {
+		position: static !important;
+		display: block !important;
+		height: auto !important;
+
+		.modal-dialog-centered {
+			min-height: unset !important;
+		}
+	}
+
+	[data-dismiss='modal'] {
+		cursor: text;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

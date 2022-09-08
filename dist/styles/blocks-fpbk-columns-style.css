@@ -1,0 +1,8 @@
+.columns {
+  flex-wrap: wrap !important;
+}
+.columns--same-height .column {
+  display: table-cell !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-columns-style.css.map*/

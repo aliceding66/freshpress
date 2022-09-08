@@ -1,0 +1,9 @@
+@import '../../freshpress-includes';
+
+.reading-progress-bar {
+	top: 0;
+	left: 0;
+	z-index: $zindex-progress-bar;
+	height: 6px;
+	background-color: $fresh-blue;
+}

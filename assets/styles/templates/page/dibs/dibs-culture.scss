@@ -1,0 +1,130 @@
+@import '../../../freshpress-includes';
+
+.culture {
+	&__4e-outter-container {
+		@include media-breakpoint-up( xxl ) {
+			top: 20px;
+			right: -150px;
+		}
+	}
+
+	&__4e-container {
+		max-width: 360px;
+		height: 415px;
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 645px;
+			height: 453px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			height: 200px;
+		}
+	}
+
+	&__label {
+		right: 45px;
+		width: 147px;
+		height: 147px;
+		background-color: $border-yellow;
+		border-top-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+
+		@include media-breakpoint-up( lg ) {
+			width: 174px;
+			height: 174px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			top: 42px;
+			right: -60px;
+		}
+	}
+	&__label-title {
+		font-size: px-to-rem( 23 );
+		line-height: px-to-rem( 28 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 28 );
+			line-height: px-to-rem( 33 );
+		}
+	}
+
+	&__label-text {
+		font-size: px-to-rem( 15 );
+		line-height: px-to-rem( 18 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 22 );
+		}
+	}
+
+	&__4e {
+		top: 157px;
+
+		@include media-breakpoint-up( lg ) {
+			top: 100px;
+		}
+	}
+
+	&__4e-title {
+		display: inline-block;
+		color: $midnight-blue;
+		font-weight: 500;
+		font-size: px-to-rem( 64 );
+		line-height: px-to-rem( 68 );
+		letter-spacing: -0.7px;
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 104 );
+			line-height: px-to-rem( 91 );
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			font-size: px-to-rem( 130 );
+			line-height: px-to-rem( 112 );
+		}
+	}
+
+	&__4e-title_1 {
+		left: 40px;
+	}
+
+	&__4e-title_2 {
+		left: -3px;
+	}
+
+	&__4e-title_3 {
+		left: 38px;
+	}
+
+	&__4e-title_4 {
+		left: 116px;
+
+		@include media-breakpoint-up( lg ) {
+			left: 215px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			left: 315px;
+		}
+	}
+
+	&__4e-decoration {
+		color: $border-yellow;
+	}
+
+	&__content-container {
+		margin: auto;
+
+		@include media-breakpoint-up( lg ) {
+			max-width: $dibs-block-max-width;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			max-width: 440px;
+			margin-left: 220px;
+		}
+	}
+}

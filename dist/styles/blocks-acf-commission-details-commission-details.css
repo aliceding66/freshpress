@@ -1,0 +1,41 @@
+.commission-details__tile {
+  max-width: 425px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 0 rgba(6, 41, 66, 0.08);
+}
+.commission-details__heading {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.33333;
+  letter-spacing: -0.15px;
+}
+.commission-details__description {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+.commission-details__earn-up-to {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.commission-details__value {
+  font-weight: 500;
+  font-size: 6.25rem;
+  line-height: 0.72222;
+}
+.commission-details__currency-sign {
+  font-weight: 500;
+  font-size: 2.875rem;
+  line-height: 0.88889;
+}
+.commission-details__currency {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.88889;
+}
+
+/*# sourceMappingURL=blocks-acf-commission-details-commission-details.css.map*/

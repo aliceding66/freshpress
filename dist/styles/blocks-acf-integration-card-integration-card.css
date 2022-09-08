@@ -1,0 +1,95 @@
+.integration-card {
+  flex-basis: 100%;
+  box-shadow: 4px 4px 0 rgba(0, 27, 64, 0.07);
+}
+@media (min-width: 768px) {
+  .integration-card {
+    flex-basis: 32%;
+    max-width: 300px;
+    min-height: 281px;
+    margin-right: 13px;
+  }
+  .integration-card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .integration-card {
+    min-height: 388px;
+  }
+}
+.integration-card .integrations-category__freshbooks-tested {
+  font-size: 0.625rem;
+}
+@media (min-width: 1280px) {
+  .integration-card .integrations-category__freshbooks-tested {
+    font-size: 0.875rem;
+  }
+}
+.integration-card__integration-top {
+  height: 112px;
+}
+@media (min-width: 768px) {
+  .integration-card__integration-top {
+    height: 85px;
+  }
+}
+@media (min-width: 1280px) {
+  .integration-card__integration-top {
+    height: 112px;
+  }
+}
+.integration-card__integration-image {
+  max-width: 180px;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.1s;
+}
+@media (min-width: 768px) {
+  .integration-card__integration-image {
+    max-width: 150px;
+  }
+}
+@media (min-width: 1280px) {
+  .integration-card__integration-image {
+    max-width: 180px;
+  }
+}
+.integration-card__freshbooks-tested {
+  color: #0d83dd;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-image: url(/wp-content/themes/freshpress/dist/images/single/integrations/checkmark-blue.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.integration-card__integration-excerpt {
+  font-size: 0.8125rem;
+}
+@media (min-width: 1280px) {
+  .integration-card__integration-excerpt {
+    font-size: 0.9375rem;
+  }
+}
+.integration-card__top-pick {
+  top: -39px;
+  right: -15px;
+  width: 49px;
+  height: 44px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/taxonomy/integrations/top-pick.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.integration-card__integration-tag {
+  font-size: 0.75rem;
+}
+.integration-card__integration-bottom-wrap {
+  bottom: 0;
+}
+.integration-card__integration-info {
+  padding-bottom: 65px;
+}
+
+/*# sourceMappingURL=blocks-acf-integration-card-integration-card.css.map*/

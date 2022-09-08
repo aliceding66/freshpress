@@ -1,0 +1,16 @@
+{
+  "taxonomy": "accounting_partners_industry",
+  "taxonomy_plural": "accounting_partners_industries",
+  "label": "Industry",
+  "label_plural": "Industries",
+  "post_types": [
+    "accounting_partners"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "accounting-partners/industry",
+      "with_front": false
+    },
+    "publicly_queryable": false
+  }
+}

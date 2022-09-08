@@ -1,0 +1,23 @@
+.editor-styles-wrapper {
+	.wp-block-fpbk-columns {
+		&[class*='d-'][class*='-none'] {
+			display: flex !important;
+		}
+
+		.wp-block-fpbk-column {
+			pointer-events: none;
+
+			&[class*='d-'][class*='-none'] {
+				display: flex !important;
+			}
+
+			.block-editor-inner-blocks {
+				pointer-events: all;
+			}
+		}
+
+		.block-list-appender {
+			order: 100 !important;
+		}
+	}
+}

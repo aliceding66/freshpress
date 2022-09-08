@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/carousel",
+  "title": "Carousel",
+  "category": "freshblocks",
+  "description": "A block containing a carousel. Insert blocks with swiper-slide classname.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

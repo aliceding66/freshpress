@@ -1,0 +1,30 @@
+// Resellers Commission.
+
+@import '~styles/freshpress-includes';
+
+.resellers-commission {
+	&__content {
+		max-width: 200px;
+	}
+
+	&__upper-text {
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 16 );
+	}
+
+	&__highlighted-text {
+		font-size: px-to-rem( 75 );
+		line-height: calc( 24 / 28 );
+	}
+
+	&__off-text {
+		max-width: 50px;
+		font-size: px-to-rem( 16 );
+	}
+
+	&.rounded-circle {
+		width: 253px;
+		height: 253px;
+		padding: 0 0 15px 20px; // align to center
+	}
+}

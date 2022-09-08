@@ -1,0 +1,149 @@
+// Typography.
+html {
+	font-size: $font-size-root;
+}
+
+body {
+	font-weight: $font-weight-normal;
+	font-size: map-get( $base-values, font-size );
+	font-family: $fb-font-family;
+	line-height: map-get( $base-values, line-height );
+	letter-spacing: map-get( $base-values, letter-spacing );
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: $font-weight-medium;
+	font-family: $fb-font-family;
+}
+
+h1,
+.h1 {
+	@include output-responsive-map( $h1-values );
+}
+
+h2,
+.h2 {
+	@include output-responsive-map( $h2-values );
+}
+
+h3,
+.h3 {
+	@include output-responsive-map( $h3-values );
+}
+
+h4,
+.h4 {
+	@include output-responsive-map( $h4-values );
+}
+
+h5,
+.h5 {
+	@include output-responsive-map( $h5-values );
+}
+
+h6,
+.h6 {
+	@include output-responsive-map( $h6-values );
+}
+
+p {
+	margin-bottom: map-get( $base-values, margin-bottom );
+}
+
+a {
+	color: $fresh-blue;
+}
+
+.font-default {
+	font-family: $font-family-sans-serif !important;
+}
+
+.font-additional {
+	font-family: $font-freshbooks-script !important;
+}
+
+.font-weight-medium {
+	font-weight: $font-weight-medium;
+}
+
+.font-weight-bold {
+	font-weight: $font-weight-bold;
+}
+
+.font-size-smaller {
+	font-size: smaller;
+}
+
+.font-size-l {
+	font-size: 2rem;
+	@include media-breakpoint-up( sm ) {
+		font-size: 3rem;
+	}
+	@include media-breakpoint-up( lg ) {
+		font-size: 3.375rem;
+	}
+}
+
+.font-size-xl {
+	font-size: 2.375rem;
+	@include media-breakpoint-up( sm ) {
+		font-size: 3.5rem;
+	}
+	@include media-breakpoint-up( lg ) {
+		font-size: 4rem;
+	}
+}
+
+.font-size-xxl {
+	font-size: 4rem;
+	@include media-breakpoint-up( sm ) {
+		font-size: 5.5rem;
+	}
+	@include media-breakpoint-up( lg ) {
+		font-size: 6rem;
+	}
+}
+
+.font-size-xxxl {
+	font-size: 3.75rem;
+	@include media-breakpoint-up( sm ) {
+		font-size: 6.25rem;
+	}
+	@include media-breakpoint-up( lg ) {
+		font-size: 7.5rem;
+	}
+}
+
+// Colours
+.text-primary {
+	color: $fresh-blue !important;
+}
+
+.text-secondary {
+	color: $midnight-blue !important;
+}
+
+a.text-secondary {
+	&:hover {
+		color: $fresh-blue !important;
+	}
+}
+
+.text-muted {
+	color: $dark-grey !important;
+}

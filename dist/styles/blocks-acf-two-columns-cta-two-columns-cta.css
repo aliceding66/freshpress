@@ -1,0 +1,186 @@
+.two-columns-cta {
+  position: relative;
+  margin: 0 -15px;
+  padding: 52px 0;
+  color: #fff;
+  background-color: #001b40;
+}
+@media (min-width: 768px) {
+  .two-columns-cta {
+    padding: 86px 0 87px;
+  }
+}
+@media (min-width: 1024px) {
+  .two-columns-cta {
+    padding: 100px 0 94px;
+  }
+}
+.two-columns-cta__container {
+  position: relative;
+  z-index: 3;
+  width: 1209px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+@media (min-width: 768px) {
+  .two-columns-cta__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.two-columns-cta__content_left, .two-columns-cta__content_right {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .two-columns-cta__content_left, .two-columns-cta__content_right {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .two-columns-cta__content_left {
+    width: 361px;
+  }
+}
+@media (min-width: 1024px) {
+  .two-columns-cta__content_left {
+    width: 643px;
+  }
+}
+@media (min-width: 768px) {
+  .two-columns-cta__content_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 380px;
+  }
+}
+@media (min-width: 1024px) {
+  .two-columns-cta__content_right {
+    width: 438px;
+  }
+}
+@media (min-width: 1024px) {
+  .two-columns-cta__hightlighed {
+    display: flex;
+    width: 100%;
+  }
+}
+.two-columns-cta__hightlighed h2,
+.two-columns-cta__hightlighed p {
+  color: #fff;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .two-columns-cta__hightlighed h2,
+.two-columns-cta__hightlighed p {
+    display: inline;
+  }
+}
+@media (min-width: 1024px) {
+  .two-columns-cta__hightlighed h2,
+.two-columns-cta__hightlighed p {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+.two-columns-cta__hightlighed h2 {
+  font-size: 2.25rem;
+  line-height: 1.625rem;
+}
+@media (min-width: 1024px) {
+  .two-columns-cta__hightlighed h2 {
+    width: 248px;
+    font-size: 3.375rem;
+    line-height: 3.1875rem;
+  }
+}
+.two-columns-cta__hightlighed p {
+  margin-bottom: 56px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+@media (min-width: 1024px) {
+  .two-columns-cta__hightlighed p {
+    width: 367px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1280px) {
+  .two-columns-cta__hightlighed p {
+    width: 367px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+}
+.two-columns-cta__cta-description {
+  margin-top: 8px;
+  color: #ecf5fd;
+  font-size: 0.8125rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.05em;
+}
+@media (min-width: 768px) {
+  .two-columns-cta__cta-description {
+    width: 141px;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .two-columns-cta__cta-description p {
+    margin-bottom: 0;
+  }
+}
+.two-columns-cta .btn {
+  max-width: 219px;
+  padding: 11px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.4875rem;
+}
+@media (min-width: 1024px) {
+  .two-columns-cta .btn {
+    max-width: 280px;
+    padding: 13px 28px;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+  }
+}
+.two-columns-cta .btn-cta-blue {
+  color: #fff;
+  background-color: #0075dd;
+  border-color: #0075dd;
+  color: #fff;
+}
+.two-columns-cta .btn-cta-blue:hover {
+  color: #fff;
+  background-color: #0064bc;
+  border-color: #0064bc;
+}
+.two-columns-cta .btn-cta-blue:focus, .two-columns-cta .btn-cta-blue.focus {
+  color: #fff;
+  background-color: #0064bc;
+  border-color: #0064bc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 138, 226, 0.5);
+}
+.two-columns-cta .btn-cta-blue.disabled, .two-columns-cta .btn-cta-blue:disabled {
+  color: #fff;
+  background-color: #0075dd;
+  border-color: #0075dd;
+}
+.two-columns-cta .btn-cta-blue:not(:disabled):not(.disabled):active, .two-columns-cta .btn-cta-blue:not(:disabled):not(.disabled).active, .show > .two-columns-cta .btn-cta-blue.dropdown-toggle {
+  color: #fff;
+  background-color: #0064bc;
+  border-color: #0064bc;
+}
+.two-columns-cta .btn-cta-blue:not(:disabled):not(.disabled):active:focus, .two-columns-cta .btn-cta-blue:not(:disabled):not(.disabled).active:focus, .show > .two-columns-cta .btn-cta-blue.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 138, 226, 0.5);
+}
+.two-columns-cta .btn-cta-blue:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=blocks-acf-two-columns-cta-two-columns-cta.css.map*/

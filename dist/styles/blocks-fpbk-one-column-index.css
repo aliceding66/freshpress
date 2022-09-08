@@ -1,0 +1,29 @@
+.one-column__text {
+  max-width: 600px;
+}
+@media (min-width: 768px) {
+  .one-column__title {
+    font-size: 2.375rem;
+    line-height: 1.15789;
+  }
+}
+.one-column__image {
+  max-width: 100%;
+}
+@media (min-width: 480px) {
+  .one-column__image {
+    max-width: 330px;
+  }
+}
+@media (min-width: 768px) {
+  .one-column__image {
+    max-width: 630px;
+  }
+}
+@media (min-width: 1024px) {
+  .one-column__image {
+    max-width: 900px;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-one-column-index.css.map*/

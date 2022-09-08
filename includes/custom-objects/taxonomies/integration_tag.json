@@ -1,0 +1,16 @@
+{
+  "taxonomy": "integration_tag",
+  "taxonomy_plural": "integration_tags",
+  "label": "Integration Tag",
+  "label_plural": "Integration Tags",
+  "post_types": [
+    "integration"
+  ],
+  "args": {
+    "hierarchical": false,
+    "rewrite": {
+      "slug": "integrations/tag",
+      "with_front": false
+    }
+  }
+}

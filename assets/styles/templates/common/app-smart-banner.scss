@@ -1,0 +1,96 @@
+@import '../../freshpress-includes';
+
+@media only screen and ( max-width: 1280px ) {
+	@supports not ( -webkit-touch-callout: none ) {
+		.app-smart-banner {
+			top: 0;
+			left: 0;
+			z-index: 30;
+			height: 78px;
+			font-family: Helvetica, arial, sans-serif;
+			background: $white;
+			border-bottom: 1px solid #ccc;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-size-adjust: none;
+
+			&__container {
+				margin: 0 auto;
+			}
+
+			&__close {
+				top: 7px;
+				left: 7px;
+				width: 17px;
+				height: 17px;
+				color: #b1b1b3;
+				font-size: px-to-rem( 15px );
+				line-height: calc( 17 / 15 );
+				text-decoration: none;
+				background: #efefef;
+				border: 0;
+				border-radius: 14px;
+				-webkit-font-smoothing: subpixel-antialiased;
+
+				&:hover,
+				&:active {
+					color: #333;
+				}
+			}
+
+			&__app-icon {
+				top: 10px;
+				left: 30px;
+				width: 57px;
+				height: 57px;
+				background-color: $white;
+
+				img {
+					width: 57px;
+					height: 57px;
+				}
+			}
+
+			&__app-info {
+				top: 15px;
+				left: 98px;
+				width: 44%;
+				color: #999;
+				font-weight: $font-weight-demi;
+				font-size: px-to-rem( 12px );
+				line-height: calc( 17 / 14 );
+
+				span {
+					font-weight: $font-weight-lighter;
+				}
+			}
+
+			&__app-title {
+				color: $black;
+				font-weight: $font-weight-demi;
+				font-size: px-to-rem( 15px );
+				line-height: calc( 17 / 15 );
+			}
+
+			&__button {
+				top: 24px;
+				right: 20px;
+				min-width: 12%;
+				height: 24px;
+				padding: 0 10px;
+				color: $white;
+				font-weight: $font-weight-normal;
+				font-size: px-to-rem( 14px );
+				line-height: calc( 24 / 14 );
+				text-decoration: none;
+				background-color: #6bce28;
+				border-bottom: 3px solid #6bce28;
+				border-radius: 5px;
+
+				&:hover {
+					background-color: #70d62a;
+					border-bottom: 3px solid #59af1f;
+				}
+			}
+		}
+	}
+}

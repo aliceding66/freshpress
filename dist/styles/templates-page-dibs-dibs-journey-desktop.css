@@ -1,0 +1,116 @@
+.journey_desktop {
+  height: 874px;
+  padding-bottom: 100px;
+  overflow: visible;
+  color: #fff;
+  background-color: #002d79;
+}
+@media (min-width: 1600px) {
+  .journey_desktop {
+    border-top-right-radius: 236px;
+  }
+}
+.journey_desktop__text-container {
+  top: 150px;
+  right: 50px;
+  width: 343px;
+  color: #fff;
+}
+@media (min-width: 1600px) {
+  .journey_desktop__text-container {
+    top: 200px;
+    right: 240px;
+    width: 443px;
+  }
+}
+.journey_desktop__timeline-container {
+  bottom: 0;
+  width: 936px;
+}
+.journey_desktop__image {
+  width: 100%;
+  height: auto;
+}
+.journey_desktop__timeline-year {
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.journey_desktop__timeline-dot {
+  cursor: pointer;
+}
+.journey_desktop__tooltip {
+  position: relative;
+  z-index: 9999;
+  display: none;
+  width: 270px;
+  padding: 10px 25px 25px;
+  color: #fff;
+  background-color: #002057;
+  border-radius: 10px 10px 10px 0;
+  filter: drop-shadow(8px 8px 11px rgba(0, 27, 64, 0.25));
+}
+.journey_desktop__tooltip::after {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-color: #002057 transparent transparent transparent;
+  border-style: solid;
+  border-width: 36px 36px 0 0;
+  filter: drop-shadow(8px 8px 11px rgba(0, 27, 64, 0.25));
+  content: "";
+}
+.journey_desktop__tooltip_active {
+  display: block;
+}
+.journey_desktop__tooltip-year {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+.journey_desktop__today-container {
+  right: -267px;
+  bottom: 65px;
+  width: 360px;
+}
+.journey_desktop__today {
+  width: 150px;
+  padding: 10px 25px 15px;
+  color: #fff;
+  background-color: #002057;
+  border-radius: 10px 10px 10px 0;
+}
+.journey_desktop__today::after {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-color: #002057 transparent transparent transparent;
+  border-style: solid;
+  border-width: 36px 36px 0 0;
+  content: "";
+}
+.journey_desktop__today-title {
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+.journey_desktop__today-title::after {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 10px auto;
+  background-color: #ffc414;
+  border-radius: 50px;
+  content: "";
+}
+.journey_desktop__today-text {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-journey-desktop.css.map*/

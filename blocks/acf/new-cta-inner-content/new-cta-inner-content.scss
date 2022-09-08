@@ -1,0 +1,82 @@
+// New Cta Inner Content.
+
+@import '~styles/freshpress-includes';
+
+$white: #fff;
+$button-blue: #0064bc;
+.new-cta-inner-content {
+	width: 450px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 5px;
+	color: $white;
+	text-align: center;
+	@include media-breakpoint-up( lg ) {
+		width: 590px;
+		&_lesswidth {
+			width: 550px;
+		}
+	}
+	&__pre-heading {
+		display: block;
+		margin-bottom: 16px;
+		font-size: px-to-rem( 16 );
+		font-family: $font-freshbooks-script;
+		line-height: px-to-rem( 20 );
+	}
+	&__title {
+		max-width: 100%;
+		margin-bottom: 8px;
+		font-size: px-to-rem( 30 );
+		line-height: px-to-rem( 28 );
+		@include media-breakpoint-up( lg ) {
+			width: 554px;
+			margin-bottom: 21px;
+			font-size: px-to-rem( 36 );
+			line-height: px-to-rem( 36 );
+		}
+	}
+	p {
+		margin-bottom: 24px;
+		color: $white;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( lg ) {
+			margin-bottom: 32px;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 24 );
+		}
+	}
+	.btn {
+		padding: 11px 22px;
+		font-weight: 500;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 20 );
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 20 );
+			line-height: px-to-rem( 24 );
+		}
+	}
+	.btn-cta-blue {
+		@include button-variant(
+			$fresh-new,
+			$fresh-new,
+			$button-blue,
+			$button-blue,
+			$button-blue,
+			$button-blue
+		);
+		color: $white;
+		&:hover {
+			color: $white;
+		}
+	}
+	.btn-cta-white {
+		@include button-variant( $white, $white, $rule-grey, $rule-grey, $rule-grey, $rule-grey );
+		color: $midnight-blue;
+		border: 2px solid $rule-grey;
+		&:hover {
+			color: $midnight-blue;
+		}
+	}
+}

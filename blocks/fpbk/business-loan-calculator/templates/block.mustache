@@ -1,0 +1,150 @@
+<div class="freshpress-tools--wrapper">
+	<div class="freshpress-tools--wrapper-border">
+		<form id="fbtoolsBlcForm" class="business-loan-calculator--form">
+			<div class="business-loan-calculator--form-container">
+				<div class="freshpress-tools--heading">
+					{{ labels.title }}
+				</div>
+
+				<div class="freshpress-tools--input-wrapper">
+					<label class="freshpress-tools--input-container">
+						<h5 class="freshpress-tools--input-label">{{ labels.input_amount_label }}</h5>
+						<div class="position-relative">
+							<span id="fbtoolsBlcLoanAmountIcon" class="freshpress-tools--input-icon">
+								{{{ icons.dollar }}}
+							</span>
+							<input
+									id="fbtoolsBlcLoanAmount"
+									class="freshpress-tools--input-field"
+									placeholder="$0.00"
+									autocomplete="off"
+									inputmode="numeric"
+									name="loanAmount"
+									value=""
+							>
+							<div id="fbtoolsBlcLoanAmountError" class="freshpress-tools--input--error-message"></div>
+						</div>
+					</label>
+				</div>
+
+				<div class="freshpress-tools--input-wrapper">
+					<label class="freshpress-tools--input-container">
+						<h5 class="freshpress-tools--input-label">{{ labels.input_rate_label }}</h5>
+						<div class="position-relative">
+							<span id="fbtoolsBlcLoanRateIcon" class="freshpress-tools--input-icon">
+								{{{ icons.rate }}}
+							</span>
+							<input
+									id="fbtoolsBlcLoanRate"
+									class="freshpress-tools--input-field"
+									placeholder="0.00%"
+									autocomplete="off"
+									inputmode="numeric"
+									name="loanRate"
+									value=""
+							>
+							<div id="fbtoolsBlcLoanRateError" class="freshpress-tools--input--error-message"></div>
+						</div>
+					</label>
+				</div>
+
+				<div class="business-loan-calculator--slider-wrapper">
+					<label class="d-inline">
+						<div class="business-loan-calculator--slider-row">
+							<h5 id="labelLoanTerm"
+								class="business-loan-calculator--slider-label">{{ labels.input_term_label }}</h5>
+							<input
+									id="fbtoolsBlcLoanYearsInput"
+									type="number"
+									class="business-loan-calculator--slider-number-field"
+									min="1"
+									max="30"
+									step="1"
+									aria-label="{{ labels.input_term_label }}"
+									aria-labelledby="labelLoanTerm"
+									title="{{ labels.input_term_label }}"
+									value="10"
+							>
+							<span class="business-loan-calculator--slider-number-field--label">&nbsp;{{ labels.years }}</span>
+						</div>
+
+						<div class="business-loan-calculator--slider-main-field-wrapper">
+							<input
+									id="fbtoolsBlcLoanYearsSlider"
+									class="business-loan-calculator--slider-main-field"
+									type="range"
+									min="1"
+									max="30"
+									step="1"
+									title="{{ labels.input_term_label }}"
+									aria-label="{{ labels.input_term_label }}"
+									aria-labelledby="{{ labels.input_term_label }}"
+									value="10"
+									style="background: linear-gradient(to right, rgb(13, 131, 222) 33.34%, rgb(204, 204, 204) 0px);"
+							>
+						</div>
+					</label>
+					<div class="business-loan-calculator--slider-main-field-label-wrapper">
+						<div class="business-loan-calculator--slider-main-field-label-item">1{{ labels.yr }}</div>
+						<div class="business-loan-calculator--slider-main-field-label-item">10{{ labels.yr }}</div>
+						<div class="business-loan-calculator--slider-main-field-label-item">20{{ labels.yr }}</div>
+						<div class="business-loan-calculator--slider-main-field-label-item">30{{ labels.yr }}</div>
+					</div>
+				</div>
+
+				<button class="freshpress-tools--button" type="submit">{{ labels.calculate }}</button>
+				<button id="fbtoolsBlcRefresh" class="freshpress-tools--button freshpress-tools--button-inline" type="button">
+					{{{ icons.refresh }}}&nbsp;{{ labels.refresh }}
+				</button>
+			</div>
+
+			<div class="business-loan-calculator--results-container">
+				<div class="freshpress-tools--heading">{{ labels.result_title }}</div>
+				<div class="business-loan-calculator--results-paragraph">
+					{{ labels.result_description--to-borrow }}
+					<span id="fbtoolsBlcResultLoanAmount" class="business-loan-calculator--results-value business-loan-calculator--results-value--muted">$0.00</span>
+					{{ labels.result_description--over-a }}
+					<span id="fbtoolsBlcResultYears" class="business-loan-calculator--results-value business-loan-calculator--results-value--muted">0</span>
+					{{ labels.result_description--year-term-your-monthly-payment-will-be }}
+					<span id="fbtoolsBlcResultMonthlyPayment" class="business-loan-calculator--results-value business-loan-calculator--results-value--muted">$0.00</span>
+					{{ labels.result_description--at-an-interest-rate-of }}
+					<span id="fbtoolsBlcResultRate" class="business-loan-calculator--results-value business-loan-calculator--results-value--muted">0.00%</span>
+					.
+				</div>
+
+				<div class="business-loan-calculator--results-summary">
+					<div class="business-loan-calculator--results-summary--label">{{ labels.total_cost }}:</div>
+					<div id="fbtoolsBlcResultTotalCost" class="business-loan-calculator--results-value business-loan-calculator--results-summary--main-value business-loan-calculator--results-value--muted">
+						$0.00
+					</div>
+				</div>
+				<div class="business-loan-calculator--results-summary--footer">
+					<div class="business-loan-calculator--results-summary--footer-item">
+						<h5 class="business-loan-calculator--results-summary--label">{{ labels.avg_monthly_interest }}</h5>
+						<div id="fbtoolsBlcResultFooterMonthlyInterest" class="business-loan-calculator--results-value business-loan-calculator--results-summary--footer-value business-loan-calculator--results-value--muted">
+							$0.00
+						</div>
+					</div>
+					<div class="business-loan-calculator--results-summary--footer-item">
+						<h5 class="business-loan-calculator--results-summary--label">{{ labels.monthly_payment }}</h5>
+						<div id="fbtoolsBlcResultFooterMonthlyPayment" class="business-loan-calculator--results-value business-loan-calculator--results-summary--footer-value business-loan-calculator--results-value--muted">
+							$0.00
+						</div>
+					</div>
+					<div class="business-loan-calculator--results-summary--footer-item">
+						<h5 class="business-loan-calculator--results-summary--label">{{ labels.total_interest }}</h5>
+						<div id="fbtoolsBlcResultFooterTotalInterest" class="business-loan-calculator--results-value business-loan-calculator--results-summary--footer-value business-loan-calculator--results-value--muted">
+							$0.00
+						</div>
+					</div>
+					<div class="business-loan-calculator--results-summary--footer-item">
+						<h5 class="business-loan-calculator--results-summary--label">{{ labels.number_of_years }}</h5>
+						<div id="fbtoolsBlcResultFooterYears" class="business-loan-calculator--results-value business-loan-calculator--results-summary--footer-value business-loan-calculator--results-value--muted">
+							0
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

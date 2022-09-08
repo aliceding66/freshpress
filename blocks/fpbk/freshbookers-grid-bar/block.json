@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/freshbookers-grid-bar",
+  "title": "FreshBookers Grid Bar",
+  "category": "freshblocks",
+  "description": "A block containing grid with Freshbookers thumbnails.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

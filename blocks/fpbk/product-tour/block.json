@@ -1,0 +1,26 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/product-tour",
+  "title": "Product Tour",
+  "category": "freshblocks",
+  "description": "Product Tour Carousel Widget.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "with-video",
+      "label": "With video"
+    }
+  ],
+  "example": {
+    "attributes": {}
+  }
+}

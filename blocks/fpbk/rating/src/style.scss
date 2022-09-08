@@ -1,0 +1,48 @@
+// Rating.
+@import '~styles/freshpress-includes';
+
+.rating {
+	&__category {
+		top: 2px;
+		font-weight: $font-weight-medium;
+	}
+
+	&__description {
+		top: 3px;
+		color: $accessible-grey;
+		font-size: 0.875rem;
+
+		a {
+			color: $accessible-grey;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&.rating__wrap_1 {
+		flex-direction: column;
+
+		@include media-breakpoint-up( md ) {
+			flex-direction: row;
+		}
+	}
+
+	&.rating__wrap_2 {
+		flex-direction: column;
+	}
+}
+
+.wp-block-fpbk-rating.is-style-light {
+	color: $white;
+
+	.rating__description {
+		color: $white;
+
+		a {
+			color: $white;
+		}
+	}
+}

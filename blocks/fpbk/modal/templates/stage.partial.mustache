@@ -1,0 +1,36 @@
+<div class="modal__stage position-relative w-100 px-3 px-sm-5 d-flex flex-column align-items-center {{# first_stage }}active{{/ first_stage }}">
+	{{# heading }}
+		<h3 class="modal__content-heading modal__content-heading_stages px-0 px-sm-5 px-lg-0 mb-0">{{ heading }}</h3>
+	{{/ heading }}
+
+	{{# description }}
+		<p class="modal__description mt-3">{{ description }}</p>
+	{{/ description }}
+
+	{{# has_list_items }}
+		<ul class="modal__list">
+			{{# list_items }}
+				<li class="list-item">{{ . }}</li>
+			{{/ list_items }}
+		</ul>
+	{{/ has_list_items }}
+
+	{{# include_form }}
+		{{{ stage_pardot_form }}}
+	{{/ include_form }}
+
+	{{# next_stage_button_text }}
+		<a data-stage="next" href="#0"
+		   class="modal__next-stage btn btn-cta-green d-inline-block mt-3">{{ next_stage_button_text }}</a>
+	{{/ next_stage_button_text }}
+
+	{{# close_modal_button_text }}
+		<a data-dismiss="modal" href="#0"
+		   class="modal__close btn btn-white d-inline-block mt-3">{{ close_modal_button_text }}</a>
+	{{/ close_modal_button_text }}
+
+	{{# close_modal_text }}
+		<a data-dismiss="modal" href="#0"
+		   class="modal__close-link d-inline-block mt-2">{{ close_modal_text }}</a>
+	{{/ close_modal_text }}
+</div>

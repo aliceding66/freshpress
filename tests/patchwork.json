@@ -1,0 +1,10 @@
+{
+  "redefinable-internals": [
+    "function_exists",
+    "glob",
+    "gmdate",
+    "header",
+    "headers_list",
+    "headers_sent"
+  ]
+}

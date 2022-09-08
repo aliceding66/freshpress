@@ -1,0 +1,49 @@
+.framework {
+  color: #fff;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+  background-color: #002d79;
+  background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/fb-icon-dark.svg);
+  background-repeat: no-repeat;
+  background-position: -332px 300px;
+  background-size: 1100px 1100px;
+  border-top-left-radius: 88px;
+}
+@media (min-width: 768px) {
+  .framework {
+    background-position: 0 0;
+    background-size: 1900px 1900px;
+    border-top-left-radius: 88px;
+  }
+}
+@media (min-width: 1600px) {
+  .framework {
+    background-position: 400px -202px;
+  }
+}
+@media (min-width: 1024px) {
+  .framework__column {
+    max-width: 340px;
+  }
+}
+.framework__title {
+  font-size: 2.875rem;
+  line-height: 2.875rem;
+}
+@media (min-width: 1024px) {
+  .framework__title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 1600px) {
+  .framework__title {
+    font-size: 3.625rem;
+    line-height: 3.625rem;
+  }
+}
+.framework__subtitle {
+  color: #ffc414;
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-framework.css.map*/

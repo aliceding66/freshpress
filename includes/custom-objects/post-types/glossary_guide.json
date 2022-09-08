@@ -1,0 +1,21 @@
+{
+  "post_type": "glossary_guide",
+  "post_type_plural": "glossary_guides",
+  "label": "Glossary Guide",
+  "label_plural": "Glossary Guides",
+  "args": {
+    "description": "Glossary Guide",
+    "hierarchical": true,
+    "labels": {
+      "menu_name": "Glossary Guide"
+    },
+    "menu_icon": "dashicons-book-alt",
+    "supports": [
+      "page-attributes",
+      "revisions",
+      "thumbnail",
+      "title",
+      "excerpt"
+    ]
+  }
+}

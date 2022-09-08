@@ -1,0 +1,1207 @@
+/*
+* Accounting Partners Templates Archive styles
+*/
+body.unmoved {
+  overflow: hidden;
+}
+
+header.header {
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+}
+
+.accounting-partners-filter {
+  position: relative;
+  z-index: 5;
+  margin: 0 -15px 30px;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter {
+    margin: -46px -15px 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter {
+    margin: -46px -15px 40px;
+  }
+}
+.accounting-partners-filter .br-8 {
+  border-radius: 8px !important;
+}
+.accounting-partners-filter__container {
+  position: relative;
+  width: 714px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(180, 190, 198, 0.6);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 3px 3px 0 0 rgba(0, 27, 64, 0.07);
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__container {
+    padding: 20px 18px 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__container {
+    width: 1008px;
+    padding: 22px 36px 24px;
+    border-radius: 7px 7px 0 0;
+  }
+}
+.accounting-partners-filter__container::after {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(180, 190, 198, 0.6);
+  content: none;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__container::after {
+    margin-top: 8px;
+    content: "";
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__container::after {
+    margin-top: 0;
+  }
+}
+.accounting-partners-filter__select {
+  display: none;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__select {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 69px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__select {
+    justify-content: space-between;
+    height: 44px;
+  }
+}
+@media (max-width: 1023.98px) {
+  .accounting-partners-filter__select.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    padding: 0 22px 100px;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+  .accounting-partners-filter__select.active .accounting-partners-filter__button {
+    height: 70px;
+  }
+}
+@media (max-width: 1023.98px) and (max-width: 1023.98px) {
+  .accounting-partners-filter__select.active .accounting-partners-filter__button_location {
+    height: auto;
+    padding: 13px 6px 0 0;
+    border-bottom: none;
+  }
+}
+@media (max-width: 1023.98px) {
+  .accounting-partners-filter__select.active .accounting-partners-filter__label {
+    margin-bottom: -15px;
+    background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/close.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 17px;
+    background-size: 11px 11px;
+  }
+}
+.accounting-partners-filter__options {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0 25px 21px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(180, 190, 198, 0.3);
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__options {
+    position: absolute;
+    top: calc(100% - 23px);
+    padding: 20px 30px 21px;
+    border: none;
+    border-radius: 0 0 8px 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__options {
+    top: calc(100% - 31px);
+  }
+}
+.accounting-partners-filter__options::before {
+  position: relative;
+  top: -15px;
+  left: -30px;
+  display: block;
+  width: calc(100% + 60px);
+  border-top: 1px solid rgba(180, 190, 198, 0.6);
+  content: none;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__options::before {
+    content: "";
+  }
+}
+.accounting-partners-filter__options:hover {
+  display: block;
+}
+.accounting-partners-filter__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 25px;
+  color: #002d79;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2.75rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(180, 190, 198, 0.3);
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__button {
+    display: inline;
+    flex: 1;
+    width: auto;
+    padding: 0;
+    text-align: center;
+    border: none;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__button {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+.accounting-partners-filter__button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  margin-left: 6px;
+  color: #0075dd;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: rgba(0, 117, 221, 0.1);
+  border-radius: 4px;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__button span {
+    display: none;
+  }
+}
+.accounting-partners-filter__button::after {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  margin-top: -3px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-chevron-down.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  content: "";
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__button::after {
+    position: relative;
+    top: 0;
+    right: auto;
+    margin-top: 0;
+  }
+}
+.accounting-partners-filter__button_location.opc-trans {
+  opacity: 0;
+  -webkit-animation: back-in-opacity 0.4s forwards;
+          animation: back-in-opacity 0.4s forwards;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.accounting-partners-filter__button_location::after {
+  top: 34px;
+  right: 13px;
+  display: inline-block;
+  width: 11px;
+  height: 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-magnifier.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 12px;
+  content: "";
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__button_location::after {
+    top: 0;
+    right: 0;
+  }
+}
+.accounting-partners-filter__button.active + .accounting-partners-filter__options {
+  display: block;
+}
+.accounting-partners-filter__button.selected {
+  position: relative;
+}
+.accounting-partners-filter__button.selected:not(.active)::before {
+  position: absolute;
+  top: calc(100% - 7px);
+  left: 50%;
+  z-index: 6;
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  background-color: #359ce4;
+  border-radius: 50%;
+  content: none;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__button.selected:not(.active)::before {
+    content: "";
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__button.selected:not(.active)::before {
+    top: 100%;
+  }
+}
+.accounting-partners-filter__button.active {
+  position: relative;
+  border: none;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__button.active {
+    color: #0075dd;
+  }
+}
+.accounting-partners-filter__button.active::before {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 50%;
+  z-index: 6;
+  display: block;
+  width: 16px;
+  height: 11px;
+  margin-left: -8px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/arrow-image.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  content: none;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__button.active::before {
+    top: calc(100% - 9px);
+    content: "";
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__button.active::before {
+    top: calc(100% - 1px);
+  }
+}
+.accounting-partners-filter__button.active::after {
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-chevron-up.svg);
+}
+.accounting-partners-filter__location {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 25px 14px;
+  border-bottom: 1px solid rgba(180, 190, 198, 0.3);
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__location {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    padding: 0;
+    border: none;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__location {
+    justify-content: flex-start;
+    width: 250px;
+  }
+}
+.accounting-partners-filter__location-submit {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  width: 16px;
+  height: 16px;
+  margin-top: -12px;
+  background-color: transparent;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/blue-magnifier.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  border: none;
+  visibility: visible;
+  cursor: default !important;
+  opacity: 0;
+  transition: none;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__location-submit {
+    right: 10px;
+    margin-top: -5px;
+  }
+}
+.accounting-partners-filter__location-input, .accounting-partners-filter__location-input:focus {
+  position: absolute;
+  top: 1px;
+  display: block;
+  width: 0;
+  height: 44px;
+  margin-top: 14px;
+  padding: 0 41px 0 15px;
+  color: #002d79;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  border: 1px solid rgba(180, 190, 198, 0.6);
+  border-radius: 8px 8px 0 0;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: width 0.4s ease;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__location-input, .accounting-partners-filter__location-input:focus {
+    position: relative;
+    margin-top: 0;
+  }
+}
+.accounting-partners-filter__location-input::-webkit-input-placeholder, .accounting-partners-filter__location-input:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+.accounting-partners-filter__location-input::-moz-placeholder, .accounting-partners-filter__location-input:focus::-moz-placeholder {
+  opacity: 0.5;
+}
+.accounting-partners-filter__location-input:-ms-input-placeholder, .accounting-partners-filter__location-input:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.accounting-partners-filter__location-input:-moz-placeholder, .accounting-partners-filter__location-input:focus:-moz-placeholder {
+  opacity: 0.5;
+}
+.accounting-partners-filter__location-input::-ms-clear, .accounting-partners-filter__location-input:focus::-ms-clear {
+  display: none;
+}
+.accounting-partners-filter__location-input.active, .accounting-partners-filter__location-input:focus.active {
+  position: relative;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.accounting-partners-filter__location-input.active + .accounting-partners-filter__location-submit, .accounting-partners-filter__location-input:focus.active + .accounting-partners-filter__location-submit {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  transition-delay: 0.4s;
+}
+.accounting-partners-filter__location-input:-moz-placeholder-shown {
+  border-radius: 8px;
+}
+.accounting-partners-filter__location-input:placeholder-shown {
+  border-radius: 8px;
+}
+.accounting-partners-filter__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 32px 0 35px;
+  color: #001b40;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+  line-height: 1.25rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+.accounting-partners-filter__label::before {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(180, 190, 198, 0.6);
+  content: "";
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__label {
+    display: inline;
+    margin-bottom: 12px;
+    padding: 0;
+    border: none;
+  }
+  .accounting-partners-filter__label::before {
+    content: none;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__label {
+    width: auto;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+.accounting-partners-filter__label::after {
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-chevron-down.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  content: "";
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__label::after {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: none;
+    content: ":";
+  }
+}
+.accounting-partners-filter__label.active::after {
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/tile-chevron-up.svg);
+}
+.accounting-partners-filter__term {
+  position: relative;
+  display: block;
+  min-height: 32px;
+  margin-bottom: 12px;
+  padding: 0;
+  color: #001b40;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__term {
+    margin-right: 11px;
+  }
+}
+.accounting-partners-filter__term_gray {
+  display: inline-block;
+  margin-left: 4px;
+  color: #8394a1;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  vertical-align: middle;
+}
+.accounting-partners-filter__term-name::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: -4px;
+  margin-right: 13px;
+  vertical-align: middle;
+  border: 1px solid #b4bec6;
+  border-radius: 4px;
+  content: "";
+}
+.accounting-partners-filter__term-name::after {
+  position: absolute;
+  top: 12px;
+  left: 1px;
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-top: -3px;
+  vertical-align: middle;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/white-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 12px;
+  content: none;
+}
+.accounting-partners-filter__term.active .accounting-partners-filter__term-name::before {
+  background-color: #0075dd;
+  border: none;
+}
+.accounting-partners-filter__term.active .accounting-partners-filter__term-name::after {
+  content: "";
+}
+.accounting-partners-filter__term.disabled {
+  color: #8394a1;
+  background: rgba(131, 148, 161, 0.05);
+  cursor: default;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter__term {
+    display: inline-block;
+    padding: 0 12px;
+    background: linear-gradient(to right, rgba(0, 117, 221, 0.04) 0%, rgba(0, 117, 221, 0.04) 50%, #fff 50%, #fff 100%);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    border: 1px solid rgba(179, 187, 197, 0.6);
+    border-radius: 8px;
+    transition: background-position 2s;
+  }
+  .accounting-partners-filter__term:last-of-type {
+    margin-right: 0;
+  }
+  .accounting-partners-filter__term:hover:not(.disabled) {
+    color: #0075dd;
+  }
+  .accounting-partners-filter__term.active {
+    color: #0075dd;
+    background-position: 0 0;
+  }
+  .accounting-partners-filter__term-name::before, .accounting-partners-filter__term-name::after {
+    content: none !important;
+  }
+}
+.accounting-partners-filter__back-hover {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  width: 100vw;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(-50%);
+  opacity: 0;
+  -webkit-animation: back-in-opacity 0.5s forwards;
+          animation: back-in-opacity 0.5s forwards;
+}
+.accounting-partners-filter__back-hover-out {
+  -webkit-animation: back-out-opacity 0.5s forwards;
+          animation: back-out-opacity 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter__back-hover {
+    top: 88px;
+  }
+}
+@media (min-width: 1280px) {
+  .accounting-partners-filter__back-hover {
+    top: 90px;
+  }
+}
+.accounting-partners-filter .autocomplete-items {
+  position: absolute;
+  top: calc(100% - 14px);
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter .autocomplete-items {
+    top: 100%;
+  }
+}
+.accounting-partners-filter .autocomplete-items div {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(180, 190, 198, 0.6);
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .accounting-partners-filter .autocomplete-items div {
+    width: 100%;
+  }
+}
+.accounting-partners-filter .autocomplete-items div:last-of-type {
+  border-bottom: 1px solid rgba(180, 190, 198, 0.6);
+  border-radius: 0 0 8px 8px;
+}
+.accounting-partners-filter .autocomplete-items div:hover {
+  color: #0075dd;
+}
+.accounting-partners-filter .autocomplete-items div.no-results {
+  cursor: default;
+}
+.accounting-partners-filter .autocomplete-items div.no-results:hover {
+  color: inherit;
+}
+.accounting-partners-filter .autocomplete-active {
+  color: #fff;
+  background-color: #0075dd !important;
+}
+.accounting-partners-filter__trigger {
+  justify-content: center;
+  padding: 16px 46px;
+  background-color: #fff;
+  box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.08);
+}
+.accounting-partners-filter__trigger-button {
+  width: 100%;
+  height: 46px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
+.accounting-partners-filter-elements {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 714px;
+  max-width: 100%;
+  margin: 0 auto 25px;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-filter-elements {
+    width: 1008px;
+    margin-top: -15px;
+  }
+}
+.accounting-partners-filter-elements:empty {
+  display: none;
+}
+.accounting-partners-filter-elements__button {
+  height: 32px;
+  margin: 0 10px 10px 0;
+  padding: 0 12px;
+  color: #0075dd;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  background-color: transparent;
+  border: 1px solid rgba(180, 190, 198, 0.6);
+  border-radius: 8px;
+}
+.accounting-partners-filter-elements__button::after {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  vertical-align: revert;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/close.svg);
+  background-size: 8px 8px;
+  content: "";
+}
+.accounting-partners-filter-elements__button span {
+  color: rgba(0, 27, 64, 0.6);
+}
+.accounting-partners-filter-elements__clear-all {
+  margin-bottom: 10px;
+  padding: 0;
+  color: #001b40;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  background-color: transparent;
+  border: none;
+}
+
+.accounting-partners-content {
+  position: relative;
+  width: 714px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content {
+    width: 1008px;
+  }
+}
+.accounting-partners-content__container {
+  margin-bottom: 64px;
+}
+.accounting-partners-content__single {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid #b4bec6;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .accounting-partners-content__single {
+    padding: 24px 36px 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__single {
+    align-items: flex-start;
+    padding: 36px 36px 42px;
+  }
+}
+.accounting-partners-content__single.hovered {
+  box-shadow: 6px 6px 0 rgba(255, 196, 20, 0.3);
+}
+.accounting-partners-content a:hover {
+  text-decoration: none;
+}
+.accounting-partners-content__profile-image {
+  position: relative;
+  order: 1;
+  width: 110px;
+  height: 88px;
+  border: 1px solid #b4bec6;
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 rgba(180, 190, 198, 0.3);
+}
+@media (min-width: 768px) {
+  .accounting-partners-content__profile-image {
+    width: 140px;
+    height: 112px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__profile-image {
+    height: 120px;
+  }
+}
+.accounting-partners-content__profile-image img {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.accounting-partners-content__profile-info {
+  order: 3;
+  width: 100%;
+  margin-top: 26px;
+}
+@media (min-width: 768px) {
+  .accounting-partners-content__profile-info {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__profile-info {
+    order: 2;
+    width: 626px;
+    margin-top: 0;
+  }
+}
+.accounting-partners-content__profile-info h2 {
+  color: #001b40;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
+  letter-spacing: normal;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__profile-info h2 {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+}
+.accounting-partners-content__profile-info h2 a {
+  color: #001b40;
+}
+.accounting-partners-content__profile-info address {
+  display: block;
+  margin-bottom: 18px;
+  color: rgba(0, 27, 64, 0.6);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__profile-info address {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+}
+.accounting-partners-content__profile-info address::before {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 0.28125rem;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/map-pin.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  content: "";
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__profile-info address::before {
+    margin-right: 3px;
+  }
+}
+.accounting-partners-content__description {
+  margin-bottom: 18px;
+  color: #001b40;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__description {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.accounting-partners-content__button {
+  order: 2;
+  padding: 10px 12px 10px;
+  color: #001b40;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  border: 2px solid #cdd4d9;
+  border-radius: 8px;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-content__button {
+    order: 3;
+  }
+}
+.accounting-partners-content__button:hover {
+  color: #001b40;
+}
+.accounting-partners-content__term {
+  margin: 0 8px 8px 0;
+  padding: 6px 12px;
+  color: #0075dd;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: rgba(0, 117, 221, 0.08);
+  border-radius: 8px;
+}
+.accounting-partners-content__terms, .accounting-partners-content__terms .terms-hidden {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.accounting-partners-content__terms .show-terms, .accounting-partners-content__terms .terms-hidden .show-terms {
+  margin-bottom: 10px;
+  padding: 0;
+  color: #001b40;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: transparent;
+  border: none;
+}
+.accounting-partners-content__terms .terms-hidden {
+  display: none;
+}
+.accounting-partners-content__pagination, .accounting-partners-content__pagination .nav-links {
+  display: flex;
+  grid-gap: 2px;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.accounting-partners-content__pagination .page-numbers, .accounting-partners-content__pagination .nav-links .page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 40px;
+  color: #001b40;
+  border-radius: 8px;
+}
+.accounting-partners-content__pagination .page-numbers:hover:not(.dots), .accounting-partners-content__pagination .page-numbers.current, .accounting-partners-content__pagination .nav-links .page-numbers:hover:not(.dots), .accounting-partners-content__pagination .nav-links .page-numbers.current {
+  color: #fff;
+  background-color: #0075dd;
+}
+.accounting-partners-content__pagination .page-numbers.prev, .accounting-partners-content__pagination .page-numbers.next, .accounting-partners-content__pagination .nav-links .page-numbers.prev, .accounting-partners-content__pagination .nav-links .page-numbers.next {
+  width: auto;
+  padding: 0 16px;
+}
+.accounting-partners-content__pagination_disabled .page-numbers, .accounting-partners-content__pagination .nav-links_disabled .page-numbers {
+  cursor: progress;
+  opacity: 0.5;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(#000, 0);
+}
+
+.post-type-archive-accounting_partners .new-cta-bar .btn {
+  margin-bottom: 32px;
+  padding: 11px 25px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 1280px) {
+  .post-type-archive-accounting_partners .new-cta-bar .btn {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+.post-type-archive-accounting_partners .faq__headline {
+  margin-bottom: 32px;
+  font-size: 1.875rem;
+  line-height: 1.75rem;
+  letter-spacing: normal;
+}
+@media (min-width: 1024px) {
+  .post-type-archive-accounting_partners .faq__headline {
+    margin-bottom: 24px;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+}
+.post-type-archive-accounting_partners .faq__question h3 {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+@media (min-width: 1024px) {
+  .post-type-archive-accounting_partners .faq__question h3 {
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+.post-type-archive-accounting_partners .faq__answer p,
+.post-type-archive-accounting_partners .faq__answer ul,
+.post-type-archive-accounting_partners .faq__answer a {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+@media (min-width: 1024px) {
+  .post-type-archive-accounting_partners .faq__answer p,
+.post-type-archive-accounting_partners .faq__answer ul,
+.post-type-archive-accounting_partners .faq__answer a {
+    margin-bottom: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.post-type-archive-accounting_partners .faq__arrow {
+  width: 0.625rem;
+  height: 0.3475rem;
+}
+
+.accounting-partners__top {
+  position: relative;
+  left: calc(50% - 50vw);
+  display: none;
+  width: 100vw;
+  background-color: #fffaea;
+}
+.accounting-partners__top::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 160px;
+  background-color: #fffaea;
+  content: "";
+}
+@media (min-width: 768px) {
+  .accounting-partners__top {
+    display: block;
+  }
+}
+@media (min-width: 1600px) {
+  .accounting-partners__top {
+    left: calc(50% - 800px);
+    width: 1600px;
+  }
+}
+.accounting-partners__breadcrumbs {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+  color: #001b40;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners__breadcrumbs {
+    width: 980px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 1251px) {
+  .accounting-partners__breadcrumbs {
+    width: 1166px;
+  }
+}
+@media (min-width: 1280px) {
+  .accounting-partners__breadcrumbs {
+    width: 1216px;
+  }
+}
+.accounting-partners__breadcrumbs-divider {
+  display: none;
+  margin: 0 8px;
+  color: #8394a1;
+}
+@media (min-width: 480px) {
+  .accounting-partners__breadcrumbs-divider {
+    display: inline-block;
+  }
+}
+.accounting-partners__breadcrumbs a {
+  display: none;
+  color: #0075dd;
+  text-decoration: underline;
+}
+.accounting-partners__breadcrumbs a:last-of-type {
+  display: inline-block;
+}
+.accounting-partners__breadcrumbs a:last-of-type::before {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/right-arrow-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  content: "";
+}
+@media (min-width: 480px) {
+  .accounting-partners__breadcrumbs a:last-of-type::before {
+    content: none;
+  }
+}
+@media (min-width: 480px) {
+  .accounting-partners__breadcrumbs a {
+    display: inline-block;
+  }
+}
+.accounting-partners__breadcrumbs a:hover {
+  text-decoration: none;
+}
+
+@-webkit-keyframes back-in-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes back-in-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes back-out-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes back-out-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.accounting-partners-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  transform: translateZ(1px);
+}
+
+.accounting-partners-loader > div {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/icon-fb.svg);
+  background-size: 35px 35px;
+  -webkit-animation: accounting-partners-loader 10s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          animation: accounting-partners-loader 10s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@-webkit-keyframes accounting-partners-loader {
+  0%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+@keyframes accounting-partners-loader {
+  0%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+/*# sourceMappingURL=templates-archive-accounting-partners.css.map*/

@@ -1,0 +1,3697 @@
+{
+    "key": "group_5f738944957f3",
+    "title": "Block - Pricing Table",
+    "fields": [
+        {
+            "key": "field_5f737934e45f1",
+            "label": "Default to Yearly?",
+            "name": "default_to_yearly",
+            "type": "true_false",
+            "instructions": "Enable this to show yearly pricing on load.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f6d008757974",
+            "label": "Enable Compact View?",
+            "name": "enable_compact_view",
+            "type": "true_false",
+            "instructions": "Display a compact pricing grid with less information.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f6909f61196c",
+            "label": "Enable Term Switch?",
+            "name": "enable_term_switch",
+            "type": "true_false",
+            "instructions": "Show an interactive switch to switch between monthly and yearly plans.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f6cc258ebd3a",
+            "label": "Enable Promo?",
+            "name": "enable_promo",
+            "type": "true_false",
+            "instructions": "Show promotional details and decorations.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_600023ba25bd9",
+            "label": "Force Promo?",
+            "name": "force_promo",
+            "type": "true_false",
+            "instructions": "Show promo regardless of the smux_login cookie.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f6cc258ebd3a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f6cca685aa58",
+            "label": "Term Switch",
+            "name": "term_switch",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f6909f61196c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f690a2b1196d",
+                    "label": "Monthly Term Label",
+                    "name": "monthly_term_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6909f61196c",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Monthly (50% off)",
+                    "placeholder": "Monthly (50% off)",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f6cca0f5aa52",
+                    "label": "Promo Monthly Term Label",
+                    "name": "promo_monthly_term_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6909f61196c",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_5f6cc258ebd3a",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Monthly (50% off)",
+                    "placeholder": "Monthly (50% off)",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f690a561196e",
+                    "label": "Yearly Term Label",
+                    "name": "yearly_term_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6909f61196c",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Yearly (Extra Savings)",
+                    "placeholder": "Yearly (Extra Savings)",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f6cca395aa55",
+                    "label": "Promo Yearly Term Label",
+                    "name": "promo_yearly_term_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6909f61196c",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_5f6cc258ebd3a",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Yearly (Extra Savings)",
+                    "placeholder": "Yearly (Extra Savings)",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        },
+        {
+            "key": "field_60b12d6e41416",
+            "label": "Pricing Term Suffix",
+            "name": "pricing_term_suffix",
+            "type": "group",
+            "instructions": "Select if indicated pricing is on a \"Per Year\" or \"Per Month\" term.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_60b12e9e41417",
+                    "label": "Monthly Plan",
+                    "name": "monthly_plan",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "mo": "\/mo",
+                        "yr": "\/yr"
+                    },
+                    "default_value": "mo",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60b12fad41419",
+                    "label": "Yearly Plan",
+                    "name": "yearly_plan",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "mo": "\/mo",
+                        "yr": "\/yr"
+                    },
+                    "default_value": "mo",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60b12f9f41418",
+                    "label": "Promo Monthly Plan",
+                    "name": "promo_monthly_plan",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "mo": "\/mo",
+                        "yr": "\/yr"
+                    },
+                    "default_value": "mo",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60b12fba4141a",
+                    "label": "Promo Yearly Plan",
+                    "name": "promo_yearly_plan",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "mo": "\/mo",
+                        "yr": "\/yr"
+                    },
+                    "default_value": "mo",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5f848107ebc22",
+            "label": "Links",
+            "name": "links",
+            "type": "group",
+            "instructions": "Non-promotional plan links.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f848213ebc23",
+                    "label": "Lite",
+                    "name": "lite",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f848223ebc24",
+                            "label": "CTA",
+                            "name": "cta",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f848235ebc25",
+                            "label": "CTA Style",
+                            "name": "cta_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Primary Green",
+                                "ghost": "Secondary Outline"
+                            },
+                            "default_value": "ghost",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f848279ebc26",
+                            "label": "Secondary Links",
+                            "name": "secondary_links",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "or <a href='#'>Try It Free<\/a>",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": "",
+                            "wpml_cf_preferences": 2
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f8482b2ebc27",
+                    "label": "Plus",
+                    "name": "plus",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f8482b2ebc28",
+                            "label": "CTA",
+                            "name": "cta",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f8482b2ebc29",
+                            "label": "CTA Style",
+                            "name": "cta_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Primary Green",
+                                "ghost": "Secondary Outline"
+                            },
+                            "default_value": "ghost",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f8482b2ebc2a",
+                            "label": "Secondary Links",
+                            "name": "secondary_links",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "or <a href='#'>Try It Free<\/a>",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": "",
+                            "wpml_cf_preferences": 2
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f8482b9ebc2b",
+                    "label": "Premium",
+                    "name": "premium",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f8482b9ebc2c",
+                            "label": "CTA",
+                            "name": "cta",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f8482b9ebc2d",
+                            "label": "CTA Style",
+                            "name": "cta_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Primary Green",
+                                "ghost": "Secondary Outline"
+                            },
+                            "default_value": "ghost",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f8482b9ebc2e",
+                            "label": "Secondary Links",
+                            "name": "secondary_links",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "or <a href='#'>Try It Free<\/a>",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": "",
+                            "wpml_cf_preferences": 2
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f8482c4ebc30",
+                    "label": "Select",
+                    "name": "select",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f8482c4ebc31",
+                            "label": "CTA",
+                            "name": "cta",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f8482c4ebc32",
+                            "label": "CTA Style",
+                            "name": "cta_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Primary Green",
+                                "ghost": "Secondary Outline"
+                            },
+                            "default_value": "ghost",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f8482c4ebc33",
+                            "label": "Secondary Links",
+                            "name": "secondary_links",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "or <a href='#'>Try It Free<\/a>",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": "",
+                            "wpml_cf_preferences": 2
+                        }
+                    ]
+                },
+                {
+                    "key": "field_627cdb0ff96b1",
+                    "label": "Starter",
+                    "name": "starter",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_627cdb0ff96b2",
+                            "label": "CTA",
+                            "name": "cta",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_627cdb0ff96b3",
+                            "label": "CTA Style",
+                            "name": "cta_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "choices": {
+                                "primary": "Primary Green",
+                                "ghost": "Secondary Outline"
+                            },
+                            "default_value": "ghost",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_627cdb0ff96b4",
+                            "label": "Secondary Links",
+                            "name": "secondary_links",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "or <a href='#'>Try It Free<\/a>",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5f6e4cd006e1e",
+            "label": "Promo",
+            "name": "promo",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f6cc258ebd3a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f6e4d0006e1f",
+                    "label": "Lite",
+                    "name": "lite",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f6e4d1806e20",
+                            "label": "Exclude Plan?",
+                            "name": "exclude_plan",
+                            "type": "true_false",
+                            "instructions": "Exclude this plan from the promo?",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f6e4d3c06e21",
+                            "label": "Monthly Banner Image",
+                            "name": "monthly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f6e4d6506e22",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738d1eff1e9",
+                            "label": "Yearly Banner Image",
+                            "name": "yearly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738d28ff1ea",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f6e4d8a06e23",
+                            "label": "Custom Pricing?",
+                            "name": "custom_pricing",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f6e4da806e24",
+                            "label": "Monthly Price",
+                            "name": "monthly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the monthly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f6e4d8a06e23",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_5f6e4de006e26",
+                            "label": "Include Monthly Price Asterisk?",
+                            "name": "include_monthly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f6e4d8a06e23",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f6e4e0b06e28",
+                            "label": "Monthly Price Subtext",
+                            "name": "monthly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.\r\nFor the tooltip use:\r\n&lt;span class=\"show-tooltip\">Hover Text Here &lt;span class=\"hover-tooltip\">Tooltip Text Here&lt;\/span>&lt;\/span>",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f6e4d8a06e23",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f6e4e3d06e2a",
+                            "label": "Yearly Price",
+                            "name": "yearly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the yearly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f6e4d8a06e23",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_5f6e4e8e06e2c",
+                            "label": "Include Yearly Price Asterisk?",
+                            "name": "include_yearly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f6e4d8a06e23",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f6e4eae06e2e",
+                            "label": "Yearly Price Subtext",
+                            "name": "yearly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.\r\nFor the tooltip use:\r\n&lt;span class=\"show-tooltip\">Hover Text Here &lt;span class=\"hover-tooltip\">Tooltip Text Here&lt;\/span>&lt;\/span>",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f6e4d1806e20",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f6e4d8a06e23",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f8485c5a8b33",
+                            "label": "Links",
+                            "name": "links",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "wpml_cf_preferences": 3,
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f8482ebebc34",
+                                    "label": "CTA",
+                                    "name": "cta",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "wpml_cf_preferences": 2
+                                },
+                                {
+                                    "key": "field_5f848305ebc35",
+                                    "label": "CTA Style",
+                                    "name": "cta_style",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary": "Primary Green",
+                                        "ghost": "Secondary Outline"
+                                    },
+                                    "default_value": "ghost",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "wpml_cf_preferences": 3
+                                },
+                                {
+                                    "key": "field_5f84831febc36",
+                                    "label": "Secondary Links",
+                                    "name": "secondary_links",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "or <a href='#'>Try It Free<\/a>",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": "",
+                                    "wpml_cf_preferences": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f73892285171",
+                    "label": "Plus",
+                    "name": "plus",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f73892285172",
+                            "label": "Exclude Plan?",
+                            "name": "exclude_plan",
+                            "type": "true_false",
+                            "instructions": "Exclude this plan from the promo?",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73892285173",
+                            "label": "Monthly Banner Image",
+                            "name": "monthly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f73892285174",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738f3a8e305",
+                            "label": "Yearly Banner Image",
+                            "name": "yearly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738f4b8e306",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f73892285175",
+                            "label": "Custom Pricing?",
+                            "name": "custom_pricing",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73892285176",
+                            "label": "Monthly Price",
+                            "name": "monthly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the monthly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892285175",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_5f73892285177",
+                            "label": "Include Monthly Price Asterisk?",
+                            "name": "include_monthly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892285175",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73892285178",
+                            "label": "Monthly Price Subtext",
+                            "name": "monthly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.\r\nFor the tooltip use:\r\n&lt;span class=\"show-tooltip\">Hover Text Here &lt;span class=\"hover-tooltip\">Tooltip Text Here&lt;\/span>&lt;\/span>",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892285175",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f73892285179",
+                            "label": "Yearly Price",
+                            "name": "yearly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the yearly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892285175",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_5f7389228517a",
+                            "label": "Include Yearly Price Asterisk?",
+                            "name": "include_yearly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892285175",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f7389228517b",
+                            "label": "Yearly Price Subtext",
+                            "name": "yearly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.\r\nFor the tooltip use:\r\n&lt;span class=\"show-tooltip\">Hover Text Here &lt;span class=\"hover-tooltip\">Tooltip Text Here&lt;\/span>&lt;\/span>",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892285172",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892285175",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f8485e7a8b34",
+                            "label": "Links",
+                            "name": "links",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "wpml_cf_preferences": 3,
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f848359ebc37",
+                                    "label": "CTA",
+                                    "name": "cta",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "wpml_cf_preferences": 2
+                                },
+                                {
+                                    "key": "field_5f848362ebc38",
+                                    "label": "CTA Style",
+                                    "name": "cta_style",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary": "Primary Green",
+                                        "ghost": "Secondary Outline"
+                                    },
+                                    "default_value": "ghost",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "wpml_cf_preferences": 3
+                                },
+                                {
+                                    "key": "field_5f848377ebc39",
+                                    "label": "Secondary Links",
+                                    "name": "secondary_links",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "or <a href='#'>Try It Free<\/a>",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": "",
+                                    "wpml_cf_preferences": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f73892d8517d",
+                    "label": "Premium",
+                    "name": "premium",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f73892d8517e",
+                            "label": "Exclude Plan?",
+                            "name": "exclude_plan",
+                            "type": "true_false",
+                            "instructions": "Exclude this plan from the promo?",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73892d8517f",
+                            "label": "Monthly Banner Image",
+                            "name": "monthly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f73892d85180",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738f0b8e302",
+                            "label": "Yearly Banner Image",
+                            "name": "yearly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738f178e303",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f73892d85181",
+                            "label": "Custom Pricing?",
+                            "name": "custom_pricing",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73892d85182",
+                            "label": "Monthly Price",
+                            "name": "monthly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the monthly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892d85181",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_5f73892d85183",
+                            "label": "Include Monthly Price Asterisk?",
+                            "name": "include_monthly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892d85181",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73892d85184",
+                            "label": "Monthly Price Subtext",
+                            "name": "monthly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.\r\nFor the tooltip use:\r\n&lt;span class=\"show-tooltip\">Hover Text Here &lt;span class=\"hover-tooltip\">Tooltip Text Here&lt;\/span>&lt;\/span>",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892d85181",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f73892d85185",
+                            "label": "Yearly Price",
+                            "name": "yearly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the yearly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892d85181",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_5f73892d85186",
+                            "label": "Include Yearly Price Asterisk?",
+                            "name": "include_yearly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892d85181",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73892d85187",
+                            "label": "Yearly Price Subtext",
+                            "name": "yearly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.\r\nFor the tooltip use:\r\n&lt;span class=\"show-tooltip\">Hover Text Here &lt;span class=\"hover-tooltip\">Tooltip Text Here&lt;\/span>&lt;\/span>",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73892d8517e",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f73892d85181",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f848654a8b35",
+                            "label": "Links",
+                            "name": "links",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "wpml_cf_preferences": 3,
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f84839aebc3a",
+                                    "label": "CTA",
+                                    "name": "cta",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "wpml_cf_preferences": 2
+                                },
+                                {
+                                    "key": "field_5f8483a1ebc3b",
+                                    "label": "CTA Style",
+                                    "name": "cta_style",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary": "Primary Green",
+                                        "ghost": "Secondary Outline"
+                                    },
+                                    "default_value": "ghost",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "wpml_cf_preferences": 3
+                                },
+                                {
+                                    "key": "field_5f8483c2ebc3c",
+                                    "label": "Secondary Links",
+                                    "name": "secondary_links",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "or <a href='#'>Try It Free<\/a>",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": "",
+                                    "wpml_cf_preferences": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f73893285188",
+                    "label": "Select",
+                    "name": "select",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f73893385189",
+                            "label": "Exclude Plan?",
+                            "name": "exclude_plan",
+                            "type": "true_false",
+                            "instructions": "Exclude this plan from the promo?",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f7389338518a",
+                            "label": "Monthly Banner Image",
+                            "name": "monthly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f7389338518b",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738e8c8e300",
+                            "label": "Yearly Banner Image",
+                            "name": "yearly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f738e9d8e301",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f7389338518c",
+                            "label": "Custom Pricing?",
+                            "name": "custom_pricing",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f7389338518d",
+                            "label": "Monthly Price",
+                            "name": "monthly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the monthly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f7389338518c",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f7389338518e",
+                            "label": "Include Monthly Price Asterisk?",
+                            "name": "include_monthly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f7389338518c",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f7389338518f",
+                            "label": "Monthly Price Subtext",
+                            "name": "monthly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f7389338518c",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0,
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f73893385190",
+                            "label": "Yearly Price",
+                            "name": "yearly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the yearly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f7389338518c",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73893385191",
+                            "label": "Include Yearly Price Asterisk?",
+                            "name": "include_yearly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f7389338518c",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "wpml_cf_preferences": 3
+                        },
+                        {
+                            "key": "field_5f73893385192",
+                            "label": "Yearly Price Subtext",
+                            "name": "yearly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f73893385189",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5f7389338518c",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0,
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f848675a8b36",
+                            "label": "Links",
+                            "name": "links",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "wpml_cf_preferences": 3,
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f8483efebc3d",
+                                    "label": "CTA",
+                                    "name": "cta",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "wpml_cf_preferences": 2
+                                },
+                                {
+                                    "key": "field_5f8483f4ebc3e",
+                                    "label": "CTA Style",
+                                    "name": "cta_style",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary": "Primary Green",
+                                        "ghost": "Secondary Outline"
+                                    },
+                                    "default_value": "ghost",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "wpml_cf_preferences": 3
+                                },
+                                {
+                                    "key": "field_5f84840cebc3f",
+                                    "label": "Secondary Links",
+                                    "name": "secondary_links",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "or <a href='#'>Try It Free<\/a>",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": "",
+                                    "wpml_cf_preferences": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_627cdb1cf96b5",
+                    "label": "Starter",
+                    "name": "starter",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_627cdb1df96b6",
+                            "label": "Exclude Plan?",
+                            "name": "exclude_plan",
+                            "type": "true_false",
+                            "instructions": "Exclude this plan from the promo?",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96b7",
+                            "label": "Monthly Banner Image",
+                            "name": "monthly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96b8",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96b9",
+                            "label": "Yearly Banner Image",
+                            "name": "yearly_banner_image",
+                            "type": "image",
+                            "instructions": "If an image is uploaded, it will replace the default promotional banner.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96ba",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96bb",
+                            "label": "Custom Pricing?",
+                            "name": "custom_pricing",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96bc",
+                            "label": "Monthly Price",
+                            "name": "monthly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the monthly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_627cdb1df96bb",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_627cdb1df96bd",
+                            "label": "Include Monthly Price Asterisk?",
+                            "name": "include_monthly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_627cdb1df96bb",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96be",
+                            "label": "Monthly Price Subtext",
+                            "name": "monthly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_627cdb1df96bb",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_627cdb1df96bf",
+                            "label": "Yearly Price",
+                            "name": "yearly_price",
+                            "type": "number",
+                            "instructions": "Promotional price for the yearly plan.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_627cdb1df96bb",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "$",
+                            "append": "",
+                            "min": "0.00",
+                            "max": "",
+                            "step": "0.01"
+                        },
+                        {
+                            "key": "field_627cdb1df96c0",
+                            "label": "Include Yearly Price Asterisk?",
+                            "name": "include_yearly_price_asterisk",
+                            "type": "true_false",
+                            "instructions": "Include * at the end of the price to reference further details.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_627cdb1df96bb",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_627cdb1df96c1",
+                            "label": "Yearly Price Subtext",
+                            "name": "yearly_price_subtext",
+                            "type": "wysiwyg",
+                            "instructions": "Subtext below the plan price.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_627cdb1df96b6",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_627cdb1df96bb",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "<p>REG. <del>$15.00<\/del><\/p>",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_627cdb1df96c2",
+                            "label": "Links",
+                            "name": "links",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 3,
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_627cdb1df96c3",
+                                    "label": "CTA",
+                                    "name": "cta",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "wpml_cf_preferences": 2,
+                                    "return_format": "array"
+                                },
+                                {
+                                    "key": "field_627cdb1df96c4",
+                                    "label": "CTA Style",
+                                    "name": "cta_style",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "wpml_cf_preferences": 3,
+                                    "choices": {
+                                        "primary": "Primary Green",
+                                        "ghost": "Secondary Outline"
+                                    },
+                                    "default_value": "ghost",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_627cdb1df96c5",
+                                    "label": "Secondary Links",
+                                    "name": "secondary_links",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "wpml_cf_preferences": 2,
+                                    "default_value": "",
+                                    "placeholder": "or <a href='#'>Try It Free<\/a>",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_6284c6a6014bc",
+            "label": "Standard",
+            "name": "standard",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f6cc258ebd3a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6284c6a6014bd",
+                    "label": "Lite",
+                    "name": "lite",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6284c6a6014c0",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6284c6a6014c2",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6284c6cc01512",
+                    "label": "Plus",
+                    "name": "plus",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6284c6cc01513",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6284c6cc01514",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6284c6d601515",
+                    "label": "Premium",
+                    "name": "premium",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6284c6d601516",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6284c6d601517",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6284c6e101518",
+                    "label": "Select",
+                    "name": "select",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6284c6e101519",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6284c6e10151a",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6284c6ed0151b",
+                    "label": "Starter",
+                    "name": "starter",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6284c6ed0151c",
+                            "label": "Monthly Banner Subtext",
+                            "name": "monthly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6284c6ed0151d",
+                            "label": "Yearly Banner Subtext",
+                            "name": "yearly_banner_subtext",
+                            "type": "text",
+                            "instructions": "This text will show below the banner image, if left blank, no text will show below the banner image.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6284c6a6014be",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5fd13f69733ac",
+            "label": "Base Pricing Info",
+            "name": "base_pricing_info",
+            "type": "textarea",
+            "instructions": "CSV output of Pricing Table information for this region. This remains persistent regardless of whether or not a Promo is enabled.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 16,
+            "new_lines": ""
+        },
+        {
+            "key": "field_62908f3cdfaf6",
+            "label": "Most popular plan",
+            "name": "most_popular_plan",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "plus",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_629095f62c392",
+            "label": "Price disclaimer align",
+            "name": "price_disclaimer_align",
+            "type": "select",
+            "instructions": "How to align \"Prices in USD\" text on tablet\/desktop view",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "right": "Right",
+                "left": "Left"
+            },
+            "default_value": "right",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60dd7603e5c4b",
+            "label": "Block Design",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60dd7667e5c4c",
+            "label": "Use Carousel for Mobile View",
+            "name": "mobile_carousel",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/pricing-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1653642816
+}

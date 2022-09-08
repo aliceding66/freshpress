@@ -1,0 +1,198 @@
+@media (min-width: 1024px) {
+  .graph {
+    width: 905px;
+    padding: 100px 80px;
+  }
+}
+.graph .swiper-pagination-bullets {
+  bottom: 0 !important;
+  z-index: 1;
+  width: auto !important;
+}
+.graph__nav-item {
+  padding: 10px 25px;
+  color: #001b40;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+.graph__nav-item:hover, .graph__nav-item:visited {
+  color: #001b40;
+  text-decoration: none;
+}
+.graph__nav-item_active {
+  color: #fff;
+  background-color: #0075dd;
+  border-radius: 20px;
+}
+.graph__nav-item_active:hover, .graph__nav-item_active:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.graph__legend {
+  order: 2;
+  max-width: 285px;
+}
+@media (min-width: 1024px) {
+  .graph__legend {
+    order: 1;
+  }
+}
+.graph__legend-title {
+  font-weight: 500;
+  font-size: 1.625rem;
+}
+@media (min-width: 1024px) {
+  .graph__legend-title {
+    font-size: 2.375rem;
+  }
+}
+.graph__legend-items {
+  font-size: 1.125rem;
+  border-bottom: 1px solid #c2c8d1;
+}
+.graph__legend-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.graph__legend-item-decoration {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  border-radius: 50px;
+}
+.graph__percentage_white, .graph__percentage_man, .graph__percentage_18, .graph__legend-item-decoration_white, .graph__legend-item-decoration_man, .graph__legend-item-decoration_18 {
+  color: #fff;
+  background-color: #0075dd;
+}
+.graph__percentage_asian, .graph__percentage_26, .graph__percentage_woman, .graph__legend-item-decoration_asian, .graph__legend-item-decoration_woman, .graph__legend-item-decoration_26 {
+  color: #fff;
+  background-color: #0041b2;
+}
+.graph__percentage_black, .graph__percentage_30, .graph__percentage_beyond, .graph__legend-item-decoration_black, .graph__legend-item-decoration_beyond, .graph__legend-item-decoration_30 {
+  color: #fff;
+  background-color: #2e9000;
+}
+.graph__percentage_hispanic, .graph__percentage_35, .graph__legend-item-decoration_hispanic, .graph__legend-item-decoration_35 {
+  color: #001b40;
+  background-color: #ffc414;
+}
+.graph__percentage_middle-eastern, .graph__percentage_40, .graph__legend-item-decoration_middle-eastern, .graph__legend-item-decoration_40 {
+  color: #fff;
+  background-color: #001b40;
+}
+.graph__percentage_hawaiian, .graph__legend-item-decoration_hawaiian {
+  background-color: #80baee;
+}
+.graph__percentage_other, .graph__legend-item-decoration_other {
+  color: #001b40;
+  background-color: #ffe189;
+}
+.graph__legend-description {
+  font-size: 1rem;
+}
+.graph__image {
+  order: 1;
+  width: 340px;
+  height: 550px;
+  margin-bottom: 90px;
+}
+@media (min-width: 1024px) {
+  .graph__image {
+    order: 2;
+    width: 390px;
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
+}
+.graph__column {
+  position: relative;
+  width: 105px;
+}
+.graph__percentage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0;
+  font-size: 0.75rem;
+}
+@media (min-width: 1024px) {
+  .graph__percentage:hover .graph__tooltip {
+    display: inline-block;
+  }
+}
+.graph__percentage_top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.graph__percentage_bottom {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.graph__tooltip {
+  position: absolute;
+  top: -148px;
+  left: -130px;
+  z-index: 9999;
+  display: none;
+  width: 171px;
+  height: 115px;
+  padding: 13px 53px 20px 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #002057;
+  border-radius: 20px 20px 0 20px;
+  filter: drop-shadow(8px 8px 11px rgba(0, 27, 64, 0.25));
+}
+.graph__tooltip::after {
+  position: absolute;
+  right: 0;
+  bottom: -44px;
+  width: 0;
+  height: 0;
+  border-color: transparent #002057 transparent transparent;
+  border-style: solid;
+  border-width: 0 44px 44px 0;
+  filter: drop-shadow(8px 8px 11px rgba(0, 27, 64, 0.25));
+  content: "";
+}
+.graph__tooltip-race, .graph__tooltip-year {
+  font-size: 0.875rem;
+}
+.graph__tooltip-percentage {
+  display: block;
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 3rem;
+}
+.graph__year {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.graph__swiper-button-prev, .graph__swiper-button-next {
+  color: #001b40;
+  transform: scale(0.8);
+}
+.graph__swiper-button-prev {
+  left: 0;
+}
+.graph__swiper-button-next {
+  right: 0;
+}
+.graph__race-column_2 {
+  top: -3px;
+}
+.graph__race-column_3 {
+  top: -114px;
+}
+.graph__age-column_2 {
+  top: 11px;
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-graph.css.map*/

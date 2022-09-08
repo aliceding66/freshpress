@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/vat-table",
+  "title": "VAT Table",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

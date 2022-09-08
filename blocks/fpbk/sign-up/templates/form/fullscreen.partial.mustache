@@ -1,0 +1,30 @@
+<form
+	method="post"
+	class="sign-up__form w-100 needs-validation with-arrows"
+	data-form-handler="handleSignup"
+	data-action="https://{{ domains.api }}/auth/api/v1/smux/registrations"
+	novalidate
+>
+	{{# admin_form_input_fields }}
+		{{{ admin_form_input_fields }}}
+	{{/ admin_form_input_fields }}
+	{{^ admin_form_input_fields }}
+		{{> partial__form_input_fields }}
+	{{/ admin_form_input_fields }}
+
+	{{# admin_form_submit }}
+		{{{ admin_form_submit }}}
+	{{/ admin_form_submit }}
+	{{^ admin_form_submit }}
+		{{> partial__form_submit }}
+	{{/ admin_form_submit }}
+
+	{{> partial__form_sso }}
+
+	{{# admin_form_tos }}
+		{{{ admin_form_tos }}}
+	{{/ admin_form_tos }}
+	{{^ admin_form_tos }}
+		{{> partial__form_tos }}
+	{{/ admin_form_tos }}
+</form>

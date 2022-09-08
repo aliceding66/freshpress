@@ -1,0 +1,85 @@
+{
+    "key": "group_608c07f806172",
+    "title": "Block - Search Swiftype",
+    "fields": [
+        {
+            "key": "field_608c080de3b62",
+            "label": "Swiftype ID",
+            "name": "swiftype_id",
+            "type": "text",
+            "instructions": "XYZ from  Swiftype snippet:  _st('install','XYZ','2.0.0');",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_608c081ae3b63",
+            "label": "Placeholder",
+            "name": "placeholder",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_609130e6b09f8",
+            "label": "No result content",
+            "name": "no_result_content",
+            "type": "wysiwyg",
+            "instructions": "Additional content that will be displayed when no results was found. This will not work when \"Swiftype Overlay\" is enabled",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/search-swiftype"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643309290
+}

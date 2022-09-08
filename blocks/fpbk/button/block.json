@@ -1,0 +1,27 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/button",
+  "title": "Button",
+  "category": "freshblocks",
+  "description": "The generic FB button.",
+  "textdomain": "fpbk",
+  "supports": {
+    "align": true,
+    "anchor": true
+  },
+  "styles": [
+    {
+      "name": "btn-cta-green",
+      "label": "Green Button",
+      "isDefault": true
+    },
+    {
+      "name": "btn-white",
+      "label": "White Button"
+    },
+    {
+      "name": "btn-midnight-blue",
+      "label": "Midnight Blue Button"
+    }
+  ]
+}

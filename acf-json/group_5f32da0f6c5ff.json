@@ -1,0 +1,65 @@
+{
+    "key": "group_5f32da0f6c5ff",
+    "title": "DMA - Direct Buy Banner",
+    "fields": [
+        {
+            "key": "field_5f32da6ddde2b",
+            "label": "Desktop Content",
+            "name": "desktop_content",
+            "type": "wysiwyg",
+            "instructions": "Enter the copy text and link for the banner, to be visible on desktop viewports.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0,
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f32dc8da66b8",
+            "label": "Mobile Content",
+            "name": "mobile_content",
+            "type": "wysiwyg",
+            "instructions": "Enter the copy text and link for the banner, to be visible on mobile viewports.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0,
+            "wpml_cf_preferences": 2
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/banner-direct-buy"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310473
+}

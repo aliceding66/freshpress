@@ -1,0 +1,51 @@
+<div class="sign-up py-4 px-3 p-md-3 d-flex flex-column align-items-center justify-content-center row min-vh-100">
+    <div class="sign-up__wrapper d-flex flex-column align-items-center text-center w-100 position-relative">
+
+        <img loading="lazy" class="sign-up__logo-image d-md-none mb-4" alt="Freshbooks Logo" src="https://www.dev.freshenv.com/wp-content/themes/freshpress/dist/images/logos/freshbooks-logo-white.svg" width="155" height="38">		<img loading="lazy" class="sign-up__logo-image d-none d-md-block mb-4" alt="Freshbooks Logo" src="https://www.dev.freshenv.com/wp-content/themes/freshpress/dist/images/logos/freshbooks-logo.svg" width="155" height="38">
+        <h1 class="sign-up__heading mt-md-2">Try FreshBooks Free</h1>
+        <h2 class="sign-up__sub-heading mb-4">No credit card required. Cancel anytime.</h2>
+
+        <form method="post" class="sign-up__form w-100 needs-validation with-arrows" data-form-handler="handleSignup" data-action="https://api.staging.freshenv.com/auth/api/v1/smux/registrations" novalidate="">
+            <!-- Email -->
+            
+            <div class="form-group sign-up__form-group sign-up__form-email mb-md-2 position-relative">
+                <input required="" name="email" type="email" class="form-control shadow-none" id="email" placeholder="Email" aria-label="Email">
+                <div class="invalid-tooltip py-2 px-3"></div>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group sign-up__form-group sign-up__form-password mb-md-2 position-relative">
+                <input required="" minlength="8" name="password" type="password" class="form-control shadow-none" id="password" placeholder="Password (min. 8 characters)" aria-label="Password">
+                <div class="invalid-tooltip py-2 px-3"></div>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-group sign-up__form-group sign-up__form-btn mt-4 mt-md-2 mb-2">
+                <button type="submit" name="submit" class="btn btn-cta-green btn-block btn-lg sign-up__submit">Get Started</button>
+            </div>
+
+            <div class="sign-up__divider position-relative w-100 mb-3 mt-2">OR</div>
+
+            <!-- Apple SSO -->
+            <a href="#" data-href="apple-sso-href" class="sso-signup_apple btn btn-outline-grey bg-white sign-up__ghost-btn d-flex align-items-center position-relative justify-content-center w-100 mb-2">
+                <img loading="lazy" class="position-absolute" alt="Apple Logo" src="https://www.dev.freshenv.com/wp-content/themes/freshpress/dist/images/logos/apple-logo.svg" width="1000" height="1188">Sign up with Apple			</a>
+
+            <!-- Google SSO -->
+            <a href="#" data-href="google-sso-href" class="sso-signup_google btn btn-outline-grey bg-white sign-up__ghost-btn d-flex align-items-center position-relative justify-content-center w-100 mb-5">
+                <img loading="lazy" class="position-absolute" alt="Google Logo" src="https://www.dev.freshenv.com/wp-content/themes/freshpress/dist/images/logos/google-logo-icon.svg" width="48" height="48">Sign up with Google			</a>
+
+            <!-- Terms of Service -->
+            <div class="sign-up__policy-privacy position-relative mb-2 pt-1 pb-1 mt-4">
+                <input required="" type="checkbox" id="tos-accepted" name="tos-accepted" class="form-control-checkbox float-left">
+                <label for="tos-accepted">
+                    I confirm that I have read and agree to FreshBooks <a href="/policies/terms-of-service" target="_blank">Terms of Service</a> and <a href="/policies/privacy" target="_blank">Privacy Policy</a>.				</label>
+                <div class="invalid-tooltip invalid-checkbox-tooltip py-2 px-3">
+                    This field is required.				</div>
+            </div>
+
+        </form>
+        <div class="sign-up__already-registered">Already have an account? <a class="signup-link" href="https://my.freshbooks.com/#/login">Log In</a></div>
+    </div>
+    <a href="https://www.staging.freshenv.com/policies/security-safeguards" class="sign-up__security-link mt-3" target="_blank" rel="noopener noreferrer">
+        <img loading="lazy" alt="Lock icon" src="https://www.dev.freshenv.com/wp-content/themes/freshpress/dist/images/icons/lock.svg" width="10" height="12">Security Safeguards</a>
+</div>

@@ -1,0 +1,138 @@
+@import '../../freshpress-includes';
+@import '~highlight.js/scss/railscasts.scss';
+
+.main,
+.header {
+	max-width: 1600px !important;
+}
+
+.api-single {
+	h1 {
+		padding-bottom: 1.5rem;
+	}
+
+	.snippets {
+		&__menu {
+			width: 100%;
+			padding: 10px 25px;
+			background-color: $black;
+		}
+
+		&__menu-tab {
+			color: $white;
+			line-height: 1;
+
+			&:hover {
+				color: $white;
+				cursor: pointer;
+			}
+
+			&.active {
+				background-color: $fresh-blue;
+				border-radius: 17px;
+			}
+		}
+
+		&__title {
+			color: $white;
+			font-size: px-to-rem( 22 );
+		}
+	}
+
+	.api {
+		&__menu-section {
+			&--title {
+				span {
+					font-size: px-to-rem( 20 );
+				}
+
+				svg {
+					width: 10px;
+					height: 26px;
+					padding-top: 5px;
+					transform: rotate( 0deg );
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&.collapsed {
+					padding-bottom: 1rem;
+
+					svg {
+						transform: rotate( -90deg );
+					}
+				}
+			}
+
+			&--item {
+				width: 100%;
+
+				&:last-child {
+					margin-bottom: 0.5rem;
+				}
+
+				span {
+					color: $font-grey;
+					font-size: px-to-rem( 16 );
+				}
+
+				&:hover {
+					text-decoration: none;
+					cursor: pointer;
+
+					span {
+						color: $fresh-blue;
+					}
+				}
+			}
+		}
+	}
+
+	.col-content {
+		p,
+		ol,
+		li,
+		span,
+		a {
+			font-size: px-to-rem( 16 );
+		}
+
+		pre {
+			padding: 0;
+			white-space: pre-wrap;
+			word-wrap: break-word;
+			border-radius: 3px;
+		}
+
+		code {
+			white-space: pre-wrap;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.col-snippets {
+		height: max-content;
+	}
+
+	.code-snippet {
+		color: $white;
+		background-color: $snippet-grey;
+		border-radius: 3px;
+	}
+
+	table th,
+	table td {
+		padding: 0.8rem;
+	}
+
+	table td {
+		border-top: 1px solid $card-tab-grey;
+		border-bottom: 1px solid $card-tab-grey;
+	}
+}

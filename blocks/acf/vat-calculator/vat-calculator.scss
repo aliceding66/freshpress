@@ -1,0 +1,655 @@
+// VAT Calculator.
+@use "sass:math";
+@import '~styles/freshpress-includes';
+
+$fb-tooltip-arrow-width: 26px;
+$fb-tooltip-arrow-height: 14px;
+
+$light-gray: #b3bbc5;
+$white: #fff;
+$gray: #8390a1;
+$button-blue: #0064bc;
+
+header > .header__region-selector-container {
+	display: none !important;
+}
+
+.vat-calculator {
+	position: relative;
+	margin: 0 -15px;
+	padding: 36px 0 75px;
+	background-color: $light-cream;
+
+	@include media-breakpoint-up( md ) {
+		padding: 101px 0 102px;
+	}
+
+	@include media-breakpoint-up( lg ) {
+		padding: 100px 0 140px;
+	}
+	@include media-breakpoint-up( xl ) {
+		display: flex;
+		align-items: center;
+		border-radius: 463px 0 0 0;
+	}
+
+	.btn {
+		padding: 10px 15px 9px;
+		font-weight: 500;
+		font-size: px-to-rem( 20 );
+		line-height: px-to-rem( 26 );
+
+		@include media-breakpoint-up( lg ) {
+			padding: 13px 24px;
+			font-size: px-to-rem( 26 );
+		}
+	}
+
+	&__container {
+		position: relative;
+		z-index: 3;
+		width: 647px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 0 21px;
+
+		@include media-breakpoint-up( xl ) {
+			width: 1238px;
+		}
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+		width: 100%;
+
+		@include media-breakpoint-up( xl ) {
+			width: 487px;
+		}
+	}
+	&__country-label {
+		color: $fresh-new;
+		font-weight: 600;
+		font-size: px-to-rem( 26 );
+		line-height: px-to-rem( 68 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 36 );
+		}
+	}
+	&__title {
+		margin-bottom: 20px;
+		color: $tile-blue;
+		font-weight: 500;
+		font-size: px-to-rem( 36 );
+		line-height: px-to-rem( 42 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 64 );
+			line-height: px-to-rem( 68 );
+		}
+	}
+	&__description {
+		margin-bottom: 20px;
+		color: $tile-blue;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 26 );
+	}
+	//Tools
+	&__tools-select {
+		position: relative;
+		&:hover .vat-calculator__tools-options {
+			@include media-breakpoint-up( xl ) {
+				visibility: visible;
+			}
+		}
+	}
+	&__tools-arrow {
+		display: block;
+		color: $fresh-new;
+		font-weight: 500;
+		font-size: px-to-rem( 17 );
+		line-height: px-to-rem( 25 );
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		cursor: pointer;
+		&::after {
+			display: inline-block;
+			width: px-to-rem( 8.94 );
+			height: px-to-rem( 5 );
+			margin-left: 4px;
+			vertical-align: middle;
+			background-image: url( ./../../../assets/images/vat-calculator/arrow-down.svg );
+			background-repeat: no-repeat;
+			background-size: px-to-rem( 8.94 ) px-to-rem( 5 );
+			content: '';
+		}
+	}
+	&__tools-options {
+		position: relative;
+		width: 100%;
+		max-height: 0;
+		padding-top: 5px;
+		overflow: hidden;
+		color: $midnight-blue;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 21.42 );
+		text-align: center;
+		transition: max-height 1s linear;
+		@include media-breakpoint-up( sm ) {
+			text-align: left;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			max-height: inherit;
+			transform: translateX( -50% );
+			visibility: hidden;
+		}
+
+		&.active {
+			max-height: 90vh;
+			transition: max-height 1s linear;
+		}
+		&:hover,
+		&.active {
+			@include media-breakpoint-up( xl ) {
+				visibility: visible;
+			}
+		}
+		@include media-breakpoint-up( xl ) {
+			&::before {
+				position: relative;
+				top: 2px;
+				left: 50%;
+				z-index: 5;
+				display: block;
+				width: 26px;
+				height: 14px;
+				background-image: url( ./../../../assets/images/vat-calculator/arrow-image.svg );
+				background-repeat: no-repeat;
+				background-size: 26px 14px;
+				transform: translateX( -50% );
+				content: '';
+			}
+		}
+	}
+
+	&__tools-container {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 25px 15px 25px;
+		text-align: center;
+
+		@include media-breakpoint-up( xl ) {
+			width: 257px;
+			padding: 32px 27px 32px;
+			text-align: left;
+			background-color: $white;
+			border: 1px solid rgba( 179, 187, 197, 0.6 );
+			border-radius: 8px;
+		}
+		a {
+			display: block;
+			margin-bottom: 10px;
+			color: $midnight-blue;
+			font-weight: 400;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 21.42 );
+			letter-spacing: 0.01em;
+			text-decoration: none;
+			@include media-breakpoint-up( sm ) {
+				margin-bottom: 16px;
+			}
+
+			span {
+				font-weight: 500;
+			}
+
+			&:hover {
+				color: $fresh-new;
+				text-decoration: none;
+			}
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	// Form
+
+	&__tabs {
+		&.nav-tabs {
+			border: none;
+			li.nav-item {
+				margin-bottom: 0;
+				a.nav-link {
+					min-width: 120px;
+					padding: 14px;
+					color: $tile-blue;
+					font-weight: 400;
+					font-size: px-to-rem( 14 );
+					line-height: px-to-rem( 16.66 );
+					letter-spacing: 0.05em;
+					text-align: center;
+					background-color: $white;
+					border: 1px solid $tile-blue;
+
+					@include media-breakpoint-up( md ) {
+						min-width: 140px;
+						font-size: px-to-rem( 15 );
+						line-height: px-to-rem( 17.85 );
+					}
+					@include media-breakpoint-up( lg ) {
+						min-width: 169px;
+						font-size: px-to-rem( 18 );
+						line-height: px-to-rem( 21.42 );
+					}
+
+					&.active {
+						color: $white;
+						font-weight: 600;
+						background-color: $tile-blue;
+					}
+				}
+			}
+			li.nav-item + li.nav-item {
+				margin-left: 4px;
+
+				@include media-breakpoint-up( md ) {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+
+	&__form-container {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		margin-top: 50px;
+
+		@include media-breakpoint-up( md ) {
+			margin-top: 75px;
+		}
+		@include media-breakpoint-up( xl ) {
+			width: 605px;
+			margin-top: 0;
+		}
+	}
+
+	&__form {
+		&_content_top {
+			position: relative;
+			z-index: 3;
+			padding: 27px 27px 48px;
+			color: $white;
+			background-color: $tile-blue;
+			border-radius: 0 8px 0 0;
+
+			@include media-breakpoint-up( md ) {
+				padding: 36px 39px 51px;
+			}
+			@include media-breakpoint-up( lg ) {
+				padding: 36px 42px 70px;
+			}
+		}
+		&_content_bottom {
+			position: relative;
+			z-index: 1;
+			padding: 22px 27px 0;
+			color: $tile-blue;
+			background-color: $white;
+			border: 1px solid $tile-blue;
+			border-radius: 0 0 8px 8px;
+
+			@include media-breakpoint-up( md ) {
+				padding: 34px 39px 36px;
+			}
+			@include media-breakpoint-up( lg ) {
+				padding: 34px 42px 36px;
+			}
+		}
+	}
+	&__input {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: 35px;
+		margin-bottom: 28px;
+		padding: 0 12px;
+		color: $tile-blue;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 19.04 );
+		background-color: $white;
+		border: none;
+		border-radius: 5px;
+		appearance: none;
+
+		@include media-breakpoint-up( md ) {
+			width: 250px;
+			margin-bottom: 0;
+		}
+		@include media-breakpoint-up( lg ) {
+			height: 50px;
+			padding: 0 26px;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 21.42 );
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&::-webkit-input-placeholder {
+			color: $light-gray;
+			font-style: italic;
+		}
+		&::-moz-placeholder {
+			color: $light-gray;
+			font-style: italic;
+		}
+		&:-ms-input-placeholder {
+			color: $light-gray;
+			font-style: italic;
+		}
+		&:-moz-placeholder {
+			color: $light-gray;
+			font-style: italic;
+		}
+		&::-ms-clear {
+			display: none;
+		}
+	}
+	&__input-label {
+		margin-bottom: 9px;
+		font-weight: 400;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 19.04 );
+		letter-spacing: 0.05em;
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 21.42 );
+		}
+		span {
+			font-size: px-to-rem( 10 );
+			line-height: px-to-rem( 11.9 );
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 12 );
+				line-height: px-to-rem( 14.28 );
+			}
+		}
+	}
+	&__select-wrapper {
+		position: relative;
+		width: 207px;
+		max-width: 100%;
+		height: 36px;
+		@include media-breakpoint-up( lg ) {
+			height: 51px;
+		}
+	}
+	&__select-container {
+		z-index: 4;
+		display: flex;
+		height: 100%;
+		background-color: $white;
+		border: 1px solid $tile-blue;
+		border-bottom: none;
+		border-radius: 5px;
+
+		&_active {
+			border-radius: 5px 5px 0 0;
+		}
+	}
+	&__option {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 0 12px;
+		color: $tile-blue;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 19.04 );
+		background-color: transparent;
+		border-right: 1px solid $tile-blue;
+		border-left: 1px solid $tile-blue;
+		cursor: pointer;
+		transition: top 0.3s, background-color 0.3s;
+
+		&:hover:not( .vat-calculator__option_active ) {
+			color: $fresh-new;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			padding: 0 26px;
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 21.42 );
+		}
+
+		&:first-of-type {
+			border-radius: 5px;
+		}
+		&:last-of-type {
+			border-bottom: 1px solid $tile-blue;
+			border-radius: 0 0 5px 5px;
+		}
+
+		&_active {
+			background-color: $white;
+			border-bottom: 1px solid $tile-blue;
+			transition: top 0.3s, background-color 0s;
+			&::after {
+				position: absolute;
+				top: 50%;
+				right: 11px;
+				z-index: 1;
+				display: block;
+				width: px-to-rem( 8.94 );
+				height: px-to-rem( 5 );
+				background-image: url( ./../../../assets/images/vat-calculator/arrow-down.svg );
+				background-repeat: no-repeat;
+				background-size: px-to-rem( 8.94 ) px-to-rem( 5 );
+				transform: translateX( -50% );
+				content: '';
+
+				@include media-breakpoint-up( lg ) {
+					right: 19px;
+				}
+			}
+		}
+		&_active .vat-calculator__option:first-of-type {
+			border-radius: 5px 5px 0 0;
+		}
+	}
+	&__option + &__option {
+		z-index: 1;
+	}
+	&__select-container_active &__option_active ~ &__option {
+		background-color: $white;
+	}
+	&__select-container_active &__option_active::after {
+		transform: translateX( -50% ) scale( 1, -1 );
+	}
+	&__button {
+		margin-left: 13px;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+	}
+
+	// Tooltip
+	&__options {
+		margin: 0;
+		padding: 0;
+		font-size: px-to-rem( 12 );
+		line-height: px-to-rem( 14.28 );
+		list-style-type: none;
+		&-items {
+			margin-bottom: 10px;
+			&:last-of-type {
+				margin: 0;
+			}
+			&_bold {
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__tooltip {
+		&.show {
+			opacity: 1;
+		}
+		.arrow {
+			&::before {
+				top: -9px !important;
+				right: 0;
+				left: 50%;
+				z-index: 1;
+				width: 26px;
+				height: 14px;
+				background-image: url( ./../../../assets/images/vat-calculator/arrow-image.svg );
+				background-repeat: no-repeat;
+				background-size: 26px 14px;
+				border: none !important;
+				box-shadow: none;
+				transform: translateX( -50% ) scale( -1 );
+			}
+		}
+		.tooltip-inner {
+			max-width: 137px;
+			padding: 23px 15px;
+			color: $midnight-blue;
+			font-size: px-to-rem( 12 );
+			line-height: px-to-rem( 14.28 );
+			text-align: left;
+			background-color: $white;
+			border: 1px solid rgba( 179, 187, 197, 0.6 );
+			border-radius: 5px;
+			box-shadow: 1.5px 1.5px 0 rgba( 210, 210, 210, 0.3 );
+		}
+
+		&.bs-tooltip-top {
+			padding: $fb-tooltip-arrow-height 0;
+
+			.arrow {
+				bottom: 1px !important;
+
+				&::before {
+					top: 0;
+					border-width: $fb-tooltip-arrow-height
+						( math.div( $fb-tooltip-arrow-width, 2 ) ) 0;
+					border-top-color: $tooltip-arrow-color;
+				}
+			}
+		}
+
+		&.bs-tooltip-right {
+			padding: 0 $fb-tooltip-arrow-height;
+
+			.arrow {
+				left: 0;
+				width: $fb-tooltip-arrow-height;
+				height: $fb-tooltip-arrow-width;
+
+				&::before {
+					right: 0;
+					border-width: ( math.div( $fb-tooltip-arrow-width, 2 ) )
+						$fb-tooltip-arrow-height ( math.div( $fb-tooltip-arrow-width, 2 ) ) 0;
+					border-right-color: $tooltip-arrow-color;
+				}
+			}
+		}
+
+		&.bs-tooltip-bottom {
+			padding: $fb-tooltip-arrow-height 0;
+
+			.arrow {
+				top: 0;
+
+				&::before {
+					top: 2px !important;
+					bottom: 0;
+					transform: translateX( -50% ) scale( 1 );
+				}
+			}
+		}
+
+		&.bs-tooltip-left {
+			padding: 0 $fb-tooltip-arrow-height;
+
+			.arrow {
+				right: 0;
+				width: $fb-tooltip-arrow-height;
+				height: $fb-tooltip-arrow-width;
+
+				&::before {
+					left: 0;
+					border-width: ( math.div( $fb-tooltip-arrow-width, 2 ) ) 0
+						( math.div( $fb-tooltip-arrow-width, 2 ) ) $fb-tooltip-arrow-height;
+					border-left-color: $tooltip-arrow-color;
+				}
+			}
+		}
+	}
+	&__label {
+		display: block;
+		margin-bottom: 8px;
+		color: $gray;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 19.04 );
+		letter-spacing: 0.05em;
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 15 );
+			line-height: px-to-rem( 17.85 );
+		}
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 18 );
+			line-height: px-to-rem( 21.42 );
+		}
+	}
+	&__amount {
+		display: block;
+		margin-bottom: 33px;
+		color: $tile-blue;
+		font-size: px-to-rem( 25 );
+		line-height: px-to-rem( 29.75 );
+		letter-spacing: 0.05em;
+
+		@include media-breakpoint-up( md ) {
+			margin-bottom: 0;
+		}
+		&_font_bold {
+			font-weight: 600;
+		}
+
+		span {
+			color: $gray;
+			font-weight: 400;
+			font-style: italic;
+		}
+	}
+	.btn-cta-blue {
+		@include button-variant(
+			$fresh-new,
+			$fresh-new,
+			$button-blue,
+			$button-blue,
+			$button-blue,
+			$button-blue
+		);
+		color: $white;
+		&:hover {
+			color: $white;
+		}
+	}
+}

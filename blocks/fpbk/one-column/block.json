@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/one-column",
+  "title": "One Column",
+  "category": "freshblocks",
+  "description": "A block with one column of title, text and image.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,139 @@
+.accounting-partners-services-accordion {
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .accounting-partners-services-accordion {
+    padding-top: 60px;
+  }
+}
+.accounting-partners-services-accordion__heading {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  font-size: 1.875rem;
+  line-height: 1.75rem;
+  border-bottom: 1px solid rgba(180, 190, 198, 0.6);
+}
+@media (min-width: 1024px) {
+  .accounting-partners-services-accordion__heading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+}
+.accounting-partners-services-accordion__item {
+  border-bottom: 1px solid rgba(180, 190, 198, 0.6);
+}
+.accounting-partners-services-accordion__open-body {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 24px 0;
+  text-align: left;
+  background-color: transparent;
+  border: 0;
+}
+.accounting-partners-services-accordion__open-body::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 10px;
+  height: 6px;
+  margin-top: -3px;
+  margin-left: 8px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/accounting-partners/accordion-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  content: "";
+}
+@media (min-width: 768px) {
+  .accounting-partners-services-accordion__open-body::after {
+    right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .accounting-partners-services-accordion__open-body::after {
+    right: 40px;
+  }
+}
+.accounting-partners-services-accordion__open-body.active {
+  padding: 24px 0 0;
+}
+.accounting-partners-services-accordion__open-body.active::after {
+  transform: scaleY(-1);
+}
+.accounting-partners-services-accordion__open-body h3 {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-services-accordion__open-body h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+.accounting-partners-services-accordion__body, .accounting-partners-services-accordion__hidden {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+.accounting-partners-services-accordion__hidden {
+  margin-bottom: 6px;
+}
+.accounting-partners-services-accordion__content {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.accounting-partners-services-accordion__content h4 {
+  margin-bottom: 28px;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-services-accordion__content h4 {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+}
+.accounting-partners-services-accordion__content ul {
+  margin: 0;
+  padding: 0;
+}
+.accounting-partners-services-accordion__content li {
+  list-style-type: none;
+}
+.accounting-partners-services-accordion__content a {
+  display: block;
+  color: #0075dd;
+  text-decoration: underline;
+}
+.accounting-partners-services-accordion__content a:hover {
+  text-decoration: none;
+}
+.accounting-partners-services-accordion__content .col-6:nth-child(3) h4,
+.accounting-partners-services-accordion__content .col-6:nth-child(4) h4 {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .accounting-partners-services-accordion__content .col-6:nth-child(3) h4,
+.accounting-partners-services-accordion__content .col-6:nth-child(4) h4 {
+    margin-top: 0;
+  }
+}
+.accounting-partners-services-accordion__button-show {
+  margin: 11px 0 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+.accounting-partners-services-accordion__button-show_green {
+  color: #36a900;
+}
+
+/*# sourceMappingURL=blocks-acf-accounting-partners-services-accordion-accounting-partners-services-accordion.css.map*/

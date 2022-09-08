@@ -1,0 +1,56 @@
+@import '~styles/freshpress-includes';
+
+.wp-block-fpbk-vat-table {
+	border: none;
+}
+.vat-table {
+	&__title {
+		display: inline-block;
+		padding: 15px 28px;
+		color: $tile-blue;
+		font-weight: 400;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 21.42 );
+		letter-spacing: 5%;
+		background-color: $white;
+		border: 1px solid $tile-blue;
+		border-bottom: none;
+		border-radius: 8px 8px 0 0;
+	}
+	&__cell {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		justify-content: space-between;
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			@include media-breakpoint-up( md ) {
+				width: calc( 33.33% - 1px );
+			}
+		}
+		&__title {
+			display: flex;
+			align-items: center;
+			min-height: 125px;
+			padding: 22px;
+			color: $white;
+			font-weight: 500;
+			font-size: px-to-rem( 22 );
+			line-height: px-to-rem( 27 );
+			background-color: $tile-blue;
+		}
+		&__description {
+			display: block;
+			min-height: 125px;
+			padding: 22px;
+			color: $white;
+			font-weight: 400;
+			font-size: px-to-rem( 16 );
+			line-height: px-to-rem( 19 );
+			white-space: pre-wrap;
+			background-color: $tile-highlight-blue;
+		}
+	}
+}

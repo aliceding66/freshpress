@@ -1,0 +1,23 @@
+<div class="stat-tiles__bg-row px-md-3 px-xl-5 text-center">
+	{{# heading }}
+    	<h2 class="stat-tiles__heading px-3 mt-lg-3">{{ heading }}</h2>
+	{{/ heading }}
+    <div class="stat-tiles__stats d-md-flex px-md-3 px-lg-4">
+        {{# stats }}
+            {{> stat }}
+        {{/ stats }}
+    </div>
+</div>
+
+<div class="stat-tiles__about d-flex flex-column-reverse px-4 px-lg-5 pt-md-4 mx-md-1 mx-lg-auto flex-md-row align-items-start">
+    <div class="stat-tiles__about-content d-flex flex-column px-2 pr-md-2 pl-md-4 pl-lg-5 mt-md-5">
+		{{# about_team_heading }}
+        	<h3 class="stat-tiles__about-heading mb-4">{{ about_team_heading }}</h3>
+		{{/ about_team_heading }}
+        <div class="stat-tiles__about-body">{{{ about_team_body }}}</div>
+        {{# about_team_contact_links }}
+            {{> contact_link }}
+        {{/ about_team_contact_links }}
+    </div>
+    {{{ about_team_image }}}
+</div>

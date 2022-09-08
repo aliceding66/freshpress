@@ -1,0 +1,19 @@
+// File Download.
+
+@import '~styles/freshpress-includes';
+
+.file-download {
+	&__icon {
+		max-width: 20px;
+		min-height: 20px;
+		max-height: 20px;
+	}
+
+	&__name {
+		margin-top: 5px;
+		color: $font-grey;
+		font-weight: $font-weight-bolder;
+		font-size: px-to-rem( 11px );
+		letter-spacing: 1px;
+	}
+}

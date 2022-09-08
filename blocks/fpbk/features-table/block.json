@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/features-table",
+  "title": "Features Table",
+  "category": "freshblocks",
+  "description": "A block containing a table with FreshBooks Features and comparisonsck.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

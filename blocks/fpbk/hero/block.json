@@ -1,0 +1,23 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/hero",
+  "title": "Hero",
+  "category": "freshblocks",
+  "description": "A large image with optional headline, copy, signup form and call to action button.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "centered-with-sso",
+      "label": "Centered with SSO"
+    }
+  ]
+}

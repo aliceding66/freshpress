@@ -1,0 +1,22 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/rating",
+  "title": "Rating",
+  "category": "freshblocks",
+  "description": "Rating stand-alone block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  },
+  "styles": [
+    {
+      "name": "dark",
+      "label": "Dark",
+      "isDefault": true
+    },
+    {
+      "name": "light",
+      "label": "Light"
+    }
+  ]
+}

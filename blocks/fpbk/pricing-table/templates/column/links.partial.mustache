@@ -1,0 +1,51 @@
+<div
+	class="pricing-table_column-cta d-flex flex-column w-100 align-items-center px-2"
+	data-cta-text-monthly="{{# data_cta_text }}{{ data_cta_text }}-monthly-{{ plan_name }}{{/ data_cta_text }}"
+	data-cta-text-yearly="{{# data_cta_text }}{{ data_cta_text }}-yearly-{{ plan_name }}{{/ data_cta_text }}"
+	data-cta-section="pricinggrid-top"
+>
+	{{# cta.html }}
+		{{{ cta.html }}}
+	{{/ cta.html }}
+	{{^ cta.html }}
+		{{{ cta }}}
+	{{/ cta.html }}
+</div>
+
+
+<div
+	class="pricing-table_column-cta d-flex flex-column w-100 align-items-center px-2"
+	data-cta-text-monthly="{{# promo_data_cta_text }}{{ promo_data_cta_text }}-monthly-{{ plan_name }}{{/ promo_data_cta_text }}"
+	data-cta-text-yearly="{{# promo_data_cta_text }}{{ promo_data_cta_text }}-yearly-{{ plan_name }}{{/ promo_data_cta_text }}"
+	data-cta-section="pricinggrid-top"
+>
+	{{# promo_cta.html }}
+		{{{ promo_cta.html }}}
+	{{/ promo_cta.html }}
+	{{^ promo_cta.html }}
+		{{{ promo_cta }}}
+	{{/ promo_cta.html }}
+</div>
+
+
+{{# secondary_links }}
+	<div
+			class="pricing-table_column-secondary-link standard"
+			data-cta-text-monthly="{{# data_secondary_links_text }}{{ data_secondary_links_text }}-monthly-{{ plan_name }}{{/ data_secondary_links_text }}"
+			data-cta-text-yearly="{{# data_secondary_links_text }}{{ data_secondary_links_text }}-yearly-{{ plan_name }}{{/ data_secondary_links_text }}"
+			data-cta-section="pricinggrid-top"
+	>
+		{{{ secondary_links }}}
+	</div>
+{{/ secondary_links }}
+
+{{# promo_secondary_links }}
+	<div
+			class="pricing-table_column-secondary-link promo"
+			data-cta-text-monthly="{{# promo_data_secondary_links_text }}{{ promo_data_secondary_links_text }}-monthly-{{ plan_name }}{{/ promo_data_secondary_links_text }}"
+			data-cta-text-yearly="{{# promo_data_secondary_links_text }}{{ promo_data_secondary_links_text }}-yearly-{{ plan_name }}{{/ promo_data_secondary_links_text }}"
+			data-cta-section="pricinggrid-top"
+	>
+		{{{ promo_secondary_links }}}
+	</div>
+{{/ promo_secondary_links }}

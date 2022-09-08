@@ -1,0 +1,53 @@
+.competitor-table {
+	img {
+		max-height: 200px;
+	}
+
+	th,
+	td {
+		padding: 1rem;
+		vertical-align: baseline;
+	}
+
+	&__feature-row {
+		td {
+			&:first-child {
+				padding: 1.5rem 0.5rem;
+			}
+		}
+	}
+
+	&__feature-row-label {
+		img {
+			filter: grayscale( 1 );
+		}
+
+		input[type='checkbox'] {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 2;
+			width: 25px;
+			height: 25px;
+			transform: translate( -50%, -50% );
+			opacity: 0;
+		}
+
+		input[type='checkbox']:checked {
+			~ img {
+				filter: grayscale( 0 );
+			}
+		}
+	}
+
+	.components-toggle-control {
+		> div {
+			display: flex;
+			flex-direction: column-reverse;
+
+			.components-form-toggle {
+				margin-right: 0;
+			}
+		}
+	}
+}

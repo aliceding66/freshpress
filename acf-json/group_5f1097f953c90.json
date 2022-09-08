@@ -1,0 +1,255 @@
+{
+    "key": "group_5f1097f953c90",
+    "title": "Block - Icons List",
+    "fields": [
+        {
+            "key": "field_5f10980016e5e",
+            "label": "Title",
+            "name": "icons_list_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f10981016e5f",
+            "label": "Topic",
+            "name": "icons_list_topic",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f10983a16e60",
+                    "label": "Topic Icon",
+                    "name": "icons_list_topic_icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_606e19400ba95",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5f109b7e14300",
+                    "label": "Topic Title",
+                    "name": "icons_list_topic_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f10985d16e61",
+                    "label": "Topic Text",
+                    "name": "icons_list_topic_text",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        },
+        {
+            "key": "field_5f7c6ac5297e7",
+            "label": "Block Settings",
+            "name": "block_settings",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f7c6adb297e8",
+                    "label": "Stack Elements on Mobile",
+                    "name": "topic_elements_stack",
+                    "type": "true_false",
+                    "instructions": "Check if you want to stack Icons on top of their Titles (mobile only).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f7ecc4213315",
+                    "label": "Number of Columns",
+                    "name": "icons_list_columns",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "1": "1",
+                        "2": "2",
+                        "3": "3",
+                        "4": "4"
+                    },
+                    "default_value": 1,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f7edec690e74",
+                    "label": "Topic Bottom Margin Size",
+                    "name": "topic_bottom_margin",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "5": "5",
+                        "4": "4",
+                        "3": "3",
+                        "2": "2",
+                        "1": "1"
+                    },
+                    "default_value": 5,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_606e19400ba95",
+                    "label": "Numbered Topics",
+                    "name": "numbered_topics",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "wpml_cf_preferences": 3,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/icons-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308017
+}

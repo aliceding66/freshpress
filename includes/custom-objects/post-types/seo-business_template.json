@@ -1,0 +1,22 @@
+{
+  "disabled": true,
+  "post_type": "business_template",
+  "post_type_plural": "business_templates",
+  "label": "Business Template",
+  "label_plural": "Business Templates",
+  "args": {
+    "description": "User templates for business",
+    "menu_icon": "dashicons-networking",
+    "rewrite": {
+      "slug": "business-templates"
+    },
+    "supports": [
+      "editor",
+      "page-attributes",
+      "revisions",
+      "title",
+      "excerpt",
+      "thumbnail"
+    ]
+  }
+}

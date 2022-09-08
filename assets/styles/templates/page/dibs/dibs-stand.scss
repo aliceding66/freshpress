@@ -1,0 +1,17 @@
+@import '../../../freshpress-includes';
+
+.dibs {
+	.stand {
+		margin: 150px auto auto;
+
+		@include media-breakpoint-up( lg ) {
+			max-width: $dibs-block-max-width;
+		}
+
+		&__subtitle {
+			font-weight: 500;
+			font-size: px-to-rem( 16 );
+			line-height: px-to-rem( 22 );
+		}
+	}
+}

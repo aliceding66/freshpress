@@ -1,0 +1,190 @@
+@import '../../../freshpress-includes';
+
+.champions {
+	color: $midnight-blue;
+	background-color: $pale-yellow;
+
+	&__text-container {
+		@include media-breakpoint-up( lg ) {
+			max-width: 350px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			max-width: 430px;
+		}
+	}
+
+	&__slides-container {
+		width: 360px;
+		margin: 80px 0 -150px;
+		padding-top: 100px;
+		transform: translate( -28%, 20% );
+
+		@include media-breakpoint-up( md ) {
+			width: 768px;
+			transform: translate( -6%, 20% );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			width: 1024px;
+			transform: translate( 13%, 20% );
+		}
+
+		@include media-breakpoint-up( xl ) {
+			width: 1280px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			width: 1600px;
+		}
+	}
+
+	&__slide {
+		&.swiper-slide-active {
+			position: relative;
+			z-index: 9;
+			width: 300px !important;
+			box-shadow: 3px 4px 19px 3px rgba( 0, 27, 64, 0.08 );
+			transform: translate( 0, -24% );
+
+			@include media-breakpoint-up( md ) {
+				transform: translate( -7%, -23% );
+			}
+
+			@include media-breakpoint-up( lg ) {
+				width: 413px !important;
+				transform: translate( -11%, -50% );
+			}
+
+			@include media-breakpoint-up( xxl ) {
+				transform: translate( -2%, -50% );
+			}
+
+			.champions__slide-content-container {
+				display: block;
+			}
+
+			.champions__image {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&__slide-content-container {
+		display: none;
+		height: 364px;
+		margin-top: -215px;
+		padding: 155px 25px 50px;
+		background-color: $white;
+	}
+
+	&__image {
+		position: relative;
+		top: -100px;
+		width: 132px;
+		height: 132px;
+	}
+
+	&__name {
+		margin-bottom: 0;
+		font-size: px-to-rem( 22 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 28 );
+		}
+	}
+
+	&__pronouns {
+		margin-bottom: 30px;
+		font-size: px-to-rem( 16 );
+		text-transform: uppercase;
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 18 );
+		}
+	}
+
+	&__role {
+		width: 70%;
+		margin-bottom: 20px;
+	}
+
+	&__location {
+		padding: 0 0 0 20px;
+		background-image: url( #{$dibs_images_path}/templates/page/dibs/pin.svg );
+		background-repeat: no-repeat;
+		background-position: left middle;
+	}
+
+	&__nav-arrows-container {
+		position: relative;
+		width: 360px;
+		height: 300px;
+		transform: translate( -6%, -61% );
+
+		@include media-breakpoint-up( md ) {
+			width: 768px;
+			transform: translate( -7%, -61% );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			left: -340px;
+			width: 1024px;
+			height: 197px;
+			transform: translate( 13%, 53% );
+		}
+
+		@include media-breakpoint-up( xl ) {
+			left: -210px;
+			width: 1280px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			left: -9px;
+			width: 1600px;
+		}
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			color: $midnight-blue;
+			transform: scale( 0.8 );
+
+			@include media-breakpoint-up( lg ) {
+				top: -280px;
+			}
+		}
+
+		.swiper-button-prev {
+			left: -3px;
+
+			@include media-breakpoint-up( md ) {
+				left: 233px;
+			}
+
+			@include media-breakpoint-up( lg ) {
+				left: 625px;
+			}
+
+			@include media-breakpoint-up( xxl ) {
+				left: 665px;
+			}
+		}
+
+		.swiper-button-next {
+			right: 2px;
+
+			@include media-breakpoint-up( md ) {
+				left: 588px;
+			}
+
+			@include media-breakpoint-up( lg ) {
+				left: 1135px;
+			}
+
+			@include media-breakpoint-up( xxl ) {
+				left: 1169px;
+			}
+		}
+	}
+}

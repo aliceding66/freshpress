@@ -1,0 +1,10 @@
+<div class="form-group sign-up__form-group sign-up__form-btn mb-2{{# is_inline_theme }} mt-2{{/ is_inline_theme }}{{^ is_inline_theme }} mt-4 mt-md-2{{/ is_inline_theme }}">
+	<button
+			type="submit"
+			name="submit"
+			class="btn btn-cta-green btn-block btn-lg sign-up__submit{{# is_inline_theme }} w-md-auto mx-auto px-5{{/ is_inline_theme }}"
+	>
+		{{# sign_up_form_submit_button_text }}{{ sign_up_form_submit_button_text }}{{/ sign_up_form_submit_button_text }}
+		{{^ sign_up_form_submit_button_text }}{{ labels.default_submit_text }}{{/ sign_up_form_submit_button_text }}
+	</button>
+</div>

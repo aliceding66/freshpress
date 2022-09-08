@@ -1,0 +1,8 @@
+.editor-styles-wrapper .team-members__image-container {
+  border-radius: 0 !important;
+}
+.editor-styles-wrapper .team-members__image-container img {
+  border-radius: 50% !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-team-members-editor.css.map*/

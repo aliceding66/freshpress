@@ -1,0 +1,15 @@
+// Column.
+
+@import '~styles/freshpress-includes';
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.wp-block-fpbk-boxes {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-between;
+}

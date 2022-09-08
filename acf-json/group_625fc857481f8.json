@@ -1,0 +1,52 @@
+{
+    "key": "group_625fc857481f8",
+    "title": "Extended article fields",
+    "fields": [
+        {
+            "key": "field_625fc8681107d",
+            "label": "Estimated read time",
+            "name": "fb_estimated_read_time",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "press_article"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "hub_article"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1650444967
+}

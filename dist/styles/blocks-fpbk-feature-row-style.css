@@ -1,0 +1,67 @@
+/* stylelint-disable selector-pseudo-class-parentheses-space-inside */
+/* stylelint-disable no-descending-specificity */
+.feature-row__column_content .subtext {
+  color: #8495a2;
+  font-size: 0.8125rem;
+}
+.feature-row__content {
+  max-width: calc(325px + 1rem);
+}
+@media (min-width: 768px) {
+  .feature-row__content {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .feature-row__content {
+    max-width: 320px;
+  }
+}
+@media (min-width: 1280px) {
+  .feature-row__content {
+    max-width: 380px;
+  }
+}
+.feature-row__content_body {
+  width: 100%;
+}
+.feature-row__content_body ul {
+  margin-left: -20px;
+  text-align: left;
+}
+.feature-row__content_body ul li {
+  margin: 0 auto 10px;
+  padding-left: 26px;
+  line-height: 1.55556;
+  list-style-type: none;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: left 0;
+  background-size: 18px 26px;
+}
+@media (min-width: 1024px) {
+  .feature-row__content_body ul li {
+    padding-left: 38px;
+  }
+}
+.feature-row__image {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .feature-row__image {
+    max-width: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  .feature-row__image {
+    max-width: 100%;
+  }
+}
+.feature-row__cta {
+  width: 100%;
+}
+.feature-row__cta .btn {
+  font-size: 1.125rem;
+}
+
+/*# sourceMappingURL=blocks-fpbk-feature-row-style.css.map*/

@@ -1,0 +1,148 @@
+// Stat Tiles.
+
+@import '~styles/freshpress-includes';
+
+.stat-tiles {
+	&__bg-row {
+		margin: 0 -15px; // body padding
+		padding: px-to-rem( 70 ) 0; // from the mocks
+		background-color: $light-blue;
+
+		@include media-breakpoint-up( md ) {
+			padding-bottom: px-to-rem( 310 ); // padding + &__about negative margin top | mocks
+		}
+
+		@include media-breakpoint-up( md ) {
+			padding-bottom: px-to-rem( 300 );
+		}
+	}
+
+	&__heading {
+		align-items: center;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 16 );
+		line-height: calc( 24 / 18 );
+		text-transform: uppercase;
+	}
+
+	&__block {
+		margin-top: 50px; // from the mocks
+
+		@include media-breakpoint-up( md ) {
+			width: 27%;
+			margin-top: 10px;
+		}
+
+		&:nth-child( 2 ) {
+			@include media-breakpoint-up( md ) {
+				width: 46%;
+			}
+		}
+	}
+
+	&__number {
+		color: $fresh-blue;
+		font-weight: $font-weight-book;
+		font-size: px-to-rem( 47 );
+		line-height: calc( 24 / 18 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 49.5 );
+			letter-spacing: -0.97px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 66 );
+			letter-spacing: -1.3px;
+		}
+	}
+
+	&__description {
+		max-width: 300px; // mocks
+		color: $accessible-grey-on-light-blue-bg;
+		font-weight: $font-weight-book;
+
+		@include media-breakpoint-up( md ) {
+			max-width: 180px; // mocks
+			font-size: px-to-rem( 15 );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 220px; // mocks
+			font-size: px-to-rem( 18 );
+		}
+	}
+
+	&__about {
+		padding: px-to-rem( 60 ) 0 0; // from the mocks
+		background-color: $white;
+
+		@include media-breakpoint-up( md ) {
+			margin-top: px-to-rem( -240 ); // mocks;
+			padding: px-to-rem( 60 ) 0; // from the mocks
+			border: 1px solid $rule-grey-secondary;
+			border-radius: 8px;
+			box-shadow: 4px 4px 13px 0 rgba( 6, 41, 66, 0.1 );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 1128px; // mocks
+		}
+	}
+
+	&__about-content {
+		@include media-breakpoint-up( md ) {
+			width: 75%;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			width: 60%;
+		}
+	}
+
+	&__about-heading {
+		font-size: px-to-rem( 28 );
+		line-height: calc( 24 / 18 );
+		letter-spacing: -0.07px;
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 34 );
+		}
+
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 40 );
+			letter-spacing: -0.1px;
+		}
+	}
+
+	&__about-body {
+		p {
+			&:last-child {
+				margin-bottom: 10px; // mocks
+
+				@include media-breakpoint-up( lg ) {
+					margin-bottom: 30px;
+					padding-right: 3rem;
+				}
+
+				@include media-breakpoint-up( xl ) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+	&__image {
+		width: 100%;
+		max-width: 300px; // mocks
+
+		@include media-breakpoint-up( lg ) {
+			width: 40%;
+			max-width: 100%;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			max-width: 370px; // mocks
+		}
+	}
+}

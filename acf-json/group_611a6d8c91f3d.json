@@ -1,0 +1,227 @@
+{
+    "key": "group_611a6d8c91f3d",
+    "title": "Block - One Columns Text",
+    "fields": [
+        {
+            "key": "field_61b23b2c1ec13",
+            "label": "Style",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 0
+        },
+        {
+            "key": "field_61b23b421ec14",
+            "label": "Background Style",
+            "name": "two_columns_text_bg_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "background_color": "Background Color",
+                "background_image": "Background Image"
+            },
+            "default_value": "default",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61b23ba71ec15",
+            "label": "Background Color",
+            "name": "two_columns_text_bg_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b23b421ec14",
+                        "operator": "==",
+                        "value": "background_color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false
+        },
+        {
+            "key": "field_61b23bd51ec16",
+            "label": "Background Image",
+            "name": "two_columns_text_bg_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b23b421ec14",
+                        "operator": "==",
+                        "value": "background_image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_61b23bf81ec17",
+            "label": "Do not Crop Background",
+            "name": "two_columns_text_bg_nocrop",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_611a6da4ae1yz",
+                        "operator": "==",
+                        "value": "background_image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_611a6da4ae1yz",
+                        "operator": "==",
+                        "value": "background_color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "wpml_cf_preferences": 3,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_611a707717b2a",
+            "label": "Content",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_611a6d9cae6ea",
+            "label": "Title",
+            "name": "two_columns_text_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_611a6da4ae6eb",
+            "label": "Description",
+            "name": "two_columns_text_description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/two-columns-text"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310076
+}

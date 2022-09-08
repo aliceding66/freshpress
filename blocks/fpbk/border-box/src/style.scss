@@ -1,0 +1,10 @@
+@import '~styles/freshpress-includes';
+
+.career-box {
+	position: relative;
+	max-width: 270px;
+
+	@include media-breakpoint-up( md ) {
+		max-width: 220px;
+	}
+}

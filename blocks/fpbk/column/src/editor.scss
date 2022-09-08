@@ -1,0 +1,12 @@
+.editor-styles-wrapper {
+	.wp-block-fpbk-column {
+		&[class*='d-'][class*='-none'] {
+			opacity: 0.5;
+		}
+	}
+
+	.editor-block-list-item-fpbk-column {
+		opacity: 0.2 !important;
+		pointer-events: none !important;
+	}
+}

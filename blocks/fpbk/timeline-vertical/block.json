@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/timeline-vertical",
+  "title": "Timeline Vertical",
+  "category": "freshblocks",
+  "description": "A block containing a FreshBooks timeline in vertical view.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

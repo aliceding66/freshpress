@@ -1,0 +1,35 @@
+<div class="article-card__top w-100 overflow-hidden">
+	<a class="article-card__link" href="{{ article_url }}">
+		<div
+			class="article-card__image overflow-hidden"
+			style="background-image:url( {{ bg_image.url }} )"
+		></div>
+	</a>
+</div>
+<div class="article-card__bottom w-100 position-relative">
+	{{# category }}
+		<div class="article-card__category position-absolute text-center text-uppercase py-1">
+			{{ category }}
+		</div>
+	{{/ category }}
+	<div class="article-card__info position-relative">
+		<h3 class="mb-3">
+			{{{ article_title }}}
+		</h3>
+	</div>
+</div>
+<div class="article-card__interaction d-flex flex-nowrap position-absolute overflow-hidden py-0">
+	<div class="article-card__read-time w-50">
+		{{# read_time }}
+			<span>{{ read_min }}</span>
+		{{/ read_time }}
+	</div>
+	<div class="article-card__cta w-50 d-flex justify-content-end">
+		<a
+			href="{{ article_url }}"
+			class="btn btn-outline-grey py-1 px-3"
+		>
+			{{ read_more }}
+		</a>
+	</div>
+</div>

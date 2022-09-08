@@ -1,0 +1,21 @@
+{
+  "post_type": "accounting_template",
+  "post_type_plural": "accounting_templates",
+  "label": "Accounting Template",
+  "label_plural": "Accounting Templates",
+  "args": {
+    "description": "User templates for accounting",
+    "menu_icon": "dashicons-networking",
+    "has_archive": true,
+    "rewrite": {
+      "slug": "accounting-templates"
+    },
+    "supports": [
+      "editor",
+      "page-attributes",
+      "revisions",
+      "thumbnail",
+      "title"
+    ]
+  }
+}

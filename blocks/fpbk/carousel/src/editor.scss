@@ -1,0 +1,40 @@
+.editor-styles-wrapper {
+	.carousel {
+		&__swiper-container {
+			max-width: unset !important;
+		}
+
+		&__swiper-wrapper {
+			height: auto !important;
+
+			> .block-editor-inner-blocks {
+				width: 100%;
+
+				> .block-editor-block-list {
+					&__layout {
+						display: flex;
+						overflow-x: scroll;
+
+						> .wp-block {
+							min-width: 300px;
+							margin: 0 10px;
+
+							&:first-child {
+								margin-left: 0;
+							}
+
+							&:last-child {
+								margin-right: 20px;
+							}
+
+							&.block-list-appender {
+								align-self: center;
+								min-width: 38px !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

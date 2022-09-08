@@ -1,0 +1,85 @@
+.welcome {
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #c2c8d1;
+}
+.welcome__row {
+  width: 3000px;
+  font-weight: 500;
+  font-size: 4.375rem;
+  line-height: 3.5rem;
+}
+@media (min-width: 768px) {
+  .welcome__row {
+    font-size: 6.5rem;
+    line-height: 4.5625rem;
+  }
+}
+@media (min-width: 1600px) {
+  .welcome__row {
+    font-size: 8.125rem;
+    line-height: 5.5rem;
+  }
+}
+.welcome__row_1 {
+  left: 875px;
+}
+@media (min-width: 768px) {
+  .welcome__row_1 {
+    left: 600px;
+  }
+}
+@media (min-width: 1280px) {
+  .welcome__row_1 {
+    left: 586px;
+  }
+}
+@media (min-width: 1600px) {
+  .welcome__row_1 {
+    left: 361px;
+  }
+}
+.welcome__row_2 {
+  left: 979px;
+}
+@media (min-width: 768px) {
+  .welcome__row_2 {
+    left: 737px;
+  }
+}
+@media (min-width: 1280px) {
+  .welcome__row_2 {
+    left: 723px;
+  }
+}
+@media (min-width: 1600px) {
+  .welcome__row_2 {
+    left: 529px;
+  }
+}
+.welcome__row_3 {
+  left: 991px;
+}
+@media (min-width: 768px) {
+  .welcome__row_3 {
+    left: 861px;
+  }
+}
+@media (min-width: 1280px) {
+  .welcome__row_3 {
+    left: 859px;
+  }
+}
+@media (min-width: 1600px) {
+  .welcome__row_3 {
+    left: 700px;
+  }
+}
+.welcome__text_midnight_blue {
+  color: #001b40;
+}
+.welcome__text_blue {
+  color: #0075dd;
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-welcome.css.map*/

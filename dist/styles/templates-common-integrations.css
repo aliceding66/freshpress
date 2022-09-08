@@ -1,0 +1,244 @@
+.integrations-taxonomy .hero .row:first-child {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.integrations-taxonomy__navigation-wrapper {
+  position: fixed;
+  top: 40px;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__navigation-wrapper {
+    position: absolute;
+    top: 0;
+    width: 96%;
+    box-shadow: 4px 4px 0 rgba(0, 27, 64, 0.07);
+  }
+}
+@media (min-width: 1024px) {
+  .integrations-taxonomy__navigation-wrapper {
+    position: relative;
+    display: block;
+    box-shadow: none;
+  }
+}
+.integrations-taxonomy__navigation-wrapper.active {
+  display: block;
+}
+.integrations-taxonomy__navigation-group-by {
+  padding-left: 18px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/filter.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 14px 14px;
+}
+.integrations-taxonomy__navigation-close {
+  width: 24px;
+  height: 24px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/crossmark-thin.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.integrations-taxonomy__navigation-inner-wrapper {
+  height: calc(100vh - 150px);
+  overflow-y: scroll;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__navigation-inner-wrapper {
+    height: auto;
+    overflow-y: unset;
+  }
+}
+.integrations-taxonomy__navigation-collections-wrapper {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__navigation-collections-wrapper {
+    flex-basis: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations-taxonomy__navigation-collections-wrapper {
+    flex-basis: 100%;
+  }
+}
+.integrations-taxonomy__navigation-categories-wrapper {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__navigation-categories-wrapper {
+    flex-basis: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations-taxonomy__navigation-categories-wrapper {
+    flex-basis: 100%;
+  }
+}
+.integrations-taxonomy__home-link {
+  color: #001b40;
+  font-weight: 500;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/arrow-left-midnight-blue.svg);
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  background-size: 12px 12px;
+}
+.integrations-taxonomy__home-link:hover {
+  color: #001b40;
+}
+.integrations-taxonomy__navigation-title {
+  font-size: 1.125rem;
+}
+.integrations-taxonomy__navigation-list_categories {
+  margin-left: -8px;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__navigation-list_categories {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations-taxonomy__navigation-list_categories {
+    -moz-columns: 1;
+         columns: 1;
+  }
+}
+.integrations-taxonomy__navigation-list_collections {
+  margin-left: -8px;
+}
+.integrations-taxonomy__navigation-list li.current, .integrations-taxonomy__navigation-list li:hover {
+  background-color: #eff8fe;
+}
+.integrations-taxonomy__navigation-list li.current a, .integrations-taxonomy__navigation-list li:hover a {
+  color: #0d83dd;
+  font-weight: 500;
+}
+.integrations-taxonomy__navigation-list a {
+  color: #001b40;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__navigation-item {
+    max-width: 230px;
+  }
+}
+.integrations-taxonomy__cancel-button {
+  width: 128px;
+}
+.integrations-taxonomy .search-swiftype {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy .search-swiftype {
+    flex-basis: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations-taxonomy .search-swiftype {
+    flex-basis: 100%;
+  }
+}
+.integrations-taxonomy__navigation-toggle {
+  width: 50px;
+  height: 48px;
+  line-height: 43px;
+  vertical-align: middle;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/filter.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #cdd4d9;
+  border-width: 2px;
+  border-right-width: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__navigation-toggle {
+    width: 140px;
+    background-position: 15px center;
+    border-right-width: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+.integrations-taxonomy .search-swiftype__input {
+  height: 44px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: 0.875rem !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy .search-swiftype__input {
+    font-size: 1.125rem !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+}
+.integrations-taxonomy__view-all {
+  padding-right: 20px;
+  font-weight: 500;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/arrow-right-fresh-blue.svg);
+  background-repeat: no-repeat;
+  background-position: right top 7px;
+  background-size: 13px 13px;
+}
+.integrations-taxonomy__view-all:hover {
+  color: #0075dd;
+}
+.integrations-taxonomy__ad {
+  min-height: 418px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/taxonomy/integrations/Integrations_Ad.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy__ad {
+    min-height: 365px;
+  }
+}
+.integrations-taxonomy .integrations__developers-banner .flexible-colour-background {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.integrations-taxonomy .integrations__developers-banner .btn.btn-white {
+  padding: 10px 24px;
+  color: #fff;
+  background-color: transparent;
+}
+.integrations-taxonomy .integrations__developers-banner .btn.btn-white:hover {
+  background-color: #0d83dd;
+  border-color: #0d83dd;
+}
+.integrations-taxonomy .integrations__developers-banner-title {
+  color: #fff;
+}
+.integrations-taxonomy .integrations__developers-banner-subtitle {
+  min-height: 54px;
+  font-size: 1.5rem;
+}
+@media (min-width: 1280px) {
+  .integrations-taxonomy .integrations__developers-banner-subtitle {
+    min-height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .integrations-taxonomy .integrations__developers-banner-text {
+    min-height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations-taxonomy .integrations__developers-banner-text {
+    min-height: 100px;
+  }
+}
+
+/*# sourceMappingURL=templates-common-integrations.css.map*/

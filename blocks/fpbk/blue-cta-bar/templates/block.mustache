@@ -1,0 +1,24 @@
+<div class="blue-cta-bar__inner mx-auto no-gutters d-flex flex-column flex-lg-row align-items-center">
+	<div class="blue-cta-bar__info col-12 col-lg-7">
+		<h2 class="blue-cta-bar__title mb-4">
+            {{{ blue_cta_bar_title }}}
+		</h2>
+
+		<div class="blue-cta-bar__cta-container d-flex flex-column flex-lg-row align-items-center">
+			{{# blue_cta_bar_cta.html }}
+                {{{ blue_cta_bar_cta.html }}}
+			{{/ blue_cta_bar_cta.html }}
+			{{^ blue_cta_bar_cta.html }}
+				{{{ blue_cta_bar_cta }}}
+			{{/ blue_cta_bar_cta.html }}
+
+			<div class="blue-cta-bar__text-container ml-lg-3 mb-4 mb-lg-0">
+				{{{ blue_cta_bar_text }}}
+			</div>
+		</div>
+
+	</div>
+	<div class="blue-cta-bar__image-container col-12 col-lg-5 text-center">
+		{{{ blue_cta_bar_image }}}
+	</div>
+</div>

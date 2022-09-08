@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/article-card",
+  "title": "Article Card",
+  "category": "freshblocks",
+  "description": "A card to preview and link to a single article.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

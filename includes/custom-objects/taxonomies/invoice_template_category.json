@@ -1,0 +1,15 @@
+{
+  "taxonomy": "invoice_template_category",
+  "taxonomy_plural": "invoice_template_categories",
+  "label": "Invoice Template Category",
+  "label_plural": "Invoice Template Categories",
+  "post_types": [
+    "invoice_template"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "invoice-templates/category",
+      "with_front": false
+    }
+  }
+}

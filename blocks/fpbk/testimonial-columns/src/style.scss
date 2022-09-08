@@ -1,0 +1,48 @@
+// Testimonial Columns.
+
+@import '~styles/freshpress-includes';
+
+.testimonial-columns {
+	.testimonial-header {
+		font-size: px-to-rem( 36 );
+		line-height: calc( 46 / 36 );
+	}
+
+	.divider_blue {
+		width: 72px;
+		height: 3px;
+		background: $fresh-blue;
+		border: 1px solid $fresh-blue;
+	}
+
+	.testimonial {
+		&__photo {
+			max-width: 120px;
+			border-radius: 60px;
+		}
+
+		&__quote-text {
+			max-width: 304px;
+			color: $midnight-blue;
+			font-size: px-to-rem( 18 );
+			line-height: calc( 30 / 18 );
+			letter-spacing: -0.11px;
+		}
+
+		&__author {
+			p {
+				font-size: px-to-rem( 14 );
+				line-height: calc( 18 / 14 );
+			}
+		}
+
+		&__author-name {
+			color: $midnight-blue;
+		}
+
+		&__author-title {
+			margin-bottom: 0;
+			color: $dark-grey;
+		}
+	}
+}

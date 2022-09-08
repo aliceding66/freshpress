@@ -1,0 +1,14 @@
+<div class="feature-row__column_image feature-row__image--{{ side }} col-12 col-lg-6 align-items-center d-flex flex-wrap flex-lg-nowrap flex-row justify-content-lg-{{ side }} mx-0 px-0 my-4 my-lg-0">
+	{{# image_mobile_max_width }}
+		<style>
+			@media screen and (max-width: 767px) {
+				#{{ id }} .feature-row__image--{{ side }} {
+			  		max-width: {{ image_mobile_max_width }}px !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+				}
+			}
+		</style>
+	{{/ image_mobile_max_width }}
+	{{{ image }}}
+</div>

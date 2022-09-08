@@ -1,0 +1,36 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/tabbed-cards",
+  "title": "Tabbed Cards",
+  "category": "freshblocks",
+  "description": "Tabbed Cards",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  },
+  "styles": [
+    {
+      "name": "old",
+      "label": "Old",
+      "isDefault": true
+    },
+    {
+      "name": "new",
+      "label": "New"
+    }
+  ],
+  "example": {
+    "attributes": {
+      "cards": [
+        {
+          "tab_title": "Tab 1",
+          "card_content": "Card 1"
+        },
+        {
+          "tab_title": "Tab 2",
+          "card_content": "Card 2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/flexible-colour-background",
+  "title": "Flexible Background",
+  "category": "freshblocks",
+  "description": "A block used as an container (with custom background colour or image) for other blocks.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "html": false,
+    "color": false
+  }
+}

@@ -1,0 +1,179 @@
+@import '../../freshpress-includes';
+
+.notification-slide-in {
+	position: fixed;
+	right: 35px;
+	bottom: 30px;
+	z-index: 25;
+	display: none;
+	width: 100%;
+	max-width: calc( 100% - 1em );
+	height: 100%;
+	max-height: 180px;
+	border-radius: 0.5rem;
+	box-shadow: 10px 10px 20px rgba( $midnight-blue, 0.4 );
+	transform: translateX( calc( 100% + 50px ) );
+
+	&.slide-in {
+		animation: slide-in 1s forwards;
+		animation-delay: 3s;
+	}
+
+	@keyframes slide-in {
+		100% {
+			transform: translateX( 0% );
+		}
+	}
+
+	@include media-breakpoint-up( sm ) {
+		max-width: 528px;
+		max-height: 218px;
+	}
+
+	@include media-breakpoint-up( md ) {
+		display: block;
+	}
+
+	&__card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		min-width: 0;
+		height: 100%;
+		overflow: hidden;
+		color: $white;
+		background-color: $fresh-blue;
+		background-position: 0 0;
+		background-size: cover;
+		background-clip: border-box;
+		border-radius: 0.5rem;
+
+		&_img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display: none;
+			height: inherit;
+			max-height: 100%;
+
+			@include media-breakpoint-up( sm ) {
+				height: auto;
+			}
+
+			@include media-breakpoint-up( md ) {
+				display: block;
+			}
+		}
+
+		&_dismiss {
+			position: absolute;
+			top: 11px;
+			right: 13px;
+			float: right;
+			padding: 0;
+			text-shadow: 0 1px 0 $white;
+			background-color: transparent;
+			border: 0;
+			opacity: 0.5;
+
+			span {
+				box-sizing: border-box;
+				color: rgba( $white, 0.6 );
+				font-weight: 100;
+				font-size: 3rem;
+				line-height: 0.6;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__card-body {
+		position: relative;
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		justify-content: space-around;
+		min-height: 1px;
+		padding: 26px 29px;
+		border: none;
+
+		&_badge {
+			position: absolute;
+			top: 36px;
+			left: 26px;
+			width: 65px;
+			height: 65px;
+		}
+
+		&_title {
+			margin: 0 0 0.5rem;
+			font-size: px-to-rem( 20 );
+
+			@include media-breakpoint-up( sm ) {
+				font-size: px-to-rem( 27 );
+			}
+
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 34 );
+				line-height: calc( 36 / 34 );
+			}
+		}
+
+		&_text {
+			margin-bottom: 0.75rem;
+			font-size: px-to-rem( 21 );
+			line-height: calc( 26 / 21 );
+		}
+
+		&_title,
+		&_text,
+		&_btn {
+			margin-left: 82px;
+		}
+
+		&_text,
+		&_btn {
+			font-size: px-to-rem( 16 );
+
+			@include media-breakpoint-up( sm ) {
+				font-size: px-to-rem( 23 );
+			}
+		}
+
+		&_title,
+		&_text {
+			max-width: 210px;
+		}
+
+		&_btn {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 100%;
+			max-width: 105px;
+			padding: 0.25rem 0.75rem;
+			color: $white;
+			font-weight: 400;
+			font-size: px-to-rem( 18 );
+			line-height: calc( 20 / 18 );
+			line-height: 1.5;
+			text-align: center;
+			vertical-align: middle;
+			background-color: $cta-green;
+			border: 1px solid transparent;
+			border-color: $cta-green;
+			border-width: 2px;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+				border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+			user-select: none;
+
+			&:hover {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}

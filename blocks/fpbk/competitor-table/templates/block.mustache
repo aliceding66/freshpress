@@ -1,0 +1,89 @@
+{{{ style_tag }}}
+<div class="competitor-table__table-wrapper">
+	<table class="competitor-table__table w-100" data-competitors="{{ competitors_number }}">
+		<tr class="competitor-table__table-header">
+			<th>
+				<div class="cell-wrapper header-1">
+					{{ text_product_comparison }}
+				</div>
+			</th>
+			{{# competitors }}
+				<th>
+					<div class="cell-wrapper">
+						{{# has_logo }}
+							{{{ logo }}}
+						{{/ has_logo }}
+						{{^ has_logo }}
+							<span class="competitor-table__competitor-name">
+								{{ name }}
+							</span>
+						{{/ has_logo }}
+					</div>
+				</th>
+			{{/ competitors }}
+		</tr>
+		<tr>
+			<td>
+				<div class="cell-wrapper header-2">
+					{{ text_product_screenshot }}
+				</div>
+			</td>
+			{{# competitors }}
+				<td>
+					<div class="cell-wrapper competitor-table__modal-wrapper">
+						<div class="d-none d-md-block text-center">
+							{{# screenshot }}
+								<a href="#modal-competitor-screenshot-{{ key }}-desktop" class="text-center competitor-table__modal-opener mt-3" target="modal">
+									{{{ screenshot_thumbnail }}}
+									{{ text_enlarge_image }}
+								</a>
+								<div id="modal-competitor-screenshot-{{ key }}-desktop" class="fp-block pricing-modal modal wp-block wp-block-fpbk-modal fade my-0 trackingSection-modal" tabindex="-1" data-visibility="everyone" data-auto-show="0" data-prefix="fpbk" style="display: none;" aria-hidden="true">
+									<div class="modal__dialog modal-dialog modal-dialog-centered modal-xl" role="document">
+										<div class="modal__content modal-content pt-6 pb-7">
+											<div class="modal__content-wrapper d-flex flex-wrap justify-content-center">
+												{{{ screenshot }}}
+											</div>
+											<button data-dismiss="modal" class="modal__close-button position-absolute" style="color: #50697B;">
+												Close
+												<span class="position-absolute" style="background-color: #50697B;"></span>
+												<span class="position-absolute" style="background-color: #50697B;"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+							{{/ screenshot }}
+						</div>
+						<div class="d-md-none text-center">
+							{{# mobile_screenshot }}
+								<a href="#modal-competitor-screenshot-{{ key }}-mobile" class="text-center competitor-table__modal-opener mt-3" target="modal">
+									{{{ mobile_screenshot_thumbnail }}}
+									{{ text_enlarge_image }}
+								</a>
+								<div id="modal-competitor-screenshot-{{ key }}-mobile" class="fp-block pricing-modal modal wp-block wp-block-fpbk-modal fade my-0 trackingSection-modal" tabindex="-1" data-visibility="everyone" data-auto-show="0" data-prefix="fpbk" style="display: none;" aria-hidden="true">
+									<div class="modal__dialog modal-dialog modal-dialog-centered modal-xl" role="document">
+										<div class="modal__content modal-content pt-6 pb-7">
+											<div class="modal__content-wrapper d-flex flex-wrap justify-content-center">
+												{{{ mobile_screenshot }}}
+											</div>
+											<button data-dismiss="modal" class="modal__close-button position-absolute" style="color: #50697B;">
+												Close
+												<span class="position-absolute" style="background-color: #50697B;"></span>
+												<span class="position-absolute" style="background-color: #50697B;"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+							{{/ mobile_screenshot }}
+						</div>
+					</div>
+				</td>
+			{{/ competitors }}
+		</tr>
+		{{# feature_rows }}
+			{{> partial__feature_row }}
+		{{/ feature_rows }}
+	</table>
+</div>
+{{# subtext }}
+	<span class="competitor-table__subtext mt-2">{{{ subtext }}}</span>
+{{/ subtext }}

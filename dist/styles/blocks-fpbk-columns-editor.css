@@ -1,0 +1,17 @@
+.editor-styles-wrapper .wp-block-fpbk-columns[class*=d-][class*=-none] {
+  display: flex !important;
+}
+.editor-styles-wrapper .wp-block-fpbk-columns .wp-block-fpbk-column {
+  pointer-events: none;
+}
+.editor-styles-wrapper .wp-block-fpbk-columns .wp-block-fpbk-column[class*=d-][class*=-none] {
+  display: flex !important;
+}
+.editor-styles-wrapper .wp-block-fpbk-columns .wp-block-fpbk-column .block-editor-inner-blocks {
+  pointer-events: all;
+}
+.editor-styles-wrapper .wp-block-fpbk-columns .block-list-appender {
+  order: 100 !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-columns-editor.css.map*/

@@ -1,0 +1,101 @@
+.faq {
+  display: block;
+  margin-bottom: 1rem;
+}
+.faq__headline {
+  margin-bottom: 2.5rem;
+}
+.faq__items {
+  border-top: 1px solid #cdd4d9;
+}
+.faq__item {
+  border-bottom: 1px solid #cdd4d9;
+}
+.faq__question {
+  position: relative;
+}
+.faq__question h3 {
+  padding: 0 3rem 0 1rem;
+  color: #0075dd;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.01px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .faq__question h3 {
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+.faq__question .faq__arrow {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+.faq__question .faq__arrow path {
+  fill: #cdd4d9;
+}
+.faq__answer {
+  max-height: 0;
+  padding: 0 3rem 0 1rem;
+  overflow: hidden !important;
+  font-size: 1.125rem;
+  line-height: 1.44444;
+  transition: max-height 0.2s ease-in-out;
+}
+.faq__answer-content {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.faq__answer-content > :last-child {
+  margin-bottom: 0;
+}
+.faq__items-revealed .faq__answer {
+  max-height: 200vh;
+  margin-bottom: 2.1875rem;
+}
+.faq__items-revealed .faq__arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+.faq.is-style-new {
+  display: flex !important;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+@media (min-width: 1024px) {
+  .faq.is-style-new {
+    flex-direction: row;
+  }
+}
+.faq.is-style-new .faq__headline {
+  display: flex;
+  flex: 2;
+  margin: 0.5rem 1rem;
+  font-size: 1.5625rem !important;
+  text-align: left !important;
+}
+@media (min-width: 768px) {
+  .faq.is-style-new .faq__headline {
+    font-size: 2rem !important;
+  }
+}
+.faq.is-style-new .faq__items {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  border-top: none !important;
+}
+.faq.is-style-new .faq__question h3 {
+  font-size: 1.25rem !important;
+}
+@media (min-width: 1024px) {
+  .faq.is-style-new .faq__question h3 {
+    font-size: 1.375rem !important;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-faq-style.css.map*/

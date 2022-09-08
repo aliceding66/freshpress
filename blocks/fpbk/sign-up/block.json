@@ -1,0 +1,26 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/sign-up",
+  "title": "Sign Up",
+  "category": "freshblocks",
+  "description": "A block containing Sign Up form used on signup page.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "styles": [
+    {
+      "name": "fullscreen",
+      "label": "Fullscreen",
+      "isDefault": true
+    },
+    {
+      "name": "inline",
+      "label": "Inline"
+    }
+  ],
+  "example": {
+    "attributes": {}
+  }
+}

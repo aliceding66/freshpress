@@ -1,0 +1,111 @@
+.tabbed-cards__cards {
+  max-width: 480px;
+}
+.tabbed-cards__cards .nav-tabs {
+  transform: translateY(1px);
+}
+.tabbed-cards__cards .nav-tabs li:first-child .nav-link {
+  border-radius: 8px 0 0 0;
+}
+.tabbed-cards__cards .nav-tabs li:first-child .nav-link:not(.active) {
+  border-left: 0;
+}
+.tabbed-cards__cards .nav-tabs li:last-child .nav-link {
+  border-left: none;
+  border-radius: 0 8px 0 0;
+}
+.tabbed-cards__cards .nav-tabs li .nav-link {
+  color: #8495a2;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  background: #f0f2f4;
+  border-color: #cdd4d9;
+  border-top: 1px solid #f0f2f4;
+  border-right: 1px solid #f0f2f4;
+  border-bottom: 1px solid #cdd4d9;
+  border-left: 0;
+  border-radius: 0;
+}
+@media (min-width: 480px) {
+  .tabbed-cards__cards .nav-tabs li .nav-link {
+    font-size: 0.8125rem;
+  }
+}
+@media (min-width: 768px) {
+  .tabbed-cards__cards .nav-tabs li .nav-link {
+    font-size: 1rem;
+  }
+}
+.tabbed-cards__cards .nav-tabs li .nav-link.active {
+  color: #0075dd;
+  background: #fff;
+  border-top: 1px solid #cdd4d9;
+  border-right: 1px solid #cdd4d9;
+  border-bottom: 2px solid #fff;
+  border-left: 1px solid #cdd4d9;
+}
+.tabbed-cards__cards .card {
+  border-color: #cdd4d9;
+  border-radius: 0 8px 8px 8px;
+  box-shadow: 4px 4px 13px 0 rgba(0, 27, 64, 0.1);
+}
+.tabbed-cards__cards .card-body p,
+.tabbed-cards__cards .card-body li,
+.tabbed-cards__cards .card-body span {
+  font-size: 1rem;
+}
+.tabbed-cards__cards .card-body p:last-child,
+.tabbed-cards__cards .card-body li:last-child,
+.tabbed-cards__cards .card-body span:last-child {
+  margin-bottom: 0;
+}
+.tabbed-cards__cards .card-body p:first-child {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+}
+.tabbed-cards__cards .card-body img {
+  max-width: 100%;
+}
+.tabbed-cards__cards .card-body ul {
+  margin-left: -20px;
+}
+.tabbed-cards__cards .card-body ul li {
+  padding-left: 28px;
+  line-height: 1.33333;
+  list-style-type: none;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: left 0;
+  background-size: 18px 22px;
+}
+@media (min-width: 1024px) {
+  .tabbed-cards__cards .card-body ul li {
+    padding-left: 38px;
+  }
+}
+
+.is-style-new.tabbed-cards .nav-tabs li {
+  margin-bottom: -8px;
+}
+.is-style-new.tabbed-cards .nav-tabs li .nav-link {
+  color: #001b40;
+  font-weight: 500;
+  text-transform: none;
+  background: #f0f2f4;
+  border-color: #f0f2f4;
+  border-radius: 8px 8px 0 0 !important;
+}
+.is-style-new.tabbed-cards .card {
+  border-radius: 8px;
+  box-shadow: -4px 4px 0 0 #f0f2f4;
+}
+.is-style-new.tabbed-cards .card-body ul li {
+  padding-left: 32px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/checkmark-green.svg);
+  background-position: left 6px;
+  background-size: 13px 12px;
+}
+
+/*# sourceMappingURL=blocks-fpbk-tabbed-cards-style.css.map*/

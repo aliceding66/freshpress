@@ -1,0 +1,48 @@
+@import '../../../freshpress-includes';
+
+.framework {
+	color: $white;
+	font-size: px-to-rem( 22 );
+	line-height: px-to-rem( 27 );
+	background-color: $tile-blue;
+	background-image: url( #{$dibs_images_path}/templates/page/dibs/fb-icon-dark.svg );
+	background-repeat: no-repeat;
+	background-position: -332px 300px;
+	background-size: 1100px 1100px;
+	border-top-left-radius: 88px;
+
+	@include media-breakpoint-up( md ) {
+		background-position: 0 0;
+		background-size: 1900px 1900px;
+		border-top-left-radius: 88px;
+	}
+
+	@include media-breakpoint-up( xxl ) {
+		background-position: 400px -202px;
+	}
+
+	&__column {
+		@include media-breakpoint-up( lg ) {
+			max-width: 340px;
+		}
+	}
+
+	&__title {
+		font-size: px-to-rem( 46 );
+		line-height: px-to-rem( 46 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 48 );
+			line-height: px-to-rem( 48 );
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			font-size: px-to-rem( 58 );
+			line-height: px-to-rem( 58 );
+		}
+	}
+
+	&__subtitle {
+		color: $border-yellow;
+	}
+}

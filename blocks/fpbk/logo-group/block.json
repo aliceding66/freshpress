@@ -1,0 +1,26 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/logo-group",
+  "title": "Logo Group",
+  "category": "freshblocks",
+  "description": "A reconfigurable or wrappable row of logos with optional title.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  },
+  "styles": [
+    {
+      "name": "logo-group_single-line",
+      "label": "Single Line",
+      "isDefault": true
+    },
+    {
+      "name": "logo-group_multiline",
+      "label": "Multiline"
+    },
+    {
+      "name": "logo-group_above-the-fold",
+      "label": "Above the Fold"
+    }
+  ]
+}

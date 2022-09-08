@@ -1,0 +1,39 @@
+.rating__category {
+  top: 2px;
+  font-weight: 500;
+}
+.rating__description {
+  top: 3px;
+  color: #66768c;
+  font-size: 0.875rem;
+}
+.rating__description a {
+  color: #66768c;
+  text-decoration: underline;
+}
+.rating__description a:hover {
+  text-decoration: none;
+}
+.rating.rating__wrap_1 {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .rating.rating__wrap_1 {
+    flex-direction: row;
+  }
+}
+.rating.rating__wrap_2 {
+  flex-direction: column;
+}
+
+.wp-block-fpbk-rating.is-style-light {
+  color: #fff;
+}
+.wp-block-fpbk-rating.is-style-light .rating__description {
+  color: #fff;
+}
+.wp-block-fpbk-rating.is-style-light .rating__description a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=blocks-fpbk-rating-index.css.map*/

@@ -1,0 +1,27 @@
+// Mobile Segment Navigation.
+@import '~styles/freshpress-includes';
+
+.mobile-segment-navigation {
+	&__link {
+		flex-basis: 48%;
+		margin-bottom: 4%;
+		color: $white;
+		font-weight: $font-weight-medium;
+		font-size: 1rem;
+		background-color: $fresh-blue;
+		background-image: url( ./../../../../assets/images/icons/arrow-right-white.svg );
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		background-size: 14px 14px;
+		border: none;
+
+		&:hover {
+			color: $white;
+			background-color: $tile-blue;
+		}
+
+		@include media-breakpoint-up( md ) {
+			flex-basis: 24%;
+		}
+	}
+}

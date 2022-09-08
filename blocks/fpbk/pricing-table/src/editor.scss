@@ -1,0 +1,62 @@
+@import '~/styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	// Term Switch
+	.pricing-table_term-wrapper {
+		.pricing-table_term-switch__monthly-label,
+		.pricing-table_term-switch__yearly-label {
+			position: absolute;
+			top: 3px;
+			width: 105px;
+			color: $subtext-grey;
+			font-weight: $font-weight-medium;
+			font-size: px-to-rem( 13 );
+			line-height: calc( 22 / 13 );
+			text-transform: uppercase;
+
+			@include media-breakpoint-up( sm ) {
+				width: 200px;
+				font-size: px-to-rem( 15 );
+				line-height: calc( 22 / 15 );
+			}
+		}
+
+		.pricing-table_term-switch__monthly-label {
+			right: calc( 50% + 40px );
+			text-align: right;
+		}
+
+		.pricing-table_term-switch__yearly-label {
+			left: calc( 50% + 40px );
+			text-align: left;
+		}
+	}
+
+	// Pricing
+	.pricing-table_column-promo__ribbon-image {
+		.block-editor__editor-controls__file-wrapper {
+			min-height: 42px;
+		}
+
+		.block-editor__editor-controls__file--inline {
+			height: auto;
+
+			+ img {
+				position: absolute;
+				left: 50%;
+				height: 42px;
+				transform: translateX( -50% );
+				pointer-events: none;
+			}
+		}
+	}
+
+	// Miscellaneous
+	.pricing-table_column-features__expand-link {
+		pointer-events: none;
+	}
+
+	.pricing-table_column-standard__ribbon-subtext {
+		top: 0;
+	}
+}

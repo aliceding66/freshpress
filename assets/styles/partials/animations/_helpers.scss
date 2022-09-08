@@ -1,0 +1,9 @@
+.fp-animate {
+	&--offscreen-reset {
+		// Used to reset animation state when scrolled away.
+	}
+
+	&--multiple-animation {
+		display: inline-block;
+	}
+}

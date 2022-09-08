@@ -1,0 +1,201 @@
+.product-tour-hero {
+  min-height: 31.25rem;
+  padding: 0.3125rem 0;
+  background-color: #fffaea;
+}
+@media (min-width: 1024px) {
+  .product-tour-hero {
+    padding: 3.125rem 12.5rem 6.25rem;
+    border-radius: 0 500px 0 500px;
+  }
+}
+.product-tour-hero__dropdown-label {
+  padding-right: 14px;
+  color: #0075dd;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  background-image: url(/wp-content/themes/freshpress/dist/images/header/menu/menu-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px;
+}
+.product-tour-hero__dropdown-list {
+  z-index: 1020;
+  margin-top: 10px;
+  padding: 22px 22px 20px;
+  cursor: default;
+}
+@media (min-width: 1024px) {
+  .product-tour-hero__dropdown-list {
+    position: absolute;
+    left: 50%;
+    width: 21.875rem !important;
+    background-color: #fff;
+    border: 1px solid #ced5da;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 0 rgba(0, 27, 64, 0.06);
+    transform: translateX(-50%);
+  }
+}
+.product-tour-hero__dropdown-list-item {
+  flex-basis: 50%;
+  margin: 0 0 15px;
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 1.22727;
+  text-transform: none;
+  list-style: none;
+}
+.product-tour-hero__dropdown-list-item a {
+  color: #001b40;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-transform: none;
+  text-decoration: none;
+}
+.product-tour-hero__dropdown-list-item a:hover {
+  color: #0075dd;
+  cursor: pointer;
+}
+.product-tour-hero .tri-outer {
+  top: 2.4375rem;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -20px;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid #ced5da;
+  border-left: 1rem solid transparent;
+}
+.product-tour-hero .tri-inner {
+  top: 2.5rem;
+  left: 50%;
+  z-index: 1020;
+  width: 0;
+  height: 0;
+  margin-left: -20px;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid #fff;
+  border-left: 1rem solid transparent;
+}
+.product-tour-hero__dropdown {
+  z-index: 1000;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+}
+.product-tour-hero__dropdown--expanded .product-tour-hero__dropdown-list {
+  display: flex !important;
+}
+@media (min-width: 1024px) {
+  .product-tour-hero__dropdown--expanded .product-tour-hero__dropdown-list {
+    display: none !important;
+  }
+  .product-tour-hero__dropdown:hover .product-tour-hero__dropdown-list {
+    display: flex !important;
+  }
+  .product-tour-hero__dropdown:hover .tri-outer {
+    display: block !important;
+  }
+  .product-tour-hero__dropdown:hover .tri-inner {
+    display: block !important;
+  }
+}
+.product-tour-hero__heading {
+  max-width: 80%;
+}
+.product-tour-hero__cta-button {
+  padding: 0.625rem 2.625rem 0.9375rem;
+  font-size: 0.9375rem;
+  transform: scale3d(0.975, 0.975, 1);
+  transition: background-color 500ms ease, transform 200ms ease 150ms;
+}
+.product-tour-hero__cta-button:hover {
+  transform: scale3d(1.025, 1.025, 1);
+}
+@media (min-width: 768px) {
+  .product-tour-hero__cta-button {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .product-tour-hero__cta-button {
+    font-size: 1.625rem;
+  }
+}
+.product-tour-hero__cta-subtext {
+  font-size: 0.875rem;
+}
+.product-tour-hero__video-container {
+  width: 56.25rem;
+  max-width: 100%;
+  border: 2px solid #e6e0d1;
+  border-radius: 0.75rem;
+}
+.product-tour-hero__video-container-ratio-size {
+  padding-top: 60%;
+  opacity: 0 !important;
+  transition: padding-top 0.1s ease;
+  pointer-events: none !important;
+}
+.product-tour-hero__video-cover-file {
+  z-index: 2;
+  min-height: auto !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.product-tour-hero__video-file {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-tour-hero__video-player {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.product-tour-hero__video-player--playing {
+  pointer-events: none;
+}
+.product-tour-hero__video-player--with-controls {
+  pointer-events: all;
+}
+
+.acf-block-preview .product-tour-hero__swing-in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@-webkit-keyframes swing-in {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swing-in {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=blocks-acf-product-tour-hero-product-tour-hero.css.map*/

@@ -1,0 +1,12 @@
+<div>
+	<p>
+		Content of block.mustache
+	</p>
+	<p>
+		For a quick overview how to work with Mustache
+		<a href="https://mustache.github.io/mustache.5.html" target="_blank">see this link</a>.
+	</p>
+	{{# mustachePartial }}
+	{{{ partial }}}
+	{{/ mustachePartial }}
+</div>

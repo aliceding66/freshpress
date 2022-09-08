@@ -1,0 +1,98 @@
+// Integration Card.
+
+@import '~styles/freshpress-includes';
+
+.integration-card {
+	flex-basis: 100%;
+	box-shadow: $box-shadow-main;
+
+	@include media-breakpoint-up( md ) {
+		flex-basis: 32%;
+		max-width: 300px;
+		min-height: 281px;
+		margin-right: 13px;
+
+		&:nth-child( 3n ) {
+			margin-right: 0;
+		}
+	}
+
+	@include media-breakpoint-up( xl ) {
+		min-height: 388px;
+	}
+
+	.integrations-category__freshbooks-tested {
+		font-size: px-to-rem( 10 );
+
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 14 );
+		}
+	}
+
+	&__integration-top {
+		height: 112px;
+
+		@include media-breakpoint-up( md ) {
+			height: 85px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			height: 112px;
+		}
+	}
+
+	&__integration-image {
+		max-width: 180px;
+		max-height: 100%;
+		object-fit: contain;
+		transition: all 0.1s;
+
+		@include media-breakpoint-up( md ) {
+			max-width: 150px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			max-width: 180px;
+		}
+	}
+
+	&__freshbooks-tested {
+		color: $fresh-blue-light;
+		font-weight: $font-weight-demi;
+		font-size: px-to-rem( 14 );
+		background-image: url( ./../../../assets/images/single/integrations/checkmark-blue.svg );
+		background-repeat: no-repeat;
+		background-position: center left;
+	}
+
+	&__integration-excerpt {
+		font-size: px-to-rem( 13 );
+
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 15 );
+		}
+	}
+
+	&__top-pick {
+		top: -39px;
+		right: -15px;
+		width: 49px;
+		height: 44px;
+		background-image: url( ./../../../assets/images/taxonomy/integrations/top-pick.svg );
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: cover;
+	}
+
+	&__integration-tag {
+		font-size: px-to-rem( 12 );
+	}
+
+	&__integration-bottom-wrap {
+		bottom: 0;
+	}
+
+	&__integration-info {
+		padding-bottom: 65px;
+	}
+}

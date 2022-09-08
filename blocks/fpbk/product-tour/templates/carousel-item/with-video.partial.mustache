@@ -1,0 +1,51 @@
+<div
+	class="product-tour__item position-relative justify-content-between align-items-start flex-column flex-lg-row{{# mobile_carousel }} swiper-slide{{/ mobile_carousel }} {{ item_active_class }}"
+	data-id="{{ nav_title_id }}"
+>
+	<div class="product-tour__item-text mx-auto mx-lg-0 text-center text-lg-left pb-4 pb-lg-0">
+		<h2 class="product-tour__item-title mb-2">
+			{{{ product_tour_item_title }}}
+		</h2>
+
+		<div class="product-tour__item-description mb-4">
+			{{{ product_tour_item_description }}}
+		</div>
+
+		<div class="product-tour__buttons mx-auto ml-lg-0 {{# product_tour_item_edit_video_id }}mb-1{{/product_tour_item_edit_video_id}}">
+			<div class="product-tour__watch">
+				{{{ product_tour_item_watch_video_label }}}
+			</div>
+            {{# product_tour_item_link.html }}
+                {{{ product_tour_item_link.html }}}
+            {{/ product_tour_item_link.html }}
+            {{^ product_tour_item_link.html }}
+                {{{ product_tour_item_link }}}
+            {{/ product_tour_item_link.html }}
+		</div>
+
+		{{# product_tour_item_edit_video_id }}
+			{{{ product_tour_item_edit_video_id }}}
+		{{/ product_tour_item_edit_video_id }}
+
+		<div class="product-tour__try-it-free mx-auto ml-lg-0">
+			{{# product_tour_item_cta.html }}
+				{{{ product_tour_item_cta.html }}}
+			{{/ product_tour_item_cta.html }}
+			{{^ product_tour_item_cta.html }}
+				{{{ product_tour_item_cta }}}
+			{{/ product_tour_item_cta.html }}
+			<p>{{{ product_tour_item_cta_text }}}</p>
+		</div>
+
+	</div>
+
+	<div class="product-tour__item-image-container position-relative mx-auto text-center">
+		{{{ product_tour_item_image }}}
+		{{# has_mobile_image }}
+			{{{ product_tour_item_mobile_image }}}
+		{{/ has_mobile_image }}
+
+		<lite-youtube id="video{{ product_tour_item_index }}" videoid="{{ product_tour_item_video_id }}" params="enablejsapi=1" class="product-tour__item-video"></lite-youtube>
+		<div class="product-tour__item-close-video">Close video</div>
+	</div>
+</div>

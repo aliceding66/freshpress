@@ -1,0 +1,48 @@
+<div class="feature-grid__container d-block w-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="feature-grid__cta-box col-12 col-lg-4 col-xl-3 offset-xl-1 text-center text-lg-left pt-lg-6">
+                <p class="feature-grid__cta-box__before-heading text-white-50 text-uppercase font-weight-medium h6">
+                    {{ cta_box_before_heading }}
+                </p>
+                <h2 class="feature-grid__cta-box__heading text-white h1">
+                    {{ cta_box_heading }}
+                </h2>
+				<div class="d-inline-flex flex-column text-center">
+					{{# cta_box_cta.html }}
+						{{{ cta_box_cta.html }}}
+					{{/ cta_box_cta.html }}
+					{{^ cta_box_cta.html }}
+						{{{ cta_box_cta }}}
+					{{/ cta_box_cta.html }}
+					<p class="feature-grid__cta-box__after-cta-button text-white-50 mt-2">
+						{{{ cta_box_after_cta }}}
+					</p>
+				</div>
+            </div>
+            <div class="feature-grid__grid col-12 col-lg-8 col-xl-7 mt-5 mt-lg-0 ml-0">
+                <div class="feature-grid__tile  feature-grid__tile--main-tile">
+                    <p class="feature-grid__tile-heading font-weight-medium mb-2 text-white h4">
+                        {{ grid_main_tile_heading }}
+                    </p>
+                    <p class="feature-grid__tile-description text-white-50">
+                        {{ grid_main_tile_description }}
+                    </p>
+                    {{{ grid_main_tile_image }}}
+                </div>
+
+                {{# grid_tiles }}
+                    {{# image }}
+                        {{> partial__tile_with_image }}
+                    {{/ image }}
+                    {{^ image }}
+                        {{> partial__tile_without_image }}
+                    {{/ image }}
+                {{/ grid_tiles }}
+                {{# admin_tiles_partials }}
+                    {{{ admin_tiles_partials }}}
+                {{/ admin_tiles_partials }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.flexible-colour-background__background-wrapper {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.flexible-colour-background__background-image {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.flexible-colour-background .reversed-corner {
+  z-index: -1;
+}
+
+/*# sourceMappingURL=blocks-fpbk-flexible-colour-background-index.css.map*/

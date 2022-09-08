@@ -1,0 +1,28 @@
+.did-you-know {
+  width: 416px;
+}
+.did-you-know__image {
+  width: 182px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.did-you-know__heading {
+  color: #0075dd;
+  font-size: 2.25rem;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+}
+.did-you-know__card {
+  border-radius: 5px;
+  box-shadow: 4px 4px 0 rgba(0, 27, 64, 0.07);
+}
+.did-you-know__cta {
+  padding: 18px 35px;
+  line-height: 1;
+  border-radius: 5px;
+}
+.did-you-know__sub-text {
+  color: #8495a2;
+  font-size: 0.875rem;
+}
+
+/*# sourceMappingURL=blocks-fpbk-did-you-know-style.css.map*/

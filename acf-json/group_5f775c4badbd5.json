@@ -1,0 +1,307 @@
+{
+    "key": "group_5f775c4badbd5",
+    "title": "Block - Comparison Table",
+    "fields": [
+        {
+            "key": "field_5f777fed27e3e",
+            "label": "Enable Promo?",
+            "name": "enable_promo",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f7764bb24c22",
+            "label": "Plan Header",
+            "name": "plan_header",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f77656124c23",
+                    "label": "Trial Cell",
+                    "name": "trial_cell",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f7765e224c24",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f7765ed24c25",
+                            "label": "Trial CTA",
+                            "name": "trial_cta",
+                            "type": "link",
+                            "instructions": "The trial CTA is visible in this header cell at all breakpoints.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f7c937b9e6bc",
+                            "label": "Buy CTA",
+                            "name": "buy_cta",
+                            "type": "link",
+                            "instructions": "The buy CTA is only visible at certain smaller responsive breakpoint sizes, instead of showing an individual buy CTA in each cell header.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f8dbd14d7669",
+                            "label": "Promo Buy CTA",
+                            "name": "promo_buy_cta",
+                            "type": "link",
+                            "instructions": "The promotional buy CTA is only visible at certain smaller responsive breakpoint sizes, instead of showing an individual buy CTA in each cell header.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f777fed27e3e",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f7765fc24c26",
+                    "label": "Plan Cells",
+                    "name": "plan_cells",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_5f77662b24c27",
+                    "min": 3,
+                    "max": 4,
+                    "layout": "block",
+                    "button_label": "Add Column Cell",
+                    "wpml_cf_preferences": 3,
+                    "sub_fields": [
+                        {
+                            "key": "field_5f77662b24c27",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Title or name of the plan.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f77663424c28",
+                            "label": "Price",
+                            "name": "price",
+                            "type": "text",
+                            "instructions": "Price will be placed in brackets.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f77668024c29",
+                            "label": "CTA",
+                            "name": "cta",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f77813a27e3f",
+                            "label": "Promo Price",
+                            "name": "promo_price",
+                            "type": "text",
+                            "instructions": "Price will be placed in brackets.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f777fed27e3e",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "wpml_cf_preferences": 2
+                        },
+                        {
+                            "key": "field_5f7781c427e40",
+                            "label": "Promo CTA",
+                            "name": "promo_cta",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f777fed27e3e",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "wpml_cf_preferences": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5fd7a541a020f",
+            "label": "Base Comparison Info",
+            "name": "base_comparison_info",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 10,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/comparison-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643306232
+}

@@ -1,0 +1,268 @@
+// Paths.
+$global_images_path: '~images';
+$dibs_images_path: '~images';
+$fonts_path: '~fonts';
+
+// Colours.
+$button-grey: #8596a2;
+$cta-green: #36a900;
+$dark-cta-green: #2e9000;
+$bright-blue: #359ce4;
+$fresh-blue: #0075dd;
+$midnight-blue: #001b40;
+$pre-midnight-blue: #062942;
+$fresh-new: #0075dd; // This is slowly being used in place of fresh-blue
+$medium-blue: #005dab;
+$dark-blue: #0062af;
+$amber: #efc100;
+$admin_black: #3c434a;
+
+// Border colours.
+$border-blue: #ccdfef;
+$border-blue-bold: #cde6f8;
+$fb-grey-border-menu: #eef1f3;
+$outline-grey: #b4bec6;
+$rule-grey-secondary: #ced5da;
+$rule-grey: #cdd4d9;
+$table-grey: #c5c7ce;
+$border-yellow: #ffc414;
+$border-grayish-blue: #9ba9b3;
+
+// Background colours.
+$dark-grey: #8495a2;
+$ghost-white: #fafafb;
+$mobile-sub-menu: #f7f8f9;
+$off-white: #fafdff;
+$card-tab-grey: #f0f2f4;
+$select-blue: #0060af;
+$blue-secondary-content: #eff8fe;
+$product-tour-blue: #eaf6fe;
+$box-grey: #fbfdfe;
+$light-blue: #eff8fe;
+$new-light-blue: #ecf5fd;
+$table-header-grey: #f2f4f5;
+$light-blue-highlight: #f5fbff;
+$light-cream: #fffaea;
+$light-cream-secondary: #fff9e4;
+$dark-cream: #fcf3cc;
+$tile-blue: #002d79;
+$tile-highlight-blue: #0069c7;
+$fresh-blue-light: #0d83dd;
+$additional-blue: #9fcef2;
+$pale-blue: #d3eafe;
+$pale-yellow: #fff9e8;
+$snippet-grey: #232323;
+
+// Font colours.
+$subtext-grey: #6a7f8e;
+$font-grey: #8294a0;
+$light-grey: #8394a1;
+$soft-blue: #b6daf5;
+$pale-blue: #9fcef2;
+$accessible-grey: #66768c;
+$accessible-grey-on-light-blue-bg: #405470;
+
+// Form Colours
+// $form-feedback-valid-color: $rule-grey;
+$form-feedback-invalid-color: #fa405c;
+
+// Line colors
+$grey-line-color: #e5e9eb;
+$border-grey-line-color: #e6e0d1;
+$blue-line-color: #4d9ee7;
+
+// Bootstrap Icons
+$form-feedback-icon-invalid: url( ./../images/icons/cross-red.svg );
+
+// Set the default breadcrumb divider.
+$breadcrumb-divider: quote( '>' );
+
+// Set bootstrap variable defaults before importing bootstrap variables.
+
+// Breakpoints.
+$grid-breakpoints: (
+	xs: 0,
+	sm: 480px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1280px,
+	xxl: 1600px,
+);
+
+// Spacers.
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+	(
+		// Default.
+		0: 0,
+		1: ( $spacer * 0.25 ),
+		2: ( $spacer * 0.5 ),
+		3: $spacer,
+		4: ( $spacer * 1.5 ),
+		5: ( $spacer * 3 ),
+		// Extended.
+		6: ( $spacer * 4.5 ),
+		7: ( $spacer * 6 ),
+		8: ( $spacer * 7.5 ),
+		9: ( $spacer * 9 )
+	),
+	$spacers
+);
+
+$header-breakpoint: 1025px;
+
+// Typography.
+
+// Base font size.
+$font-size-root: 16px;
+
+// Default sans serif font stack.
+$font-family-sans-serif: founders-grotesk, helvetica, arial, sans-serif !default;
+
+// Additional fonts
+$font-family-p: ibm-plex-sans, founders-grotesk, helvetica, arial, sans-serif;
+$font-freshbooks-script: moranga-italic, helvetica, arial, sans-serif;
+$font-script-regular: freshbooksscript-regular, helvetica, arial, sans-serif;
+$font-icon: icomoon, helvetica, arial, sans-serif;
+
+// Default body colour.
+$body-color: $midnight-blue !default;
+
+// Responsive headings.
+$h1-values: (
+	xs: (
+		font-size: px-to-rem( 24 ),
+		line-height: calc( 29 / 24 ),
+		letter-spacing: -0.2px,
+	),
+	md: (
+		font-size: px-to-rem( 42 ),
+		line-height: calc( 48 / 40 ),
+		letter-spacing: -0.3px,
+	),
+	lg: (
+		font-size: px-to-rem( 48 ),
+		line-height: calc( 51 / 48 ),
+	),
+);
+$h2-values: (
+	xs: (
+		font-size: px-to-rem( 26 ),
+		line-height: calc( 33 / 26 ),
+		letter-spacing: -0.15px,
+	),
+	md: (
+		font-size: px-to-rem( 36 ),
+		line-height: calc( 42 / 36 ),
+		letter-spacing: -0.2px,
+	),
+	lg: (
+		font-size: px-to-rem( 38 ),
+		line-height: calc( 44 / 38 ),
+	),
+);
+$h3-values: (
+	xs: (
+		font-size: px-to-rem( 22 ),
+		line-height: calc( 27 / 22 ),
+		letter-spacing: -0.1px,
+	),
+	md: (
+		font-size: px-to-rem( 26 ),
+		line-height: calc( 32 / 26 ),
+		letter-spacing: -0.15px,
+	),
+	lg: (
+		font-size: px-to-rem( 28 ),
+		line-height: calc( 34 / 28 ),
+	),
+);
+$h4-values: (
+	xs: (
+		font-size: px-to-rem( 20 ),
+		line-height: calc( 25 / 20 ),
+		letter-spacing: -0.1px,
+	),
+	lg: (
+		font-size: px-to-rem( 22 ),
+		line-height: calc( 27 / 22 ),
+	),
+);
+$h5-values: (
+	xs: (
+		font-size: px-to-rem( 16 ),
+		line-height: calc( 22 / 16 ),
+		letter-spacing: -0.5px,
+	),
+);
+$h6-values: (
+	xs: (
+		font-size: px-to-rem( 16 ),
+		line-height: calc( 22 / 16 ),
+		letter-spacing: -0.5px,
+	),
+);
+
+// Titles.
+$h1-font-size: map-get( $h1-values, xs );
+$h2-font-size: map-get( $h2-values, xs );
+$h3-font-size: map-get( $h3-values, xs );
+$h4-font-size: map-get( $h4-values, xs );
+$h5-font-size: map-get( $h5-values, xs );
+$h6-font-size: map-get( $h6-values, xs );
+
+// Reusable base values.
+$base-values: (
+	font-size: 1.125rem,
+	line-height: calc( 26 / 18 ),
+	letter-spacing: 0,
+	margin-bottom: 1.188rem,
+);
+
+// Borders
+$border-color: $rule-grey !default;
+$border-radius: 0.5rem !default;
+$border-radius-lg: 0.5rem !default;
+$border-radius-sm: 0.5rem !default;
+
+// Code
+$pre-scrollable-max-height: 25rem !default;
+
+// Form spacing
+$form-group-margin-bottom: 0.5rem;
+
+// Then import the bootstrap variables.
+@import '~bootstrap/scss/variables';
+
+// Finally, declare our own custom variables.
+
+// Typography
+
+// Default font stack.
+$fb-font-family: $font-family-sans-serif;
+
+// Font weights.
+$font-weight-book: $font-weight-normal;
+$font-weight-medium: 500;
+$font-weight-demi: $font-weight-bold;
+
+// Supported country codes and flags
+$flag-icons-path: '~flag-icons/flags';
+$country-codes: ( au, ca, eu, fr, gb, ie, nz, us, za, sg );
+
+// The inner width of some elements, like the footer.
+$inner-max-width-lg: 928px;
+$inner-max-width-xl: 1170px;
+
+// Box shadows
+$box-shadow-main: 4px 4px 0 rgba( $midnight-blue, 0.07 );
+
+// Z-index
+$zindex-background: -1;
+$zindex-sticky-header: 1100;
+$zindex-progress-bar: 9999;
+$zindex-modal: 10000;
+
+// DIBS page
+$dibs-block-max-width: 650px;

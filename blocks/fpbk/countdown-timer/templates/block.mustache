@@ -1,0 +1,33 @@
+{{# campaign_exists }}
+	{{# no-text-lto }}
+		{{{ lto_image }}}
+	{{/ no-text-lto }}
+	{{^ no-text-lto }}
+		<p class="countdown-timer__title" {{ lto_style }}>{{ lto_label }}</p>
+	{{/ no-text-lto }}
+	<div class="countdown-timer__text m-0 p-0" role="alert" aria-label="{{ countdown_time }}">
+		<span class="countdown-timer__days" aria-hidden="true">
+			<span class="countdown-timer__days-tens">0</span>
+			<span class="countdown-timer__days-ones">0</span>
+			<span class="countdown-timer__days-text">Days</span>
+		</span>
+		<span class="countdown-timer__colon" aria-hidden="true">:</span>
+		<span class="countdown-timer__hours" aria-hidden="true">
+			<span class="countdown-timer__hours-tens">0</span>
+			<span class="countdown-timer__hours-ones">0</span>
+			<span class="countdown-timer__hours-text">Hours</span>
+		</span>
+		<span class="countdown-timer__colon" aria-hidden="true">:</span>
+		<span class="countdown-timer__minutes" aria-hidden="true">
+			<span class="countdown-timer__minutes-tens">0</span>
+			<span class="countdown-timer__minutes-ones">0</span>
+			<span class="countdown-timer__minutes-text">Minutes</span>
+		</span>
+		<span class="countdown-timer__colon" aria-hidden="true">:</span>
+		<span class="countdown-timer__seconds" aria-hidden="true">
+			<span class="countdown-timer__seconds-tens">0</span>
+			<span class="countdown-timer__seconds-ones">0</span>
+			<span class="countdown-timer__seconds-text">Seconds</span>
+		</span>
+	</div>
+{{/ campaign_exists }}

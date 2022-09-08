@@ -1,0 +1,13 @@
+<div class="sign-up__wrapper_inline d-flex flex-column align-items-center text-center w-100 position-relative p-md-5 {{# include_sign_up_banner }} pt-promo{{/ include_sign_up_banner }}">
+
+	<h1 class="sign-up__heading sign-up__heading__inline mt-5 mt-md-2">{{ heading }}</h1>
+	<h2 class="sign-up__sub-heading sign-up__sub-heading__inline mb-4">{{ sub_heading }}</h2>
+
+    {{# admin_form }}
+		{{{ admin_form }}}
+	{{/ admin_form }}
+	{{^ admin_form }}
+		{{> partial__form_inline }}
+	{{/ admin_form }}
+</div>
+

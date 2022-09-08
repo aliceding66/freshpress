@@ -1,0 +1,40 @@
+<td {{# background_colour.hex }}style="background-color: {{ background_colour.hex }};"{{/ background_colour.hex }}
+    class="align-middle text-center">
+    {{# mark_check_green }}
+        {{{ mark_check_green_image }}}
+    {{/ mark_check_green }}
+
+    {{# mark_check_grey }}
+        {{{ mark_check_grey_image }}}
+    {{/ mark_check_grey }}
+
+    {{# mark_x }}
+        {{{ mark_x_image }}}
+    {{/ mark_x }}
+
+    {{# admin_paragraphs }}
+        {{{ admin_paragraphs }}}
+    {{/ admin_paragraphs }}
+    {{^ admin_paragraphs }}
+        {{# paragraphs }}
+            <p class="mb-2{{# bolded }} bolded{{/bolded}}">{{{ text }}}</p>
+        {{/ paragraphs }}
+    {{/ admin_paragraphs }}
+    {{{ admin_add_paragraph }}}
+
+    {{# list_exists }}
+        <ul class="pl-0">
+            {{# admin_list }}
+                {{{ admin_list }}}
+            {{/ admin_list }}
+            {{^ admin_list }}
+                {{# list }}
+                    <li class="{{ style }}">
+                        <span class="text-center position-relative features-table__list--icon"> {{{ text }}}</span>
+                    </li>
+                {{/ list }}
+            {{/ admin_list }}
+        </ul>
+    {{/ list_exists }}
+    {{{ admin_add_list }}}
+</td>

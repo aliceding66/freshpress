@@ -1,0 +1,64 @@
+// Nicereply.
+
+@import '~styles/freshpress-includes';
+
+.nicereply {
+	&__step-one {
+		.box {
+			max-width: 542px;
+			background: $white;
+		}
+	}
+
+	&__step-two {
+		.nicereply__feedback {
+			max-width: 542px;
+			height: 148px;
+			color: #062942;
+			border-radius: 5px;
+			resize: none;
+		}
+	}
+
+	&__step-three {
+		.nicereply__thankyou {
+			max-width: 542px;
+		}
+	}
+
+	&__page-dots {
+		max-width: 26px;
+		margin: 30px auto 0;
+	}
+
+	&__page-dot {
+		width: 6px;
+		height: 6px;
+		fill: $rule-grey;
+
+		&.active {
+			fill: $fresh-blue;
+		}
+	}
+
+	&__survey-item {
+		width: 20%;
+
+		@include media-breakpoint-up( md ) {
+			width: auto;
+		}
+
+		label {
+			font-weight: 500;
+		}
+	}
+
+	&__error > span {
+		color: $form-feedback-invalid-color;
+	}
+
+	.survey-emoji {
+		width: 30px;
+		height: 30px;
+	}
+}

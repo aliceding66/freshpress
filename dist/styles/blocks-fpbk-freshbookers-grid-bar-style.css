@@ -1,0 +1,32 @@
+.freshbookers-grid-bar__item {
+  width: 33.3333333333%;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 480px) {
+  .freshbookers-grid-bar__item {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .freshbookers-grid-bar__item {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 1024px) {
+  .freshbookers-grid-bar__item {
+    width: 12.5%;
+  }
+}
+@media (min-width: 1280px) {
+  .freshbookers-grid-bar__item {
+    width: 10%;
+  }
+}
+.freshbookers-grid-bar__item::after {
+  display: block;
+  padding-bottom: 100%;
+  content: "";
+}
+
+/*# sourceMappingURL=blocks-fpbk-freshbookers-grid-bar-style.css.map*/

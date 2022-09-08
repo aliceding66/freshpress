@@ -1,0 +1,49 @@
+@import '~styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	.wp-block.wp-block-fpbk-features-table {
+		max-width: 976px;
+
+		table {
+			thead {
+				th {
+					&.align-middle {
+						padding: 4px;
+					}
+
+					label {
+						font-weight: $font-weight-normal;
+					}
+				}
+			}
+		}
+
+		.block-editor__block-controls {
+			.components-button.has-icon {
+				min-width: 20px;
+			}
+		}
+
+		.dashicon {
+			margin-right: 2px;
+		}
+
+		.block-editor-rich-text__toolbar {
+			top: 0;
+			left: 0;
+			display: none;
+			background: $ghost-white;
+			transform: translateY( -100% );
+		}
+
+		.block-editor-rich-text__toolbar-wrapper {
+			&:active,
+			&:hover,
+			&:focus {
+				.block-editor-rich-text__toolbar {
+					display: block;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.editor-styles-wrapper .modal {
+  position: static !important;
+  display: block !important;
+  height: auto !important;
+}
+.editor-styles-wrapper .modal .modal-dialog-centered {
+  min-height: unset !important;
+}
+.editor-styles-wrapper [data-dismiss=modal] {
+  cursor: text;
+}
+.editor-styles-wrapper [data-dismiss=modal]:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=blocks-fpbk-modal-editor.css.map*/

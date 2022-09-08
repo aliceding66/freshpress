@@ -1,0 +1,5 @@
+.editor-styles-wrapper [class*=d-][class*=-none].freshbooks-careers__headings, .editor-styles-wrapper [class*=d-][class*=-none].freshbooks-careers__item {
+  display: flex !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-freshbooks-careers-editor.css.map*/

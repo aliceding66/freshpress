@@ -1,0 +1,16 @@
+{
+  "taxonomy": "accounting_partners_location",
+  "taxonomy_plural": "accounting_partners_locations",
+  "label": "Location",
+  "label_plural": "Locations",
+  "post_types": [
+    "accounting_partners"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "accounting-partners/location",
+      "hierarchical": true
+    },
+    "publicly_queryable": false
+  }
+}

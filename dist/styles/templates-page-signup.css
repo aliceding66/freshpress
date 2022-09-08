@@ -1,0 +1,248 @@
+html {
+  margin: 0 !important;
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #0d83dd;
+}
+
+.signup-page__content-expander {
+  position: fixed;
+  top: calc(100% - 40px);
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 40px;
+  font-size: 1.25rem;
+  background-color: #002d79;
+  border-radius: 8px 8px 0 0;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: top 0.3s;
+}
+.signup-page__content-expander::after {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/button-arrow-right-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(-90deg) translateX(-1px);
+  content: "";
+}
+.signup-page__content-expander.expanded {
+  top: calc(19% - 40px);
+}
+@media (min-width: 768px) {
+  .signup-page__content-expander.expanded {
+    top: calc(30% - 40px);
+  }
+}
+.signup-page__content-expander.expanded::after {
+  transform: rotate(90deg) translateX(2px);
+}
+.signup-page__content-button {
+  font-size: 1.25rem;
+  border-color: #8394a1;
+  border-radius: 5px;
+}
+.signup-page__content-wrapper {
+  position: fixed !important;
+  top: 100%;
+  left: 0;
+  height: 85%;
+  background-color: #002d79;
+  transition: top 0.3s;
+}
+@media (min-width: 1024px) {
+  .signup-page__content-wrapper {
+    position: static !important;
+    max-width: 500px;
+    height: auto;
+    background-color: transparent;
+    transition: none;
+  }
+}
+.signup-page__content-wrapper.shown {
+  top: 19%;
+}
+@media (min-width: 768px) {
+  .signup-page__content-wrapper.shown {
+    top: 30%;
+  }
+}
+.signup-page__content-wrapper.shown.has-banner {
+  top: 25%;
+}
+@media (min-width: 768px) {
+  .signup-page__content-wrapper.shown.has-banner {
+    top: 29%;
+  }
+}
+.signup-page__content-wrapper.shown.has-banner .signup-page__content-expander.expanded {
+  top: calc(25% - 40px);
+}
+@media (min-width: 768px) {
+  .signup-page__content-wrapper.shown.has-banner .signup-page__content-expander.expanded {
+    top: calc(29% - 40px);
+  }
+}
+.signup-page__content {
+  height: calc(100% - 3rem);
+  overflow: auto;
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  .signup-page__content {
+    height: auto;
+    background-color: transparent;
+  }
+}
+.signup-page__content > *:not(.signup-page__content-expander) {
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+@media (min-width: 1024px) {
+  .signup-page__content > *:not(.signup-page__content-expander) {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+.signup-page__content h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2.125rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .signup-page__content h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    text-align: left;
+  }
+}
+.signup-page__content > p {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .signup-page__content > p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+.signup-page__content ul {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style-type: none;
+}
+@media (min-width: 1024px) {
+  .signup-page__content ul {
+    margin-top: 0;
+  }
+}
+.signup-page__content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+  /* prettier-ignore */
+}
+@media (min-width: 1024px) {
+  .signup-page__content ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
+.signup-page__content ul li::before {
+  display: inline-block;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/checkmark-white.svg);
+  background-repeat: no-repeat;
+  background-position: center top6px;
+  background-size: 60%;
+  filter: brightness(100);
+  content: "";
+}
+@media (min-width: 1024px) {
+  .signup-page__content ul li::before {
+    background-image: url(/wp-content/themes/freshpress/dist/images/icons/checkmark.svg);
+    background-size: 72%;
+    filter: brightness(1);
+  }
+}
+.signup-page__content .wp-block-separator {
+  width: 100%;
+  margin-bottom: 35px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.signup-page__content .testimonial-quote {
+  display: none !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 !important;
+}
+@media (min-width: 1024px) {
+  .signup-page__content .testimonial-quote {
+    display: flex !important;
+  }
+}
+.signup-page__content .testimonial-quote__text {
+  flex-basis: 100%;
+  padding: 0;
+}
+.signup-page__content .testimonial-quote__quote {
+  margin-bottom: 10px !important;
+  font-size: 1rem;
+}
+.signup-page__content .testimonial-quote__quote::before {
+  display: none;
+}
+.signup-page__content .testimonial-quote__author-name {
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+}
+.signup-page__content .testimonial-quote__author-description, .signup-page__content .testimonial-quote__author-location {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+.signup-page__content .testimonial-quote__attribution-text {
+  display: inline-flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.signup-page__content .testimonial-quote__image-container {
+  display: none !important;
+}
+.signup-page__content .testimonial-quote__image-container_small {
+  display: inline-block !important;
+  flex-basis: 25%;
+  margin-right: 15px !important;
+}
+.signup-page__submit-arrow {
+  top: -35px;
+  right: -105px;
+}
+
+.wp-block-separator {
+  border-right: 0;
+  border-left: 0;
+}
+
+/*# sourceMappingURL=templates-page-signup.css.map*/

@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/business-loan-calculator",
+  "title": "Business Loan Calculator",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

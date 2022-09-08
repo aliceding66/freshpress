@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/social-share",
+  "title": "Social Share",
+  "category": "freshblocks",
+  "description": "A block containing social share buttons.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

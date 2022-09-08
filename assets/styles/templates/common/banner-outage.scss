@@ -1,0 +1,55 @@
+@import '../../freshpress-includes';
+
+.banner-outage {
+	position: relative;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	color: #856404;
+	text-align: center;
+	background-color: #fff3cd;
+	border: 1px solid #f2cd33;
+	border-radius: 0;
+	transition: opacity 0.15s linear;
+
+	&__content-mobile {
+		display: inline-block;
+		margin-bottom: 0;
+		text-align: center;
+
+		@include media-breakpoint-up( md ) {
+			display: none;
+		}
+	}
+
+	&__content-desktop {
+		display: none;
+		margin-bottom: 0;
+		text-align: center;
+
+		@include media-breakpoint-up( md ) {
+			display: inline-block;
+		}
+	}
+
+	> p {
+		color: $midnight-blue;
+		font-size: px-to-rem( 16 );
+	}
+
+	> button {
+		display: inline-block;
+		padding: 3px 5px;
+		color: $midnight-blue;
+		font-size: 1rem;
+		line-height: 1.5;
+		text-align: center;
+		vertical-align: middle;
+		background-color: transparent;
+		border: 1px solid #f2cd33;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+			border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+		user-select: none;
+	}
+}

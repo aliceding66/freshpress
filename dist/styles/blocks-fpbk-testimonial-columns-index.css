@@ -1,0 +1,38 @@
+.editor-styles-wrapper .wp-block-fpbk-testimonial-columns .block-editor__block-controls {
+  top: 0;
+  right: 0;
+}
+.testimonial-columns .testimonial-header {
+  font-size: 2.25rem;
+  line-height: 1.27778;
+}
+.testimonial-columns .divider_blue {
+  width: 72px;
+  height: 3px;
+  background: #0075dd;
+  border: 1px solid #0075dd;
+}
+.testimonial-columns .testimonial__photo {
+  max-width: 120px;
+  border-radius: 60px;
+}
+.testimonial-columns .testimonial__quote-text {
+  max-width: 304px;
+  color: #001b40;
+  font-size: 1.125rem;
+  line-height: 1.66667;
+  letter-spacing: -0.11px;
+}
+.testimonial-columns .testimonial__author p {
+  font-size: 0.875rem;
+  line-height: 1.28571;
+}
+.testimonial-columns .testimonial__author-name {
+  color: #001b40;
+}
+.testimonial-columns .testimonial__author-title {
+  margin-bottom: 0;
+  color: #8495a2;
+}
+
+/*# sourceMappingURL=blocks-fpbk-testimonial-columns-index.css.map*/

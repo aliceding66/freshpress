@@ -1,0 +1,191 @@
+{
+    "key": "group_5f318f0c95e49",
+    "title": "Block - Button",
+    "fields": [
+        {
+            "key": "field_5f318f1db152d",
+            "label": "Link",
+            "name": "button_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f318f2cb152e",
+            "label": "Style",
+            "name": "button_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "green": "Green",
+                "white": "White"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5fa28ef4b4725",
+            "label": "Max Width",
+            "name": "button_max_width",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f929b6ec5e5f",
+            "label": "Click Action",
+            "name": "button_click_action",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "open_link": "Open Link",
+                "open_modal": "Open Modal",
+                "open_drift": "Open DriftChat Box",
+                "execute_script": "Execute Script"
+            },
+            "default_value": "open_link",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f929b9fc5e60",
+            "label": "Modal ID",
+            "name": "button_modal_id",
+            "type": "text",
+            "instructions": "Modal block ID attribute.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f929b6ec5e5f",
+                        "operator": "==",
+                        "value": "open_modal"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "#",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_62f4f6b4e00cb",
+            "label": "Drift Interaction ID",
+            "name": "drift_interaction_id",
+            "type": "text",
+            "instructions": "Set Drift interaction ID. Default is 331999.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "default_value": 331999,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62f3b33c33bb7",
+            "label": "Script",
+            "name": "script",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f929b6ec5e5f",
+                        "operator": "==",
+                        "value": "execute_script"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/button"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1660221166
+}

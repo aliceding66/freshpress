@@ -1,0 +1,11 @@
+{{# mobile_segment_navigation_link.html }}
+	{{{ mobile_segment_navigation_link.html }}}
+{{/ mobile_segment_navigation_link.html }}
+{{^ mobile_segment_navigation_link.html }}
+	{{# admin_controls }}
+		<div class="d-flex flex-row">
+			{{ mobile_segment_navigation_link }}
+			{{{ admin_controls }}}
+		</div>
+	{{/ admin_controls }}
+{{/ mobile_segment_navigation_link.html }}

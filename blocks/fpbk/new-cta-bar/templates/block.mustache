@@ -1,0 +1,42 @@
+<div
+	class="new-cta-bar__container overflow-hidden position-relative w-100"
+	style="{{# background_attribute }}{{ background_attribute }}{{/ background_attribute }}"
+>
+	<div class="container-fluid">
+		<div class="row w-100 mx-auto">
+
+			<div class="new-cta-bar__content position-relative w-100 d-flex flex-column align-items-center justify-content-center">
+				{{{ inner_blocks }}}
+
+				{{# cta_link.html }}
+					<div class="fp-animate fp-animate__zoom_in_alt fp-animate__zoom_in_alt--on-hover mt-5 mb-2 position-relative">
+						{{{ cta_link.html }}}
+					</div>
+				{{/ cta_link.html }}
+				{{^ cta_link.html }}
+					<div class="mt-5 mb-2 position-relative">
+						{{{ cta_link }}}
+					</div>
+				{{/ cta_link.html }}
+
+				{{# cta_after }}
+					<p class="new-cta-bar__after-cta-button text-white position-relative text-center">
+						{{ cta_after }}
+					</p>
+				{{/ cta_after }}
+			</div>
+
+			{{# images_left }}
+				{{{ images_left }}}
+			{{/ images_left }}
+
+			{{# images_top_right }}
+				{{{ images_top_right }}}
+			{{/ images_top_right }}
+
+			{{# images_bottom_right }}
+				{{{ images_bottom_right }}}
+			{{/ images_bottom_right }}
+		</div>
+	</div>
+</div>

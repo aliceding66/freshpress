@@ -1,0 +1,22 @@
+.resellers-commission__content {
+  max-width: 200px;
+}
+.resellers-commission__upper-text {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.resellers-commission__highlighted-text {
+  font-size: 4.6875rem;
+  line-height: 0.85714;
+}
+.resellers-commission__off-text {
+  max-width: 50px;
+  font-size: 1rem;
+}
+.resellers-commission.rounded-circle {
+  width: 253px;
+  height: 253px;
+  padding: 0 0 15px 20px;
+}
+
+/*# sourceMappingURL=blocks-acf-resellers-commission-resellers-commission.css.map*/

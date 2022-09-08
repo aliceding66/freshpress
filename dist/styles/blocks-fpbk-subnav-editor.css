@@ -1,0 +1,6 @@
+.editor-styles-wrapper .wp-block-fpbk-subnav a,
+.editor-styles-wrapper .wp-block-fpbk-subnav select {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=blocks-fpbk-subnav-editor.css.map*/

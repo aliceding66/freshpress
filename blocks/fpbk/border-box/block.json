@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/border-box",
+  "title": "Border Box",
+  "category": "freshblocks",
+  "description": "Block with adjustable border, background and spacing.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

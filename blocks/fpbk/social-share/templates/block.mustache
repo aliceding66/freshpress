@@ -1,0 +1,19 @@
+<p
+	class="social-share__text"
+	{{# share_text_colour.hex }}style="color: {{ share_text_colour.hex }}"{{/ share_text_colour.hex }}
+>
+	{{ share_text }}
+</p>
+<div class="social-share__buttons">
+	{{# social_info }}
+		<a
+			class="social-share__button text-decoration-none"
+			href="{{ share_url }}"
+			title="{{ sharing_title }}"
+			target="_blank"
+			rel="noopener"
+		>
+			{{{ share_icon }}}
+		</a>
+	{{/ social_info }}
+</div>

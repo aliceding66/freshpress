@@ -1,0 +1,53 @@
+.accounting-partners-simple-hero {
+  position: relative;
+  left: calc(50% - 50vw);
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100vw;
+  margin: 0 !important;
+  padding: 64px 22px 48px;
+  overflow: hidden;
+  color: #fff;
+  background-color: #0075dd;
+}
+@media (min-width: 768px) {
+  .accounting-partners-simple-hero {
+    padding: 60px 0 48px;
+  }
+}
+@media (min-width: 1280px) {
+  .accounting-partners-simple-hero {
+    min-height: 184px;
+  }
+}
+.accounting-partners-simple-hero__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+  background-color: #0075dd;
+}
+@media (min-width: 768px) {
+  .accounting-partners-simple-hero__container {
+    padding: 0 15px;
+  }
+}
+.accounting-partners-simple-hero h1 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+@media (min-width: 1024px) {
+  .accounting-partners-simple-hero h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=blocks-acf-accounting-partners-simple-hero-accounting-partners-simple-hero.css.map*/

@@ -1,0 +1,209 @@
+/*
+
+Railscasts-like style (c) Visoft, Inc. (Damien White)
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #232323;
+  color: #e6e1dc;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #bc9458;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #c26230;
+}
+
+.hljs-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
+  color: #a5c261;
+}
+
+.hljs-subst {
+  color: #519f50;
+}
+
+.hljs-tag,
+.hljs-name {
+  color: #e8bf6a;
+}
+
+.hljs-type {
+  color: #da4939;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-attr,
+.hljs-link {
+  color: #6d9cbe;
+}
+
+.hljs-params {
+  color: #d0d0ff;
+}
+
+.hljs-attribute {
+  color: #cda869;
+}
+
+.hljs-meta {
+  color: #9b859d;
+}
+
+.hljs-title,
+.hljs-section {
+  color: #ffc66d;
+}
+
+.hljs-addition {
+  background-color: #144212;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-selector-class {
+  color: #9b703f;
+}
+
+.hljs-selector-id {
+  color: #8b98ab;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.main,
+.header {
+  max-width: 1600px !important;
+}
+
+.api-single h1 {
+  padding-bottom: 1.5rem;
+}
+.api-single .snippets__menu {
+  width: 100%;
+  padding: 10px 25px;
+  background-color: #000;
+}
+.api-single .snippets__menu-tab {
+  color: #fff;
+  line-height: 1;
+}
+.api-single .snippets__menu-tab:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.api-single .snippets__menu-tab.active {
+  background-color: #0075dd;
+  border-radius: 17px;
+}
+.api-single .snippets__title {
+  color: #fff;
+  font-size: 1.375rem;
+}
+.api-single .api__menu-section--title span {
+  font-size: 1.25rem;
+}
+.api-single .api__menu-section--title svg {
+  width: 10px;
+  height: 26px;
+  padding-top: 5px;
+  transform: rotate(0deg);
+}
+.api-single .api__menu-section--title:hover {
+  cursor: pointer;
+}
+.api-single .api__menu-section--title.collapsed {
+  padding-bottom: 1rem;
+}
+.api-single .api__menu-section--title.collapsed svg {
+  transform: rotate(-90deg);
+}
+.api-single .api__menu-section--item {
+  width: 100%;
+}
+.api-single .api__menu-section--item:last-child {
+  margin-bottom: 0.5rem;
+}
+.api-single .api__menu-section--item span {
+  color: #8294a0;
+  font-size: 1rem;
+}
+.api-single .api__menu-section--item:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.api-single .api__menu-section--item:hover span {
+  color: #0075dd;
+}
+.api-single .col-content p,
+.api-single .col-content ol,
+.api-single .col-content li,
+.api-single .col-content span,
+.api-single .col-content a {
+  font-size: 1rem;
+}
+.api-single .col-content pre {
+  padding: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+.api-single .col-content code {
+  white-space: pre-wrap;
+}
+.api-single .col-content img {
+  max-width: 100%;
+  height: auto;
+}
+.api-single .col-snippets {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.api-single .code-snippet {
+  color: #fff;
+  background-color: #232323;
+  border-radius: 3px;
+}
+.api-single table th,
+.api-single table td {
+  padding: 0.8rem;
+}
+.api-single table td {
+  border-top: 1px solid #f0f2f4;
+  border-bottom: 1px solid #f0f2f4;
+}
+
+/*# sourceMappingURL=templates-single-api.css.map*/

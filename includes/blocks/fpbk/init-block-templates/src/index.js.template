@@ -1,0 +1,22 @@
+import { registerBlockType } from '@wordpress/blocks';
+{{# innerBlocks }}
+import { InnerBlocks } from '@wordpress/block-editor';
+{{/ innerBlocks }}
+import config from '../block.json';
+import Edit from './_edit';
+{{# editorStyles }}
+import './editor.scss';
+{{/ editorStyles }}
+import './style.scss';
+import freshbooksLogo from 'images/logos/freshbooks-logomark-reacty.svg';
+
+const { name: blockName, ...restConfig } = config;
+
+registerBlockType( blockName, {
+	...restConfig,
+	icon: <img src={ freshbooksLogo } alt="FreshBooks Logo" />,
+	edit: Edit,
+{{# innerBlocks }}
+	save: () => <InnerBlocks.Content />,
+{{/ innerBlocks }}
+} );

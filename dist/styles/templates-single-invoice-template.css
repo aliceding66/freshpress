@@ -1,0 +1,16 @@
+.feature-row.first-row {
+  order: -1;
+}
+.feature-row .row {
+  align-items: flex-start !important;
+}
+
+.wp-block-image img {
+  height: auto !important;
+}
+
+.flexible-colour-background.white img {
+  max-width: 203px;
+}
+
+/*# sourceMappingURL=templates-single-invoice-template.css.map*/

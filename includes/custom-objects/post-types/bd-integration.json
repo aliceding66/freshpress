@@ -1,0 +1,103 @@
+{
+  "post_type": "integration",
+  "post_type_plural": "integrations",
+  "label": "Integration",
+  "label_plural": "Integrations",
+  "args": {
+    "description": "FreshBooks app integrations",
+    "has_archive": false,
+    "menu_icon": "dashicons-id-alt",
+    "rewrite": {
+      "slug": "integrations/pages"
+    },
+    "supports": [
+      "editor",
+      "page-attributes",
+      "revisions",
+      "thumbnail",
+      "title",
+      "excerpt"
+    ],
+    "taxonomies": [
+      "integration_category",
+      "integration_tags",
+      "integration_collections"
+    ],
+    "template": [
+      [
+        "fpbk/columns",
+        {
+          "className": "mt-5"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "bootstrap_class": "col-12 col-lg-3 order-2 order-lg-1",
+              "block_settings_tracking_section": "integrations-single-page-left-column",
+              "className": "integrations__sidebar mx-auto pr-0 pr-lg-5 pt-3"
+            },
+            [
+              [
+                "core/heading",
+                {
+                  "content": "On This Page",
+                  "level": 3,
+                  "align": "left",
+                  "className": "integrations__sidebar-subtitle text-left pb-3 mb-3 d-none d-lg-block"
+                }
+              ],
+              [
+                "fpbk/related-links",
+                {
+                  "className": "mb-5 ml-0 ml-lg-3 d-none d-lg-block"
+                }
+              ],
+              [
+                "core/heading",
+                {
+                  "content": "Need Help?",
+                  "level": 3,
+                  "align": "left",
+                  "className": "integrations__sidebar-subtitle pb-3 mb-3 text-left mr-3 mr-lg-0"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "Contact FreshBooks for help:",
+                  "align": "left",
+                  "className": "integrations__sidebar-contact-info"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "<a href=\"mailto:support@freshbooks.com\">support@freshbooks.com</a>",
+                  "align": "left",
+                  "className": "integrations__sidebar-contact-info integrations__sidebar-contact-info_email"
+                }
+              ],
+              [
+                "core/paragraph",
+                {
+                  "content": "<a href=\"tel:1-866-303-6061\">1-866-303-6061</a>",
+                  "align": "left",
+                  "className": "integrations__sidebar-contact-info integrations__sidebar-contact-info_phone"
+                }
+              ]
+            ]
+          ],
+          [
+            "fpbk/column",
+            {
+              "bootstrap_class": "col-12 col-lg-9 order-1 order-lg-2",
+              "className": "integrations__main-content mx-auto mb-5",
+              "block_settings_tracking_section": "integrations-single-page-right-column"
+            }
+          ]
+        ]
+      ]
+    ]
+  }
+}

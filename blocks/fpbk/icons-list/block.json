@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/icons-list",
+  "title": "Icons List",
+  "category": "freshblocks",
+  "description": "A collection of sets of icons/numbers and text.",
+  "textdomain": "fpbk",
+  "supports": {
+    "align": true,
+    "anchor": true
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "key": "group_62e277e0f0ac6",
+    "title": "CPT - Glossary Term",
+    "fields": [
+        {
+            "key": "field_62e277f8c8e81",
+            "label": "Glossary Guide",
+            "name": "glossary_guide",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "post_type": [
+                "glossary_guide"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_62e3a399bffe0",
+            "label": "Guide Title Override",
+            "name": "guide_title_override",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "glossary"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1659085745
+}

@@ -1,0 +1,201 @@
+// Features Table.
+
+@import '~styles/freshpress-includes';
+
+.features-table {
+	max-width: 976px; // mocks
+	overflow-x: auto;
+	border: 1px solid $table-grey;
+	border-bottom: 0;
+
+	table {
+		tr {
+			border-bottom: 1px solid $table-grey;
+
+			th,
+			td {
+				&:first-child {
+					border-right: 1px solid $table-grey;
+				}
+			}
+		}
+
+		thead {
+			tr {
+				th {
+					padding: 8px;
+					font-size: 14px;
+
+					@include media-breakpoint-up( md ) {
+						padding: 14px;
+						font-size: 16px;
+					}
+
+					@include media-breakpoint-up( lg ) {
+						padding: 27px;
+						font-size: 18px;
+					}
+
+					&:first-child {
+						min-width: 70px;
+					}
+
+					&.rotate-mobile {
+						@media screen and ( max-width: 575px ) { /* stylelint-disable-line */
+							height: 110px;
+							padding: 0;
+						}
+
+						span {
+							@media screen and ( max-width: 575px ) { /* stylelint-disable-line */
+								display: inline-flex;
+								width: 29px;
+								height: 24px;
+								line-height: 1;
+								text-align: left;
+								transform: rotate( -90deg ) translate( -20px, -6% );
+							}
+						}
+					}
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				td {
+					padding: 15px 5px;
+
+					@include media-breakpoint-up( lg ) {
+						padding: 18px 38px; // mocks
+					}
+
+					&:first-child {
+						font-weight: $font-weight-medium;
+						font-size: px-to-rem( 12px );
+
+						&.font-small {
+							@include media-breakpoint-up( lg ) {
+								font-size: px-to-rem( 16px );
+							}
+						}
+
+						&.font-medium {
+							@include media-breakpoint-up( lg ) {
+								font-size: px-to-rem( 22px );
+							}
+						}
+
+						&.font-normal {
+							@include media-breakpoint-up( lg ) {
+								font-size: px-to-rem( 20px );
+							}
+						}
+
+						&.padding-small {
+							@include media-breakpoint-up( lg ) {
+								padding: 18px 11px;
+							}
+						}
+
+						&.padding-medium {
+							@include media-breakpoint-up( lg ) {
+								padding: 28px 11px;
+							}
+						}
+
+						&.padding-normal {
+							@include media-breakpoint-up( lg ) {
+								padding: 18px 38px;
+							}
+						}
+					}
+
+					img {
+						height: 22px; // mocks
+
+						&:not( :last-child ) {
+							margin-bottom: 10px;
+						}
+					}
+
+					p {
+						font-size: px-to-rem( 13px );
+
+						@include media-breakpoint-up( md ) {
+							font-size: px-to-rem( 14px );
+						}
+						@include media-breakpoint-up( lg ) {
+							font-size: px-to-rem( 16px );
+						}
+
+						&.bolded {
+							font-weight: $font-weight-medium;
+						}
+					}
+
+					ul {
+						list-style-type: none;
+
+						li {
+							.features-table__list--icon {
+								padding-left: 28px;
+								font-size: px-to-rem( 13px );
+
+								@include media-breakpoint-up( md ) {
+									font-size: px-to-rem( 14px );
+								}
+								@include media-breakpoint-up( lg ) {
+									font-size: px-to-rem( 16px );
+								}
+
+								&::before {
+									position: absolute;
+									top: -2px;
+									left: 0;
+									display: block;
+									width: 22px;
+									height: 18px;
+									margin-top: 2px;
+									margin-right: 10px;
+									background-repeat: no-repeat;
+									background-position: center;
+									background-size: contain;
+									content: '';
+								}
+							}
+
+							&.normal {
+								.features-table__list--icon {
+									font-weight: $font-weight-medium;
+
+									&::before {
+										background-image: url( ./../../../../assets/images/icons/checkmark.svg );
+									}
+								}
+							}
+
+							&.grey-check {
+								.features-table__list--icon {
+									&::before {
+										background-image: url( ./../../../../assets/images/icons/checkmark-grey.svg );
+									}
+								}
+							}
+
+							&.greyed-out {
+								.features-table__list--icon {
+									opacity: 0.45;
+
+									&::before {
+										background-image: url( ./../../../../assets/images/icons/crossmark.svg );
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

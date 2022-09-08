@@ -1,0 +1,17 @@
+<div class="mx-auto mw-100 my-0 text-center">
+	{{# did_you_know_image }}
+		{{{ did_you_know_image }}}
+	{{/ did_you_know_image  }}
+	<div class="did-you-know__card border py-4 px-3 px-sm-5">
+		<h3 class="did-you-know__heading mt-2 mb-4">{{ did_you_know_heading }}</h3>
+		<div class="did-you-know__description mb-4">{{{ did_you_know_description }}}</div>
+		<div class="did-you-know__sub-text my-3">{{ did_you_know_top_sub_text }}</div>
+		{{# did_you_know_cta.html }}
+            {{{ did_you_know_cta.html }}}
+		{{/ did_you_know_cta.html }}
+		{{^ did_you_know_cta.html }}
+			{{{ did_you_know_cta }}}
+		{{/ did_you_know_cta.html }}
+		<div class="did-you-know__sub-text my-2">{{ did_you_know_bottom_sub_text }}</div>
+	</div>
+</div>

@@ -1,0 +1,53 @@
+@import '~styles/freshpress-includes';
+
+// Helper Vars
+$spacer-3: map-get( $spacers, 3 );
+$spacer-4: map-get( $spacers, 4 );
+$spacer-5: map-get( $spacers, 5 );
+
+$answer-margin: px-to-rem( 35 );
+
+.editor-styles-wrapper {
+	.wp-block-fpbk-faq {
+		border: none;
+
+		&.faq {
+			display: block;
+			margin-bottom: $spacer-3;
+		}
+
+		.faq {
+			&__headline {
+				margin-bottom: 1rem;
+			}
+
+			&__item {
+				&_buttons {
+					top: 1rem;
+					right: 1rem;
+				}
+			}
+
+			&__question {
+				.faq__arrow {
+					transform: translateY( -50% ) rotate( 180deg );
+				}
+			}
+
+			&__answer {
+				max-height: 200vh;
+				margin-bottom: $answer-margin;
+				padding: 0.5rem $spacer-5 0.5rem $spacer-3;
+			}
+		}
+
+		&.is-style-new {
+			display: flex !important;
+			flex-direction: column !important;
+
+			@include media-breakpoint-up( lg ) {
+				flex-direction: row !important;
+			}
+		}
+	}
+}

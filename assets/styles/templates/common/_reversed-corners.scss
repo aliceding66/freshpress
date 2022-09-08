@@ -1,0 +1,62 @@
+.reversed-corner {
+	position: absolute;
+	z-index: 2;
+
+	div {
+		position: relative;
+		width: 180px;
+		height: 180px;
+		overflow: hidden;
+
+		&::before {
+			position: absolute;
+			display: block;
+			width: 200%;
+			height: 200%;
+			border-radius: 50%;
+			content: '';
+		}
+	}
+
+	&_up {
+		top: 0;
+		right: 0;
+		transform: rotate( 90deg );
+	}
+
+	&_down {
+		bottom: 0;
+		left: 0;
+		transform: rotate( -90deg );
+	}
+
+	&_down-right {
+		right: 0;
+		bottom: 0;
+		transform: rotate( -180deg );
+	}
+
+	&_white {
+		div {
+			&::before {
+				box-shadow: -100px -100px 0 0 $white;
+			}
+		}
+	}
+
+	&_blue {
+		div {
+			&::before {
+				box-shadow: -100px -100px 0 0 $fresh-blue;
+			}
+		}
+	}
+
+	&_light-blue {
+		div {
+			&::before {
+				box-shadow: -100px -100px 0 0 $product-tour-blue;
+			}
+		}
+	}
+}

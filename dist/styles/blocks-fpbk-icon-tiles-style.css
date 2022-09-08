@@ -1,0 +1,21 @@
+.icon-tiles__title {
+  margin-bottom: 60px;
+  font-size: 2.25rem;
+  line-height: 1.27778;
+}
+.icon-tiles__tile {
+  margin-bottom: 60px;
+}
+.icon-tiles__tile-title {
+  font-size: 1rem;
+}
+.icon-tiles__cta {
+  font-size: 1.5625rem;
+}
+.icon-tiles__subtext {
+  color: #8495a2;
+  font-size: 0.875rem;
+  line-height: 1.35714;
+}
+
+/*# sourceMappingURL=blocks-fpbk-icon-tiles-style.css.map*/

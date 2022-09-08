@@ -1,0 +1,33 @@
+// One Column.
+
+@import '~styles/freshpress-includes';
+
+.one-column {
+	&__text {
+		max-width: 600px;
+	}
+
+	&__title {
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 38 );
+			line-height: calc( 44 / 38 );
+		}
+	}
+
+	// Sizes in px from mocks.
+	&__image {
+		max-width: 100%;
+
+		@include media-breakpoint-up( sm ) {
+			max-width: 330px;
+		}
+
+		@include media-breakpoint-up( md ) {
+			max-width: 630px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 900px;
+		}
+	}
+}

@@ -1,0 +1,83 @@
+// Confirmation Box.
+
+@import '~styles/freshpress-includes';
+
+// Sizes in px from the current build.
+.confirmation-box {
+	max-width: 290px !important;
+	border: 1px solid $rule-grey;
+	border-radius: 8px;
+
+	@include media-breakpoint-up( md ) {
+		max-width: 698px !important;
+	}
+
+	@include media-breakpoint-up( lg ) {
+		max-width: 770px !important;
+	}
+
+	&__primary-message {
+		padding-top: 50px;
+		padding-bottom: 55px;
+		color: $white;
+		background-color: $midnight-blue;
+		border-radius: 8px 8px 0 0;
+
+		@include media-breakpoint-up( md ) {
+			padding-top: 60px;
+			padding-bottom: 65px;
+		}
+	}
+
+	&__secondary-message {
+		padding-top: 75px;
+		padding-bottom: 80px;
+		border-radius: 0 0 8px 8px;
+
+		@include media-breakpoint-up( md ) {
+			padding-top: 85px;
+			padding-bottom: 95px;
+		}
+	}
+
+	&__title {
+		font-weight: $font-weight-normal;
+		font-size: px-to-rem( 24 );
+		line-height: calc( 33 / 24 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 27 );
+			line-height: calc( 37 / 27 );
+		}
+	}
+
+	&__primary-message-text,
+	&__secondary-message-text {
+		font-size: px-to-rem( 16 );
+		line-height: calc( 25 / 16 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 18 );
+			line-height: calc( 28 / 18 );
+		}
+	}
+
+	&__cta {
+		font-size: px-to-rem( 18 );
+		line-height: calc( 22 / 18 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 20 );
+			line-height: calc( 24 / 20 );
+		}
+	}
+
+	/*
+  This is so we can style things on the dynamic content so they can
+  look blue without having to contain a link.
+  */
+	em {
+		color: $fresh-blue;
+		font-style: normal;
+	}
+}

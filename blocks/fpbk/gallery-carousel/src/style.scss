@@ -1,0 +1,40 @@
+// Gallery Carousel.
+@import '~styles/freshpress-includes';
+@import '~swiper/swiper';
+@import '~swiper/components/navigation/navigation';
+@import '~swiper/components/pagination/pagination';
+
+.gallery-carousel {
+	display: block;
+
+	img {
+		max-width: 100%;
+	}
+
+	&__arrow {
+		right: unset !important;
+		left: unset !important;
+		width: unset !important;
+		height: unset !important;
+		color: $button-grey !important;
+
+		&::after {
+			font-weight: $font-weight-bold !important;
+			font-size: px-to-rem( 20px ) !important;
+		}
+	}
+
+	&__slide {
+		.with-shadow {
+			box-shadow: 4px 4px 0 0 rgba( $midnight-blue, 0.1 );
+		}
+	}
+
+	&__pagination {
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			margin: 0 6px;
+		}
+	}
+}

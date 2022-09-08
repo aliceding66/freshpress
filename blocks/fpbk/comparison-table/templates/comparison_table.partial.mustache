@@ -1,0 +1,44 @@
+<table class="comparison-table__category-table table table-fb-striped table-borderless table-responsive-lg mb-0 w-100">
+	<thead class="comparison-table__category-plan">
+	<tr>
+		<th id="{{ first_col_id }}" scope="col">{{ section_title }}</th>
+		{{# feature_col_ids }}
+			<th id="{{ . }}" scope="col"></th>
+		{{/ feature_col_ids }}
+	</tr>
+	</thead>
+
+	<tbody>
+	{{# rows }}
+		<tr>
+			<th id="{{ row_id }}" headers="{{ first_col_id }}" scope="row">
+				{{{ features }}}
+				{{# info_tooltip_html }}
+					<div class="d-none d-xl-inline-block">
+						{{{ info_tooltip_html }}}
+					</div>
+				{{/ info_tooltip_html }}
+			</th>
+
+			{{# feature_values }}
+				<td class="text-center px-0 d-table-cell align-middle" headers="{{ first_col_id }}_{{ row_key }} {{ row_id }}">
+					{{{ feature_value }}}
+				</td>
+			{{/ feature_values }}
+		</tr>
+	{{/ rows }}
+
+	{{# not_last_section }}
+		<tr class="comparison-table__category-plan_gap">
+			<th
+				id="{{ first_col_id }}_gap"
+				headers="{{ first_col_id }}"
+				scope="rowgroup"
+				rowspan="99"
+			>&nbsp;</th>
+		</tr>
+	{{/ not_last_section }}
+
+	</tbody>
+</table>
+

@@ -1,0 +1,14 @@
+.button.aligncenter {
+  text-align: center;
+}
+.button.alignleft {
+  text-align: left;
+}
+.button.alignright {
+  text-align: right;
+}
+.button--cta-padding {
+  padding: 0.8125rem 2.4375rem !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-button-index.css.map*/

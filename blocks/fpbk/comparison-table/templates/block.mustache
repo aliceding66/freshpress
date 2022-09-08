@@ -1,0 +1,16 @@
+<div class="comparison-table__header-sticky table-sticky-header sticky-top">
+	<table class="comparison-table__header-table table table-borderless table-responsive-lg mb-0 w-100">
+		<thead class="comparison-table__header-row">
+			<tr>
+				{{> partial__plan_header }}
+				{{# plan_header_plan_cells }}
+					{{> partial__plan_cell }}
+				{{/ plan_header_plan_cells }}
+			</tr>
+		</thead>
+	</table>
+</div>
+
+{{# comparison_table }}
+	{{> partial__comparison_table }}
+{{/ comparison_table }}

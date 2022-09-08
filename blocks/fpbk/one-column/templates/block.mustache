@@ -1,0 +1,17 @@
+<div class="one-column__text mx-auto text-center">
+	<h2 class="one-column__title text-center mb-4">
+		{{ one_column_title }}
+	</h2>
+	<div class="one-column__description text-center mb-4 mb-md-5">
+        {{{ one_column_description }}}
+	</div>
+	{{# one_column_cta.html }}
+		{{{ one_column_cta.html }}}
+	{{/ one_column_cta.html }}
+	{{^ one_column_cta.html }}
+		{{{ one_column_cta }}}
+	{{/ one_column_cta.html }}
+</div>
+<div class="text-center">
+	{{{ one_column_image }}}
+</div>

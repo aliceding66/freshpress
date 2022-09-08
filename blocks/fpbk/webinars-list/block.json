@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/webinars-list",
+  "title": "Webinars List",
+  "category": "freshblocks",
+  "description": "List of upcoming webinars.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

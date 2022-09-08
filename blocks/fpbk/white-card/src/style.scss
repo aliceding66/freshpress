@@ -1,0 +1,125 @@
+// White Card.
+
+@import '~styles/freshpress-includes';
+
+// All sizes in pixels come from mocks.
+.white-card {
+	&__inner {
+		padding: 0 35px 0;
+		background-color: $white;
+
+		@include media-breakpoint-up( md ) {
+			width: 730px;
+			padding: 80px 46px 80px;
+			border: 1px solid $rule-grey-secondary;
+			border-radius: 8px;
+			box-shadow: 4px 4px 13px 0 rgba( $dark-grey, 0.1 );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			width: 982px;
+			padding: 80px 63px 80px 95px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			width: 1130px;
+		}
+	}
+
+	&__text {
+		flex-basis: 65%;
+
+		@include media-breakpoint-up( md ) {
+			padding-right: 30px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			padding-right: 90px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			padding-right: 120px;
+		}
+	}
+
+	&__title {
+		font-size: px-to-rem( 28 );
+		line-height: calc( 32 / 28 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 32 );
+			line-height: calc( 38 / 32 );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 34 );
+			line-height: calc( 42 / 34 );
+		}
+
+		@include media-breakpoint-up( xl ) {
+			font-size: px-to-rem( 40 );
+			line-height: calc( 46 / 40 );
+		}
+	}
+
+	&__description {
+		@include media-breakpoint-up( xl ) {
+			line-height: calc( 27 / 18 );
+		}
+
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__image-container {
+		@include media-breakpoint-up( md ) {
+			flex-basis: 35%;
+		}
+	}
+
+	&__image {
+		max-width: 243px;
+
+		@include media-breakpoint-up( md ) {
+			max-width: 280px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			max-width: 328px;
+		}
+	}
+
+	&__support-contact-info {
+		color: $fresh-blue;
+	}
+
+	&__secondary-content {
+		padding-top: 75px;
+		padding-bottom: 75px;
+		background-color: $blue-secondary-content;
+
+		@include media-breakpoint-up( md ) {
+			min-height: 371px;
+			margin-bottom: -230px;
+			padding-bottom: 245px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			padding-top: 85px;
+			padding-bottom: 235px;
+		}
+	}
+
+	&.white-card-with-secondary-content {
+		.white-card__inner {
+			padding: 80px 35px 0;
+
+			@include media-breakpoint-up( md ) {
+				padding: 80px 46px 80px;
+			}
+		}
+	}
+}

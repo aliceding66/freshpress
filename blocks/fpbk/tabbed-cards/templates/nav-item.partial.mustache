@@ -1,0 +1,18 @@
+<li class="nav-item {{# admin_tab}} position-relative {{/ admin_tab }}">
+	{{# admin_tab }}
+		{{{ admin_tab }}}
+	{{/ admin_tab }}
+	{{^ admin_tab }}
+		<a
+			id="{{ card_id }}-tab"
+			class="nav-link {{ tab_y_padding }} px-2 px-sm-4 px-md-2 px-xl-4 {{ active }}"
+			data-toggle="tab"
+			href="#{{ card_id }}"
+			role="tab"
+			aria-controls="home"
+			aria-selected="true"
+		>
+			{{ tab_title }}
+		</a>
+	{{/ admin_tab }}
+</li>

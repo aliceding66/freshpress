@@ -1,0 +1,80 @@
+@import '../../../freshpress-includes';
+
+.welcome {
+	color: $white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #c2c8d1;
+
+	&__row {
+		width: 3000px;
+		font-weight: 500;
+		font-size: px-to-rem( 70 );
+		line-height: px-to-rem( 56 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 104 );
+			line-height: px-to-rem( 73 );
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			font-size: px-to-rem( 130 );
+			line-height: px-to-rem( 88 );
+		}
+	}
+
+	&__row_1 {
+		left: 875px;
+
+		@include media-breakpoint-up( md ) {
+			left: 600px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			left: 586px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			left: 361px;
+		}
+	}
+
+	&__row_2 {
+		left: 979px;
+
+		@include media-breakpoint-up( md ) {
+			left: 737px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			left: 723px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			left: 529px;
+		}
+	}
+
+	&__row_3 {
+		left: 991px;
+
+		@include media-breakpoint-up( md ) {
+			left: 861px;
+		}
+
+		@include media-breakpoint-up( xl ) {
+			left: 859px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			left: 700px;
+		}
+	}
+
+	&__text_midnight_blue {
+		color: $midnight-blue;
+	}
+
+	&__text_blue {
+		color: $fresh-blue;
+	}
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///../blocks/fpbk/info-tooltip/src/style.scss","webpack:///style.scss"],"names":[],"mappings":"AAAA;EACC;ACCD,C","file":"styles/blocks-fpbk-info-tooltip-style.css","sourcesContent":[".wp-block-fpbk-info-tooltip {\n\tborder: none;\n}\n",".wp-block-fpbk-info-tooltip {\n  border: none;\n}"],"sourceRoot":""}

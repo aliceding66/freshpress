@@ -1,0 +1,137 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/boxes",
+  "title": "Boxes",
+  "category": "freshblocks",
+  "description": "Boxes for multiple uses.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "variations": [
+    {
+      "name": "box-info",
+      "scope": "transform",
+      "isDefault": true,
+      "title": "Box - Info",
+      "description": "A box with a title, icon, text and CTA.",
+      "icon": "info",
+      "attributes": {
+        "className": "box-info text-center"
+      },
+      "innerBlocks": [
+        [
+          "core/heading",
+          {
+            "className": "box-info__title"
+          }
+        ],
+        [
+          "core/image",
+          {
+            "className": "box-info__image"
+          }
+        ],
+        [
+          "core/paragraph",
+          {
+            "className": "box-info__description"
+          }
+        ],
+        [
+          "fpbk/button",
+          {
+            "className": "box-info__cta"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "box-media",
+      "scope": "transform",
+      "title": "Box - Media",
+      "description": "A box with a logo and text.",
+      "icon": "cover-image",
+      "attributes": {
+        "className": "box-media"
+      },
+      "innerBlocks": [
+        [
+          "core/image",
+          {
+            "className": "box-media__image",
+            "height": 21
+          }
+        ],
+        [
+          "core/heading",
+          {
+            "className": "box-media__title"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "box-media-text",
+      "scope": "transform",
+      "title": "Box - Media (Text Only)",
+      "description": "A box with the outlet name and heading.",
+      "icon": "text",
+      "attributes": {
+        "className": "box-media-text"
+      },
+      "innerBlocks": [
+        [
+          "core/paragraph",
+          {
+            "className": "box-media-text__outlet"
+          }
+        ],
+        [
+          "core/heading",
+          {
+            "className": "box-media-text__title"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "box-large-image",
+      "scope": "transform",
+      "title": "Box - Large Image",
+      "description": "A box with a large image, header and description.",
+      "icon": "text",
+      "attributes": {
+        "className": "box-large-image"
+      },
+      "innerBlocks": [
+        [
+          "core/image",
+          {
+            "className": "box-large-image__image",
+            "height": 21
+          }
+        ],
+        [
+          "core/heading",
+          {
+            "className": "box-large-image__title"
+          }
+        ],
+        [
+          "core/paragraph",
+          {
+            "className": "box-large-image__description"
+          }
+        ],
+        [
+          "fpbk/button",
+          {
+            "className": "box-large-image__cta is-style-btn-white"
+          }
+        ]
+      ]
+    }
+  ]
+}

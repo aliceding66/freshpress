@@ -1,0 +1,16 @@
+{
+  "disabled": true,
+  "taxonomy": "accounting_software_category",
+  "taxonomy_plural": "accounting_software_categories",
+  "label": "Accounting Software Category",
+  "label_plural": "Accounting Software Categories",
+  "post_types": [
+    "accounting_software"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "accounting-software/category",
+      "with_front": false
+    }
+  }
+}

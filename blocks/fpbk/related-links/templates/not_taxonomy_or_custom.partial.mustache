@@ -1,0 +1,13 @@
+{{# links }}
+	{{# show_cards_grid }}
+		<div class="related-links__card mb-4 px-2 col-12 col-sm-6 col-md-4 col-lg-{{ number_of_posts_in_one_row }}">
+			<div class="related-links__card-image mb-1 overflow-hidden" {{{ background_image_style }}}></div>
+			<a class="related-links__card-link text-decoration-none" href="{{ post_link }}">{{{ the_title }}}</a>
+		</div>
+	{{/ show_cards_grid }}
+	{{# do_not_show_cards_grid }}
+		<li class="related-links__list-item related-links__list-item_{{ selected_layout }}">
+			<a class="text-decoration-none" href="{{ post_link }}">{{ title_prefix }}{{{ the_title }}}</a>
+		</li>
+	{{/ do_not_show_cards_grid }}
+{{/ links }}

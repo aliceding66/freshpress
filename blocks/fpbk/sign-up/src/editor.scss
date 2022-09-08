@@ -1,0 +1,22 @@
+.editor-styles-wrapper {
+	.sso-signup_apple,
+	.sso-signup_google {
+		pointer-events: none;
+	}
+
+	.sign-up__security-link {
+		margin-top: 1rem;
+
+		.position-absolute {
+			left: -15px;
+		}
+	}
+
+	.sign-up__policy-privacy {
+		.form-control-checkbox {
+			top: 8px;
+			left: -24px;
+			pointer-events: none;
+		}
+	}
+}

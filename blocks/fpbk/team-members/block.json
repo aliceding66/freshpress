@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/team-members",
+  "title": "Team Members",
+  "category": "freshblocks",
+  "description": "A block containing team members (image, name, description).",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,205 @@
+.integrations__hero {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 20px 40px 62px;
+  background-color: #eff8fe;
+}
+@media (min-width: 768px) {
+  .integrations__hero {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.integrations__breadcrumb {
+  margin-bottom: 50px;
+}
+.integrations__breadcrumb img {
+  width: 8px;
+  height: 15px;
+  margin: 0 5px 3px;
+}
+.integrations__back-link {
+  color: #8495a2;
+  font-size: 0.875rem;
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 12px 12px;
+}
+.integrations__category-link {
+  color: #8495a2;
+}
+.integrations__info {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .integrations__info {
+    padding: 0 37px;
+  }
+}
+.integrations__logo-wrapper {
+  position: relative;
+  max-width: 244px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #b4bec6;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .integrations__logo-wrapper {
+    max-width: 168px;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations__logo-wrapper {
+    max-width: 215px;
+  }
+}
+@media (min-width: 1280px) {
+  .integrations__logo-wrapper {
+    max-width: 244px;
+  }
+}
+.integrations__logo-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.integrations__freshbooks-tested {
+  color: #0d83dd;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-image: url(/wp-content/themes/freshpress/dist/images/single/integrations/checkmark-blue.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.integrations__top-pick {
+  right: -27px;
+  bottom: -18px;
+  width: 49px;
+  height: 44px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/taxonomy/integrations/top-pick.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.integrations__text-container {
+  max-width: 575px;
+}
+@media (min-width: 768px) {
+  .integrations__text-container {
+    align-items: flex-start;
+  }
+}
+.integrations__text-container .btn-cta-green {
+  padding: 8px 20px;
+}
+.integrations__text-container .btn-cta-green .integrations__cta-title {
+  margin: 0 15px;
+  padding-right: 25px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/single/integrations/cta-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.integrations__title {
+  font-size: 2.625rem;
+}
+@media (min-width: 768px) {
+  .integrations__title {
+    line-height: 0.8;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations__title {
+    font-size: 3rem;
+  }
+}
+.integrations__built-by {
+  font-size: 0.875rem;
+}
+.integrations__developers-banner .flexible-colour-background {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.integrations__developers-banner .btn {
+  padding: 10px 24px;
+  color: #fff;
+  background-color: transparent;
+}
+.integrations__developers-banner .btn:hover {
+  background-color: #0d83dd;
+  border-color: #0d83dd;
+}
+.integrations__developers-banner-title {
+  color: #fff;
+}
+.integrations__developers-banner-subtitle {
+  min-height: 54px;
+  font-size: 1.5rem;
+}
+@media (min-width: 1280px) {
+  .integrations__developers-banner-subtitle {
+    min-height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .integrations__developers-banner-text {
+    min-height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .integrations__developers-banner-text {
+    min-height: 100px;
+  }
+}
+.integrations__sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+.integrations__sidebar p {
+  margin-bottom: 10px;
+}
+.integrations__sidebar .related-links__list-item a {
+  color: #001b40;
+}
+.integrations__sidebar-subtitle {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #b4bec6;
+}
+.integrations__sidebar-contact-info a {
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left 2px;
+}
+.integrations__sidebar-contact-info_email a {
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/email.svg);
+  background-position: left 6px;
+}
+.integrations__sidebar-contact-info_phone a {
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/phone.svg);
+}
+.integrations__sidebar-contact-info_link a {
+  background-image: url(/wp-content/themes/freshpress/dist/images/icons/link.svg);
+}
+.integrations__main-content li,
+.integrations__main-content p,
+.integrations__main-content span {
+  line-height: 1.55556;
+}
+
+.related-links {
+  margin-left: 0 !important;
+}
+.related-links__list-item {
+  margin-bottom: 4px;
+  padding: 4px 10px;
+}
+.related-links__list-item.current {
+  background-color: #eff8fe;
+}
+.related-links__list-item.current a {
+  color: #0d83dd;
+}
+
+/*# sourceMappingURL=templates-single-integrations.css.map*/

@@ -1,0 +1,2398 @@
+{
+    "key": "group_5f9b02adb4be5",
+    "title": "Campaigns",
+    "fields": [
+        {
+            "key": "field_5fa2c4597cb69",
+            "label": "Active",
+            "name": "campaign_active",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "10",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5fa176fc21f66",
+            "label": "Start Date",
+            "name": "campaign_start_date",
+            "type": "date_time_picker",
+            "instructions": "Marks the beginning of the campaign.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "45",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "display_format": "Y-m-d H:i:s",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_5fa1771621f67",
+            "label": "End Date",
+            "name": "campaign_end_date",
+            "type": "date_time_picker",
+            "instructions": "Marks the end of the campaign, when all the elements are removed from the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "45",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "display_format": "Y-m-d H:i:s",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_600b3c8de4c32",
+            "label": "Countdown Start Date",
+            "name": "campaign_countdown_start_date",
+            "type": "date_time_picker",
+            "instructions": "Marks the date and time when the content of the field 'Desktop Content With Countdown' takes the place of the content of the field 'Desktop Content'. \r\nImportant: The countdown timer only shows up to 2 digits for days. Days above 99 will be cut off.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "display_format": "Y-m-d H:i:s",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_6099857a808fc",
+            "label": "Excluded Post Types",
+            "name": "campaign_excluded_post_types",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "page": "Pages",
+                "education": "Education Pages",
+                "integration": "Integrations",
+                "landing_page": "Landing Pages",
+                "glossary": "Glossary Terms",
+                "glossary_guide": "Glossary Guides",
+                "api": "API Pages",
+                "podcast": "Podcast Episodes",
+                "press_article": "Press Articles",
+                "accounting_partners": "Accounting Partners",
+                "accounting_software": "Accounting Software",
+                "accounting_template": "Accounting Templates",
+                "hub_article": "Hub Articles",
+                "invoice_template": "Invoice Templates"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_5fa07a59f9618",
+            "label": "Include Promo Banner",
+            "name": "campaign_include_promo_banner",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f9b0b997ff9c",
+            "label": "Promo Banner",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa07a59f9618",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fa2c558e6550",
+            "label": "Promo Banner Include\/Exclude Criteria",
+            "name": "campaign_promo_banner_include_exclude_criteria",
+            "type": "select",
+            "instructions": "Defines how the list of pages below will be treated.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "include": "Include",
+                "exclude": "Exclude"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5fa1775adaead",
+            "label": "Promo Banner Included\/Excluded Pages",
+            "name": "campaign_promo_banner_excluded_pages",
+            "type": "textarea",
+            "instructions": "A newline-separated list of paths (one per line is allowed). Example: \/for-freelancers",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_601db3deaedd4",
+            "label": "Mobile Content",
+            "name": "campaign_promo_banner_mobile_content",
+            "type": "wysiwyg",
+            "instructions": "Add the text and CTA for the mobile content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_601daff338392",
+            "label": "Desktop Content",
+            "name": "campaign_promo_banner_desktop_content",
+            "type": "wysiwyg",
+            "instructions": "Add the text and CTA for the desktop content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_600b30506c1bf",
+            "label": "Desktop Content With Countdown",
+            "name": "campaign_promo_banner_desktop_content_countdown",
+            "type": "text",
+            "instructions": "Use dynamic tags for the portions of the text that will be replaced. Example: Only &lt;replace-data&gt;countdown&lt;\/replace-data&gt; left to get 60% off for &lt;replace-data&gt;optimizely&lt;\/replace-data&gt; months",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_600ed62c19f4a",
+            "label": "Optimizely Content",
+            "name": "campaign_promo_banner_optimizely",
+            "type": "textarea",
+            "instructions": "The complete Optimizely content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5fc67b4310cb1",
+            "label": "CTA",
+            "name": "campaign_promo_banner_cta",
+            "type": "link",
+            "instructions": "The CTA for the countdown version of the text only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array"
+        },
+        {
+            "key": "field_61b32811ca4ff",
+            "label": "Background Colour",
+            "name": "campaign_promo_banner_background_colour",
+            "type": "color_picker",
+            "instructions": "Background Colour of the promo banner.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0075DD",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "wpml_cf_preferences": 0
+        },
+        {
+            "key": "field_61b32864ca500",
+            "label": "Text Colour",
+            "name": "campaign_promo_banner_text_colour",
+            "type": "color_picker",
+            "instructions": "Text Colour of the promo banner.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "wpml_cf_preferences": 0
+        },
+        {
+            "key": "field_5fa07d62981b1",
+            "label": "Accordion Endpoint (Header)",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_5fa07acb2eb43",
+            "label": "Include Slide-In Notification",
+            "name": "campaign_include_slide_in",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f9b15772c0ca",
+            "label": "Slide-In Notification",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa07acb2eb43",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fa2c5da779ac",
+            "label": "Slide-In Notification Include\/Exclude Criteria",
+            "name": "campaign_slide_in_include_exclude_criteria",
+            "type": "select",
+            "instructions": "Defines how the list of pages below will be treated.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "include": "Include",
+                "exclude": "Exclude"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5fa2c4b73ee68",
+            "label": "Slide-In Notification Included\/Excluded Pages",
+            "name": "campaign_slide_in_excluded_pages",
+            "type": "textarea",
+            "instructions": "A newline-separated list of paths (one per line is allowed). Example: \/for-freelancers",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f9b158d2c0cb",
+            "label": "Title",
+            "name": "campaign_slide_in_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f9b15ce2c0cc",
+            "label": "Background Image",
+            "name": "campaign_slide_in_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f9c18dcff533",
+            "label": "Badge Image",
+            "name": "campaign_slide_in_badge_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f9b15e92c0cd",
+            "label": "Text",
+            "name": "campaign_slide_in_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f9b15f52c0ce",
+            "label": "CTA",
+            "name": "campaign_slide_in_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array"
+        },
+        {
+            "key": "field_5fa5a93bcbde0",
+            "label": "Accordion Endpoint (Slide-In)",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_5fa5a986177f7",
+            "label": "Include Sign-Up banner",
+            "name": "campaign_include_sign_up_banner",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5fa5a9f70d239",
+            "label": "Sign-Up Banner",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa5a986177f7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_605ce109abf3d",
+            "label": "Mobile Content",
+            "name": "campaign_sign_up_mobile_content",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5fa5aa90e84ad",
+            "label": "Desktop Content",
+            "name": "campaign_sign_up_desktop_content",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5fa5aa9ce84ae",
+            "label": "Sign-Up CTA",
+            "name": "campaign_sign_up_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array"
+        },
+        {
+            "key": "field_60f6858d0b71f",
+            "label": "Accordion Endpoint (Sign-Up Banner)",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_60f685b70b720",
+            "label": "Include Homepage Promo Hero",
+            "name": "campaign_include_homepage_promo_hero",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60f68a2e0b721",
+            "label": "Homepage Promo Hero",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_61e00a47ea96e",
+            "label": "Promo Hero Variation",
+            "name": "campaign_homepage_promo_hero_variation",
+            "type": "radio",
+            "instructions": "Select the design.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "old": "Old",
+                "new": "New"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "old",
+            "layout": "horizontal",
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_61e00d96ec5d4",
+            "label": "Content Background Colour",
+            "name": "campaign_homepage_promo_hero_content_background_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61e00a47ea96e",
+                        "operator": "==",
+                        "value": "new"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f68a890b723",
+            "label": "Label Text",
+            "name": "campaign_homepage_promo_hero_label_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f7d7f21a828",
+            "label": "Label Text Colour",
+            "name": "campaign_homepage_promo_hero_label_text_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#fff",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f68aaa0b724",
+            "label": "Label Background Image",
+            "name": "campaign_homepage_promo_hero_label_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_62419a041cec3",
+            "label": "Countdown Colour",
+            "name": "campaign_homepage_promo_hero_countdown_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#001b40",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_62419a381cec4",
+            "label": "Countdown Numbers Colour",
+            "name": "campaign_homepage_promo_hero_countdown_numbers_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f68ace0b725",
+            "label": "Include MTD & HMRC icons?",
+            "name": "campaign_homepage_promo_hero_mtd_include_mtd",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60f68afe0b726",
+            "label": "Icons Colour",
+            "name": "campaign_homepage_promo_hero_mtd_icons_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f68ace0b725",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f68a420b722",
+            "label": "Heading",
+            "name": "campaign_homepage_promo_hero_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f68b690b727",
+            "label": "Heading Colour",
+            "name": "campaign_homepage_promo_hero_heading_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f68b830b728",
+            "label": "Heading Size",
+            "name": "campaign_homepage_promo_hero_heading_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "smaller": "Smaller",
+                "normal": "Normal",
+                "bigger": "Bigger"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61b32d466b427",
+            "label": "Heading Weight",
+            "name": "campaign_homepage_promo_hero_heading_weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "normal": "Normal",
+                "medium": "Medium",
+                "bold": "Bold"
+            },
+            "default_value": "medium",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60f68bbc0b729",
+            "label": "Description",
+            "name": "campaign_homepage_promo_hero_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f68bd10b72a",
+            "label": "Description Colour",
+            "name": "campaign_homepage_promo_hero_description_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_61b32db86b428",
+            "label": "Description Weight",
+            "name": "campaign_homepage_promo_hero_description_weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "normal": "Normal",
+                "medium": "Medium",
+                "bold": "Bold"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60f68bf30b72b",
+            "label": "Description Size",
+            "name": "campaign_homepage_promo_hero_description_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "smaller": "Smaller",
+                "normal": "Normal",
+                "bigger": "Bigger",
+                "large": "Large"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62909c19f27f9",
+            "label": "Description Second Line",
+            "name": "campaign_homepage_promo_hero_description_2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62909c8bf27fa",
+            "label": "Description Secong Line Colour",
+            "name": "campaign_homepage_promo_hero_description_2_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_62909ca3f27fb",
+            "label": "Description Second Line Weight",
+            "name": "campaign_homepage_promo_hero_description_2_weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "normal": "Normal",
+                "medium": "Medium",
+                "bold": "Bold"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62909cc1f27fc",
+            "label": "Description Second Line Size",
+            "name": "campaign_homepage_promo_hero_description_2_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "smaller": "Smaller",
+                "normal": "Normal",
+                "bigger": "Bigger",
+                "large": "Large"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6290abb5f9686",
+            "label": "Subtext Link",
+            "name": "campaign_homepage_promo_hero_subtext_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "return_format": "array"
+        },
+        {
+            "key": "field_62909cf7f27fe",
+            "label": "Subtext Colour",
+            "name": "campaign_homepage_promo_hero_subtext_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_62909d0bf27ff",
+            "label": "Subtext Weight",
+            "name": "campaign_homepage_promo_hero_subtext_weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "normal": "Normal",
+                "medium": "Medium",
+                "bold": "Bold"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62909d1df2800",
+            "label": "Subtext Size",
+            "name": "campaign_homepage_promo_hero_subtext_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "smaller": "Smaller",
+                "normal": "Normal",
+                "bigger": "Bigger",
+                "large": "Large"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60f68c120b72c",
+            "label": "CTA",
+            "name": "campaign_homepage_promo_hero_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60f68c6e0b72d",
+            "label": "Background Images",
+            "name": "campaign_homepage_promo_hero_background_images",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_60f68c860b72e",
+                    "label": "Screen Size",
+                    "name": "screen_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "0": "Mobile Small",
+                        "480": "Mobile Large",
+                        "768": "Tablet",
+                        "1024": "Desktop Small",
+                        "1280": "Desktop Large",
+                        "1600": "Desktop Extra Large",
+                        "custom": "Custom"
+                    },
+                    "default_value": 0,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_610a51d39ba21",
+                    "label": "Custom Breakpoint",
+                    "name": "custom_breakpoint",
+                    "type": "number",
+                    "instructions": "Custom breakpoint value",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60f68c860b72e",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 0,
+                    "max": "",
+                    "step": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_60f68cb70b72f",
+                    "label": "Background Image",
+                    "name": "background_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_60f68cdd0b730",
+                    "label": "Background Colour",
+                    "name": "background_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "wpml_cf_preferences": 3,
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_60f68cfe0b731",
+                    "label": "Background Size",
+                    "name": "background_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "auto 100%": "Normal",
+                        "cover": "Cover",
+                        "custom": "Custom"
+                    },
+                    "default_value": "auto 100%",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60f68d370b732",
+                    "label": "Background Position",
+                    "name": "background_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "center": "Center",
+                        "center bottom": "Center Bottom",
+                        "left center": "Left Center",
+                        "right center": "Right Center",
+                        "custom": "Custom"
+                    },
+                    "default_value": "left center",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60f68d6a0b733",
+                    "label": "Custom Background Size",
+                    "name": "custom_background_size",
+                    "type": "text",
+                    "instructions": "e. g. \"80% 90%\", \"auto 400px\" etc.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60f68cfe0b731",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60f68d9a0b734",
+                    "label": "Custom Background Position",
+                    "name": "custom_background_position",
+                    "type": "text",
+                    "instructions": "e. g. \"top center\", \"40px 0px\" etc.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60f68d370b732",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60f68de00b735",
+            "label": "Accordion Endpoint (Homepage Promo Hero)",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_60f68df60b736",
+            "label": "Include Pricing Promo Hero",
+            "name": "campaign_include_pricing_promo_hero",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60f68e110b737",
+            "label": "Pricing Promo Hero",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_62d11ca9d38a0",
+            "label": "Include Top Banner?",
+            "name": "campaign_pricing_promo_hero_include_top_banner",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_62d11dda0896f",
+            "label": "Top Banner Text",
+            "name": "campaign_pricing_promo_hero_top_banner_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d11ca9d38a0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0,
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_62d11ce3d38a1",
+            "label": "Top Banner Text Colour",
+            "name": "campaign_pricing_promo_hero_top_banner_text_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d11ca9d38a0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#001b40",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_62d11d47d38a2",
+            "label": "Top Banner Background Colour",
+            "name": "campaign_pricing_promo_hero_top_banner_bg_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d11ca9d38a0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#d5ecff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f68ee70b738",
+            "label": "Label Text",
+            "name": "campaign_pricing_promo_hero_label_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f7d8381a829",
+            "label": "Label Text Colour",
+            "name": "campaign_pricing_promo_hero_label_text_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#fff",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f68efa0b739",
+            "label": "Label Background Image",
+            "name": "campaign_pricing_promo_hero_label_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_60f68f0a0b73a",
+            "label": "Include MTD & HMRC icons?",
+            "name": "campaign_pricing_promo_hero_mtd_include_mtd",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60f68f300b73b",
+            "label": "Icons Colour",
+            "name": "campaign_pricing_promo_hero_mtd_icons_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f68f0a0b73a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f690d10b73c",
+            "label": "Heading",
+            "name": "campaign_pricing_promo_hero_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f690e10b73d",
+            "label": "Heading Colour",
+            "name": "campaign_pricing_promo_hero_heading_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f690ef0b73e",
+            "label": "Heading Size",
+            "name": "campaign_pricing_promo_hero_heading_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "smaller": "Smaller",
+                "normal": "Normal",
+                "bigger": "Bigger"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61b32ee00fb06",
+            "label": "Heading Weight",
+            "name": "campaign_pricing_promo_hero_heading_weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "normal": "Normal",
+                "medium": "Medium",
+                "bold": "Bold"
+            },
+            "default_value": "medium",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60f690fc0b73f",
+            "label": "Description",
+            "name": "campaign_pricing_promo_hero_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60f691120b740",
+            "label": "Description Colour",
+            "name": "campaign_pricing_promo_hero_description_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f6913a0b741",
+            "label": "Description Size",
+            "name": "campaign_pricing_promo_hero_description_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "smaller": "Smaller",
+                "normal": "Normal",
+                "bigger": "Bigger"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61b32f130fb07",
+            "label": "Description Weight",
+            "name": "campaign_pricing_promo_hero_description_weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "normal": "Normal",
+                "medium": "Medium",
+                "bold": "Bold"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60f691650b742",
+            "label": "CTA",
+            "name": "campaign_pricing_promo_hero_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60f691840b743",
+            "label": "Countdown Colour",
+            "name": "campaign_pricing_promo_hero_countdown_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#001b40",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f691e30b744",
+            "label": "Countdown Numbers Colour",
+            "name": "campaign_pricing_promo_hero_countdown_numbers_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#fff",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_629096ea0bfe1",
+            "label": "Is \"Offer Details\" a link?",
+            "name": "campaign_pricing_promo_hero_is_offer_details_a_link",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60f6922e0b746",
+            "label": "Offer Details",
+            "name": "campaign_pricing_promo_hero_offer_details",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_629096ea0bfe1",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_629097550bfe2",
+            "label": "Offer Details Link",
+            "name": "campaign_pricing_promo_hero_offer_details_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_629096ea0bfe1",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60f6921b0b745",
+            "label": "Offer Details Label Colour",
+            "name": "campaign_pricing_promo_hero_offer_details_label_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#fff",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_60f6a419bcec6",
+            "label": "Background Images",
+            "name": "campaign_pricing_promo_hero_background_images",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_60f6a419bcec7",
+                    "label": "Screen Size",
+                    "name": "screen_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "0": "Mobile Small",
+                        "480": "Mobile Large",
+                        "768": "Tablet",
+                        "1024": "Desktop Small",
+                        "1280": "Desktop Large",
+                        "1600": "Desktop Extra Large",
+                        "custom": "Custom"
+                    },
+                    "default_value": 0,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_610a523e9ba22",
+                    "label": "Custom Breakpoint",
+                    "name": "custom_breakpoint",
+                    "type": "number",
+                    "instructions": "Custom breakpoint value",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60f6a419bcec7",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "px",
+                    "min": 0,
+                    "max": "",
+                    "step": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_60f6a419bcec8",
+                    "label": "Background Image",
+                    "name": "background_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_60f6a419bcec9",
+                    "label": "Background Colour",
+                    "name": "background_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_60f6a419bceca",
+                    "label": "Background Size",
+                    "name": "background_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "auto 100%": "Normal",
+                        "cover": "Cover",
+                        "custom": "Custom"
+                    },
+                    "default_value": "auto 100%",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60f6a419bcecb",
+                    "label": "Background Position",
+                    "name": "background_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "center": "Center",
+                        "center bottom": "Center Bottom",
+                        "left center": "Left Center",
+                        "right center": "Right Center",
+                        "custom": "Custom"
+                    },
+                    "default_value": "left center",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60f6a419bcecc",
+                    "label": "Custom Background Size",
+                    "name": "custom_background_size",
+                    "type": "text",
+                    "instructions": "e. g. \"80% 90%\", \"auto 400px\" etc.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60f6a419bceca",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60f6a419bcecd",
+                    "label": "Custom Background Position",
+                    "name": "custom_background_position",
+                    "type": "text",
+                    "instructions": "e. g. \"top center\", \"40px 0px\" etc.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60f6a419bcecb",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "campaign"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1657871883
+}

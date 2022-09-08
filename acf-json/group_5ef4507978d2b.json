@@ -1,0 +1,263 @@
+{
+    "key": "group_5ef4507978d2b",
+    "title": "Block Settings",
+    "fields": [
+        {
+            "key": "field_5f85cea2c48d5",
+            "label": "Tracking Section",
+            "name": "block_settings_tracking_section",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f18ec8d289ab",
+            "label": "Block Display Options",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5ef45080a6d67",
+            "label": "Style Overrides",
+            "name": "style_overrides",
+            "type": "repeater",
+            "instructions": "Use these to override items like padding, margin and other layout capabilities",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Override",
+            "sub_fields": [
+                {
+                    "key": "field_5ef450b5a6d68",
+                    "label": "Property",
+                    "name": "property",
+                    "type": "select",
+                    "instructions": "Which CSS property are you changing?",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "m": "Margin",
+                        "p": "Padding"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ef450e1a6d69",
+                    "label": "Direction",
+                    "name": "direction",
+                    "type": "select",
+                    "instructions": "In which direction?",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "t": "Top",
+                        "b": "Bottom",
+                        "l": "Left",
+                        "r": "Right",
+                        "x": "Both Left and Right",
+                        "y": "Both Top and Bottom"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ef45162a6d6a",
+                    "label": "Amount",
+                    "name": "amount",
+                    "type": "select",
+                    "instructions": "What is the new value",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": [
+                        "Eliminate the value by setting it to 0",
+                        "Set the value to $spacer * .25",
+                        "Set the value to $spacer * .5",
+                        "Set the value to $spacer",
+                        "Set the value to $spacer * 1.5",
+                        "Set the value to $spacer * 3",
+                        "Set the value to $spacer * 4.5",
+                        "Set the value to $spacer * 6",
+                        "Set the value to $spacer * 7.5",
+                        "Set the value to $spacer * 9"
+                    ],
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6295c5dbe19fd",
+                    "label": "Breakpoint",
+                    "name": "breakpoint",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "null": "General",
+                        "-sm": "Mobile (sm)",
+                        "-md": "Tablet (md)",
+                        "-lg": "Desktop (lg)",
+                        "-xl": "Desktop FullHD (xl)",
+                        "-xxl": "Desktop HD (xxl)"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5f778a7e0a9d3",
+            "label": "Wide Block",
+            "name": "block_settings_wide_block",
+            "type": "true_false",
+            "instructions": "Check this box if the block should be 1600px wide.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_605b4b0ef058e",
+            "label": "Narrow Content Within Wide Block",
+            "name": "block_settings_narrow_content_within_wide_block",
+            "type": "true_false",
+            "instructions": "Check this box if the block content should be 1280px wide. Useful when applying background that needs to be wider than content of block.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f778a7e0a9d3",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "all"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/scroll-tracking"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/insert-template-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1653983587
+}

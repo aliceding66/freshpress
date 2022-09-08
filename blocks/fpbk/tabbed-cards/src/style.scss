@@ -1,0 +1,147 @@
+// Tabbed Cards.
+
+@import '~styles/freshpress-includes';
+
+.tabbed-cards {
+	&__cards {
+		max-width: 480px;
+
+		// Border requirements too complex for BS classes, defined here instead.
+		.nav-tabs {
+			transform: translateY( 1px );
+
+			li {
+				&:first-child {
+					.nav-link {
+						border-radius: 8px 0 0 0;
+
+						&:not( .active ) {
+							border-left: 0;
+						}
+					}
+				}
+
+				&:last-child {
+					.nav-link {
+						border-left: none;
+						border-radius: 0 8px 0 0;
+					}
+				}
+
+				.nav-link {
+					color: $dark-grey;
+					font-weight: $font-weight-bold;
+					font-size: px-to-rem( 11 );
+					text-transform: uppercase;
+					background: $card-tab-grey;
+					border-color: $rule-grey;
+					border-top: 1px solid $card-tab-grey;
+					border-right: 1px solid $card-tab-grey;
+					border-bottom: 1px solid $rule-grey;
+					border-left: 0;
+					border-radius: 0;
+
+					@include media-breakpoint-up( sm ) {
+						font-size: px-to-rem( 13 );
+					}
+
+					@include media-breakpoint-up( md ) {
+						font-size: px-to-rem( 16 );
+					}
+
+					&.active {
+						color: $fresh-blue;
+						background: $white;
+						border-top: 1px solid $rule-grey;
+						border-right: 1px solid $rule-grey;
+						border-bottom: 2px solid $white;
+						border-left: 1px solid $rule-grey;
+					}
+				}
+			}
+		}
+
+		.card {
+			border-color: $rule-grey;
+			border-radius: 0 8px 8px 8px;
+			box-shadow: 4px 4px 13px 0 rgba( $midnight-blue, 0.1 );
+		}
+
+		.card-body {
+			p,
+			li,
+			span {
+				font-size: px-to-rem( 16 );
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			p {
+				&:first-child {
+					display: flex;
+					align-items: flex-end;
+					height: 50px;
+				}
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+			ul {
+				margin-left: -20px;
+
+				li {
+					padding-left: 28px;
+					line-height: 1.33333;
+					list-style-type: none;
+					background-image: url( ./../../../../assets/images/icons/checkmark.svg );
+					background-repeat: no-repeat;
+					background-position: left 0;
+					background-size: 18px 22px;
+
+					@include media-breakpoint-up( lg ) {
+						padding-left: 38px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.is-style-new {
+	&.tabbed-cards {
+		.nav-tabs {
+			li {
+				margin-bottom: -8px;
+
+				.nav-link {
+					color: $body-color;
+					font-weight: $font-weight-medium;
+					text-transform: none;
+					background: $card-tab-grey;
+					border-color: $card-tab-grey;
+					border-radius: 8px 8px 0 0 !important;
+				}
+			}
+		}
+
+		.card {
+			border-radius: 8px;
+			box-shadow: -4px 4px 0 0 $card-tab-grey;
+		}
+
+		.card-body {
+			ul {
+				li {
+					padding-left: 32px;
+					background-image: url( ./../../../../assets/images/icons/checkmark-green.svg );
+					background-position: left 6px;
+					background-size: 13px 12px;
+				}
+			}
+		}
+	}
+}

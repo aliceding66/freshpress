@@ -1,0 +1,49 @@
+.stats__stats-description {
+  color: #062942;
+}
+.stats__stats-container {
+  justify-content: space-evenly;
+  min-width: 100%;
+}
+.stats__stat-item {
+  flex: 1;
+}
+.stats__stat-item-value {
+  color: #0075dd;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+}
+.stats__stat-item-value--unit {
+  margin-right: -4px;
+}
+@media (min-width: 480px) {
+  .stats__stat-item-value--unit {
+    margin-right: -6px;
+  }
+}
+.stats__stat-item-value--content + .stats__stat-item-value--unit {
+  margin-right: auto;
+  margin-left: -4px;
+}
+@media (min-width: 480px) {
+  .stats__stat-item-value--content + .stats__stat-item-value--unit {
+    margin-left: -6px;
+  }
+}
+.stats__stat-item-label {
+  color: #062942;
+}
+.stats--all-white .stats__stats-description {
+  margin: 3rem auto;
+  color: #fff;
+}
+.stats--all-white .stats__stat-item-value {
+  color: #fff;
+}
+.stats--all-white .stats__stat-item-label {
+  color: #fff;
+}
+.stats--layout-big .stats__stats-description {
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+}
+
+/*# sourceMappingURL=blocks-acf-stats-stats.css.map*/

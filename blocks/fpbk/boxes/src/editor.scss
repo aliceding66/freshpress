@@ -1,0 +1,14 @@
+.editor-styles-wrapper {
+	.wp-block {
+		// Media case.
+		&.box-media {
+			&__image {
+				height: auto;
+
+				img {
+					height: 21px;
+				}
+			}
+		}
+	}
+}

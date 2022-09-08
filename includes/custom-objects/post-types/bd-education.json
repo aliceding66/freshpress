@@ -1,0 +1,110 @@
+{
+  "post_type": "education",
+  "post_type_plural": "educations",
+  "label": "Education Page",
+  "label_plural": "Education Pages",
+  "args": {
+    "description": "Education partner pages",
+    "has_archive": false,
+    "labels": {
+      "menu_name": "Education"
+    },
+    "menu_icon": "dashicons-id-alt",
+    "template": [
+      [
+        "fpbk/flexible-colour-background",
+        {
+          "className": "my-0",
+          "background_colour": {
+            "hex": "#eff8fe"
+          }
+        },
+        [
+          [
+            "fpbk/hero",
+            {
+              "className": "m-0 mx-n3 pb-md-5",
+              "headline": "Small Business Accounting Software That Makes Billing Painless",
+              "headline_colour": "#062942",
+              "text": "<p>The all-new FreshBooks is accounting software that makes running your small business easy, fast and secure. Spend less time on accounting and more time doing the work you love.</p>",
+              "text_colour": "#062942",
+              "text_mobile_visibility": "0",
+              "images": [
+                {
+                  "screen_size": "xs",
+                  "display_image": "1",
+                  "image": {
+                    "id": "10718",
+                    "url": "/wp-content/uploads/hero-V1-mobile.png"
+                  },
+                  "bottom_padding": "60%",
+                  "background_size": "custom",
+                  "background_position": "center bottom",
+                  "hero_custom_background_size": "100%"
+                },
+                {
+                  "screen_size": "sm",
+                  "display_image": "1",
+                  "image": {
+                    "id": "10716",
+                    "url": "/wp-content/uploads/hero-V1-tablet.png"
+                  },
+                  "bottom_padding": "42%",
+                  "background_size": "custom",
+                  "background_position": "center bottom",
+                  "hero_custom_background_size": "100%"
+                },
+                {
+                  "screen_size": "md",
+                  "display_image": "1",
+                  "image": {
+                    "id": "10714",
+                    "url": "/wp-content/uploads/hero-V1.png"
+                  },
+                  "bottom_padding": "0",
+                  "background_size": "cover",
+                  "background_position": "center",
+                  "hero_custom_background_size": "start"
+                },
+                {
+                  "screen_size": "xl",
+                  "display_image": "1",
+                  "image": {
+                    "id": "10714",
+                    "url": "/wp-content/uploads/hero-V1.png"
+                  },
+                  "bottom_padding": "0",
+                  "background_size": "auto 100%",
+                  "background_position": "100% 100%",
+                  "hero_custom_background_size": "start"
+                }
+              ],
+              "include_signup_form": true,
+              "signup_form_visibility": [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+                "xxl"
+              ],
+              "signup_form_submit_button_text": "Get Started",
+              "signup_form_include_default_terms_of_service": "1",
+              "signup_form_email_placeholder_text": "Enter Your Email",
+              "signup_form_password_placeholder_text": "Create a Password (min 8 characters)"
+            }
+          ]
+        ]
+      ],
+      [
+        "fpbk/partner-feature",
+        {
+          "className": "mb-5",
+          "partner_feature_text": "In partnership with…",
+          "partner_feature_font_size": "big",
+          "partner_feature_block_position": "lifted"
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+// Timeline Vertical.
+@import '~/styles/freshpress-includes';
+
+.timeline-vertical {
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 11px; // half of the dot
+		width: 1px;
+		height: 99%; // doesn't fully fill the height of the container (mocks)
+		background-color: $rule-grey;
+		content: '';
+
+		@include media-breakpoint-up( md ) {
+			left: calc( 1.5rem + 11px );
+		}
+	}
+
+	&__stage {
+		&::before {
+			position: absolute;
+			left: 0;
+			width: 23px; // dot size from mocks
+			height: 23px;
+			background-color: $fresh-blue;
+			border-radius: 50%;
+			content: '';
+		}
+
+		&:not(:last-child) { /* stylelint-disable-line */
+			margin-bottom: 100px; // spacing from the mocks
+
+			@include media-breakpoint-up( lg ) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__stage-date {
+		color: $dark-grey;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 18 );
+		line-height: calc( 24 / 18 );
+	}
+
+	&__stage-title {
+		color: $fresh-blue;
+		font-weight: $font-weight-book;
+		font-size: px-to-rem( 24 );
+		line-height: calc( 24 / 18 );
+	}
+}

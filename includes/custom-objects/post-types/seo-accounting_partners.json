@@ -1,0 +1,30 @@
+{
+  "post_type": "accounting_partners",
+  "post_type_plural": "accounting_partners",
+  "label": "Accounting Partner",
+  "label_plural": "Accounting Partners",
+  "args": {
+    "description": "Listing of Accounting Partners with filter options",
+    "has_archive": true,
+    "labels": {
+      "all_items": "All Accounting Partners"
+    },
+    "menu_icon": "dashicons-groups",
+    "rewrite": {
+      "slug": "accounting-partners"
+    },
+    "supports": [
+      "page-attributes",
+      "revisions",
+      "thumbnail",
+      "title"
+    ],
+    "taxonomies": [
+      "accounting_partners_industry",
+      "accounting_partners_language",
+      "accounting_partners_location",
+      "accounting_partners_service"
+    ],
+    "show_in_rest": false
+  }
+}

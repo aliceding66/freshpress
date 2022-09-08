@@ -1,0 +1,27 @@
+@import '~styles/freshpress-includes';
+
+.icon-tiles {
+	&__title {
+		margin-bottom: 60px;
+		font-size: px-to-rem( 36px );
+		line-height: calc( 46 / 36 );
+	}
+
+	&__tile {
+		margin-bottom: 60px;
+	}
+
+	&__tile-title {
+		font-size: px-to-rem( 16px );
+	}
+
+	&__cta {
+		font-size: px-to-rem( 25px );
+	}
+
+	&__subtext {
+		color: $dark-grey;
+		font-size: px-to-rem( 14px );
+		line-height: calc( 19 / 14 );
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/pricing-table",
+  "title": "Pricing Table",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

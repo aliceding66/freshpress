@@ -1,0 +1,63 @@
+@import '../../../freshpress-includes';
+
+.hero {
+	&__title-container {
+		display: flex;
+		width: 360px;
+		height: 380px;
+		background-image: url( #{$dibs_images_path}/templates/page/dibs/dibs-hero-360.svg );
+		background-repeat: no-repeat;
+		background-size: 100%;
+
+		@include media-breakpoint-up( md ) {
+			width: 768px;
+			height: 424px;
+			background-image: url( #{$dibs_images_path}/templates/page/dibs/dibs-hero-768.svg );
+		}
+
+		@include media-breakpoint-up( lg ) {
+			width: 1024px;
+			height: 454px;
+			background-image: url( #{$dibs_images_path}/templates/page/dibs/dibs-hero-1024.svg );
+		}
+
+		@include media-breakpoint-up( xl ) {
+			width: 1280px;
+			height: 568px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			width: 1600px;
+			height: 457px;
+			background-image: url( #{$dibs_images_path}/templates/page/dibs/dibs-hero-1600.svg );
+		}
+	}
+
+	&__title {
+		width: 100%;
+		color: $white;
+		font-weight: 500;
+		font-size: px-to-rem( 54 );
+		line-height: px-to-rem( 54 );
+
+		@include media-breakpoint-up( md ) {
+			font-size: px-to-rem( 62 );
+			line-height: px-to-rem( 72 );
+		}
+		@include media-breakpoint-up( lg ) {
+			position: relative;
+			top: -50px;
+		}
+
+		@include media-breakpoint-up( xxl ) {
+			font-size: px-to-rem( 82 );
+			line-height: px-to-rem( 72 );
+		}
+	}
+
+	&__text-container {
+		@include media-breakpoint-up( lg ) {
+			max-width: $dibs-block-max-width;
+		}
+	}
+}

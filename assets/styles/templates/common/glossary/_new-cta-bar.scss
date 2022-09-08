@@ -1,0 +1,22 @@
+.new-cta-bar {
+	&__container {
+		@include media-breakpoint-up( lg ) {
+			padding: 1.65rem 0.625rem 4rem !important;
+		}
+	}
+
+	&__cta-button {
+		width: 310px;
+		max-width: 100%;
+		margin-bottom: 8px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: px-to-rem( 23px ) !important;
+		text-transform: uppercase;
+	}
+
+	&__after-cta-button {
+		max-width: 270px;
+		line-height: 1.3;
+	}
+}

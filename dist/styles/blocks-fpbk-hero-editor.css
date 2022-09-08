@@ -1,0 +1,12 @@
+.hero__image-labels {
+  align-items: center;
+}
+.hero__image-label img {
+  height: 40px;
+}
+
+.color-button {
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=blocks-fpbk-hero-editor.css.map*/

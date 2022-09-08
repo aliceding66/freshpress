@@ -1,0 +1,228 @@
+.freshpress-tools--wrapper {
+  display: flex;
+  justify-content: center;
+}
+.freshpress-tools--wrapper-border {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 0 rgba(6, 41, 65, 0.07);
+}
+.freshpress-tools--heading {
+  padding-bottom: 27px;
+  color: #062941;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: left;
+}
+.freshpress-tools--input-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.freshpress-tools--input-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 27px;
+  line-height: 18px;
+}
+.freshpress-tools--input-label {
+  margin: 0;
+  padding-bottom: 7px;
+  color: rgba(6, 41, 65, 0.8);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.freshpress-tools--input-icon {
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  display: flex;
+  height: 17px;
+  color: #0d83dd;
+}
+.freshpress-tools--input-field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  padding: 7px 7px 7px 36px;
+  color: #062941;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  border: 2px solid rgba(6, 41, 65, 0.2);
+  border-radius: 5px;
+}
+.freshpress-tools--input-field::-moz-placeholder {
+  opacity: 0.5;
+}
+.freshpress-tools--input-field::placeholder {
+  opacity: 0.5;
+}
+.freshpress-tools--input-field--has-error {
+  color: #fa425e;
+  background-color: rgba(250, 66, 94, 0.1);
+  border: 2px solid #fa425e;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.freshpress-tools--input-field--has-error::-moz-placeholder {
+  color: #fa425e;
+  opacity: 0.5;
+}
+.freshpress-tools--input-field--has-error::placeholder {
+  color: #fa425e;
+  opacity: 0.5;
+}
+.freshpress-tools--input--error-message {
+  padding: 5px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #fa425e;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.freshpress-tools--input--error-message:empty {
+  display: none !important;
+}
+.freshpress-tools--icon--has-error,
+.freshpress-tools--icon--has-error svg {
+  color: #fa425e;
+}
+.freshpress-tools--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 51px;
+  padding: 12px 20px 10px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #86c332;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.freshpress-tools--button:focus {
+  background-color: #86c332;
+}
+.freshpress-tools--button:hover {
+  opacity: 0.7;
+}
+.freshpress-tools--button:disabled {
+  opacity: 0.5;
+}
+.freshpress-tools--button-inline {
+  width: auto;
+  margin: 0 auto;
+  color: #639f0f;
+  background-color: #fff;
+  border-style: none;
+}
+@supports (background-color: transparent) {
+  .freshpress-tools--button-inline, .freshpress-tools--button-inline:focus, .freshpress-tools--button-inline:hover {
+    background-color: transparent;
+    background-color: initial;
+  }
+}
+.freshpress-tools--button-inline:focus, .freshpress-tools--button-inline:hover {
+  background-color: #fff;
+}
+.freshpress-tools--button:not(:last-child), .freshpress-tools--button-inline:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.editor-styles-wrapper .freshpress-tools--wrapper,
+.editor-styles-wrapper .freshpress-tools--wrapper * {
+  cursor: default !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+  pointer-events: none !important;
+}
+
+.markup-calculator--form {
+  display: flex;
+  margin: 0;
+  color: #062941;
+  font-size: 24px;
+  text-align: center;
+}
+.markup-calculator--form-container {
+  position: relative;
+  width: 475px;
+  padding: 52px 5% 59px;
+}
+.markup-calculator--subtitle {
+  margin: 0;
+  padding: 0 0 20px;
+  color: rgba(6, 41, 65, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 18px;
+  text-align: left;
+}
+.markup-calculator--icon-point-wrapper {
+  position: absolute;
+  top: 33px;
+  right: 4px;
+  z-index: 1;
+  display: flex;
+  height: 32px;
+  margin: 0;
+  padding: 7px;
+  color: #86c332;
+}
+.markup-calculator--icon-point-wrapper, .markup-calculator--icon-point-wrapper:focus, .markup-calculator--icon-point-wrapper:hover {
+  background: transparent;
+  border-style: none;
+  outline: none;
+}
+.markup-calculator--icon-point-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: transparent;
+  background-color: initial;
+}
+.markup-calculator--tooltip {
+  position: absolute;
+  top: -45px;
+  right: -18px;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #062941;
+  border-radius: 5px;
+  filter: drop-shadow(3px 3px 0 rgba(6, 41, 65, 0.15));
+}
+.markup-calculator--tooltip::after {
+  position: absolute;
+  right: 24px;
+  bottom: -10px;
+  width: 21px;
+  height: 21px;
+  background-color: #062941;
+  border-top-left-radius: 50%;
+  transform: rotate(45deg);
+  transform-origin: center center;
+  content: "";
+}
+
+/*# sourceMappingURL=blocks-fpbk-markup-calculator-style.css.map*/

@@ -1,0 +1,106 @@
+/// Global Fixes
+
+// Clean up the admin bar.
+#wp-admin-bar-customize,
+#wp-admin-bar-comments {
+	display: none !important;
+}
+
+// Fix for tracking pixels that take up space.
+body > img[width='1'][height='1'] {
+	position: absolute;
+}
+
+html.no-admin-bar {
+	margin: 0 !important;
+
+	#wpadminbar {
+		display: none !important;
+	}
+}
+
+// Fix Separator block issue from WP v5.8+.
+.wp-block-separator {
+	border-top: 1px solid rgba( 0, 0, 0, 0.1 ) !important;
+	border-bottom: none !important;
+}
+
+// Add responsive size classes like w-md-100.
+.t-100 {
+	top: 100px !important;
+}
+
+// Add responsive size classes like w-md-100.
+@each $breakpoint in map-keys( $grid-breakpoints ) {
+	@include media-breakpoint-up( $breakpoint ) {
+		$infix: breakpoint-infix( $breakpoint, $grid-breakpoints );
+		@each $prop, $abbrev in ( width: w, height: h ) {
+			@each $size, $length in $sizes {
+				.#{$abbrev}#{$infix}-#{$size} {
+					#{$prop}: $length !important;
+				}
+			}
+		}
+	}
+}
+
+// Add responsive border classes.
+@each $breakpoint in map-keys( $grid-breakpoints ) {
+	@include media-breakpoint-up( $breakpoint ) {
+		$infix: breakpoint-infix( $breakpoint, $grid-breakpoints );
+
+		.border#{$infix} {
+			border: 1px solid $border-color !important;
+		}
+
+		.border#{$infix}-0 {
+			border: 0 !important;
+		}
+
+		@each $direction in ( top, right, bottom, left ) {
+			.border#{$infix}-#{$direction} {
+				border-#{$direction}: 1px solid $border-color !important;
+			}
+
+			.border#{$infix}-#{$direction}-0 {
+				border-#{$direction}: 0 !important;
+			}
+		}
+	}
+}
+
+// Add "object-fit" for images classes.
+$available-object-fit: [ cover, contain, fill, revert, scale-down ];
+@each $object-fit in $available-object-fit {
+	.image-#{$object-fit} {
+		&,
+		img {
+			object-fit: $object-fit !important;
+		}
+	}
+}
+
+// For "core/image" blocks.
+.img-h-auto {
+	img {
+		height: auto !important;
+	}
+}
+
+// Lists
+.list-unstyled {
+	@include list-unstyled();
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+	@include list-unstyled();
+}
+
+.list-inline-item {
+	display: inline-block;
+
+	&:not( :last-child ) {
+		margin-right: $list-inline-padding;
+	}
+}

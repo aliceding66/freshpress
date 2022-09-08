@@ -1,0 +1,17 @@
+{
+  "post_type": "api",
+  "post_type_plural": "apis",
+  "label": "API Page",
+  "label_plural": "API Pages",
+  "args": {
+    "description": "Developer API documentation",
+    "hierarchical": true,
+    "labels": {
+      "menu_name": "API"
+    },
+    "menu_icon": "dashicons-editor-code",
+    "rewrite": {
+      "slug": "api"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div
+	class="vat-cta-bar__container overflow-hidden position-relative w-100"
+	style="{{# background_attribute }}{{ background_attribute }}{{/ background_attribute }}"
+>
+	<div class="container-fluid">
+		<div class="row w-100 mx-auto">
+			<div class="vat-cta-bar__content position-relative w-100 d-flex flex-column align-items-center justify-content-center">
+				{{# vat_cta_title }}
+					<h2 class="vat-cta-bar__title">{{{ vat_cta_title }}}</h2>
+				{{/ vat_cta_title }}
+
+				{{# vat_cta_link.html }}
+					<div class="fp-animate fp-animate__zoom_in_alt fp-animate__zoom_in_alt--on-hover mt-5 mb-2 position-relative">
+						{{{ vat_cta_link.html }}}
+					</div>
+				{{/ vat_cta_link.html }}
+				{{^ vat_cta_link.html }}
+					<div class="mt-5 mb-2 position-relative">
+						{{{ vat_cta_link }}}
+					</div>
+				{{/ vat_cta_link.html }}
+
+				<div class="vat-cta-bar__inner">
+					{{{ inner_blocks }}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

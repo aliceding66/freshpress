@@ -1,0 +1,61 @@
+{
+    "key": "group_5f06056437738",
+    "title": "Block - CTA Bar",
+    "fields": [
+        {
+            "key": "field_5f0605a938e23",
+            "label": "Copy",
+            "name": "copy",
+            "type": "wysiwyg",
+            "instructions": "Insert the copy that the block should contain, including any hyperlinks.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0,
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f0605fb38e24",
+            "label": "CTA",
+            "name": "cta",
+            "type": "link",
+            "instructions": "Set the text and URL of the CTA link.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 2
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cta-bar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643306242
+}

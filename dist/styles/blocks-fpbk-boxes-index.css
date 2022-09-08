@@ -1,0 +1,275 @@
+.wp-block.box {
+  width: 300px;
+  max-width: 100%;
+  background-color: #fbfdfe;
+  border: 0.75px solid #cdd4d9;
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 0 rgba(0, 27, 64, 0.07);
+}
+@media (min-width: 1280px) {
+  .wp-block.box {
+    width: 340px;
+  }
+}
+.wp-block.box:hover {
+  border-color: #0075dd;
+}
+.wp-block.box > *:last-child {
+  margin-bottom: 0;
+}
+.column .wp-block.box {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 480px) {
+  .column .wp-block.box {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .column .wp-block.box {
+    width: 100%;
+  }
+}
+.wp-block.box-info {
+  padding: 30px 23px;
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-info {
+    padding: 35px 25px;
+  }
+}
+.wp-block.box-info__title {
+  margin-bottom: 30px;
+  font-size: 1.1875rem;
+  line-height: 1.21053;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-info__title {
+    font-size: 1.375rem;
+    line-height: 1.18182;
+  }
+}
+.wp-block.box-info .box-info__image {
+  width: 76px;
+  height: 76px;
+  margin: auto auto 25px;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-info .box-info__image {
+    width: 84px;
+    height: 84px;
+  }
+}
+.block-editor .wp-block.box-info .box-info__image {
+  width: auto;
+  height: auto;
+}
+.wp-block.box-info .box-info__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.wp-block.box-info .box-info__description {
+  margin-bottom: 25px;
+  font-size: 0.8125rem;
+  line-height: 1.53846;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-info .box-info__description {
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+  }
+}
+.wp-block.box-info .box-info__cta a {
+  padding: 4px 15px;
+  font-size: 0.6875rem;
+  line-height: 1.27273;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-info .box-info__cta a {
+    padding: 6px 20px;
+    font-size: 0.75rem;
+    line-height: 1.25;
+  }
+}
+.wp-block.box-info .box-info__cta a:not(.btn-cta-green):hover, .wp-block.box-info .box-info__cta a:not(.btn-cta-green):active, .wp-block.box-info .box-info__cta a:not(.btn-cta-green):focus {
+  color: #fff;
+  background-color: #0075dd;
+  border-color: #0075dd;
+  box-shadow: none;
+}
+.wp-block.box-media {
+  padding: 35px 27px;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-media {
+    padding: 40px 34px;
+  }
+}
+.wp-block.box-media .box-media__title {
+  font-weight: 400;
+  font-size: 1.3125rem;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-media .box-media__title {
+    font-size: 1.5rem;
+  }
+}
+.wp-block.box-media .box-media__image {
+  width: auto;
+  height: 21px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-media .box-media__image {
+    height: 21px;
+  }
+}
+.wp-block.box-media .box-media__image img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+.wp-block.box-media .box-media__description {
+  font-size: 1.3125rem;
+  line-height: 1.42857;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-media .box-media__description {
+    font-size: 1.5rem;
+    line-height: 1.41667;
+  }
+}
+.wp-block.box-media-text {
+  padding: 35px 27px;
+}
+@media (min-width: 1280px) {
+  .wp-block.box-media-text {
+    padding: 40px 34px;
+  }
+}
+.wp-block.box-media-text .box-media-text__outlet {
+  color: #8495a2;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .wp-block.box-media-text .box-media-text__outlet {
+    font-size: 1.25rem;
+  }
+}
+.wp-block.box-media-text .box-media-text__outlet a {
+  color: #8495a2;
+  text-decoration: none;
+}
+.wp-block.box-media-text .box-media-text__outlet a:hover {
+  color: #8495a2;
+}
+.wp-block.box-media-text .box-media-text__title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  /* stylelint-disable no-descending-specificity */
+  /* stylelint-enable no-descending-specificity */
+}
+@media (min-width: 768px) {
+  .wp-block.box-media-text .box-media-text__title {
+    font-size: 1.6875rem;
+  }
+}
+.wp-block.box-media-text .box-media-text__title.has-huge-font-size {
+  font-size: 2.625em;
+}
+.wp-block.box-media-text .box-media-text__title a {
+  color: #001b40;
+  text-decoration: none;
+}
+.wp-block.box-media-text .box-media-text__title a:hover {
+  color: #0075dd;
+}
+.wp-block.box-large-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 0.25rem);
+  max-width: 100%;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid #cdd4d9;
+  border-radius: 5px;
+  box-shadow: none;
+}
+@media (min-width: 768px) {
+  .wp-block.box-large-image {
+    width: 270px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .wp-block.box-large-image {
+    width: 236px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .wp-block.box-large-image {
+    width: 270px !important;
+  }
+}
+.wp-block.box-large-image:hover {
+  text-decoration: none;
+  background-color: #002d79;
+}
+@media (min-width: 768px) {
+  .wp-block.box-large-image:hover {
+    background-color: #fff;
+    border-color: #0075dd;
+  }
+}
+.wp-block.box-large-image .box-large-image__image img {
+  flex: 0 0 160px;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.wp-block.box-large-image .box-large-image__title {
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 1.2;
+}
+@media (min-width: 480px) {
+  .wp-block.box-large-image .box-large-image__title {
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block.box-large-image .box-large-image__title {
+    margin-bottom: 8px;
+    color: #001b40;
+    font-size: 1.3125rem;
+  }
+}
+.wp-block.box-large-image .box-large-image__description {
+  padding: 0 1.5rem;
+  color: #001b40;
+  font-size: 0.875rem;
+}
+.wp-block.box-large-image .box-large-image__cta {
+  max-width: 140px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  color: #001b40;
+  font-weight: 500;
+}
+
+.wp-block-fpbk-column p:empty:last-of-type {
+  display: none;
+}
+.editor-styles-wrapper .wp-block.box-media__image {
+  height: auto;
+}
+.editor-styles-wrapper .wp-block.box-media__image img {
+  height: 21px;
+}
+
+/*# sourceMappingURL=blocks-fpbk-boxes-index.css.map*/

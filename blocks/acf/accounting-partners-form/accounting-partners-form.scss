@@ -1,0 +1,567 @@
+// Accounting Partners Form.
+
+@import '~styles/freshpress-includes';
+
+$white: #fff;
+$fresh-blue-light: #d5ecff;
+.accounting-partners-form {
+	position: relative;
+	left: calc( 50% - 50vw );
+	width: 100vw;
+	padding: 0 22px 88px;
+	background-color: $midnight-blue;
+	@include media-breakpoint-up( md ) {
+		padding: 15px 22px 88px;
+	}
+	@include media-breakpoint-up( lg ) {
+		padding: 35px 22px 88px;
+	}
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+		@include media-breakpoint-up( lg ) {
+			max-width: 1246px;
+		}
+	}
+	&__top {
+		padding: 25px 0;
+	}
+	&__breadcrumbs {
+		a {
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		a,
+		&-divider {
+			display: none;
+			color: $white;
+			vertical-align: middle;
+		}
+		a:last-of-type {
+			display: inline-block;
+			&::before {
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				margin-right: 6px;
+				background-image: url( ./../../../assets/images/accounting-partners/right-arrow-blue.svg );
+				background-repeat: no-repeat;
+				background-size: 8px 8px;
+				filter: grayscale( 100% ) brightness( 1000% );
+				content: '';
+			}
+		}
+		&-divider {
+			display: none;
+			margin: 0 8px;
+			@include media-breakpoint-up( sm ) {
+				display: inline-block;
+			}
+		}
+		@include media-breakpoint-up( sm ) {
+			a {
+				display: inline-block;
+				&:last-of-type::before {
+					content: none;
+				}
+			}
+		}
+	}
+
+	&__error-message {
+		margin: 20px 0;
+		padding: 10px;
+		color: $form-feedback-invalid-color;
+		font-weight: 500;
+		text-align: center;
+		background-color: rgba( $form-feedback-invalid-color, 0.1 );
+		border: 1px solid $form-feedback-invalid-color;
+		border-radius: 8px;
+	}
+	&__left-side {
+		padding: 40px 25px 40px;
+		background-color: $white;
+		border-radius: 8px;
+		@include media-breakpoint-up( md ) {
+			padding: 48px 71px 44px;
+		}
+		@include media-breakpoint-up( lg ) {
+			padding: 52px 110px 44px;
+		}
+	}
+	&__certified {
+		margin-bottom: 11px;
+		color: $fresh-new;
+		font-size: px-to-rem( 16 );
+		font-family: $font-freshbooks-script;
+		line-height: px-to-rem( 20 );
+	}
+
+	h1 {
+		margin-bottom: 28px;
+		font-size: px-to-rem( 30 );
+		line-height: px-to-rem( 28 );
+		letter-spacing: normal;
+
+		span {
+			display: block;
+			margin-top: 5px;
+			font-size: px-to-rem( 24 );
+			line-height: px-to-rem( 22 );
+		}
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 36 );
+			line-height: px-to-rem( 36 );
+			span {
+				font-size: px-to-rem( 26 );
+				line-height: px-to-rem( 28 );
+			}
+		}
+	}
+	.invalid-feedback {
+		order: 3;
+		margin-top: 0;
+	}
+	.invalid-feedback-format {
+		display: none;
+	}
+	.was-validated {
+		.accounting-partners-form {
+			&__field {
+				.form-control:valid,
+				.form-control.is-valid {
+					background-image: none;
+					border-color: rgba( $midnight-blue, 0.3 );
+				}
+				.form-control:invalid,
+				.form-control.is-invalid {
+					background-color: rgba( $form-feedback-invalid-color, 0.04 ) !important;
+					background-image: none;
+				}
+				.form-control:invalid:not( :focus ) ~ .invalid-feedback {
+					display: block;
+				}
+			}
+		}
+	}
+	&__field {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 16px;
+
+		.g-recaptcha {
+			max-width: 100%;
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		sup {
+			top: 0;
+			font-size: 1em;
+		}
+		label,
+		input,
+		select,
+		textarea {
+			display: block;
+			order: 2;
+			color: $midnight-blue;
+			font-size: px-to-rem( 16 );
+			line-height: px-to-rem( 20 );
+			background-color: $white;
+		}
+		label {
+			order: 1;
+			margin-bottom: 5px;
+		}
+		input,
+		select,
+		textarea {
+			width: 100%;
+			height: 46px;
+			padding: 0 15px;
+			border: 1px solid rgba( $midnight-blue, 0.3 );
+			border-radius: 8px;
+			@include media-breakpoint-up( lg ) {
+				height: 50px;
+			}
+			&.service-other {
+				height: 35px;
+			}
+			&::placeholder {
+				color: rgba( $midnight-blue, 0.3 );
+				opacity: 1;
+			}
+			&:focus {
+				border-color: $fresh-new;
+				box-shadow: none !important;
+			}
+			&:focus + label {
+				color: $fresh-new;
+			}
+			&.is_invalid {
+				border-color: $form-feedback-invalid-color;
+			}
+			&.is_invalid + label {
+				color: $midnight-blue;
+			}
+		}
+		select {
+			padding: 0 35px 0 15px;
+			background-image: url( ./../../../assets/images/accounting-partners/tile-chevron-down.svg ) !important;
+			background-repeat: no-repeat;
+			background-position: calc( 100% - 15px ) center !important;
+			background-size: 9px 5px !important;
+			appearance: none;
+			&::-ms-expand {
+				display: none;
+			}
+		}
+		select:invalid,
+		select option[value=''] {
+			color: rgba( $midnight-blue, 0.3 );
+		}
+		textarea {
+			height: 140px;
+			padding: 15px;
+			@include media-breakpoint-up( lg ) {
+				height: 130px;
+			}
+		}
+	}
+	&__checkbox {
+		margin-bottom: 10px;
+		color: $midnight-blue;
+		font-size: px-to-rem( 16 );
+		line-height: px-to-rem( 20 );
+		input {
+			display: none;
+		}
+		label {
+			position: relative;
+			padding-left: 26px;
+			&::before {
+				position: absolute;
+				top: 4px;
+				left: 0;
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				vertical-align: middle;
+				border: 1px solid rgba( $midnight-blue, 0.3 );
+				border-radius: 4px;
+				content: '';
+			}
+			&::after {
+				position: absolute;
+				top: 4px;
+				left: 0;
+				display: block;
+				width: 18px;
+				height: 18px;
+				background-image: url( ./../../../assets/images/accounting-partners/white-check.svg );
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 13px 11px;
+				content: none;
+			}
+		}
+		input:checked + label {
+			&::before {
+				background-color: $fresh-new;
+			}
+			&::after {
+				content: '';
+			}
+		}
+	}
+	&__confirm {
+		margin-top: 24px;
+		color: rgba( $midnight-blue, 0.6 );
+		font-size: px-to-rem( 14 );
+		line-height: px-to-rem( 16 );
+		a {
+			color: rgba( $midnight-blue, 0.6 );
+			font-weight: 500;
+			text-decoration: underline;
+		}
+	}
+	&__disclaimer {
+		margin-top: 11px;
+	}
+	&__submit {
+		width: 100%;
+		min-height: 50px;
+		color: $white;
+		font-weight: 500;
+		font-size: px-to-rem( 18 );
+		line-height: px-to-rem( 20 );
+		background-color: $cta-green;
+		border: none;
+		border-radius: 8px;
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 20 );
+			line-height: px-to-rem( 24 );
+		}
+		&:hover {
+			background-color: darken( $cta-green, 0.5 );
+		}
+		&.loading {
+			text-indent: -9999px;
+			background-image: url( ./../../../assets/images/accounting-partners/loader-circle-white.gif );
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 36px 36px;
+		}
+	}
+	&__right-side {
+		margin-top: 68px;
+		color: $white;
+		@include media-breakpoint-up( lg ) {
+			margin-top: 0;
+			padding-left: 63px;
+		}
+	}
+	&__side-title {
+		margin-bottom: 16px;
+		font-size: px-to-rem( 24 );
+		line-height: px-to-rem( 22 );
+		letter-spacing: normal;
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 26 );
+			line-height: px-to-rem( 28 );
+		}
+	}
+	ul {
+		margin-bottom: 48px;
+		padding: 0;
+		li {
+			position: relative;
+			margin-bottom: 8px;
+			padding-left: 28px;
+			font-size: px-to-rem( 16 );
+			line-height: px-to-rem( 20 );
+			list-style-type: none;
+			@include media-breakpoint-up( lg ) {
+				font-size: px-to-rem( 18 );
+				line-height: px-to-rem( 24 );
+			}
+			&::before {
+				position: absolute;
+				top: 7px;
+				left: 0;
+				display: block;
+				width: 14px;
+				height: 12px;
+				background-image: url( ./../../../assets/images/accounting-partners/green-check.svg );
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 14px 12px;
+				content: '';
+			}
+		}
+	}
+	blockquote {
+		position: relative;
+		color: $fresh-blue-light;
+		font-size: px-to-rem( 22 );
+		font-family: $font-freshbooks-script;
+		line-height: px-to-rem( 30 );
+		&::before {
+			position: absolute;
+			top: -50px;
+			left: -25px;
+			z-index: 1;
+			display: block;
+			color: rgba( $tile-blue, 0.5 );
+			font-size: px-to-rem( 132 );
+			line-height: px-to-rem( 193 );
+			content: '“';
+			@include media-breakpoint-up( lg ) {
+				top: -45px;
+				left: -58px;
+			}
+		}
+		span {
+			position: relative;
+			z-index: 2;
+		}
+		cite {
+			display: block;
+			margin-top: 16px;
+			color: $white;
+			font-size: px-to-rem( 16 );
+			font-family: $font-family-sans-serif;
+			line-height: px-to-rem( 18 );
+			&::before {
+				display: inline-block;
+				width: 18px;
+				height: 1px;
+				margin-right: 10px;
+				vertical-align: middle;
+				background-color: $white;
+				content: '';
+			}
+		}
+	}
+	.accounting-partners-form__checkbox-facade + input {
+		padding: 0 35px 0 15px;
+		background-image: url( ./../../../assets/images/accounting-partners/tile-chevron-down.svg );
+		background-repeat: no-repeat;
+		background-position: calc( 100% - 15px ) center;
+		background-size: 9px 5px;
+		appearance: none;
+		&::-ms-expand {
+			display: none;
+		}
+	}
+	.accounting-partners-form__checkbox-facade {
+		position: absolute;
+		top: calc( 100% - 12px );
+		left: 0;
+		z-index: 3;
+		display: none;
+		width: 100%;
+		padding: 5px 15px !important;
+		background: #fff;
+		border: 1px solid $fresh-new;
+		border-top: none;
+		border-radius: 0 0 8px 8px;
+		&::before {
+			display: block;
+			width: 100%;
+			height: 1px;
+			margin: 0 auto 13px;
+			background-color: rgba( $midnight-blue, 0.3 );
+			content: '';
+		}
+		li {
+			font-size: 1rem;
+			cursor: pointer;
+			&::before {
+				position: absolute;
+				top: 4px;
+				left: 0;
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				vertical-align: middle;
+				background-image: none;
+				border: 1px solid rgba( 0, 27, 64, 0.3 );
+				border-radius: 4px;
+				content: '';
+			}
+			&.active-item {
+				&::before {
+					background-color: $fresh-new;
+				}
+				&::after {
+					position: absolute;
+					top: 4px;
+					left: 0;
+					display: block;
+					width: 18px;
+					height: 18px;
+					background-image: url( ./../../../assets/images/accounting-partners/white-check.svg );
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 13px 11px;
+					content: '';
+				}
+			}
+		}
+		&.active {
+			display: block;
+		}
+		&.active + input {
+			background-image: url( ./../../../assets/images/accounting-partners/tile-chevron-up.svg );
+			border-color: $fresh-new;
+			box-shadow: none !important;
+		}
+		&.active + input + label {
+			color: $fresh-new;
+		}
+	}
+}
+.accounting-partners-thank-you {
+	padding: 125px 0 88px;
+
+	h1 {
+		margin-bottom: 12px;
+		font-size: px-to-rem( 36 );
+		line-height: px-to-rem( 36 );
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 40 );
+			line-height: px-to-rem( 40 );
+		}
+	}
+	&__header {
+		margin-bottom: 88px;
+		p {
+			font-size: px-to-rem( 16 );
+			line-height: px-to-rem( 20 );
+			@include media-breakpoint-up( lg ) {
+				font-size: px-to-rem( 18 );
+				line-height: px-to-rem( 24 );
+			}
+		}
+	}
+
+	&__resources {
+		h2 {
+			margin-bottom: 32px;
+			font-size: px-to-rem( 30 );
+			line-height: px-to-rem( 28 );
+			text-align: center;
+
+			@include media-breakpoint-up( lg ) {
+				margin-bottom: 44px;
+				font-size: px-to-rem( 36 );
+				line-height: px-to-rem( 36 );
+			}
+		}
+		&-image {
+			position: relative;
+			width: 100%;
+			margin-bottom: 24px;
+			padding-bottom: 56%;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+	&__resources-single {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 32px;
+		text-align: center;
+		@include media-breakpoint-up( md ) {
+			margin-bottom: 0;
+		}
+		h3 {
+			width: 100%;
+			margin-bottom: 16px;
+			font-weight: 400;
+			font-size: px-to-rem( 16 );
+			line-height: px-to-rem( 20 );
+			@include media-breakpoint-up( lg ) {
+				font-size: px-to-rem( 18 );
+				line-height: px-to-rem( 24 );
+			}
+		}
+		a.btn {
+			margin-top: auto;
+		}
+	}
+}

@@ -1,0 +1,338 @@
+// Comparison Table.
+
+@import '~styles/freshpress-includes';
+
+/* stylelint-disable selector-pseudo-class-parentheses-space-inside */
+/* stylelint-disable no-descending-specificity */
+.comparison-table {
+	width: 100vw;
+	max-width: 1180px !important;
+	margin-right: -15px;
+	margin-left: -15px;
+
+	@include media-breakpoint-up( lg ) {
+		width: 100%;
+	}
+
+	&__header-sticky {
+		top: 50px;
+		border-top: 1px solid $rule-grey;
+		border-bottom: 1px solid $rule-grey;
+
+		@include media-breakpoint-up( md ) {
+			top: 54px;
+		}
+
+		@include media-breakpoint-up( lg ) {
+			top: 82px;
+			border-radius: 8px 8px 0 0;
+		}
+
+		@media screen and ( min-width: 1086px ) {
+			top: 58px;
+		}
+
+		th {
+			width: calc( 100vw - ( 4 * 49px ) );
+			background-color: $white;
+			border-bottom: 1px solid $rule-grey;
+
+			@include media-breakpoint-up( sm ) {
+				width: calc( 100vw - ( 4 * 80px ) );
+			}
+
+			@include media-breakpoint-up( md ) {
+				width: calc( 100vw - ( 4 * 104px ) );
+			}
+
+			@include media-breakpoint-up( lg ) {
+				width: calc( 100vw - ( 4 * 132px ) - 30px );
+			}
+
+			@include media-breakpoint-up( xl ) {
+				width: auto;
+			}
+
+			&:not( :first-child ) {
+				width: 49px;
+				color: $fresh-blue;
+				border-left: 1px solid $rule-grey;
+
+				@include media-breakpoint-up( sm ) {
+					width: 80px;
+				}
+
+				@include media-breakpoint-up( md ) {
+					width: 104px;
+				}
+
+				@include media-breakpoint-up( lg ) {
+					width: 132px;
+				}
+
+				@include media-breakpoint-up( xl ) {
+					width: 186px;
+				}
+			}
+
+			&:first-child {
+				border-left: 1px solid $rule-grey;
+
+				@include media-breakpoint-up( lg ) {
+					border-top-left-radius: 8px;
+				}
+			}
+
+			&:last-child {
+				border-right: 1px solid $rule-grey;
+
+				@include media-breakpoint-up( lg ) {
+					border-top-right-radius: 8px;
+				}
+			}
+		}
+
+		&.stuck {
+			border-top: 1px solid transparent;
+			box-shadow: 0 3px 0 rgba( $rule-grey, 0.7 );
+
+			@include media-breakpoint-up( lg ) {
+				border-radius: 8px 8px;
+			}
+
+			th {
+				&:first-child {
+					@include media-breakpoint-up( lg ) {
+						border-top-left-radius: 0;
+						border-bottom-left-radius: 8px;
+					}
+				}
+
+				&:last-child {
+					@include media-breakpoint-up( lg ) {
+						border-top-right-radius: 0;
+						border-bottom-right-radius: 8px;
+					}
+				}
+			}
+		}
+	}
+
+	&__header-table {
+		border: 0;
+		border-collapse: separate;
+		border-spacing: 0;
+	}
+
+	&__header-row {
+		&_cell-title,
+		&_cell-price,
+		&_trial-title {
+			font-weight: $font-weight-medium;
+			font-size: px-to-rem( 16 );
+			line-height: calc( 19 / 16 );
+		}
+
+		&_cell-title {
+			color: $fresh-blue;
+		}
+
+		&_cell-title,
+		&_cell-price {
+			width: 100%;
+
+			@include media-breakpoint-up( lg ) {
+				width: auto;
+			}
+		}
+
+		&_cell-price,
+		&_trial-title {
+			color: $midnight-blue;
+		}
+
+		&_cell-cta {
+			width: 100%;
+			max-width: 135px;
+		}
+
+		&_button-wrapper {
+			> div {
+				width: 100%;
+				max-width: 135px;
+			}
+		}
+
+		th {
+			vertical-align: middle !important; // Override BS .table class
+		}
+	}
+
+	&__category-table {
+		@include media-breakpoint-up( lg ) {
+			border-radius: 8px 8px 0 0;
+		}
+
+		th,
+		td {
+			font-weight: $font-weight-normal;
+			font-size: px-to-rem( 10 );
+
+			@include media-breakpoint-up( sm ) {
+				font-size: px-to-rem( 12 );
+			}
+
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 16 );
+			}
+		}
+
+		th {
+			&:first-child {
+				width: calc( 100vw - ( 4 * 49px ) );
+
+				@include media-breakpoint-up( sm ) {
+					width: calc( 100vw - ( 4 * 80px ) );
+				}
+
+				@include media-breakpoint-up( md ) {
+					width: calc( 100vw - ( 4 * 104px ) );
+				}
+
+				@include media-breakpoint-up( lg ) {
+					width: calc( 100vw - ( 4 * 132px ) - 30px );
+				}
+
+				@include media-breakpoint-up( xl ) {
+					width: auto;
+				}
+			}
+		}
+
+		td {
+			width: 49px;
+			word-break: break-word;
+
+			@include media-breakpoint-up( sm ) {
+				width: 80px;
+			}
+
+			@include media-breakpoint-up( md ) {
+				width: 104px;
+			}
+
+			@include media-breakpoint-up( lg ) {
+				width: 132px;
+			}
+
+			@include media-breakpoint-up( xl ) {
+				width: 186px;
+			}
+		}
+
+		tr,
+		th {
+			td {
+				border-right: 1px solid $rule-grey;
+				border-left: 1px solid $rule-grey;
+
+				&:first-child {
+					border-left: none;
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+	}
+
+	&__category-plan {
+		background-color: $card-tab-grey;
+
+		tr {
+			th {
+				color: $dark-grey;
+				font-weight: $font-weight-medium;
+				font-size: px-to-rem( 15 );
+				line-height: calc( 22 / 15 );
+				letter-spacing: 0.3px;
+				border-right: 1px solid $rule-grey;
+				border-left: 1px solid $rule-grey;
+
+				&:first-child {
+					border-left: none;
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+
+		&_gap {
+			background-color: $white !important; // Override the table-striped BS class.
+		}
+	}
+
+	&__category-header {
+		tr {
+			th {
+				font-weight: $font-weight-medium;
+				background-color: $table-header-grey;
+			}
+
+			&:not( :first-child ) {
+				th {
+					color: $fresh-blue;
+					font-size: px-to-rem( 22 );
+				}
+			}
+
+			&:first-child {
+				th {
+					color: $dark-grey;
+					font-size: px-to-rem( 15 );
+					line-height: calc( 30 / 15 );
+
+					@include media-breakpoint-up( lg ) {
+						border-top-left-radius: 8px;
+					}
+				}
+			}
+
+			&:last-child {
+				th {
+					@include media-breakpoint-up( lg ) {
+						border-top-right-radius: 8px;
+					}
+				}
+			}
+		}
+	}
+
+	.checkmark {
+		max-height: 18px;
+		object-fit: contain;
+	}
+
+	.promo {
+		display: none;
+	}
+
+	&[data-promo-show='true'] {
+		.standard {
+			display: none;
+		}
+
+		.promo {
+			display: block;
+		}
+	}
+
+	@include media-breakpoint-down( sm ) {
+		.btn-outline-grey {
+			font-size: px-to-rem( 12 );
+		}
+	}
+}

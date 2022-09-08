@@ -1,0 +1,43 @@
+{{{ cookie_popup }}}
+
+{{> partial__mobile_banner }}
+
+<div class="sign-up__wrapper d-flex flex-column align-items-center text-center w-100 position-relative {{# include_sign_up_banner }} pt-promo{{/ include_sign_up_banner }}">
+	{{> partial__desktop_banner }}
+
+	{{{ logos.sign_up_white }}}
+	{{{ logos.sign_up }}}
+
+	<h1 class="sign-up__heading mt-md-2">{{ heading }}</h1>
+	<h2 class="sign-up__sub-heading mb-4">{{ sub_heading }}</h2>
+	<div class="d-none d-md-block">{{{ rating_desktop }}}</div>
+	<div class="d-block d-md-none d-editor-none">{{{ rating_mobile }}}</div>
+
+	{{# admin_form }}
+		{{{ admin_form }}}
+	{{/ admin_form }}
+	{{^ admin_form }}
+		{{> partial__form_fullscreen }}
+	{{/ admin_form }}
+
+	<div class="sign-up__already-registered">{{{ already_registered_text }}}</div>
+</div>
+
+{{# security_safeguards_link.url }}
+	<a
+		class="sign-up__security-link mt-3"
+		href="{{ security_safeguards_link.url }}"
+		target="{{ security_safeguards_link.blank }}"
+	>
+		{{{ logos.lock }}}
+		{{ security_safeguards_link.title }}
+	</a>
+{{/ security_safeguards_link.url }}
+{{^ security_safeguards_link.url }}
+	<div class="position-relative sign-up__security-link">
+		<div class="position-absolute">
+			{{{ logos.lock }}}
+		</div>
+		{{{ security_safeguards_link }}}
+	</div>
+{{/ security_safeguards_link.url }}

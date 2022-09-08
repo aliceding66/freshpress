@@ -1,0 +1,301 @@
+// Product Tour Grey Line.
+@use "sass:math";
+@import '~styles/freshpress-includes';
+
+// Variables to customize.
+$bottom-padding: 50px;
+$border-width: 2px;
+$circle-size: 20px;
+
+// Calculated variables.
+$twice-bottom-padding: $bottom_padding * 2;
+$half-border-width: math.div( $border-width, 2 );
+$twice-border-width: $border-width * 2;
+$half-circle-size: math.div( $circle-size, 2 );
+$twice-circle-size: $circle-size * 2;
+
+.product-tour-grey-line {
+	z-index: $zindex-fixed;
+	margin: 4rem 0 calc( #{$twice-bottom-padding} - #{$twice-border-width} );
+
+	&__container {
+		top: var( --top-offset );
+		left: 0;
+		height: calc( 100% + #{$twice-bottom-padding} - var( --top-offset ) );
+		transition: opacity 200ms ease-in-out;
+		pointer-events: none !important;
+
+		&--with-start-dot {
+			&::after {
+				position: absolute; // Cannot add BS4 class to pseudo-element.
+				top: 0;
+				left: calc( ( #{$half-circle-size} - #{$half-border-width} ) * -1 );
+				width: $circle-size;
+				height: $circle-size;
+				background-color: $blue-line-color;
+				border-radius: $circle-size;
+				content: '';
+			}
+		}
+	}
+
+	&__line-left-bottom {
+		top: 0;
+		left: 0;
+		height: calc( 100% - #{$bottom-padding} );
+		border-bottom: $border-width solid $grey-line-color;
+		border-left: $border-width solid $grey-line-color;
+		border-bottom-left-radius: $circle-size;
+
+		&--color {
+			@extend .product-tour-grey-line__line-left-bottom;
+			border-color: $blue-line-color;
+		}
+
+		&--revealer {
+			@extend .product-tour-grey-line__line-left-bottom;
+			top: $border-width;
+			left: -$border-width;
+			width: calc( var( --revealed-x ) + ( #{$border-width} ) );
+			max-height: var( --revealed-y );
+			transition: max-height 1s ease-in-out, width 500ms ease-in;
+		}
+	}
+
+	&__line-bottom-finish {
+		bottom: calc( ( #{$bottom-padding} - #{$border-width} ) * -1 );
+		left: 25%;
+		width: calc( 25% + #{$border-width} );
+		height: $twice-bottom-padding;
+		border-top: $border-width solid $grey-line-color;
+		border-right: $border-width solid $grey-line-color;
+		border-top-right-radius: $circle-size;
+
+		&--color {
+			@extend .product-tour-grey-line__line-bottom-finish;
+			top: 0;
+			left: 0;
+			border-color: $blue-line-color;
+
+			&::after {
+				display: none; // Cannot add BS4 class to pseudo-element.
+			}
+		}
+
+		&--revealer {
+			@extend .product-tour-grey-line__line-bottom-finish;
+			top: -$border-width;
+			right: auto;
+			bottom: auto;
+			left: 0;
+			width: calc( var( --revealed-x ) + #{$border-width} );
+			max-height: var( --revealed-y );
+			transition: max-height 1s ease-in-out 800ms, width 500ms ease-out 500ms;
+
+			&::after {
+				display: none; // Cannot add BS4 class to pseudo-element.
+			}
+		}
+	}
+
+	&__circle-marker-coordinator--vertical {
+		top: 0;
+		left: calc( ( #{$half-circle-size} - #{$half-border-width} ) * -1 );
+		height: calc( 100% - ( ( #{$bottom-padding} + #{$half-circle-size} + #{$border-width} ) ) );
+		border-radius: $circle-size;
+		transform: translateY( var( --y ) );
+		transition: transform 1s ease-in-out;
+	}
+
+	&__circle-marker-coordinator--horizontal {
+		top: 0;
+		left: 0;
+		height: $circle-size;
+		border-radius: $circle-size;
+		transform: translateX( var( --x ) );
+		transition: transform 1s ease-in-out;
+	}
+
+	&__circle-marker {
+		top: 0;
+		left: 0;
+		width: $circle-size;
+		height: $circle-size;
+		background: $blue-line-color;
+		border-radius: $circle-size;
+		transition: transform 1s ease-in-out;
+
+		&-main {
+			width: 0;
+			height: 0;
+			visibility: hidden;
+		}
+
+		&-checkpoint {
+			top: 0;
+			left: calc( ( #{$half-circle-size} + #{$half-border-width} ) * -1 );
+			width: $circle-size;
+			height: $circle-size;
+			background: $grey-line-color;
+			border-radius: $circle-size;
+			transform: scale( 0.5 );
+			transition: transform 300ms ease-out, background-color 300ms ease-out;
+			transition-delay: 750ms;
+
+			&--first {
+				transition-delay: 0ms;
+			}
+
+			&--last {
+				top: auto;
+				right: calc( ( #{$half-circle-size} + #{$half-border-width} ) * -1 );
+				bottom: calc( ( #{$half-circle-size} + #{$half-border-width} ) * -1 );
+				left: auto;
+				transition-delay: 800ms;
+			}
+
+			&--active {
+				background: $blue-line-color;
+				transform: scale( 1 );
+			}
+		}
+	}
+
+	.fp-background--wide {
+		$bp-xl: map-get( $grid-breakpoints, xl );
+		$bp-xxl: map-get( $grid-breakpoints, xxl );
+
+		@include media-breakpoint-up( lg ) {
+			&::before,
+			&::after {
+				width: calc( #{$grid-gutter-width} * 1.5 );
+			}
+
+			&::before {
+				right: calc( #{$grid-gutter-width} * -1.5 );
+			}
+
+			&::after {
+				left: calc( #{$grid-gutter-width} * -1.5 );
+			}
+		}
+
+		@include media-breakpoint-up( xl ) {
+			&::before {
+				right: calc( ( 100vw - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / -2 );
+				width: calc( ( 100vw - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / 2 );
+			}
+
+			&::after {
+				left: calc( ( 100vw - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / -2 );
+				width: calc( ( 100vw - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / 2 );
+			}
+		}
+		@include media-breakpoint-up( xxl ) {
+			&::before {
+				right: calc( ( #{$bp-xxl} - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / -2 );
+				width: calc( ( #{$bp-xxl} - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / 2 );
+			}
+
+			&::after {
+				left: calc( ( #{$bp-xxl} - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / -2 );
+				width: calc( ( #{$bp-xxl} - #{$bp-xl} + ( #{$grid-gutter-width} * 3 ) ) / 2 );
+			}
+		}
+	}
+
+	// Adjust Flexible Background block inside Product Tour Grey Line block.
+	.flexible-colour-background {
+		@include media-breakpoint-up( 'lg' ) {
+			&::before,
+			&::after {
+				position: absolute; // Cannot add BS4 class to pseudo-element.
+				top: 0;
+				z-index: -1;
+				width: 6rem;
+				height: 100%;
+				content: '';
+			}
+
+			&::before {
+				left: 0;
+				margin-left: -6rem !important;
+			}
+
+			&::after {
+				right: 0;
+				margin-right: -6rem !important;
+			}
+		}
+	}
+}
+
+/**
+	Preview in editor
+ */
+.acf-block-preview {
+	.product-tour-grey-line {
+		position: relative;
+		z-index: 0 !important;
+		border-left: $border-width solid $grey-line-color !important;
+
+		&::after {
+			position: absolute;
+			top: calc( ( #{$half-circle-size} + #{$half-border-width} ) * -1 );
+			left: calc( ( #{$half-circle-size} + #{$half-border-width} ) * -1 );
+			width: $circle-size;
+			height: $circle-size;
+			background-color: $blue-line-color;
+			border-radius: $circle-size;
+			content: '';
+		}
+
+		&:first-child {
+			&::before {
+				position: absolute;
+				top: 0;
+				left: -$border-width;
+				width: $border-width;
+				height: 20%;
+				background-color: $blue-line-color;
+				content: '';
+			}
+		}
+
+		&__container,
+		&__line-left-bottom,
+		&__line-left-bottom--color,
+		&__line-left-bottom--revealer,
+		&__line-bottom-finish,
+		&__line-bottom-finish--color,
+		&__line-bottom-finish--revealer,
+		&__circle-marker-coordinator--vertical,
+		&__circle-marker-coordinator--horizontal,
+		&__circle-marker {
+			width: 0 !important;
+			height: 0 !important;
+			visibility: hidden !important;
+			opacity: 0 !important;
+			pointer-events: none !important;
+		}
+
+		> .block-editor-inner-blocks {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				bottom: calc( ( #{$half-circle-size} + #{$half-border-width} ) * -1 );
+				left: calc( ( #{$half-circle-size} + #{$half-border-width} ) * -1 );
+				width: $circle-size;
+				height: $circle-size;
+				background-color: $grey-line-color;
+				border-radius: $circle-size;
+				content: '';
+			}
+		}
+	}
+}
+
+.transition-disabled {
+	transition: none !important;
+}

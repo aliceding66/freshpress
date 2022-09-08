@@ -1,0 +1,122 @@
+{
+    "key": "group_608a8ef85aa4f",
+    "title": "CPT - News Coverage",
+    "fields": [
+        {
+            "key": "field_608a8f20c0bdd",
+            "label": "Post Listing",
+            "name": "news_coverage_posts",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_608a8f39c0bde",
+                    "label": "Publication Name",
+                    "name": "publication_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_608a8f46c0bdf",
+                    "label": "Article Date",
+                    "name": "article_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y",
+                    "return_format": "d\/m\/Y",
+                    "first_day": 1,
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_608a8f6ec0be0",
+                    "label": "Article Headline",
+                    "name": "article_headline",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_608a8f77c0be1",
+                    "label": "Article URL",
+                    "name": "article_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "news-coverage"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643310446
+}

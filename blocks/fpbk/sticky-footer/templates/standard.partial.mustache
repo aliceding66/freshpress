@@ -1,0 +1,18 @@
+<p class="sticky-footer__text mb-2 mb-md-0 text-center text-md-left">
+    {{{ text }}}
+</p>
+<div class="d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center w-100 w-md-auto">
+	{{# cta.html }}
+		{{{ cta.html }}}
+	{{/ cta.html }}
+	{{^ cta.html }}
+		{{{ cta }}}
+	{{/ cta.html }}
+
+	{{# secondary_link.html }}
+		{{{ secondary_link.html }}}
+	{{/ secondary_link.html }}
+	{{^ secondary_link.html }}
+		{{{ secondary_link }}}
+	{{/ secondary_link.html }}
+</div>

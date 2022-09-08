@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/animate",
+  "title": "Animate",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

@@ -1,0 +1,67 @@
+<div>
+	<section class='nicereply__step-one text-center my-4'>
+		<h1 class='text-center'>{{ tell_us }}</h1>
+		<p class='text-center mb-0 mt-5'>{{ product_feedback }}</p>
+		<p class='text-center'>{{ rating }}</p>
+
+		{{{ product_boxes }}}
+		<p class='text-center mb-0 mt-5'>{{ support_feedback }}</p>
+		<p class='text-center'>{{ rating }}</p>
+
+		{{{ support_boxes }}}
+		{{{ continue_button }}}
+	</section>
+
+	<section class='nicereply__step-two my-4 d-none'>
+		<form action='/wp-json/nicereply/send' method='post' class='w-100 d-flex flex-column flex-wrap justify-content-center align-items-center'>
+			<div class='nicereply__responses'>
+				{{# responses }}
+					<div class='nicereply__response--{{ type }} d-none'>
+						<h1 class='nicereply__response-title text-center thankyou'>
+							{{ title }}
+						</h1>
+						<p class='nicereply__response-body text-center'>
+							{{ body }}
+						</p>
+					</div>
+				{{/ responses }}
+			</div>
+
+			{{^ is_editor }}
+				<textarea id='nicereply-feedback' name='nicereply-feedback' class='nicereply__feedback w-100 mx-auto my-0 border p-3' cols='30' rows='10'></textarea>
+			{{/ is_editor }}
+
+			<input type='hidden' name='done'>
+			<input type='hidden' name='user'>
+			<input type='hidden' name='ticketid'>
+			<input type='hidden' name='supportExperienceScore'>
+			<input type='hidden' name='productFeedbackScore'>
+			<input type='hidden' name='comment'>
+
+			{{{ submit_button }}}
+		</form>
+	</section>
+
+	<section class='nicereply__step-three text-center my-4 d-none'>
+		<h1 class='nicereply__thankyou mx-auto'>
+			{{ thank_you }}
+		</h1>
+	</section>
+
+	<section class='nicereply__footer'>
+		<div class='nicereply__error text-center d-flex flex-column flex-wrap justify-content-center align-items-center'>
+			<span class='nicereply__error--supportExperience text-center d-none'>
+				{{ rate_support }}
+			</span>
+			<span id='nicereply__submission--error' class='nicereply__error--submit text-center d-none'>
+				{{ error }}
+			</span>
+		</div>
+
+		<div class='nicereply__page-dots d-flex justify-content-between'>
+			<svg viewBox='0 0 12 12' class='nicereply__page-dot active'><circle cx='6' cy='6' r='6'/></svg>
+			<svg viewBox='0 0 12 12' class='nicereply__page-dot'><circle cx='6' cy='6' r='6'/></svg>
+		</div>
+	</section>
+
+</div>

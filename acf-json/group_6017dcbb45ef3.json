@@ -1,0 +1,126 @@
+{
+    "key": "group_6017dcbb45ef3",
+    "title": "Block - File Download",
+    "fields": [
+        {
+            "key": "field_6017dccb458b4",
+            "label": "Files",
+            "name": "file_download_files",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_6017ddda458b5",
+                    "label": "Download Type",
+                    "name": "download_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "url": "URL",
+                        "file": "File"
+                    },
+                    "default_value": "url",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "wpml_cf_preferences": 3,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6017ded7458b6",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6017ddda458b5",
+                                "operator": "==",
+                                "value": "url"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_6017df0c458b7",
+                    "label": "File",
+                    "name": "file",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6017ddda458b5",
+                                "operator": "==",
+                                "value": "file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "pdf, docx, xlsx",
+                    "wpml_cf_preferences": 3
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/file-download"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643306280
+}

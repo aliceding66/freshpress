@@ -1,0 +1,12 @@
+<div class="tabbed-cards__cards w-100 mx-auto">
+	<ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+		{{# cards }}
+			{{> nav-item }}
+		{{/ cards }}
+	</ul>
+	<div class="tab-content card position-{{ card_content_position }}" id="myTabContent">
+		{{# cards }}
+			{{> tab-content }}
+		{{/ cards }}
+	</div>
+</div>

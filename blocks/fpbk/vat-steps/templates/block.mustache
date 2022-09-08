@@ -1,0 +1,12 @@
+<div class="vat-steps__container">	
+	{{# vat_steps__title }}
+	<h2 class="vat-steps__main-title">{{{ vat_steps__title }}}</h2>
+	{{/ vat_steps__title }}
+
+	<ul class="vat-steps__steps">
+	{{# vat_steps_step }}
+		{{> step }}
+	{{/ vat_steps_step }}
+	</ul>	
+
+</div>

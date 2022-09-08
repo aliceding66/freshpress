@@ -1,0 +1,117 @@
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar {
+  min-height: 415px;
+}
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar .new-cta-bar__content {
+  pointer-events: none;
+}
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar .new-cta-bar__content * {
+  pointer-events: all;
+}
+.editor-styles-wrapper .wp-block-fpbk-new-cta-bar .new-cta-bar__image-left {
+  right: unset !important;
+}
+.new-cta-bar__container {
+  padding: 3.125rem 0.625rem;
+  background: #001a43;
+}
+@media (min-width: 480px) {
+  .new-cta-bar__container {
+    padding: 4.375rem 0.625rem 3.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .new-cta-bar__container {
+    padding: 6.25rem 0.625rem 5rem;
+  }
+}
+.new-cta-bar__content {
+  z-index: 10;
+}
+.new-cta-bar__before-heading {
+  font-size: 1.0625rem;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+  line-height: 1.1;
+}
+.new-cta-bar__heading {
+  font-size: 3.75rem;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -4px;
+}
+@media (min-width: 480px) {
+  .new-cta-bar__heading {
+    font-size: 6.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .new-cta-bar__heading {
+    font-size: 7.5rem;
+  }
+}
+.new-cta-bar__after-heading {
+  font-size: 1.0625rem;
+  font-family: moranga-italic, helvetica, arial, sans-serif;
+  line-height: 1.1;
+}
+.new-cta-bar__cta-button {
+  padding: 0.625rem 2.625rem 0.9375rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .new-cta-bar__cta-button {
+    font-size: 1.625rem;
+  }
+}
+.new-cta-bar__after-cta-button {
+  font-size: 0.8125rem;
+  line-height: 1.1;
+}
+.new-cta-bar__image-container {
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.new-cta-bar__image {
+  height: auto;
+}
+.new-cta-bar__image-left {
+  top: 1.25rem;
+  left: -1.25rem;
+  width: 15.625rem;
+}
+@media (min-width: 1024px) {
+  .new-cta-bar__image-left {
+    top: 3.75rem;
+    right: 72%;
+    left: auto;
+    width: 39.375rem;
+  }
+}
+.new-cta-bar__image-top-right {
+  top: -0.625rem;
+  right: 1.25rem;
+  width: 13.125rem;
+}
+@media (min-width: 1024px) {
+  .new-cta-bar__image-top-right {
+    top: 0.3125rem;
+    right: auto;
+    left: 79%;
+    width: 20rem;
+  }
+}
+.new-cta-bar__image-bottom-right {
+  top: 26.25rem;
+  right: 6.25rem;
+  width: 9.375rem;
+}
+@media (min-width: 1024px) {
+  .new-cta-bar__image-bottom-right {
+    top: 21.25rem;
+    right: auto;
+    left: 70%;
+    width: 25rem;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-new-cta-bar-index.css.map*/

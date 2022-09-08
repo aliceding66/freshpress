@@ -1,0 +1,38 @@
+.editor-styles-wrapper .freshbookers-grid-bar .components-button:nth-child(2) {
+  margin-top: 4px;
+}
+.editor-styles-wrapper .freshbookers-grid-bar .components-button.has-icon .dashicon {
+  margin: 0;
+}
+.editor-styles-wrapper .freshbookers-grid-bar .components-button.is-secondary, .editor-styles-wrapper .freshbookers-grid-bar .components-button.is-destructive {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+}
+.editor-styles-wrapper .freshbookers-grid-bar .components-button.is-secondary:hover, .editor-styles-wrapper .freshbookers-grid-bar .components-button.is-destructive:hover {
+  color: #fff;
+}
+.editor-styles-wrapper .freshbookers-grid-bar .components-button.is-secondary {
+  background-color: rgba(0, 124, 186, 0.85);
+}
+.editor-styles-wrapper .freshbookers-grid-bar .components-button.is-secondary:hover {
+  background-color: #007cba;
+}
+.editor-styles-wrapper .freshbookers-grid-bar .components-button.is-destructive {
+  background-color: rgba(204, 24, 24, 0.85);
+}
+.editor-styles-wrapper .freshbookers-grid-bar .components-button.is-destructive:hover {
+  background-color: #cc1818;
+}
+.editor-styles-wrapper .freshbookers-grid-bar__item.has-image .media-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.editor-styles-wrapper .freshbookers-grid-bar__item.has-image:hover .media-wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=blocks-fpbk-freshbookers-grid-bar-editor.css.map*/

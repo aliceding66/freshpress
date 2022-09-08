@@ -1,0 +1,14 @@
+<li class='webinars-list__item d-flex flex-row flex-nowrap justify-content-between align-items-center pt-3 pb-4 px-4 border-bottom'>
+    <div class='d-flex flex-column flex-md-row flex-wrap flex-md-nowrap justify-content-start justify-content-md-between w-md-50'>
+        <h4 class='webinars-list__item-title'>{{ topic }}</h4>
+        <div class='webinars-list__item-schedule d-flex flex-column flex-wrap justify-content-center align-items-start align-items-md-center'>
+            <span class='webinars-list__item-date d-block'>
+                {{ date }}
+            </span>
+            <span class='webinars-list__item-time d-block'>
+                {{ startTime }} - {{ endTime }} {{ timezone }}
+            </span>
+        </div>
+    </div>
+    {{{ button }}}
+</li>

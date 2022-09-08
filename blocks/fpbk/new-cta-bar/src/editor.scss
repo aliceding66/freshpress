@@ -1,0 +1,17 @@
+.editor-styles-wrapper {
+	.wp-block-fpbk-new-cta-bar {
+		min-height: 415px;
+
+		.new-cta-bar__content {
+			pointer-events: none;
+
+			* {
+				pointer-events: all;
+			}
+		}
+
+		.new-cta-bar__image-left {
+			right: unset !important;
+		}
+	}
+}

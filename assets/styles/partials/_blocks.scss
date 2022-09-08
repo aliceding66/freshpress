@@ -1,0 +1,51 @@
+// blocks.
+
+.fp-block {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+
+	main > &:first-child,
+	main > .container-fluid > &:first-child {
+		margin-top: 0;
+	}
+
+	main > &:last-child,
+	main > .container-fluid > &:last-child {
+		margin-bottom: 0;
+	}
+
+	&.no-gutters {
+		margin-right: calc( #{$grid-gutter-width} / -2 );
+		margin-left: calc( #{$grid-gutter-width} / -2 );
+	}
+
+	&.wide-block {
+		$bp-xl: map-get( $grid-breakpoints, xl );
+		$bp-xxl: map-get( $grid-breakpoints, xxl );
+
+		@include media-breakpoint-up( xl ) {
+			margin-right: calc( ( 100vw - #{$bp-xl} + #{$grid-gutter-width} ) / -2 );
+			margin-left: calc( ( 100vw - #{$bp-xl} + #{$grid-gutter-width} ) / -2 );
+		}
+		@include media-breakpoint-up( xxl ) {
+			margin-right: calc( ( #{$bp-xxl} - #{$bp-xl} + #{$grid-gutter-width} ) / -2 );
+			margin-left: calc( ( #{$bp-xxl} - #{$bp-xl} + #{$grid-gutter-width} ) / -2 );
+		}
+	}
+
+	&.wide-block--padded {
+		$bp-xl: map-get( $grid-breakpoints, xl );
+		$bp-xxl: map-get( $grid-breakpoints, xxl );
+
+		@include media-breakpoint-up( xl ) {
+			padding-right: calc( ( 100vw - #{$bp-xl} + #{$grid-gutter-width} ) / 2 ) !important;
+			padding-left: calc( ( 100vw - #{$bp-xl} + #{$grid-gutter-width} ) / 2 ) !important;
+		}
+		@include media-breakpoint-up( xxl ) {
+			padding-right: calc(
+				( #{$bp-xxl} - #{$bp-xl} + #{$grid-gutter-width} ) / 2
+			) !important;
+			padding-left: calc( ( #{$bp-xxl} - #{$bp-xl} + #{$grid-gutter-width} ) / 2 ) !important;
+		}
+	}
+}

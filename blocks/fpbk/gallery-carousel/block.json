@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/gallery-carousel",
+  "title": "Gallery Carousel",
+  "category": "freshblocks",
+  "description": "A block containing a gallery carousel.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

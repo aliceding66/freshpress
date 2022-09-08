@@ -1,0 +1,46 @@
+.nicereply__step-one .box {
+  max-width: 542px;
+  background: #fff;
+}
+.nicereply__step-two .nicereply__feedback {
+  max-width: 542px;
+  height: 148px;
+  color: #062942;
+  border-radius: 5px;
+  resize: none;
+}
+.nicereply__step-three .nicereply__thankyou {
+  max-width: 542px;
+}
+.nicereply__page-dots {
+  max-width: 26px;
+  margin: 30px auto 0;
+}
+.nicereply__page-dot {
+  width: 6px;
+  height: 6px;
+  fill: #cdd4d9;
+}
+.nicereply__page-dot.active {
+  fill: #0075dd;
+}
+.nicereply__survey-item {
+  width: 20%;
+}
+@media (min-width: 768px) {
+  .nicereply__survey-item {
+    width: auto;
+  }
+}
+.nicereply__survey-item label {
+  font-weight: 500;
+}
+.nicereply__error > span {
+  color: #fa405c;
+}
+.nicereply .survey-emoji {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=blocks-fpbk-nicereply-index.css.map*/

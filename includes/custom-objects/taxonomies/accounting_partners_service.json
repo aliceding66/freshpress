@@ -1,0 +1,16 @@
+{
+  "taxonomy": "accounting_partners_service",
+  "taxonomy_plural": "accounting_partners_services",
+  "label": "Services",
+  "label_plural": "Services",
+  "post_types": [
+    "accounting_partners"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "accounting-partners/service",
+      "with_front": false
+    },
+    "publicly_queryable": false
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "post_type": "accounting_software",
+  "post_type_plural": "accounting_softwares",
+  "label": "Accounting Software",
+  "args": {
+    "description": "Articles about accounting software",
+    "hierarchical": true,
+    "menu_icon": "dashicons-networking",
+    "rewrite": {
+      "slug": "accounting-software"
+    },
+    "taxonomies": [
+      "accounting_software_category"
+    ],
+    "template": [
+      [
+        "fpbk/hero",
+        {
+          "className": "my-0",
+          "block_settings_tracking_section": "hero",
+          "block_settings_wide_block": "1"
+        }
+      ],
+      [
+        "fpbk/testimonial-quote",
+        {
+          "testimonial_quote_quote": "FreshBooks makes my life so much easier. I wish I had this when I first started my business!\"",
+          "testimonial_quote_author_name": "PAT FLYNN",
+          "testimonial_quote_author_description": "HOST OF SMART PASSIVE INCOME & ASKPAT 2.0",
+          "testimonial_quote_image": {
+            "url": "/wp-content/uploads/pat-flynn-1-3.35.24-PM.png",
+            "alt": "Pat Flynn headshot"
+          },
+          "testimonial_quote_display_rating": true,
+          "block_settings_tracking_section": "testimonial"
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto",
+          "data": {
+            "block_settings_tracking_section": "paragraph-under-testimonial-quote"
+          }
+        }
+      ],
+      [
+        "fpbk/feature-row",
+        {
+          "block_settings_tracking_section": "feature-row-1"
+        }
+      ],
+      [
+        "fpbk/feature-row",
+        {
+          "block_settings_tracking_section": "feature-row-2"
+        }
+      ],
+      [
+        "core/heading",
+        {
+          "content": "This is the heading",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto"
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto",
+          "data": {
+            "block_settings_tracking_section": "paragraph-under-feature-row"
+          }
+        }
+      ],
+      [
+        "fpbk/columns",
+        {
+          "block_settings_tracking_section": "video",
+          "align": "center",
+          "className": "mt-5 mb-5"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "align": "center",
+              "bootstrap_class": "col-12",
+              "className": "mx-auto p-0"
+            },
+            [
+              [
+                "fpbk/flexible-colour-background",
+                {
+                  "align": "center",
+                  "background_colour": {
+                    "hex": "#eff8fe"
+                  },
+                  "className": "py-5 p-lg-5 m-auto w-100"
+                },
+                [
+                  [
+                    "core/heading",
+                    {
+                      "content": "FreshBooks Accounting Software Testimonial Videos",
+                      "level": 3,
+                      "align": "center",
+                      "className": "has-text-align-center has-text-align-center mb-5"
+                    }
+                  ],
+                  [
+                    "core-embed/youtube",
+                    {
+                      "align": "center",
+                      "url": "https://www.youtube.com/embed/XU0JVTHKlx0",
+                      "className": "has-text-align-center"
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "core/heading",
+        {
+          "content": "This is the heading",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto"
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto",
+          "data": {
+            "block_settings_tracking_section": "paragraph-under-video"
+          }
+        }
+      ],
+      [
+        "fpbk/logo-group",
+        {
+          "block_settings_tracking_section": "logo-group",
+          "className": "is-style-logo-group_single-line",
+          "logo_group_hide_lines": "0",
+          "headline": "Featured In",
+          "logos": [
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/CNET.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            },
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/forbes-1.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            },
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/CNN.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            },
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/Bloomberg.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            },
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/the-new-york-times.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            },
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/pc-mag.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            },
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/mashable.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            },
+            {
+              "logo_type": "svg",
+              "logo_svg": {
+                "url": "/wp-content/uploads/techcrunch.svg"
+              },
+              "adjust_logo_size": "-1",
+              "decrease_logo_size": "20",
+              "increase_logo_size": ""
+            }
+          ]
+        }
+      ],
+      [
+        "core/heading",
+        {
+          "content": "This is the heading",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto"
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto",
+          "data": {
+            "block_settings_tracking_section": "paragraph-under-logo-group"
+          }
+        }
+      ],
+      [
+        "fpbk/one-column",
+        {
+          "block_settings_tracking_section": "one-column",
+          "one_column_title": "This is the title",
+          "one_column_description": "This is the description",
+          "one_column_image": {
+            "url": "/wp-content/themes/freshpress/dist/images/accounting-software/all-device.png"
+          }
+        }
+      ],
+      [
+        "core/heading",
+        {
+          "content": "This is the heading",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto"
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto",
+          "data": {
+            "block_settings_tracking_section": "paragraph-under-one-column"
+          }
+        }
+      ],
+      [
+        "fpbk/stat-tiles",
+        {
+          "heading": "Small Business Owners Love FreshBooks ",
+          "stats": [
+            {
+              "number": "192",
+              "description": "hours each year can be saved by using FreshBooks"
+            },
+            {
+              "number": "24+ Million",
+              "description": "hours each year can be saved by using FreshBooks"
+            },
+            {
+              "number": "160+",
+              "description": "countries have businesses using FreshBooks"
+            }
+          ],
+          "about_team_heading": "Support for Whatever Stage of Business You’re In",
+          "about_team_body": "Our support staff is with you on every step of your journey of growth, starting the moment you make the switch from spreadsheets or any other accounting software.<br /><br />You can reach a Support Rockstar by email and phone between 8:00am and 8:00pm EST. Our reps are real people, not robots, and they won’t transfer you to another department. You can also <a href=\"https://www.freshbooks.com/webinars\">sign up</a> for a live weekly webinar for a FreshBooks demo and Q&amp;A.",
+          "about_team_image": {
+            "url": "/wp-content/uploads/rio-support.jpg"
+          },
+          "about_team_contact_links": [
+            {
+              "type": "Url",
+              "label": "Contact Us",
+              "value": "/contact"
+            },
+            {
+              "type": "Url",
+              "label": "Check out our Help Centre",
+              "value": "https://support.freshbooks.com"
+            }
+          ],
+          "block_settings_tracking_section": "support"
+        }
+      ],
+      [
+        "fpbk/feature-row",
+        {
+          "block_settings_tracking_section": "feature-row-under-support"
+        }
+      ],
+      [
+        "fpbk/columns",
+        {
+          "align": "center",
+          "className": "mt-5 mb-5"
+        },
+        [
+          [
+            "fpbk/column",
+            {
+              "align": "center",
+              "boostrap_class": "col-12",
+              "className": "mx-auto p-0"
+            },
+            [
+              [
+                "fpbk/flexible-colour-background",
+                {
+                  "align": "center",
+                  "background_colour": {
+                    "hex": "#eff8fe"
+                  },
+                  "block_settings_tracking_section": "integrations",
+                  "className": "pt-5 m-auto w-100"
+                },
+                [
+                  [
+                    "core/heading",
+                    {
+                      "content": "Integrations That Expand How<br />You Run Your Business",
+                      "level": 2,
+                      "align": "center",
+                      "className": "has-text-align-center has-text-align-center mb-5"
+                    }
+                  ],
+                  [
+                    "core/paragraph",
+                    {
+                      "content": "FreshBooks integrates with over 100 great apps to streamline your business,<br/>help you connect with your team and clients, and better understand your business.",
+                      "align": "center",
+                      "className": "w-100 w-lg-75 px-3 px-md-5 mb-5 mx-auto"
+                    }
+                  ],
+                  [
+                    "core/paragraph",
+                    {
+                      "content": "<a href=\"/integrations\" target=\"_blank\" style=\"text-decoration: underline;\">See all Integrations</a>",
+                      "align": "center",
+                      "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto"
+                    }
+                  ],
+                  [
+                    "fpbk/button",
+                    {
+                      "align": "center",
+                      "button_link": {
+                        "url": "/signup",
+                        "title": "Start Your Free Trial"
+                      },
+                      "block_settings_tracking_section": "integrations-cta",
+                      "className": "has-text-align-center is-style-btn-cta-green"
+                    }
+                  ],
+                  [
+                    "fpbk/logo-group",
+                    {
+                      "layout": "1",
+                      "logo_group_hide_lines": "1",
+                      "logos": [
+                        {
+                          "logo_type": "svg",
+                          "logo_svg": {
+                            "url": "/wp-content/uploads/bench-logo.svg"
+                          },
+                          "adjust_logo_size": "-1",
+                          "decrease_logo_size": "20",
+                          "increase_logo_size": ""
+                        },
+                        {
+                          "logo_type": "png",
+                          "logo_image": {
+                            "url": "/wp-content/uploads/logo-stripe-colour.png"
+                          },
+                          "adjust_logo_size": "+1",
+                          "decrease_logo_size": "",
+                          "increase_logo_size": "20"
+                        },
+                        {
+                          "logo_type": "png",
+                          "logo_image": {
+                            "url": "/wp-content/uploads/gmail@2x.png"
+                          },
+                          "adjust_logo_size": "0",
+                          "decrease_logo_size": "",
+                          "increase_logo_size": ""
+                        },
+                        {
+                          "logo_type": "svg",
+                          "logo_svg": {
+                            "url": "/wp-content/uploads/slack.svg"
+                          },
+                          "adjust_logo_size": "-1",
+                          "decrease_logo_size": "10",
+                          "increase_logo_size": ""
+                        },
+                        {
+                          "logo_type": "svg",
+                          "logo_svg": {
+                            "url": "/wp-content/uploads/mailchimp.svg"
+                          },
+                          "adjust_logo_size": "+1",
+                          "decrease_logo_size": "10",
+                          "increase_logo_size": ""
+                        },
+                        {
+                          "logo_type": "svg",
+                          "logo_svg": {
+                            "url": "/wp-content/uploads/fundbox.svg"
+                          },
+                          "adjust_logo_size": "0",
+                          "decrease_logo_size": "",
+                          "increase_logo_size": ""
+                        }
+                      ],
+                      "className": "m-0"
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        "core/heading",
+        {
+          "content": "This is the heading",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto"
+        }
+      ],
+      [
+        "core/paragraph",
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sed mauris tristique maximus. Quisque id metus purus. Nunc et dolor non ipsum tincidunt iaculis.",
+          "className": "w-100 w-lg-75 px-3 px-md-5 mx-auto",
+          "data": {
+            "block_settings_tracking_section": "paragraph-under-integrations"
+          }
+        }
+      ]
+    ]
+  }
+}

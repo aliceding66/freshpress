@@ -1,0 +1,1520 @@
+{
+    "key": "group_5ef101fbed23a",
+    "title": "Block - Hero",
+    "fields": [
+        {
+            "key": "field_5ef450188ed47",
+            "label": "Content",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5f9001cda22ed",
+            "label": "Content Max Width",
+            "name": "hero_content_max_width",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61fceedfc7bc8",
+            "label": "Content Background Colour",
+            "name": "hero_content_background_color",
+            "type": "color_picker",
+            "instructions": "Hero \"Centered with SSO\" variation only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "default_value": "#0075dd",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_628268494587c",
+            "label": "Hero Label Star Review",
+            "name": "hero_label_star_review",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f746586bda1a",
+            "label": "Hero Label",
+            "name": "hero_label",
+            "type": "text",
+            "instructions": "Please leave this empty in order to skip rendering this element",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 100
+        },
+        {
+            "key": "field_5f7465a52753b",
+            "label": "Hero Label Colour",
+            "name": "hero_label_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#062942",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5fdb29ab9f797",
+            "label": "Use Labels with Icons?",
+            "name": "hero_label_colour_copy",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5fd9fa0734f76",
+            "label": "Hero Labels with Icons",
+            "name": "hero_labels_with_icons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fdb29ab9f797",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5fd9fa3734f77",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 0
+                },
+                {
+                    "key": "field_5fd9fa4e34f78",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fdb2d9e7bb1c",
+                    "label": "Label Colour",
+                    "name": "label_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "wpml_cf_preferences": 0,
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5fdb2953513de",
+                    "label": "Hide on Mobile",
+                    "name": "hide_on_mobile",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        },
+        {
+            "key": "field_5ef1024852b15",
+            "label": "Headline",
+            "name": "headline",
+            "type": "text",
+            "instructions": "Please leave this empty in order to skip rendering this element",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f7303521aeca",
+            "label": "Headline Colour",
+            "name": "headline_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#062942",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5f8dc299e5705",
+            "label": "Headline Mobile Size",
+            "name": "headline_mobile_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "big": "Big"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f8fffde65b54",
+            "label": "Headline Tablet Size",
+            "name": "headline_tablet_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "big": "Big"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f8fffef65b55",
+            "label": "Headline Desktop Size",
+            "name": "headline_desktop_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "big": "Big"
+            },
+            "default_value": "normal",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5fb42b3b34b19",
+            "label": "Decrease Vertical Padding",
+            "name": "decrease_vertical_padding",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "wpml_cf_preferences": 3,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ef102fa52b16",
+            "label": "Text",
+            "name": "text",
+            "type": "wysiwyg",
+            "instructions": "Please leave this empty in order to skip rendering this element",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5f7303691aecb",
+            "label": "Text Colour",
+            "name": "text_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#062942",
+            "wpml_cf_preferences": 3,
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5f60c6dc9d993",
+            "label": "Hide on Mobile",
+            "name": "text_mobile_visibility",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5ef3a6333705e",
+            "label": "Images",
+            "name": "images",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Responsive Image",
+            "sub_fields": [
+                {
+                    "key": "field_5ef3a64b3705f",
+                    "label": "Screen Size",
+                    "name": "screen_size",
+                    "type": "select",
+                    "instructions": "This image will be visible on the selected screen size and larger unless replaced by another added image here.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "xs": "Mobile Small",
+                        "sm": "Mobile Large",
+                        "md": "Tablet",
+                        "lg": "Desktop Small",
+                        "xl": "Desktop Large"
+                    },
+                    "default_value": "xs",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ef4460dc0c6c",
+                    "label": "Display Image",
+                    "name": "display_image",
+                    "type": "true_false",
+                    "instructions": "Uncheck this to use a background colour at this breakpoint only",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5ef3a77937060",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef4460dc0c6c",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array",
+                    "preview_size": "large",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5ef446a368046",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef4460dc0c6c",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "#eff8fe",
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5f61e48f846d0",
+                    "label": "Bottom Padding",
+                    "name": "bottom_padding",
+                    "type": "text",
+                    "instructions": "Type 0 to reset from this breakpoint",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f64804cf8326",
+                    "label": "Background Size",
+                    "name": "background_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.3",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "normal": "Normal",
+                        "cover": "Cover",
+                        "custom": "Custom"
+                    },
+                    "default_value": "normal",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f648e07c9881",
+                    "label": "Background Position",
+                    "name": "background_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.3",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "normal": "Normal",
+                        "center": "Center",
+                        "center bottom": "Center Bottom",
+                        "left center": "Left Center"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f898d8c7daa1",
+                    "label": "Content Position",
+                    "name": "hero_content_position",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.3",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "start": "Left",
+                        "center": "Center",
+                        "end": "Right"
+                    },
+                    "default_value": "start",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5fa3c68a5d5c1",
+                    "label": "Custom Background Size",
+                    "name": "hero_custom_background_size",
+                    "type": "text",
+                    "instructions": "e. g. \"80% 90%\", \"auto 400px\" etc.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f64804cf8326",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5ef1035d52b17",
+            "label": "Interactivity",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ef1040352b19",
+            "label": "Include CTA Button",
+            "name": "include_cta_button",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5fd1e21b77032",
+            "label": "Include Second CTA",
+            "name": "hero_include_second_cta",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ef1072c250c6",
+            "label": "Include Signup Form",
+            "name": "include_signup_form",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5fa3c1b202ea9",
+            "label": "Include Pardot Form",
+            "name": "hero_include_pardot_form",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_613862afd3fba",
+            "label": "Include Hero Search",
+            "name": "hero_include_hero_search",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ef1086aa5d36",
+            "label": "CTA Button",
+            "name": "cta_button",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ef1040352b19",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5ef1039c52b18",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1040352b19",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ef1045952b1a",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1040352b19",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5fa5235263b9f",
+                    "label": "Max Width",
+                    "name": "max_width",
+                    "type": "text",
+                    "instructions": "Default value applied when empty (310px).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ef10dbd40f13",
+                    "label": "Mice Type",
+                    "name": "mice_type",
+                    "type": "text",
+                    "instructions": "This is the small text at the bottom of the block. Shown with smaller text and muted colours.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f80af1e6421d",
+                    "label": "Mice Type Colour",
+                    "name": "hero_mice_type_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "wpml_cf_preferences": 3,
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5fd1ff1916f5f",
+                    "label": "Offer Details Text",
+                    "name": "offer_details_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_5f730aba86133",
+                    "label": "Visibility",
+                    "name": "visibility",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "xs": "Mobile Small",
+                        "sm": "Mobile Large",
+                        "md": "Tablet",
+                        "lg": "Desktop Small",
+                        "xl": "Desktop Large",
+                        "xxl": "Desktop Extra-Large"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                        "xxl"
+                    ],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0,
+                    "wpml_cf_preferences": 3
+                }
+            ]
+        },
+        {
+            "key": "field_5fd1e29d77034",
+            "label": "Second CTA",
+            "name": "hero_second_cta",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fd1e21b77032",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5fd1e29d77035",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1040352b19",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fd1e29d77036",
+                    "label": "Anchor",
+                    "name": "anchor",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1040352b19",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "wpml_cf_preferences": 0
+                },
+                {
+                    "key": "field_5fd1e29d77037",
+                    "label": "Max Width",
+                    "name": "max_width",
+                    "type": "text",
+                    "instructions": "Default value applied when empty (310px).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fd1e29d77038",
+                    "label": "Mice Type",
+                    "name": "mice_type",
+                    "type": "text",
+                    "instructions": "This is the small text at the bottom of the block. Shown with smaller text and muted colours.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fd1e29d77039",
+                    "label": "Mice Type Colour",
+                    "name": "hero_mice_type_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "default_value": "",
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5fd1e2f17703b",
+                    "label": "Offer Details Text",
+                    "name": "offer_details_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "wpml_cf_preferences": 0
+                },
+                {
+                    "key": "field_5fd1e29d7703a",
+                    "label": "Visibility",
+                    "name": "visibility",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "choices": {
+                        "xs": "Mobile Small",
+                        "sm": "Mobile Large",
+                        "md": "Tablet",
+                        "lg": "Desktop Small",
+                        "xl": "Desktop Large",
+                        "xxl": "Desktop Extra-Large"
+                    },
+                    "allow_custom": 0,
+                    "save_custom": 0,
+                    "default_value": [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                        "xxl"
+                    ],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value"
+                }
+            ]
+        },
+        {
+            "key": "field_5ef1088ca5d37",
+            "label": "Signup Form",
+            "name": "signup_form",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ef1072c250c6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5ef1077f250c7",
+                    "label": "Email Placeholder Text",
+                    "name": "email_placeholder_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1072c250c6",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Enter Your Email",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f0db1d961e9b",
+                    "label": "Password Placeholder Text",
+                    "name": "password_placeholder_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1072c250c6",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Create a Password (min 8 characters)",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ef107ec250c8",
+                    "label": "Submit Button Text",
+                    "name": "submit_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef1072c250c6",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "Get Started",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ef10a82ef040",
+                    "label": "Include Default Terms of Service",
+                    "name": "include_default_terms_of_service",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5ef10a9cef041",
+                    "label": "Custom Terms of Service",
+                    "name": "custom_terms_of_service",
+                    "type": "wysiwyg",
+                    "instructions": "Be sure to link to the TOS and Security Safeguards",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ef10a82ef040",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0,
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f80b3e1690d8",
+                    "label": "Terms Of Service Colour",
+                    "name": "hero_terms_of_service_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "wpml_cf_preferences": 3,
+                    "enable_opacity": false,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5f730b5e86134",
+                    "label": "Visibility",
+                    "name": "visibility",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "xs": "Mobile Small",
+                        "sm": "Mobile Large",
+                        "md": "Tablet",
+                        "lg": "Desktop Small",
+                        "xl": "Desktop Large",
+                        "xxl": "Desktop Extra-Large"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                        "xxl"
+                    ],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0,
+                    "wpml_cf_preferences": 3
+                }
+            ]
+        },
+        {
+            "key": "field_5fa3c1e802eaa",
+            "label": "Pardot Form",
+            "name": "hero_pardot_form",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fa3c1b202ea9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "clone": [
+                "group_5f74e9373e96c"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_613864397d008",
+            "label": "Hero Search",
+            "name": "hero_search",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_613862afd3fba",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "wpml_cf_preferences": 0,
+            "sub_fields": [
+                {
+                    "key": "field_6138644c7d009",
+                    "label": "Input Placeholder Text",
+                    "name": "input_placeholder_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/hero"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1652713635
+}

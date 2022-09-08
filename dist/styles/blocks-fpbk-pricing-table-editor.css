@@ -1,0 +1,48 @@
+.editor-styles-wrapper .pricing-table_term-wrapper .pricing-table_term-switch__monthly-label,
+.editor-styles-wrapper .pricing-table_term-wrapper .pricing-table_term-switch__yearly-label {
+  position: absolute;
+  top: 3px;
+  width: 105px;
+  color: #6a7f8e;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.69231;
+  text-transform: uppercase;
+}
+@media (min-width: 480px) {
+  .editor-styles-wrapper .pricing-table_term-wrapper .pricing-table_term-switch__monthly-label,
+.editor-styles-wrapper .pricing-table_term-wrapper .pricing-table_term-switch__yearly-label {
+    width: 200px;
+    font-size: 0.9375rem;
+    line-height: 1.46667;
+  }
+}
+.editor-styles-wrapper .pricing-table_term-wrapper .pricing-table_term-switch__monthly-label {
+  right: calc(50% + 40px);
+  text-align: right;
+}
+.editor-styles-wrapper .pricing-table_term-wrapper .pricing-table_term-switch__yearly-label {
+  left: calc(50% + 40px);
+  text-align: left;
+}
+.editor-styles-wrapper .pricing-table_column-promo__ribbon-image .block-editor__editor-controls__file-wrapper {
+  min-height: 42px;
+}
+.editor-styles-wrapper .pricing-table_column-promo__ribbon-image .block-editor__editor-controls__file--inline {
+  height: auto;
+}
+.editor-styles-wrapper .pricing-table_column-promo__ribbon-image .block-editor__editor-controls__file--inline + img {
+  position: absolute;
+  left: 50%;
+  height: 42px;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.editor-styles-wrapper .pricing-table_column-features__expand-link {
+  pointer-events: none;
+}
+.editor-styles-wrapper .pricing-table_column-standard__ribbon-subtext {
+  top: 0;
+}
+
+/*# sourceMappingURL=blocks-fpbk-pricing-table-editor.css.map*/

@@ -1,0 +1,17 @@
+.editor-styles-wrapper .wp-block-fpbk-vat-text-image {
+  border: none;
+}
+.editor-styles-wrapper .wp-block-fpbk-vat-text-image .vat-text-image__right .block-editor__editor-controls__file-wrapper,
+.editor-styles-wrapper .wp-block-fpbk-vat-text-image .vat-text-image__right .components-base-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.editor-styles-wrapper .wp-block-fpbk-vat-text-image .vat-text-image__image {
+  z-index: 0;
+}
+
+/*# sourceMappingURL=blocks-fpbk-vat-text-image-editor.css.map*/

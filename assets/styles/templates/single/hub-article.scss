@@ -1,0 +1,59 @@
+@import '../../freshpress-includes';
+
+hr {
+	border-color: $rule-grey;
+	border-top: 0;
+}
+
+.hub-article {
+	&__date {
+		font-size: px-to-rem( 16px );
+	}
+
+	&__content {
+		.related-links {
+			padding-bottom: 20px;
+			border-bottom: 1px solid $rule-grey;
+		}
+
+		img {
+			height: auto;
+		}
+	}
+}
+
+.article-bio {
+	border-bottom: 1px solid $rule-grey;
+
+	&__image {
+		img {
+			flex: 0 0 96px;
+			width: 96px;
+			object-fit: cover;
+			border: solid 1px $rule-grey;
+			border-radius: 50%;
+		}
+
+		p {
+			margin-bottom: 0;
+
+			&:first-child {
+				font-weight: $font-weight-bold;
+			}
+		}
+	}
+
+	&__name {
+		margin-top: 10px;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 20px );
+		line-height: 21px;
+	}
+
+	&__title {
+		padding-top: 5px;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 15px );
+		letter-spacing: 0.5px;
+	}
+}

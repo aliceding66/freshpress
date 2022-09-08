@@ -1,0 +1,40 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/faq",
+  "title": "FAQ",
+  "category": "freshblocks",
+  "description": "FreshPress block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  },
+  "styles": [
+    {
+      "name": "standard",
+      "label": "Standard",
+      "isDefault": true
+    },
+    {
+      "name": "new",
+      "label": "New"
+    }
+  ],
+  "example": {
+    "attributes": {
+      "headline": "Insert FAQ Headline",
+      "layout": "classic",
+      "questions_and_answers": [
+        {
+          "answer": "Answer One",
+          "key": "exOne",
+          "question": "Question One"
+        },
+        {
+          "answer": "Answer Two",
+          "key": "exTwo",
+          "question": "Question Two"
+        }
+      ]
+    }
+  }
+}

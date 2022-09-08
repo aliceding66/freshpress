@@ -1,0 +1,101 @@
+{
+    "key": "group_5f2c3e764095e",
+    "title": "Block - Confirmation Box",
+    "fields": [
+        {
+            "key": "field_5f2c3fc0e8399",
+            "label": "Title",
+            "name": "confirmation_box_title",
+            "type": "text",
+            "instructions": "This is the title of the box.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f2c4008e839a",
+            "label": "Primary Message",
+            "name": "confirmation_box_primary_message",
+            "type": "text",
+            "instructions": "This is the message that shows in the top part of the box.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f2c4018e839b",
+            "label": "Secondary Message",
+            "name": "confirmation_box_secondary_message",
+            "type": "wysiwyg",
+            "instructions": "This is the message that shows in the bottom part of the box.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 0,
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f2c4026e839c",
+            "label": "CTA",
+            "name": "confirmation_box_cta",
+            "type": "link",
+            "instructions": "Enter the text and URL of the link.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "wpml_cf_preferences": 2
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/confirmation-box"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643306239
+}

@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/mobile-segment-navigation",
+  "title": "Mobile Segment Navigation",
+  "category": "freshblocks",
+  "description": "A block for segment navigation on mobile breakpoints",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

@@ -1,0 +1,137 @@
+@import '~styles/freshpress-includes';
+
+.modal {
+	z-index: $zindex-modal;
+	background-color: rgba( $midnight-blue, 0.9 );
+
+	&__header {
+		color: $white;
+		background-color: $fresh-blue;
+	}
+
+	&__body {
+		max-width: 480px;
+	}
+
+	&__cta {
+		max-width: 290px;
+		font-size: 1.2rem;
+	}
+
+	&__bottom-text {
+		font-size: px-to-rem( 14px );
+	}
+
+	&__close-button {
+		top: 10px;
+		right: 10px;
+		padding-right: 30px; // for X
+		color: $dark-grey;
+		background: none;
+		border: none;
+
+		span {
+			top: 12px;
+			right: 6px;
+			width: 20px;
+			height: 4px;
+			border-radius: 1px;
+
+			&:first-child {
+				transform: rotate( -45deg );
+			}
+
+			&:last-child {
+				transform: rotate( 45deg );
+			}
+		}
+	}
+
+	&__content-heading {
+		&_stages {
+			font-size: px-to-rem( 34px );
+			line-height: calc( 34 / 32 );
+		}
+	}
+
+	&__stage {
+		z-index: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: opacity 0.3s ease-out;
+		pointer-events: none;
+
+		&:not( .active ) {
+			max-height: 0;
+			overflow: hidden;
+		}
+
+		&.active {
+			z-index: 1;
+			//max-height: 1000px;
+			overflow: hidden;
+			opacity: 1;
+			transition: opacity 0.3s 0.2s ease-in;
+			pointer-events: auto;
+		}
+	}
+
+	&__description {
+		font-size: px-to-rem( 16px );
+	}
+
+	&__list {
+		padding: 0 0 0 24px;
+		font-size: px-to-rem( 16px );
+		text-align: left;
+		list-style-type: none;
+
+		li {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				top: 5px;
+				left: -20px;
+				width: 16px;
+				height: 16px;
+				background-image: url( ./../../../../assets/images/icons/checkmark-green.svg );
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 70%;
+				content: '';
+			}
+		}
+	}
+
+	&__next-stage {
+		padding: 7px 22px;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 18px );
+		pointer-events: auto;
+	}
+
+	&__close {
+		padding: 7px 30px;
+		font-weight: $font-weight-medium;
+		font-size: px-to-rem( 18px );
+		border-color: $midnight-blue;
+		pointer-events: auto;
+
+		&:hover {
+			border-color: $midnight-blue;
+		}
+	}
+
+	&__close-link {
+		color: $midnight-blue;
+		font-size: px-to-rem( 16px );
+		text-decoration: none;
+		pointer-events: auto;
+
+		&:hover {
+			color: $midnight-blue;
+			text-decoration: underline;
+		}
+	}
+}

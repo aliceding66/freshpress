@@ -1,0 +1,36 @@
+.wp-block-fpbk-partner-feature__card {
+  background-color: #fff;
+  border: 1px solid #cdd4d9;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0 rgba(0, 27, 64, 0.07);
+}
+@media (min-width: 768px) {
+  .wp-block-fpbk-partner-feature__card {
+    min-height: 160px;
+  }
+}
+.wp-block-fpbk-partner-feature__card_lifted {
+  margin-top: -40px;
+}
+@media (min-width: 1024px) {
+  .wp-block-fpbk-partner-feature__card_lifted {
+    margin-top: -50px;
+  }
+}
+.wp-block-fpbk-partner-feature__image {
+  max-width: 136px;
+  max-height: 95px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wp-block-fpbk-partner-feature__text_big {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .wp-block-fpbk-partner-feature__text_big {
+    font-size: 1.6875rem;
+  }
+}
+
+/*# sourceMappingURL=blocks-fpbk-partner-feature-style.css.map*/

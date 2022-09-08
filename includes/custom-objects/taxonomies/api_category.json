@@ -1,0 +1,15 @@
+{
+  "taxonomy": "api_category",
+  "taxonomy_plural": "api_categories",
+  "label": "API Category",
+  "label_plural": "API Categories",
+  "post_types": [
+    "api"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "api/category",
+      "with_front": false
+    }
+  }
+}

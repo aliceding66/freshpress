@@ -1,0 +1,45 @@
+// Declare custom functions
+@use 'sass:math';
+
+/// Map deep get
+/// @author Hugo Giraudel
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-deep-get( $map, $keys... ) {
+	@each $key in $keys {
+		$map: map-get( $map, $key );
+	}
+
+	@return $map;
+}
+
+/// Remove the unit of a length
+/// @author Hugo Giraudel
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit( $number ) {
+	@if type-of( $number ) == 'number' and not unitless( $number ) {
+		@return math.div( $number, ( $number * 0 + 1 ) );
+	}
+
+	@return $number;
+}
+
+/// Covert px to rem
+/// @author Freshbooks Website Services Team
+/// @param {Number} $px - Target computed size for the rems to achieve in the browser.  Can be listed with or without the px unit.
+/// @param {Number} $base - The assumed base pixel value of the root element.  Defaults to the $font-size-root variable.
+/// @return {Number} - Value in rem.
+
+@function px-to-rem( $px, $base: $font-size-root ) {
+	// force values to px so that they cancel units
+	$numerator: strip-unit( $px ) * 1px;
+	$denominator: strip-unit( $base ) * 1px;
+	$rems: math.div( $numerator, $denominator ) * 1rem;
+
+	@return $rems;
+}
+
+// Now import the bootstrap functions
+@import '~bootstrap/scss/functions';

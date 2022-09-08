@@ -1,0 +1,18 @@
+{
+  "taxonomy": "press_category",
+  "taxonomy_plural": "press_categories",
+  "label": "Press Category",
+  "label_plural": "Press Categories",
+  "post_types": [
+    "press_article"
+  ],
+  "args": {
+    "rewrite": {
+      "slug": "press",
+      "with_front": false,
+      "ep_mask": [
+        "EP_YEAR"
+      ]
+    }
+  }
+}

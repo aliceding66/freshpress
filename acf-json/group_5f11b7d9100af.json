@@ -1,0 +1,104 @@
+{
+    "key": "group_5f11b7d9100af",
+    "title": "Block - Rating",
+    "fields": [
+        {
+            "key": "field_5f11b7edce4fd",
+            "label": "Wrap",
+            "name": "rating_wrap",
+            "type": "select",
+            "instructions": "Choose between 1 or 2-line wrap.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "1 Line",
+                "2": "2 Lines"
+            },
+            "default_value": 1,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_614987ea73fa9",
+            "label": "Style",
+            "name": "rating_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "default_value": "dark",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61f3a7d5faeb6",
+            "label": "Image",
+            "name": "rating_image",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "choices": {
+                "white_green": "White with green background",
+                "yellow": "Yellow",
+                "white_yellow": "White with yellow background"
+            },
+            "default_value": "white-green",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/rating"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643816276
+}

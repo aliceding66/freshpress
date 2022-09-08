@@ -1,0 +1,9 @@
+export const ADD = 'a';
+
+export const REMOVE = 'r';
+
+export const EDIT = 'e';
+
+export const MOVE_LEFT = 'ml';
+
+export const MOVE_RIGHT = 'mr';

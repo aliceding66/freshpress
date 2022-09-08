@@ -1,0 +1,21 @@
+<iframe
+		allowTransparency="true"
+		class="pardot-form__iframe d-block mx-auto"
+		frameborder="0"
+		title="{{ form_name }}"
+		type="text/html"
+		loading="lazy"
+		src="{{ pardot_form_url }}"
+		persistentPopup="{{ pardot_form_no_close }}"
+		{{# pardot_form_thank_you_modal_id }}
+			data-thank-you-modal="{{ pardot_form_thank_you_modal_id }}"
+		{{/ pardot_form_thank_you_modal_id }}
+		{{# pardot_form_iframe_width }}
+			width="{{ pardot_form_iframe_width }}"
+			style="width: {{ pardot_form_iframe_width }}px; border: 0; max-width: 100%;"
+		{{/ pardot_form_iframe_width }}
+		{{^ pardot_form_iframe_width }}
+			width="100%"
+			style="border: 0; max-width: 100%;"
+		{{/ pardot_form_iframe_width }}
+></iframe>

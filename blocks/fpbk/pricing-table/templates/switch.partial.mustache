@@ -1,0 +1,23 @@
+<div class="pricing-table_term-wrapper w-100 d-flex justify-content-center align-content-center mb-5 position-relative">
+    <label
+            class="pricing-table_term-switch d-flex align-items-center position-relative"
+            data-monthly="{{ term_switch_monthly_term_label }}"
+            data-yearly="{{ term_switch_yearly_term_label }}"
+            data-promo-monthly="{{ term_switch_promo_monthly_term_label }}"
+            data-promo-yearly="{{ term_switch_promo_yearly_term_label }}"
+            for="{{ labels.random }}"
+    >
+        {{# admin_term_switch }}
+            {{{ admin_term_switch }}}
+        {{/ admin_term_switch }}
+        {{^ admin_term_switch }}
+            <input id="{{ labels.random }}" type="checkbox" class="pricing-table_term-switch__checkbox"{{# default_to_yearly }} checked{{/ default_to_yearly }}>
+        {{/ admin_term_switch }}
+
+        <span class="pricing-table_term-switch__slider position-absolute" style="color: transparent; font-size: 0;">{{ labels.random }}</span>
+
+    </label>
+
+    {{{ admin_monthly_label }}}
+    {{{ admin_yearly_label }}}
+</div>

@@ -1,0 +1,51 @@
+// Commission Details.
+
+@import '~styles/freshpress-includes';
+
+.commission-details {
+	&__tile {
+		max-width: 425px; // fromt the mocks
+		color: $white;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		border-radius: 8px;
+		box-shadow: 3px 3px 0 0 rgba( 6, 41, 66, 0.08 );
+	}
+
+	&__heading {
+		font-weight: $font-weight-medium;
+		font-size: px_to-rem( 28 );
+		line-height: calc( 24 / 18 );
+		letter-spacing: -0.15px;
+	}
+
+	&__description {
+		font-weight: $font-weight-book;
+		font-size: px_to-rem( 18 );
+		line-height: calc( 24 / 18 );
+	}
+
+	&__earn-up-to {
+		font-weight: $font-weight-book;
+		font-size: px_to-rem( 16 );
+	}
+
+	&__value {
+		font-weight: $font-weight-medium;
+		font-size: px_to-rem( 100 );
+		line-height: calc( 13 / 18 );
+	}
+
+	&__currency-sign {
+		font-weight: $font-weight-medium;
+		font-size: px_to-rem( 46 );
+		line-height: calc( 16 / 18 );
+	}
+
+	&__currency {
+		font-weight: $font-weight-book;
+		font-size: px_to-rem( 16 );
+		line-height: calc( 16 / 18 );
+	}
+}

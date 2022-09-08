@@ -1,0 +1,142 @@
+/**
+ * Custom Bootstrap Variants
+ *
+ * Note that these classes are to use kebab-case naming as do Bootstraps default variant classes,
+ * as opposed to our usual BEM formatting. Ensure that you are also using the base class of the
+ * chosen variant element, such as `class="btn btn-cta-green"`.
+ */
+
+// Button variants.
+
+/* Parameters for button-variant:
+background-color,
+border-color,
+background-color:hover,
+border-color:hover,
+background-color:active,
+border-color:active,
+*/
+
+.btn-cta-green {
+	@include button-variant(
+		$cta-green,
+		$cta-green,
+		darken( $cta-green, 5% ),
+		darken( $cta-green, 5% ),
+		darken( $cta-green, 5% ),
+		darken( $cta-green, 5% )
+	);
+	color: $white;
+	&:hover {
+		color: $white;
+	}
+}
+
+.btn-white {
+	@include button-variant(
+		$white,
+		$outline-grey,
+		darken( $white, 5% ),
+		$outline-grey,
+		darken( $white, 5% ),
+		$outline-grey
+	);
+	color: $midnight-blue;
+	&:hover {
+		color: $midnight-blue;
+	}
+}
+
+.btn-midnight-blue {
+	@include button-variant(
+		$midnight-blue,
+		$midnight-blue,
+		darken( $midnight-blue, 5% ),
+		$midnight-blue,
+		darken( $midnight-blue, 5% ),
+		$midnight-blue
+	);
+	color: $white;
+	&:hover {
+		color: $white;
+	}
+}
+
+.btn-link {
+	color: $midnight-blue;
+	&:hover {
+		color: $midnight-blue;
+	}
+}
+
+.btn-outline-light {
+	@include button-variant(
+		transparent,
+		$white,
+		rgba( $white, 0.15 ),
+		$white,
+		rgba( $white, 0.15 ),
+		$white
+	);
+	color: $white;
+	&:hover {
+		color: $white;
+	}
+}
+
+.btn-outline-grey {
+	@include button-variant(
+		transparent,
+		$rule-grey,
+		rgba( $white, 0.15 ),
+		$rule-grey,
+		rgba( $white, 0.15 ),
+		$rule-grey
+	);
+	color: $midnight-blue;
+	&:hover {
+		color: $midnight-blue;
+	}
+}
+
+// Alert variants
+/* stylelint-disable no-descending-specificity */
+.alert-bright-blue {
+	@include alert-variant( $bright-blue, $bright-blue, $white );
+	a,
+	a:hover {
+		color: $white;
+	}
+}
+
+.alert-fresh-blue {
+	@include alert-variant( $fresh-blue, $fresh-blue, $white );
+	a,
+	a:hover {
+		color: $white;
+	}
+}
+
+//Flexible color background.
+.home {
+	.flexible-colour-background {
+		.wp-block-fpbk-button {
+			.btn-cta-green {
+				font-weight: $font-weight-medium;
+				font-size: px-to-rem( 24px );
+			}
+		}
+	}
+}
+
+/* stylelint-enable no-descending-specificity */
+
+// Table colours
+/* stylelint-disable selector-pseudo-class-parentheses-space-inside */
+.table-fb-striped {
+	tbody {
+		tr:nth-of-type( even ) {
+			background-color: rgba( $blue-secondary-content, 0.6 );
+		}
+	}
+}

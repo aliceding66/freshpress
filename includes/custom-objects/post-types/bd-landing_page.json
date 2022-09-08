@@ -1,0 +1,24 @@
+{
+  "post_type": "landing_page",
+  "post_type_plural": "landing_pages",
+  "label": "Landing Page",
+  "label_plural": "Landing Pages",
+  "args": {
+    "description": "A lead capture page",
+    "menu_icon": "dashicons-id-alt",
+    "rewrite": {
+      "slug": "pages"
+    },
+    "template": [
+      [
+        "fpbk/hero",
+        {
+          "className": "m-0"
+        }
+      ],
+      [
+        "fpbk/partner-feature"
+      ]
+    ]
+  }
+}

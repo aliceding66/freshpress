@@ -1,0 +1,39 @@
+@import '~styles/freshpress-includes';
+
+.wp-block-fpbk-partner-feature {
+	&__card {
+		background-color: $white;
+		border: 1px solid $border-color;
+		border-radius: 5px;
+		box-shadow: 4px 4px 0 rgba( $midnight-blue, 0.07 );
+
+		@include media-breakpoint-up( md ) {
+			min-height: 160px;
+		}
+
+		&_lifted {
+			margin-top: -40px;
+
+			@include media-breakpoint-up( lg ) {
+				margin-top: -50px;
+			}
+		}
+	}
+
+	&__image {
+		max-width: 136px;
+		max-height: 95px;
+		object-fit: contain;
+	}
+
+	&__text {
+		&_big {
+			font-weight: $font-weight-medium;
+			font-size: px-to-rem( 24px );
+
+			@include media-breakpoint-up( md ) {
+				font-size: px-to-rem( 27px );
+			}
+		}
+	}
+}

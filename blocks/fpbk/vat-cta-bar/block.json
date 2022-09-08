@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/vat-cta-bar",
+  "title": "VAT CTA Bar",
+  "category": "freshblocks",
+  "description": "VAT CTA Bar that matches new design guidelines.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

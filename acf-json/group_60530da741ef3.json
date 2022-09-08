@@ -1,0 +1,92 @@
+{
+    "key": "group_60530da741ef3",
+    "title": "Block - Product Tour Grey Line",
+    "fields": [
+        {
+            "key": "field_60530dbcd7963",
+            "label": "Snap to checkpoint threshold",
+            "name": "snap_to_checkpoint_threshold",
+            "type": "range",
+            "instructions": "Distance in pixels within dot will be snapped into checkpoint",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": 50,
+            "max": 500,
+            "step": "",
+            "prepend": "",
+            "append": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_60530e51d7964",
+            "label": "Checkpoint placement",
+            "name": "checkpoint_placement",
+            "type": "select",
+            "instructions": "How checkpoints should be aligned for each block inside Product Tour Grey Line",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "heading": "With the first found heading",
+                "center": "In the middle of each block"
+            },
+            "default_value": "heading",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "wpml_cf_preferences": 3,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60530fd95cfee",
+            "label": "Show start Checkpoint?",
+            "name": "show_start_checkpoint",
+            "type": "true_false",
+            "instructions": "Set to true if the line needs to show separate dot at the very beginning of line. If that value is false, then the first dot and line will start with first checkpoint.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/product-tour-grey-line"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308120
+}

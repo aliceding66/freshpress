@@ -1,0 +1,8 @@
+.editor-styles-wrapper .feature-row {
+  min-height: 3.125rem;
+}
+.editor-styles-wrapper .feature-row__cta {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=blocks-fpbk-feature-row-editor.css.map*/

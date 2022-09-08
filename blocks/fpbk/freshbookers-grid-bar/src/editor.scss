@@ -1,0 +1,60 @@
+@import '~styles/freshpress-includes';
+
+.editor-styles-wrapper {
+	.freshbookers-grid-bar {
+		.components-button {
+			&:nth-child( 2 ) {
+				margin-top: 4px;
+			}
+
+			&.has-icon .dashicon {
+				margin: 0;
+			}
+
+			&.is-secondary,
+			&.is-destructive {
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				color: $white;
+
+				&:hover {
+					color: $white;
+				}
+			}
+
+			&.is-secondary {
+				background-color: rgba( #007cba, 0.85 );
+
+				&:hover {
+					background-color: rgba( #007cba, 1 );
+				}
+			}
+
+			&.is-destructive {
+				background-color: rgba( #cc1818, 0.85 );
+
+				&:hover {
+					background-color: rgba( #cc1818, 1 );
+				}
+			}
+		}
+
+		&__item {
+			&.has-image {
+				.media-wrapper {
+					visibility: hidden;
+					opacity: 0;
+					transition: 0.3s;
+				}
+
+				&:hover {
+					.media-wrapper {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

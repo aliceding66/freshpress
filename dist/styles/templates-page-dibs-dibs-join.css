@@ -1,0 +1,48 @@
+.join {
+  top: -50px;
+  background-color: #fff;
+}
+@media (min-width: 1024px) {
+  .join {
+    top: -100px;
+    background-image: url(/wp-content/themes/freshpress/dist/images/templates/page/dibs/global-offices.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .join {
+    background-position: right -54px;
+    background-size: 50%;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1600px) {
+  .join {
+    background-size: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .join__content {
+    max-width: 344px;
+  }
+}
+@media (min-width: 1600px) {
+  .join__content {
+    max-width: 440px;
+  }
+}
+.join__content .join__logo {
+  width: 75px;
+  height: auto;
+}
+.join__logos {
+  max-width: 330px;
+}
+@media (min-width: 1024px) {
+  .join__logos {
+    max-width: none;
+  }
+}
+
+/*# sourceMappingURL=templates-page-dibs-dibs-join.css.map*/

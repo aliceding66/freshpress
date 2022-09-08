@@ -1,0 +1,13 @@
+// Columns.
+
+@import '~styles/freshpress-includes';
+
+.columns {
+	flex-wrap: wrap !important;
+
+	&--same-height {
+		.column {
+			display: table-cell !important;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{{# show_block }}
+
+		<{{ container_tag }} {{{ list_colour_inline_style }}} class="related-links__container {{ selected_layout }} p-0 list-unstyled">
+
+			{{# show_not_taxonomy_or_custom }}
+				{{> not_taxonomy_or_custom }}
+			{{/ show_not_taxonomy_or_custom }}
+
+			{{# show_taxonomy }}
+				{{> taxonomy }}
+			{{/ show_taxonomy }}
+
+			{{# show_predefined }}
+				{{> predefined }}
+
+			{{/ show_predefined }}
+
+			{{# show_custom }}
+				{{> custom }}
+			{{/ show_custom }}
+
+		</{{ container_tag }}>
+
+{{/ show_block }}

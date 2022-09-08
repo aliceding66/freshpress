@@ -1,0 +1,141 @@
+.cta-banner {
+  max-width: 716.66px;
+  background-image: url(/wp-content/themes/freshpress/dist/images/cta-banner/background-standard.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+.cta-banner a {
+  color: #000 !important;
+}
+.cta-banner a:hover {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+.cta-banner.is-style-standard-blue {
+  background-image: url(/wp-content/themes/freshpress/dist/images/cta-banner/background-standard-blue.svg);
+}
+.cta-banner.is-style-navigation {
+  background-image: url(/wp-content/themes/freshpress/dist/images/cta-banner/background-navigation.svg);
+  background-position: top left;
+  background-size: cover;
+}
+.cta-banner.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+}
+.cta-banner.alignleft {
+  margin-right: auto;
+  margin-left: 0;
+}
+.cta-banner.alignright {
+  margin-right: 0;
+  margin-left: auto;
+}
+@media (max-width: 1023.98px) {
+  .cta-banner .btn {
+    font-size: 10px;
+    line-height: 11.7px;
+    border-radius: 5px;
+  }
+}
+.cta-banner .btn-midnight-blue {
+  padding: 0.625rem 2.125rem;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+@media (max-width: 1023.98px) {
+  .cta-banner .btn-midnight-blue {
+    padding: 0.3125rem 1.125rem;
+    font-size: 0.8125rem;
+  }
+}
+.cta-banner .banner-heading {
+  padding: 2.3125rem 2.125rem;
+  font-size: 2rem;
+}
+@media (max-width: 1023.98px) {
+  .cta-banner .banner-heading {
+    margin: 0 !important;
+    padding: 1.0625rem 1.0625rem;
+    font-size: 1rem;
+  }
+}
+.cta-banner .l-50 {
+  position: relative;
+  left: -50px;
+}
+@media (max-width: 1279.98px) {
+  .cta-banner .l-50 {
+    left: -2vw;
+  }
+}
+@media (max-width: 1023.98px) {
+  .cta-banner .l-50 {
+    left: -4vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .cta-banner .l-50 {
+    left: 4vw;
+    max-width: 40vw;
+  }
+}
+.cta-banner .columns {
+  max-width: 100%;
+}
+
+.is-style-navigation .column {
+  align-items: flex-start !important;
+  max-width: 100% !important;
+}
+.is-style-navigation .columns {
+  display: block !important;
+}
+.is-style-navigation .l-50 {
+  left: 35px !important;
+  padding-bottom: 35px;
+  padding-left: 0;
+}
+.is-style-navigation .banner-heading {
+  padding: 27px 2.125rem 0.5rem 22px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+}
+@media (max-width: 767.98px) {
+  .is-style-navigation .banner-heading {
+    position: relative;
+    left: 35px;
+    font-size: 20px !important;
+  }
+}
+.is-style-navigation .btn-midnight-blue {
+  padding: 12px 59px;
+  font-size: 16px;
+}
+
+.sticky-top .flexible-colour-background {
+  flex: 100% !important;
+  max-width: 100% !important;
+}
+.sticky-top .btn-midnight-blue {
+  position: relative;
+  left: -9px !important;
+}
+.sticky-top .column {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+.hub__mobile-cta-banner .columns {
+  margin-right: 0;
+}
+.hub__mobile-cta-banner .cta-banner {
+  width: calc(100vw - 30px);
+  min-width: calc(100% - 30px);
+  margin: auto !important;
+}
+
+/*# sourceMappingURL=blocks-fpbk-cta-banner-style.css.map*/

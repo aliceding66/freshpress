@@ -1,0 +1,23 @@
+{{# dropdown_list }}
+	<div class="related-links__list-dropdown-wrapper d-flex justify-content-center justify-content-md-start ml-3 p-1 overflow-hidden">
+		<select class="related-links__list-dropdown p-2 overflow-hidden align-bottom border-0">
+			{{# links }}
+				<option
+					class="related-links__list-item related-links__list-item_taxonomy m-0 {{ active }}"
+					value="{{{ url }}}"
+					{{ active }}
+				>
+					{{{ title }}}
+				</option>
+			{{/ links }}
+		</select>
+	</div>
+{{/ dropdown_list }}
+
+{{# simple_list }}
+	{{# links }}
+		<li class="related-links__list-item related-links__list-item_taxonomy m-0 {{ active }}">
+			<a class="text-decoration-none d-block" href="{{{ url }}}" target="{{ target }}">{{{ title }}}</a>
+		</li>
+	{{/ links }}
+{{/ simple_list }}

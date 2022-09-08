@@ -1,0 +1,104 @@
+.two-columns-text {
+  position: relative;
+  margin: 0 -15px;
+  padding: 50px 0 50px;
+  color: #001b40;
+}
+@media (min-width: 768px) {
+  .two-columns-text {
+    padding: 84px 0 84px;
+  }
+}
+@media (min-width: 1024px) {
+  .two-columns-text {
+    padding: 140px 0 140px;
+  }
+}
+@media (min-width: 1280px) {
+  .two-columns-text__default-crop::before {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: -1px;
+    left: auto;
+    z-index: 1;
+    display: block;
+    width: 350px;
+    height: 350px;
+    background-image: url(/wp-content/themes/freshpress/dist/images/vat-calculator/curve-right-bottom.svg);
+    background-size: 350px 350px;
+    content: "";
+  }
+}
+@media (min-width: 1440px) {
+  .two-columns-text__default-crop::before {
+    width: 450px;
+    height: 450px;
+    background-size: 450px 450px;
+  }
+}
+.two-columns-text__default-color {
+  background-color: #fffaea;
+}
+.two-columns-text__container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1199px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+.two-columns-text__content_left {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .two-columns-text__content_left {
+    width: 75%;
+  }
+}
+@media (min-width: 1280px) {
+  .two-columns-text__content_left {
+    width: 900px;
+  }
+}
+.two-columns-text__content_left h2 {
+  margin-bottom: 20px;
+  font-size: 1.625rem;
+  line-height: 1.93375rem;
+}
+@media (min-width: 768px) {
+  .two-columns-text__content_left h2 {
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
+  }
+}
+@media (min-width: 1024px) {
+  .two-columns-text__content_left h2 {
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+  }
+}
+.two-columns-text__content_left p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.19rem;
+}
+.two-columns-text__content_left p strong {
+  font-weight: 500;
+}
+.two-columns-text__content_left p:first-child {
+  margin-top: 0 !important;
+}
+@media (min-width: 1024px) {
+  .two-columns-text__content_left p {
+    margin-top: 30px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+
+/*# sourceMappingURL=blocks-acf-two-columns-text-two-columns-text.css.map*/

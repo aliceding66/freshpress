@@ -1,0 +1,261 @@
+@import '../../../freshpress-includes';
+
+$graph-border-radius: 10px;
+
+.graph {
+	@include media-breakpoint-up( lg ) {
+		width: 905px;
+		padding: 100px 80px;
+	}
+
+	.swiper-pagination-bullets {
+		bottom: 0 !important;
+		z-index: 1;
+		width: auto !important;
+	}
+
+	&__nav-item {
+		padding: 10px 25px;
+		color: $midnight-blue;
+		font-weight: 500;
+		font-size: px-to-rem( 18 );
+		text-decoration: none;
+
+		&:hover,
+		&:visited {
+			color: $midnight-blue;
+			text-decoration: none;
+		}
+
+		&_active {
+			color: $white;
+			background-color: $fresh-blue;
+			border-radius: 20px;
+
+			&:hover,
+			&:visited {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__legend {
+		order: 2;
+		max-width: 285px;
+
+		@include media-breakpoint-up( lg ) {
+			order: 1;
+		}
+	}
+
+	&__legend-title {
+		font-weight: 500;
+		font-size: px-to-rem( 26 );
+
+		@include media-breakpoint-up( lg ) {
+			font-size: px-to-rem( 38 );
+		}
+	}
+
+	&__legend-items {
+		font-size: px-to-rem( 18 );
+		border-bottom: 1px solid #c2c8d1;
+	}
+
+	&__legend-item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 12px;
+	}
+
+	&__legend-item-decoration {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		margin-right: 12px;
+		border-radius: 50px;
+	}
+
+	&__percentage_white,
+	&__percentage_man,
+	&__percentage_18,
+	&__legend-item-decoration_white,
+	&__legend-item-decoration_man,
+	&__legend-item-decoration_18 {
+		color: $white;
+		background-color: $fresh-blue;
+	}
+
+	&__percentage_asian,
+	&__percentage_26,
+	&__percentage_woman,
+	&__legend-item-decoration_asian,
+	&__legend-item-decoration_woman,
+	&__legend-item-decoration_26 {
+		color: $white;
+		background-color: #0041b2;
+	}
+
+	&__percentage_black,
+	&__percentage_30,
+	&__percentage_beyond,
+	&__legend-item-decoration_black,
+	&__legend-item-decoration_beyond,
+	&__legend-item-decoration_30 {
+		color: $white;
+		background-color: $dark-cta-green;
+	}
+
+	&__percentage_hispanic,
+	&__percentage_35,
+	&__legend-item-decoration_hispanic,
+	&__legend-item-decoration_35 {
+		color: $midnight-blue;
+		background-color: $border-yellow;
+	}
+
+	&__percentage_middle-eastern,
+	&__percentage_40,
+	&__legend-item-decoration_middle-eastern,
+	&__legend-item-decoration_40 {
+		color: $white;
+		background-color: $midnight-blue;
+	}
+
+	&__percentage_hawaiian,
+	&__legend-item-decoration_hawaiian {
+		background-color: #80baee;
+	}
+
+	&__percentage_other,
+	&__legend-item-decoration_other {
+		color: $midnight-blue;
+		background-color: #ffe189;
+	}
+
+	&__legend-description {
+		font-size: px-to-rem( 16 );
+	}
+
+	&__image {
+		order: 1;
+		width: 340px;
+		height: 550px;
+		margin-bottom: 90px;
+
+		@include media-breakpoint-up( lg ) {
+			order: 2;
+			width: 390px;
+			margin-bottom: 0;
+			margin-left: 70px;
+		}
+	}
+
+	&__column {
+		position: relative;
+		width: 105px;
+	}
+
+	&__percentage {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 7px 0;
+		font-size: px-to-rem( 12 );
+
+		&:hover {
+			.graph__tooltip {
+				@include media-breakpoint-up( lg ) {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	&__percentage_top {
+		border-top-left-radius: $graph-border-radius;
+		border-top-right-radius: $graph-border-radius;
+	}
+
+	&__percentage_bottom {
+		border-bottom-right-radius: $graph-border-radius;
+		border-bottom-left-radius: $graph-border-radius;
+	}
+
+	&__tooltip {
+		position: absolute;
+		top: -148px;
+		left: -130px;
+		z-index: 9999;
+		display: none;
+		width: 171px;
+		height: 115px;
+		padding: 13px 53px 20px 20px;
+		color: $white;
+		font-size: px-to-rem( 24 );
+		background-color: #002057;
+		border-radius: 20px 20px 0 20px;
+		filter: drop-shadow( 8px 8px 11px rgba( 0, 27, 64, 0.25 ) );
+
+		&::after {
+			position: absolute;
+			right: 0;
+			bottom: -44px;
+			width: 0;
+			height: 0;
+			border-color: transparent #002057 transparent transparent;
+			border-style: solid;
+			border-width: 0 44px 44px 0;
+			filter: drop-shadow( 8px 8px 11px rgba( 0, 27, 64, 0.25 ) );
+			content: '';
+		}
+	}
+
+	&__tooltip-race,
+	&__tooltip-year {
+		font-size: px-to-rem( 14 );
+	}
+
+	&__tooltip-percentage {
+		display: block;
+		font-weight: 500;
+		font-size: px-to-rem( 50 );
+		line-height: px-to-rem( 48 );
+	}
+
+	&__year {
+		margin-top: 10px;
+		font-weight: 500;
+		font-size: px-to-rem( 20 );
+		text-align: center;
+	}
+
+	&__swiper-button-prev,
+	&__swiper-button-next {
+		color: $midnight-blue;
+		transform: scale( 0.8 );
+	}
+
+	&__swiper-button-prev {
+		left: 0;
+	}
+
+	&__swiper-button-next {
+		right: 0;
+	}
+
+	&__race-column_2 {
+		top: -3px;
+	}
+
+	&__race-column_3 {
+		top: -114px;
+	}
+
+	&__age-column_2 {
+		top: 11px;
+	}
+}

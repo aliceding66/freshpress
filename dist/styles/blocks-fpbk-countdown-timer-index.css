@@ -1,0 +1,167 @@
+.editor-styles-wrapper .wp-block-fpbk-countdown-timer {
+  display: block !important;
+}
+.countdown-timer {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.countdown-timer__title {
+  display: none;
+}
+.countdown-timer__text {
+  display: inline;
+}
+.countdown-timer__days span, .countdown-timer__hours span, .countdown-timer__minutes span, .countdown-timer__seconds span {
+  font-weight: 500;
+}
+.countdown-timer__days-tens, .countdown-timer__hours-tens, .countdown-timer__minutes-tens, .countdown-timer__seconds-tens {
+  letter-spacing: -0.3rem;
+}
+.countdown-timer__lto {
+  display: none;
+}
+.countdown-timer.themed {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .countdown-timer.themed {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+.countdown-timer.themed .countdown-timer__lto {
+  display: inline-block;
+  width: auto;
+  max-height: 26px;
+}
+.countdown-timer.themed .countdown-timer__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+  height: 28px;
+  margin: 0 auto 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.125;
+  letter-spacing: -0.07px;
+  text-transform: uppercase;
+  background-image: url(/wp-content/themes/freshpress/dist/images/homepage/hero-label-freshblue.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .countdown-timer.themed .countdown-timer__title {
+    margin: 0 0 20px;
+  }
+}
+.countdown-timer.themed .countdown-timer__text {
+  display: flex;
+  flex-wrap: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.countdown-timer.themed .countdown-timer__days-tens,
+.countdown-timer.themed .countdown-timer__hours-tens,
+.countdown-timer.themed .countdown-timer__minutes-tens,
+.countdown-timer.themed .countdown-timer__seconds-tens {
+  margin-right: 3px;
+}
+.countdown-timer.themed .countdown-timer__days-tens,
+.countdown-timer.themed .countdown-timer__days-ones,
+.countdown-timer.themed .countdown-timer__hours-tens,
+.countdown-timer.themed .countdown-timer__hours-ones,
+.countdown-timer.themed .countdown-timer__minutes-tens,
+.countdown-timer.themed .countdown-timer__minutes-ones,
+.countdown-timer.themed .countdown-timer__seconds-tens,
+.countdown-timer.themed .countdown-timer__seconds-ones {
+  width: calc(50% - 3px);
+  padding: 3px 2px;
+  color: #fff;
+  font-size: 1.34375rem;
+  line-height: 1.26087;
+  letter-spacing: -0.1px;
+  background-color: #001b40;
+  border-radius: 5px;
+}
+@media (min-width: 480px) {
+  .countdown-timer.themed .countdown-timer__days-tens,
+.countdown-timer.themed .countdown-timer__days-ones,
+.countdown-timer.themed .countdown-timer__hours-tens,
+.countdown-timer.themed .countdown-timer__hours-ones,
+.countdown-timer.themed .countdown-timer__minutes-tens,
+.countdown-timer.themed .countdown-timer__minutes-ones,
+.countdown-timer.themed .countdown-timer__seconds-tens,
+.countdown-timer.themed .countdown-timer__seconds-ones {
+    padding: 4px 5px;
+    font-size: 1.4375rem;
+  }
+}
+.countdown-timer.themed .countdown-timer__days-ones,
+.countdown-timer.themed .countdown-timer__hours-ones,
+.countdown-timer.themed .countdown-timer__minutes-ones,
+.countdown-timer.themed .countdown-timer__seconds-ones {
+  margin-left: 3px;
+}
+.countdown-timer.themed .countdown-timer__days,
+.countdown-timer.themed .countdown-timer__hours,
+.countdown-timer.themed .countdown-timer__minutes,
+.countdown-timer.themed .countdown-timer__seconds {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 65px;
+  color: #001b40;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 1.8;
+  letter-spacing: -0.05px;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .countdown-timer.themed .countdown-timer__days,
+.countdown-timer.themed .countdown-timer__hours,
+.countdown-timer.themed .countdown-timer__minutes,
+.countdown-timer.themed .countdown-timer__seconds {
+    max-width: 60px;
+    font-size: 0.6875rem;
+    line-height: 1.81818;
+  }
+}
+.countdown-timer.themed .countdown-timer__colon {
+  width: 17px;
+  height: 34px;
+  color: #001b40;
+  font-weight: 500;
+  font-size: 1.3125rem;
+  letter-spacing: -0.1px;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .countdown-timer.themed .countdown-timer__colon {
+    width: 20px;
+    height: 37px;
+    font-size: 1.4375rem;
+  }
+}
+
+.for-countdown {
+  display: none;
+}
+
+[data-has-countdown=true] .countdown-timer {
+  display: inline;
+}
+[data-has-countdown=true] .for-countdown {
+  display: block;
+}
+[data-has-countdown=true] .non-countdown {
+  display: none;
+}
+
+/*# sourceMappingURL=blocks-fpbk-countdown-timer-index.css.map*/

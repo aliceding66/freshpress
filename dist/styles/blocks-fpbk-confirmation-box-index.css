@@ -1,0 +1,80 @@
+.confirmation-box {
+  max-width: 290px !important;
+  border: 1px solid #cdd4d9;
+  border-radius: 8px;
+  /*
+   This is so we can style things on the dynamic content so they can
+   look blue without having to contain a link.
+   */
+}
+@media (min-width: 768px) {
+  .confirmation-box {
+    max-width: 698px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .confirmation-box {
+    max-width: 770px !important;
+  }
+}
+.confirmation-box__primary-message {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  color: #fff;
+  background-color: #001b40;
+  border-radius: 8px 8px 0 0;
+}
+@media (min-width: 768px) {
+  .confirmation-box__primary-message {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+}
+.confirmation-box__secondary-message {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  border-radius: 0 0 8px 8px;
+}
+@media (min-width: 768px) {
+  .confirmation-box__secondary-message {
+    padding-top: 85px;
+    padding-bottom: 95px;
+  }
+}
+.confirmation-box__title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.375;
+}
+@media (min-width: 768px) {
+  .confirmation-box__title {
+    font-size: 1.6875rem;
+    line-height: 1.37037;
+  }
+}
+.confirmation-box__primary-message-text, .confirmation-box__secondary-message-text {
+  font-size: 1rem;
+  line-height: 1.5625;
+}
+@media (min-width: 768px) {
+  .confirmation-box__primary-message-text, .confirmation-box__secondary-message-text {
+    font-size: 1.125rem;
+    line-height: 1.55556;
+  }
+}
+.confirmation-box__cta {
+  font-size: 1.125rem;
+  line-height: 1.22222;
+}
+@media (min-width: 768px) {
+  .confirmation-box__cta {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+}
+.confirmation-box em {
+  color: #0075dd;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=blocks-fpbk-confirmation-box-index.css.map*/

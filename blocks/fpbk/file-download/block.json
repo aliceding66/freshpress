@@ -1,0 +1,12 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/file-download",
+  "title": "File Download",
+  "category": "freshblocks",
+  "description": "A block containing downloadable files.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  }
+}

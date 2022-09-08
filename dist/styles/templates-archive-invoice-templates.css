@@ -1,0 +1,145 @@
+/*
+* Invoice Templates Archive styles
+*/
+.feature-row__cta .btn-cta-green,
+.feature-row__cta .btn-white {
+  width: 100%;
+}
+.feature-row__cta ~ .subtext {
+  align-self: center !important;
+}
+@media (min-width: 1024px) {
+  .feature-row:nth-child(2) > .row {
+    margin-top: 70px !important;
+    padding-right: 30px;
+    padding-left: 60px;
+  }
+}
+.feature-row:nth-child(2) .feature-row__column_image {
+  margin-top: 50px !important;
+  background-image: url(/wp-content/themes/freshpress/dist/images/invoice-templates/blue-oval.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  .feature-row:nth-child(2) .feature-row__column_image {
+    margin-top: 0 !important;
+  }
+}
+.feature-row:nth-child(2) img {
+  max-width: 230px;
+}
+
+.column .wp-block.box.template-card {
+  background-color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+.wp-block.box.template-card > figure img {
+  width: auto;
+  height: 260px;
+  border: 1px solid #d8d8d8;
+  box-shadow: 5px 4px 0 -2px #d8d8d8;
+}
+
+.column:nth-child(4n+1) .wp-block.box.template-card {
+  background-color: #f0f2f4;
+  box-shadow: 5px 5px 0 1px #d8d8d8;
+}
+.column:nth-child(4n+1) .wp-block.box.template-card > figure img {
+  width: auto;
+  max-width: calc(100% - 2rem);
+  height: auto;
+  max-height: 445px;
+  box-shadow: none;
+}
+
+.max315 {
+  max-width: 315px;
+}
+
+.max460 {
+  max-width: 460px;
+}
+
+.max780 {
+  max-width: 780px;
+}
+
+.max1000 {
+  max-width: 1000px;
+}
+
+.box__category {
+  background: #fff;
+  border: 1px solid #c5c7ce;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-bar .box__bordered {
+  justify-content: space-around !important;
+  width: 100%;
+}
+
+.column--video iframe {
+  max-width: 100%;
+}
+
+.three-column-cards .box figure {
+  width: 100%;
+  max-width: 150px;
+  height: 100%;
+  max-height: 150px;
+}
+
+.wp-block-table table,
+.wp-block-table table th,
+.wp-block-table table td {
+  border: 1px solid #c5c7ce;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wp-block-table table tr th:nth-child(2),
+.wp-block-table table tr td:nth-child(2) {
+  background: #e5f4fe;
+}
+.wp-block-table table tr td,
+.wp-block-table table tr tr,
+.wp-block-table table tr th {
+  padding: 0.25rem 0.5rem;
+  color: #062942;
+  font-weight: 500;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .wp-block-table table tr td,
+.wp-block-table table tr tr,
+.wp-block-table table tr th {
+    padding: 1rem 1.75rem;
+    font-size: 1.2rem;
+  }
+}
+.wp-block-table table tr th {
+  font-weight: 600;
+}
+
+table .feature-icon {
+  height: 43px;
+}
+
+.column__centred-cta .button {
+  width: 100%;
+}
+.column__centred-cta .btn-cta-green {
+  font-size: 1.5rem;
+}
+
+.wp-block-image img {
+  height: auto;
+}
+
+/*# sourceMappingURL=templates-archive-invoice-templates.css.map*/

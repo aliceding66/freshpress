@@ -1,0 +1,27 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/cta-banner",
+  "title": "CTA Banner",
+  "category": "freshblocks",
+  "description": "CTA banner.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true,
+    "align": true
+  },
+  "styles": [
+    {
+      "name": "standard",
+      "label": "Standard",
+      "isDefault": true
+    },
+    {
+      "name": "standard-blue",
+      "label": "Standard Blue"
+    },
+    {
+      "name": "navigation",
+      "label": "Navigation"
+    }
+  ]
+}

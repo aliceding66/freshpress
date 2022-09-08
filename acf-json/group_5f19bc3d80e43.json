@@ -1,0 +1,377 @@
+{
+    "key": "group_5f19bc3d80e43",
+    "title": "Block - Logo Group",
+    "fields": [
+        {
+            "key": "field_5f19bc53302ed",
+            "label": "Layout",
+            "name": "layout",
+            "type": "select",
+            "instructions": "Choose the look and feel of this block and how the logos will be displayed.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Single Line",
+                "2": "Multiline",
+                "3": "Above the Fold"
+            },
+            "default_value": 1,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f1ae39968870",
+            "label": "Layout Preview - Above The Fold",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f19bc53302ed",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<img src=\"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAAuCAYAAADeBOt3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAEt5JREFUeNrsnQmMnVUVx8\/s09n3vct0oQstYKEUBYTighABFSVQrCaIEoWIKFqMmKAgilGjaG0waoTQqBEDYhSCS2ogIBARNxDoOp3pTGc609mX11k8v9N7xzddJWrntXP+yZfOt9977r3nf7bvNW1oeORCcTgcDofDcUIjTQl9wsXgcDgcDseJjXQXgcPhcDgcTugOh8PhcDic0B0Oh8PhcDihOxwOh8PhcEJ3OBwOh8MJ3eFwOBwOhxO6w+FwOBwOJ3SHw+FwOBxO6A6Hw+FwOKE7HA6Hw+FwQnc4HA6Hw+GE7nA4HA6Hwwnd4XA4HA4ndIfD4XA4HCmJTBeBY7qQlpYm+\/fvl3379kl\/X58MDw\/L+Pi4pKenS05OjhQWFkpRcbHk5ubKxIT\/L78Oh8NxVJ3q\/x+6YzowocQNke\/Zs8dIHHI\/5Bol8YyMDCkrK5PyykrJ1L+d2B0Oh8MJfYpnODo6Jlt2Nktre6dkZmbI2Ni4lBQXyMK5DVKYn2ckkwrtHBgclq1NLbJ4\/mzJyc4S+AwPdlfrHvVuR2VOXbXtn1iyH5WOjg7paG83wj4m+Wuni9VTr6uvt+ud1B0Oh+NQzMiQe5YSeE9vv3z9Bz+Rzc\/9RZYumCt9A4PyhmWL5KZ175Gy4iIZSST+o2fl5mTLTV\/4prz9vFVy+VvOleGRxP9ucLSdO1ta5bav3Sffv\/szUl9dqWQ2LtlZmfLwE09Kx75uWf\/htZKfN+uEITkMpd7eXmlXzzwzM1PS1BjJysqS8bExC78fzlPnWE9PjxkuDbNnn5SEjlxiROLENpRHpa2tTfZ1dU0amvxbXl4uFZWV0tXZKc3NzZZOmTN3ro39\/3s8ef\/AwIC0trZKr86j2TqHqmtqrK0zFaS3iJLl5eeb\/NkGVUaMYTpGs57Lyc2d4iwwR0f0vngPYM0mRkbsPrbsnBxb1250O6EfV+xXAsmblSu33XCtfOzad00hYibjlp0t5r0vP6VRKspKbIIn1CN+acsO6R8YklP1eHVFqbS0dcjmZ\/9sRsKZpy7WZ+bIjuY2qa+pkEq97x+v7ZC83BzzpJ\/9y0uyZP4c2a3Prasql1I1HP65dac07d4jZ522RIqIDOi7IfKX9L5EYr+MHSEcnaysmtvaLcKQrtdtb26VN61cocSQel47\/RjRxb9XvfPoaWfr4i8vK5OhoSHpUhI4uK\/sR6Xf19dnYXpC8GM6ftO2aLTNu3fvls69e03JsU+eHyWJgiP\/P3vOHJk16+iGFmNHnyG5wcFBaWhokOKSkqOO94lqrOxVWSGbfCUDx\/HFQH+\/GVmsvSh\/\/q7X+RZJeeeOHZKdnS25OmeZ14BrOce1zGXmJet2nhpjrNc9+sx+fTbrEcOc92AklVdUSKuuD4y2+QsW2FplIyrXqVtlVZWtadYQz+O9vIf7eBbGPqm4GjW6MOC7dc3v2rXL2kSUjudyDY4Bc4t1x32sn2F1xFrUYMzVNVhbWysZM8y48KK4ZAWLhZmdJXdvfFCe\/9vLUlddIRs2PSyfvv5qJd9CuXPD\/RaOz9fJ\/c0HHpIv3nyddPcqyfT0yctKzLuUWIsL8uWLG34kH\/\/Ae2XNOW+Qex\/4uZH4J6+7yjzt9s5uOXP5KXLv7TfLl+97UA2EnVJdXiJ3bnxAvnHbTbL6jKXyjR\/+VH7w0K+loqRYBnWyGlkfIayepd76I799Sp546nnp6u61bdVpS+V7d92qnnxWyil2iAtlwCLO0i25X+Yd6D6LH5Jk0WPQEG7Ha9jV1GSkXqqLdzqB0qqrq7OoAkpqVl6eKQ+UXvQC\/1N5VKgSi4bByQSUKOOHZ44RxpgnE8qkp4iB195uypl78lSWePJFRUW2zz0od4om2ed+FD\/\/EgXo7u42Ayqhipy5VabvKygosHPMFdpQq2OVFdYCBEK0h\/sgAsasqrraSIL5F9vTE8YQb7RS28N5jC\/IJT6LOVyic5HxxiiL\/YtzuEDvgWim22PNV3kUqjwTOs\/mNTbaXKP\/RC2Ye5yDUCFfM6CJnOm\/rDP6C\/HWK5Fmar\/pK7JuVoKlRwsXLTKvfVDHF2OANcF6xWhHlowB44GsuRevnzGysVZZYbouOuUUG+PdLS22j14wotb7kSmFsVX6zh3bt1t7eB7HJmL0Tvti8iVCpNcxH2g77T3Z1pUT+hFA2Lq3f1BuXP9lueVL35ZER5ds\/NYdsnBeg+xTkr7rluvl1EWN8p0HH5YXX94i565cLnd+4nqpqSyTgrxZ8gm9h9z2lRdfIPNn1+m\/F8o5ZyyT13Y06yQ6\/OLtU8\/+2sveKutvWCsv\/OM1eXX7Lrn9Y+ss5P\/Ib56U3z\/zJ31\/vdz3k0fl+19aL+evOk02\/eIJ2fjjR4+pEAaHhuXxH35NcnUxlK96p2y445aUIvQYjsWip11Y33ijY3rMFLEuQDwGFjD7KETIgL85hqJnIe\/XBcs23UqSN6MwokFC\/yAt2oxSgoBQlig\/2o4SQ9kNaH\/wZOgLfaMfyIXnIJueoPR4ToxMoAg5jnJCkZWWlto7MSaG9BlWY6CyLEkx7552IRNkAJGiaJOjE8N6LnqOsd2QDPujOj8gWzzH5FQMMkJuGELxesgijgFEzhb3uZdaDeTGO420k66nfRiKzD0ICe+O8YnjyjgSim6cP9\/Gj+tpA31jTNuU7NiPhZ20LRprEFMqeoe0DQMFcqTttJt2IieMm2gwH0yGjCHzrE+NL2TItRA29xGRQlacY0yQH+POPu\/ieuSI8XCochDJITqg8x7DAMeKsece2sdaiHMGww\/DKhp8PNvWAkahrpEhvYfiWdbXTCPzGU3ohM+LCvJkwz2fnQy5kw\/\/7qZH5Febn5GnX\/i7zMrNkQElyguUWDu6Gszb\/tur26SqvFQe+8Mf5fQlC1\/fOxP71XteYpMXY+Cvr2yVD332Hgv9U+A2f06tEv2r0thQK1UVB5T2soXzQjHckRUDHvx5Z55mYfb8vNyUD9kSnmOxdXZ2GqGlm2wSRpAQlHlDeg7FENa7KQ7284O1zzWppCyReYt6GNWq5OgbHgdKrpjwvB6n\/Rgt9NkUne5zHeHHqFAhPI6hsFBOeD9t6vHj4c6dO9f6zz7XozxRbhANMty+bZt5Rqky9tGAwxCZsDRSpvWPvyfPafshSI5D0Bgw7aqYIUW8LuTEWOcGAwePGCMGOSC\/WG\/Ace5HmaPY2cerBjwvPiNZzpyPqQDeB9kYGSmBQCZG8HoPnijjQXuS+waxZWCEaTvoCwRCG3gXYzydKaGjGVjIYySEqBkb1hFGj3nVKgtkizeee4R0ETLrUxkxnnl6Dc+DXNkYD+YksoqGKs9jXJAxa5djjDkyTraOqVlKNvww+Km1OGC8lVvKk+gH5zBE4jiw0QfeyfojKhKNvZkID7kfTI7jY\/L2c1fJzR98rzTOrrUQdllJkay79S4pLymWzZvulXwl4POvvsm84mOhtX2vzK2rPjRUrhP+rOVLZP1HrtH31Ennvl4pLsyX9r37pLmtwwgeEEUw619OrrwqCzGB8lMlUokyVyWcpHkOFObovyhMzqVq7\/EaMELwJPE4+9QbjwoPQkAJdYSQcg05vYwMU\/YoTbwVFFQMJ0NoJep9Q1YovRg2TibpGGJE+fF39Koo8ko175y+oujxuPG0IEYUeQxJU0wFII9YpEaKpV9lyT2RFC3srX1MC4QCScRzkaCRW6bKKobEC0IIHbkjQ6tFMeN3zCIZZcHrI6wLmceoUKzz2LZ165QxHtVz6cEggLxJsVgYWZ9PuzHMIBa8W\/o6EvqWasjX+ck8hUAhcuRJv8lVkzoiL75D5U\/B4hTSPcIYJ3vBkykzlQdrFhkT8WCOJkLoHEN9ig7Q401NTTZuyC9GpfL1byJVtBVdGNMxGFKE3lkD7EcvnXlG2+kfYz82QwsendCneLpjsu6Ki+WTd2+QD33uHvV6V8gvf\/e0Vb431FRK0+52ee7Fl+SxJ5+Vv7+23YriQH11hfzo4ceksrxE3nnhm2zxf+v+n8mDjz6hXvg2ueDsMw5511WXXiQPPb5ZPvWV78qqFUtk06O\/keuuvFRuvf4ay4F\/+qsbLRT\/26eeN482Pf3kInRsfyx28qVWcZvsDehCZ0FOqFKA9EzRq0zN0wtFNKninaPQ6AeV03jPtJPQLGSWFsKUkWjHk0iIeyCig6va4759sqhEw\/M5RqgeIwd5WW2BPgvviGvwzlG+eFkppVzUqMFbgixjARMkkqz8o1zMQCFSE8Lv9Jn743nmQyTbif8ilBrD8LHCfZT2hPfF8cwLpBALN2289BiyPty8i+3CeOO548F4SEUjmnlHJAySZS4xZ1595RXLeROVYE427dxpxEuE6XDPSP4qBSMAgzaOLfOyEKNUx7s678Dnv0SbiLBYmmyqRWBRjlIlaQpjGQfy9X0hrG6y1\/Yg9xjVKwp1Ccx9AMEzjzAKaQtrRGZwhX3G7bd\/\/o6Z2HHziHSC8d357NoqI2Fy3zk5WXLROSutMr2to8s89UsvfKOsWb3SQvK\/f+YFecebV8sl56+WxY1zLPx+9unLDnjQ+szGhhp5h54jX37m8sVy\/lkr5PSlCyffwTEK7MZGx+Tyt55nzIZH\/pkPr5XLLjrX4ssXn7dKldaEKYUb110pC+bUyYrF8\/+dE08Ta2tDdaWF57muoaZC5unfEB7nMEZSrdIdZRALcvi8BaUZFSBjgbfEhiJND8SNssDjYSHHIhgU0cQ058fSQ1UvG0oQZY5HYnk+PELtF14j5zpDwRTFXCgnFB+kgQdCXztDBTjKletRZlb1q8+LOWiULV4I74G8UZxVoVoYDzPm6rOT8tTTNb6MV\/zVv66kKANthVCQGdELPDbkwRxA6UP6bFzLOeTBcWTRF0K5PAvgJfOM\/hAi51pkwP0WGQjpB+7juHmbuj5j1TZREUgL+dJOZGnkZB7hfiM95livvtMKscjV6v20l3nJ+5G3eeh6\/WCojYhjHSMPXJcKnyJa6FvbSCSBuYPM6QdtQ6bIKxb0xRw4ZGlRp5AuygzFcvHrDNYjkQrkS\/U6Moi\/8Mg9vItzvKsivBe5M1bMBVIuPIvIFet9IEQ2FixcaIWMzGXGiIp1iD+uoVgHgQ4vClEukz8pOe1D9NzdQ58xYfVxy49DzAfCbokkL33ciPt9l6zR7d9eGOBbc7ZkcG+VeuYfXXvF5DFy4je+\/92HXHfD1Zcf8ApGD3hqTNKrLl2jf62Z4vHx2dq1V7xt8tjKUxdNGiHx\/rNPXzp5fvUZyyb\/pjZg\/UfWpmx4OoZcWahsLEaIqzuEZDkXP5tJBooTJWCh5VQwCMM3ufH73fi5GgoFBdQVSHYwEBb95vyxPkEkX871sZAuhoIp3EJBcg3v5LMgwqRloRIZBTclbZFixrPltbX9eHbjIY9eoLLCOIMMEiGHGkOoVaG2wM7rfIgkyfqAXMmBx\/z8652DsRguRuUIk8f0B+RMLhlDguusOFPfRSEi8zX5fZyPqYKRkCdOSX2n7RsO\/WU+YrjEGoMYAbJ5rO2PBW+sSfpOkZoVZioRl5P60j5jSOG9U19ASN0MbB2TWLBIOJ97Mc4LQkEcY92j85RnxbYgM9a0rSN9brfKfCxEt0zOpN50vDAOMCbsO3giIWokYWzEugaOx\/nDNhOL4SbnpP\/0q+N4K3cUI6G1+Jvt0RPtSvoxksPdh8fbEL6dnU4LnG9bCa\/jbUyGjVWJ4FVAxAklhc5QvMV5DLcaPUdOPJlIKPyBSFCKKKpEqN5H4SZXuRNe7AshawqRauvr7f0QCcoSGUL+8dOr6R5fvkKIoexIojmhKC3+EIkVP4VjQ8G7YkQxhg6uhLbKcjxzyCREdmL+1bxpCu70WcgUcuB92cF4sly8ygmPW0LOl\/Bt9MSjR5eW1Fba0k9BZkinRCM0Eb6wsG+nw\/Mj6feEz7kgmtaWFmtvqY4JY3w8fjznaIDEB4KxQXsh89ieuB7HgoFqdRzaB6ILyK4nGDb0n+PJ0QaLnBCNCqmk9PAjUfErAow4DE7egWwOt745h3wxEohucE+hyhzjFAMhrqHJlIGOF1EPxi+5uC6mdLg2Rk9mIrE7oTuOe1j29f70a8xTQ+bZKfopkGPmAfLaumWLkR7zkvAzaTX7BltJjfmK93+y\/VCQI3XhRXGO4+7B4VERUoXM+cWnYyk8wp14v\/477o5UAoam5ZnDLwTymVWc43yaGnPSPmcd7qE7ZgQI6xGKJmQWf0Akkj6hV8gcxTiT82KOFFaghPX5AZRQdGb1DxRIpsAvxDmc0B0Oh8PhcJyASHcROBwOh8PhhO5wOBwOh8MJ3eFwOBwOhxO6w+FwOBwOJ3SHw+FwOJzQHQ6Hw+FwOKE7HA6Hw+FwQnc4HA6Hw+GE7nA4HA6HE7rD4XA4HA4ndIfD4XA4HE7oDofD4XA4nNAdDofD4TgZ8S8BBgC5ioUvY0PjKAAAAABJRU5ErkJggg==\" \/>",
+            "new_lines": "",
+            "esc_html": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f1ae438c9b1f",
+            "label": "Layout Preview - Single Line",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f19bc53302ed",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "<img src=\"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAABXCAYAAADyKbd+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAFspJREFUeNrsnXmQpGV9x59+j56emZ6e+75nZ4fdZZeFvYClDHhhSvCiCB4xEjSxLFNGS0OljAZKS03lj0TAI9EKmigWQREUSmKMigiCsMuyy+x9zNXTc\/Q9R09f75Hv0\/P0Tjvssoer7Mx+P1VP9Xs8\/R7P+76\/7+\/3e563WwhCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEELIq+E5l8o+n8+ze\/BwfzabvR2zFpuPEEIIufDaXFZWFty2ad23M5mMfbZfMs5jRzGUX6I4bHNCCCHkDxJsz6C4bApCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCFnJeNgE5FKko6W1ygdc1y0+A5qh67Mj48F0Npfjzy0SQijohFystLe0GuU+Xx9EfACzVaeooqHM67p+HMJ+NJfL5dlqhBAKOiEXlZi3dJX7yrdCzMvFmf\/wQD4XeQj7iyPBsZFcPs8\/IiKEUNAJeU2FvLlFlJcXhHyNWPx3wXNJp5sQ9b0Q9YMQdf5dMCHkosZgE5BVzpUo5yPmkrxt21f1dHblIepHIeo2m\/PUwPHx9HV1m\/l83h0ZD16yXRX+ykq9vbm117KttZjNlQROtqZpiZnZ2bFwLBoP+P16a1Nzv2XbvbqmicTMzHAkHjtysZ1PQ119e111zVrbsSsMXT8xGQkfn52b43NAQSfkjx6ddyI670F0bmLWsSxLdHR0iNvvuEN874EHxMjwsDCMMz4CUtS3QNTDEPUYRH1FnPua7p4efGxF8Z6hKprH\/fnQ2Gj0XPcBgdKxn62O41Rjtgaf0mH6OUryEr\/1\/CjNKNnShWif1upAYB3EcV86kzmk6rWo1dGL9FxkF1WjWBxzEhbM6l7UaGwCshppW0y1r4FYVUpbqgyq8Pl8Yt369aKiokIq2elVHMJ91ZYtoqWlxfUAFen7Vsr5nxgdGcHH4yipksXSIP9ClWdQFn7P3ch2HVXG3uRdd0Zc3INGTaC6C9F5E6JzduMQRuh\/UA+notYw11xzjWtl315i8Ayh6UFnNvw9K7hv\/mI+fr2++01G1+ZuK3TgATt84mSEoDf0lBmdV7zbGh+M2JHh\/7kELqWMfALn++VkIim+8rWvim\/8+zfEQw8+6GSz2RZE6ZXDwbFMfoVE6RD1HCLoOCYr1aJpLAsX1\/f39Cbh1Nx43mqOiHxodCTe192TxnQ5rccpAyZpL2Q0XoZyhVruU07QKwZbVldVaS2NTa0Qe9lN1KCu3ayu68OxRGIoloiftD9wDDxNDQ1dtm1fJmflY16sG43HTsSTyWxdTU1NQ119G+qY6lhkPbltDfWmJqanXjJ0I4PtXIE6veqYJw1dPzg+NRlxnJPZdRvHVN5YV38lSlfxuFBvdCI8fXRufv6kc4ht4TwC3bgn5HHVye+iJLCfg6Gpycn5hZSLczSq\/H5ZJ6CyE\/LY+lBnenh8bLw2UK0Fqqouw3qZaapW25BOalplCQzse3xsIhRNZzJ8zZSC\/qptcj3KnSj\/qx5EWfajPKxuvHN7qgPNnWbfjo\/ZkaFxCO19f+DjfyPKn6hjLU35yXP4C5SDKJeEoMNA+UzTdL\/6b18Xb77xRjEyPCLuvefLIhaLis9\/8YsiGg6Lrdu3ifB0WHz4Qx8Sn7rzTvHOW94lZGr+HTe\/TaRSKfGxj\/+tmJiYcJ968kkTxqVJLKaTV1IfojzeztMI\/jwE\/6i8RfG5Dp8dYnGcgSzTjuseGR4btSD8dSrTUafKSyjS0NajzKFdJtW0FIkebKtC3W+jEIHR0fFgob1grD19XV3V9qKhl4bchmVO5izryFhoPGUapujt6vLjusljqVWC53g8nqlsLnc4OBFaaYZbCo+lbIajirQv0iPMlDhawnZst7KiQkDoNqLNrlB1XfX9CrTJFfW1tRBcdzeEPQQxr4BwbsPyHrW9IgEs2woR78F2foNpuY8N6nr8jgOBde3NDY3yOmiYrhBLY0w6lfD\/Wu1fqM+Okq8Xjgv72NTW1Nw+IcRvIeoxHJMBMb8G90R3yf7kOTdatvXm9pbWw6Oh4B6ZLZMCrhzvtHJGsD3rhc7WNinwV6NOe8kxyW30L7Nnsg3jK+x5pKD\/8f1q3eekEoPW2Et\/+opV\/noN4tzl5rPrUC\/szE7vt4IvFwa\/aFWNAbN320asqxSaEXXiY\/vs5KTX7NlynZtNXQdhH\/EGmqV3OyN0o8OJj6esiYMjWnVrpdm7vQ\/TM24qPmb2Xd3rWlmtYBB0s9qePvaSm5krM3u2rXNdpxkR9nF7+ujxk9F3XVeD0X755fjOaMFQWrkz3uB6Y99ao2XAcK3Cu9ZrPYZ32Jo4dMyOja6WhyOQSafNt739bc6GDRvEHR+4XXz2rrvEtTuvFYFAtdj9wvOY3im+9IUviH+8+26xbft2ccPrbxC33fpn4r6vfkX0r+0XNbW14r577hVPP\/WUTME7hmFUK8Oz0tvIA9G9BYL+Q0wfVU6gPLcTKHtRbkDZrHk8a1HvVxDz9ZjvLhF76TD6VTvMLtu2VwlZmzTWiKL6u9s7foZISop5K8T8BmWIn5XBHDZ2pWkYXdiP7AbwQFjeqLZxAEXe4ztQ5P6D5+NMv8bYynG5vkTgpa0YQwmJxX52iLnj1lbXSIVrg0BuLBHCnGpv36L+2tUQ8n6UmHSoMN+thLXoOMi6MhLHZuxGRNLSMZrBtLPMwbCU7fcop8KjnAKPWi6j8To4F02FbcHZWOakFAVYXicLdRua6hsGUHZhfiOEuKvk\/IdV1C+dAQ2CPQBRl1miCTXmQoil7hpXfedqlKKYF9tMF+wiPquUEDnbxvLXGxDzv4FgH8Ps54Vj\/xgi\/SOjbYPw+KrWQ8yfxDppJO8SjvW0VtP2XbNnay+WfQDLLkd5E8pfKY\/5cyi3q03LVNeXUN6r5t+P8hzKMWHnP6s39FxudGz6DgT7Kczfrdd1POfd+JbPYLmM\/rdDzJ\/Cuu+jvtz3R1EiZ3E6d6isw6MoX4ewHzDa1v+DXt+9Wi6XNBIeRIwiGo2JiVBIfPQjHxGPP\/Z4oX9cLk+lFsRMckZaysIX0pmMuPnmm0RdXZ1QEcRqww\/h7EB5XYkR3aqiMQTk7qBM0yMi3qMMqQ8LN2PZs1gWE0sDoqQgH1ECe7TEjjhoyyNDY6PPaZp2RBnhGjhCV\/Z1dVcoMXfylhVF5D+FaxBU3y2mowvdJNhXFtdoAvvNICrfg3rJVWKrXNUmDSqjUXQMHZWCb1HXBX6QPh5PJh+bjkQewcxvVV1XOQjSfrSeDD90\/UQ0Hn80Eov+ANN7VF1HOQzNSsBlvVw4Fn0umog\/guni9ZGp68R0NPLzWDLxfSwfVULtqutilgirB3V3T4anH03OzDyqa9rxEuFuUhF3nXIKXEM3nsd2d+E6Pj+fSu3BPbGg1snzLM0IyH2Mq4zonHIW5fX2YhvHcA88llpYeEhbvC+zggPzKOjnhGNntMraTd71b\/gpytPey9\/8EAT1Kjef2YrH4ovOfOyzuUO\/3IHI\/D0e0yfTU39ZuPk1Y8yZi1yNda+zxvf\/uaescpuTnAjkR1\/8MKZ\/hWj+m1h3l4zEPYbv1QYRdRQi8+jIrdb4y+\/yGGW3YH6nHR2+Htu9FvP\/DGF\/B6LszRDzW4Xranb4+NXWxIGtWPegMhZnvvaGV7MmD30e0X4vIvRvYNnOYtSw2jC9XrFv714xGZqQI5NOaxMqKyvFt++\/X+x9aW9B6FeZ5ahUhlcKuBwJ74WIy5StHOkuIMRplYpPqIGAHhjRJtQzSwYQQpcdaaRfRPnJSHBsHobasyyCc1QEqinR6FAiVoj+EJGneru6B9C+fUoMdHVchnIsKkzTfCP2u7mzrV1G7VLQFlZge3vU+SXEYj9xTi2T0edAiaAVI+vyghOq6bPxZGI4MZPMzy+kxFQ0EpL9xaqdKtUzWq5EOgExH5mZm83Pzs+LSCw2gmWTqu2rxFJfvZyfw3bmZ2ZnRSwRn0O9jNpvHMvnINIinkik5SuIp3qEUGdsMhIOLqTTAuJvJ2ZnD0PUYyXRc6XaXqG7ANH4zuaGxvfiOr7XX1kp0\/A+1QZNqm7huCDac1OR8CHcT5Op9ELh7Qm1PBacDB3L5fM5rBdYdwT34xx1iyn3c0VX0cfPhOzLc+yYVtWYQtnsZhf8iNQbIPSfll4yRF7W3Yzyn4jK70Gdz2Gd7OupQ2TuKE\/UOQ\/D+wsVcVcU0p02osqG3psxfSOi8R3KKN\/k0b0brcjxZ+3Y2Ij8IpyFUTko7iz2Ibf7LByAX8NxwJ1QdgDOwVqVWp1eBddwBqXRcVzN7690Y9Go+L9f\/kIcOXxYeMvKoGDOKcX83i\/fIx747wfFoYOHClG8+7vGOS\/O\/V32iwk5KG4\/DKxMZ99SFHZFYlndVFFgVDr+rM9bOQdJROUelenwqX25yhj7VZQvjftetQ85L4XoqhLbJCNRmTaW9\/bzKzFgklFpIpncAzEKd7W1b1H945ZqA8952IbXMrtgKNt4qnXmadZd8HCLEToF\/RwfQ910Uolha+ylfz25qLKu3FxzdR9E2ippuzjE\/kdadcsulLdi3U+w7AdCptwXRf7959XGuulxpo9m7ciQ0GrbNXUDZ1WUIj1uObDt10q0OlU0dD7ZGbm99Cq9irOIyvO7d+0ukw7\/93\/4sKhvaBBPPPGE0A1TvPWmm8TCQrqQWl9YWBDved\/7Cp8PPfwD0d7RIWYQrRw+eFB88lOfFLW1NeJb\/3G\/hvURsTRIaMUCUc9C1H+6zDDWLo\/ISkT8nIb1y+BepthL+khzpcbfsqzkaGj8wCtDwMKguB8jIpd95l1iMeWrq3tcOhxHV1hTy9fU9OpAoA6lCmLeKpb6vO2Sdi06i\/JZdG3HDtTV1PbatjOVBy0Nje34bof6jnxmg8pBqkNb1TbU1cmR7hE4qU5jfX0nptuU8CWUjWi4AOci+8rbWhub2nD9jpaX+URtIDBgO06Duk9San8BZVscRNi\/CU1Pjs6nUkIOvgtUVZUrB2+hJDOznAXVRg4i\/PrO1va1iNJfXkinpf1bq87b\/iM5DxT01YqTiqfzQy\/sMfuvzdqx4INWcN8ezd+wxuzbfhuEXN5sO4VmvOAkgrfZiZDwrr2ux7XtrtMIQLF\/yq\/mAyqNdqrBVouRjG5G7Ojwt+ypowm9rmOb0b5pCyL1Xa6dO2g09jcLKwdLmRVG24bGsxkUdwkQ9Hq9\/aHQePm7b73V7luzRkQiEeE1TbFt6zbxlXvvE4cRrY8Hg+KTH\/9EIaqMxWKitbVVJJNJMTw0JHbv2iU2btok5z0wYunR8fFE3sqvtAi9smS6pkTUC2l1CHse524oETYQWRfvV9mPajuumx1GtN3f0+t5tff2l93bHuUgFAc5BVX0LZ1c3TCMtu72jn0Q9VIxL+vr6rosnckExyZCu0zT3Nfb2bUF4jSgtlG9Es2GyoRdtWyZbJekerY1+Utx0UQ8mc3lpjpaWtdDOGE67I66mhqZkcth3i+W0toyxX0Y5TK1HTluYQCiLkVcdhP5xVKKXWbaZsWF6UYrDIjEsWxvbWqWr715IebFfcljmxCLgyqlLZN95B4I8jYI+QCKXB+Q7+Crus+o+qcioY65dvHcrbXYX7taJ8d0eFZ4loyCfhGxH4\/Pbs1f\/7B3\/Rv+C\/PXQsw34fM2IUfkOtZntOrWf0KZxfJPQ+CT6uZbwDqPFmh+qzfQLCPriJud34+o\/nZvdYt8qK+HGK8\/VbTsJEIWXPfHzI4r3q3XdjyGIl85uwPe+DAi+G+6ufQjZveWr+lN\/Q9g+Ty280GP4X38Ur9QE9NT6fbmlony8nJ\/PB43UNxcLicGBgYKKffBwUFxYP9+AeEo9K0XCY0viYzsQ39x9+7Cc6Lr+iA0byVmM2pOI+5FZNR7uVgamT4GkW9yF9XbEYsDJzVx+h+O0cRSOv1kjkks9hHL76fgDA1CpLW1Pb1RiIA01NUQ9ddjP4dKRK8eYuHACbuys639ydDUpHQs5GjodSp6nVwFt2VRjI6rLNv6ZRkReb6DYnGAoGwXn1j6MSPZX56MJeIjsUTCqglUDzc1NNSXvLZWUeIwyPt1aioSPoId1jQ3NmnFgZ8XyEmpKd0XdhaZCE+Pzc3Py3fQB6urApXqtTVvSXZADaoz9o+GgmMBf5XMXHiWDz6dCoeFp8nzvL+y0sC6NtVe\/I0DCvr5p5ZQnjyVB+nMx44jSn+P2bfjExDsm\/CI7XJmp++0gi8PalUNR8ze7X+P5fIHaYZQ\/loZuwnljd+Dcjfikw\/a0ZF\/cmcjd5trrslAgOXIdzmQ7TMlKdBHlhlQmcqX9eQI9rcgWr8fYv4d2fet13XJ0e0yQ\/B3ykP+iPpcnhmQdb4rlkbAP4Hyglh6V12+ciIHnIRW0bWURrP+94xQCgOPRoJjQyvpD1ogljKq2SR+N5Veh+XyVUw5mj0kRRufL6tBbwOI0rdhuhrTMvpbQDQ0iOh8CNH5dVgWUMbV0DRtJ6Lnl4eDY8GSaL7YVusQ6VfDGEujH4VIP4NI3IIhl+ulM7tNLA6Sa1HFVVGnvBcvw37avab5Tmx\/HiJUh2NaQOQ6FJwoCecvfuZVdFwcBFd8Fz2FtovFk4lwOpPROlvbFtA+UwUPSNPnUwsLAiI82NLYlLAW38WvUZm8tPphmaMohVf3krMzMjX9NAR0FO20QSz9sIwc7HY0Go8Nzc7NyR+W8atnXn4vXmIX0sqBmFfPvbvs2Itp9Lz6foXKtEi7tEbNy0F2JyDmxyDmMjAR4WhUbv9ZiHoY90Dxb4oL11iKufxhmUw268Ih0VU0rpfsp8BkeDqPqPxpiPoAttGvtmErGyXnm5RtnRV8B\/0VHiMhqxZE6fWI0ncqQTrXAUiFcQYwkL+CoCdWyu+4K0GvPE1ELklByE\/+JKxMt6N+GdqomNaWWp8cGhvNa1jZtxSxLzm3jpODoCcXxUiTdWpVSrWY3ciOjAdnXhFBGIanr7PLj0i98NpS3rLssdB4rBCiGqant6urCt8t\/MUtdu1CzOcg5hneyZcOEPMaiHmZjN7lr9gFJ0PzC+m03dbcbFaWV7wBjmYjHImysYnQ43CMwmwxCjq5lES9paWm3Fe+A5rUIM6+\/60QAUDMn1lpYk7IChf0HRD0fgh68UdsZKZNZjKKgyVlmt+BoP8Mgh5jiy3BkYJk1SPTgeU+36hpmjIdKFPQxhmcXFemLWEwng1Hoyl7df7IDCEXJVWVfuH1ehvggBffcpBvBxRHuBd+zU7TtBMzc3NBS\/5OM2GETi7VaL3VC3FvgbGQg3bKlZGQfcCFP4iAkEdHx4NDWTmCjhDyWkXpzYjSNzmLr8XJbFnx7QnLWHS2DyE6z7KlKOiEEEJWhrDr\/oqKasd1TUM3bAh5Mp1JMyonhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQctac05+z+Hw+bffg4e3ZbPZfMMs\/iCaEEEIuPFpZWdn+bZvWfSKTyVBrCSGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIuUD8vwADAM1S28xPji5aAAAAAElFTkSuQmCC\" \/>",
+            "new_lines": "",
+            "esc_html": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5fa280f2a7352",
+            "label": "Hide Lines",
+            "name": "logo_group_hide_lines",
+            "type": "true_false",
+            "instructions": "Hide the lines above and below logos",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f19bc53302ed",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f1ae44dc9b20",
+            "label": "Layout Preview - Multiline",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f19bc53302ed",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<img src=\"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAACqCAYAAABbJb25AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAKDFJREFUeNrsnV1sK9t13\/cxblo4NnJ5iuIWaZOcUWMULdrcSwFJ0CaANYwDxPFDRaEvjfsg8qUPRQCJQB6SBgHJBnVeUlAC8k7qoXZhoBXlB8cPqTky4BZNgmqOkyBt86G5SdvAhtHDm9i+jr9O9+b5L2pxa89wKFIKSf1\/wEDkzObMnv31X2vtPSNjCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgiZz5PHeuN\/7R\/8RGT\/NAKHxnYbfuP3P5uxeRSWW2LLKAkc79g\/qT02DByblLc9NlDnGTxEWSNfwTz7eduQeqjbP\/t2i7Dr8qHKckPKp3R92rSx\/RPbtJ0l21cRuW3vHstgofsquIcMY+L4AccXtuU78NojvnfXcNo5x3q2YZ3YBtW6hwbbs3+eb4pw5ODK7S03SAU6ozuWugEgVK6uo3rln2DAeIg8Gz\/PikP8Xet6sWVcsX\/O3UAN49OVdQX3d2SPtza8ba2KW\/UJkX8r0K9jlF9nBe2rUNQfuAwWva+ie+g9UNt66HGBgr5l1LTlDFFywnNsP9+H8B7brbupheWsZlsuGQaL0ADiqLpy1Ba2\/V6F8FyyyS2FiHlXe14o377b7OeE3o1pFYj8fdFdxstfE27dA6JBfYj6g3jqhIK+SsFqKut2EPBCI3xN5zVueFTVMmm938XITzInneRnbNOmJc+byYCv8mcWyOMQBk\/Vu+aeJ+667KpFXoq6j6xIjHR+HyqE6ZVRtgqxXLTelIfpynXoD7ruHGi3V2i3zaLr+mWnDK7sPo2Bsu16Bf04XSKPUhbpfYuX3x\/9cirKgx6LypTnXe\/LTZ\/Z34oxWQ314TL5vY\/+e8fxi4L+yER9bBtKqr1QWKk9Jeay\/1Zo3u57CS88hWVbwX5J0raf27jWExwbKc\/iXK5j97sG2vTnpNE5e14eXQdp6cFMndcN8COct+vyrbw9fd4BzlHUMS4RaYhxj0Id9+3ubd8T9D0MXONAp3Rl1CgqU+zv4bpGlY3zKE7uabC9VcaqnA\/kXuz3K4jk08A5zlHPB4vUWw5H4kXliZgLi+oBFwOtq\/eaMlIdT1R+znW7Rn6ayuibDOT2+443kL5AuoHXT87v2q69sjtGWe140Z4rDN7NQH4mETe5rv1cw9xw2+ufoehcBWUlAjFedZg5rz8ahMWR1yMZM5CH00A0xq8zV56noQjBiu9rHDAyeyq\/BmNL1+\/ry\/RfXKev6reyxPi1tbyH8p1LJI0Xg+I5BsodDFZP0RGPZQGOx+togAMMprIZb59GGmkL19gRowDWuO7QI6SvqbSTjovG7tPHuQ5w\/T7usabupwVh7c0pm8T3yJX1n8CDj73fxDneuQy0Uq6tUJkq0W+q\/J4iDHh8T165lPGuuyau28TAqMvozKWDmPnnqOP4XevNeFGOQo\/eDY45x2MIRUvancpPqsq\/FsjPhWsrSK\/PZ2C4afbN7fUTpdp1TiRIDEXfI6t7aesom1Abk\/6WYqup75pz1NVTbMMSebwrfn+UNt5Gu36KsurCAdBC7eosU3W2g7y2c8aipe4LZT6Z1\/acBRFZnd8m+ml\/Vf1XXaep6neZ8Yse+mMClqRrLCdqQBpqjwAWYMemPQx4o0Y1Xt+zdn\/ezhl4qtprUOH\/awxYkh+xiA\/Ec0HaGryUtpmdQ3TnHWivF+LTVddy93MCq7myaAQDn8ewnicDrjOElDUdmZz5c69cXR6OdJnCoGp4ZSPlLxGPQQmr\/NCm2ysQy9QToVR7qrjuAOeoq7D2EHXii5mIzPCO9RYMad6xWR\/CMNGh3R483QN1fwnycw1vqqMMMR2R2YfBWw8YDqd3bNd+u5D1GnsqTR3XrUj7UsZlknceJ4Bo20Wh3kvtLdr0XbS73DyWbF9+9CXUH6WND7SXjf7wDG38BL+toO9m6v6a9vjbvgd9h\/sK3UOMdF1P5HvGm3NH\/8hgEEr\/v3P\/xW\/7uM7AjwbeZfyih77dOAtxpDYZyFJpwG5A1oOea2SywVIONaCsKJyYQ+YPNmoArqiOFMNaznyhxaAWBzwkP0ybofPG3jkGJUPYCQbVamBATTzvLfb2G8+7NYG8VTyvL8\/7GiJtvMpG4crWhWtV2Lmq6nxm0ECaJCBuRyLwd6y3UtMCXvsdqbDuTDl5YWvJz0XIYEN+9tX9pZ43PhVuiUygLUQBD31uu57jpety3cO+zMtPPXQvCzK4Yx4XJdQf9wv6w4Uqc8lT2\/ewnbDmjDmL3FcGw1tvQ2UA6PqvBOpaDKaxuqc79V81tZAEphKWHb\/ooT8S0oA1KINW29zMQ4VC0KFOuJCgl0gj14\/VXOBc8Q1Yv11YviNYyRKOvCw5t+bPo8fKAEq9lfAyf54tcc9pjvCmyH\/VhB+VmzEe8lYhh0QQA0o7INQmxzBxdVLHIqIIeeouUW93oZozUF\/ktKM8j\/+5d98XEBGJtkQQin0Vmajn1HO2xP246x5LueIaLRUdaGFQr5glHwtbwWLAs5Kr3EP9UepjpNba3KpbtK0BBPYaaRPU40VINBe8r8uceXh3PRemF+NMFralBeNodYn+K33PlZMzWitemS07ftFD31Ja8MRkOwiIeQOWousYzlN\/quZUk7+ifLs81gq2eYOX+\/0OOkaCAVE67VVJD30i1jkDaoKOGJn8+fO1Rc0vu\/y78PCOqvNujqehPS0\/3L5svaVetGM6IOr2a+4ekp+Hns+eGHEqMhGrex+u8qLa21PrNIYwKCO0r32Vn02nqG0MUCZNfD+RfgbjeoTpwpWD8SIzNwsz75s26nkX349XPH7RQ3\/EyIKQg5zw2UOuqJyGy5Z97AMDYEeJmMyLNZwRU2TpevPoz83txVoX6GAxBpzTJe85zhHeaAVeYAgZuGoBb+r1nPIQD9INuIeeuC1Vb6q8q8pbDREt2I7y0j\/TZaqiLnue8XYmHrQXkVi1MSHtTB5NGmK+tI5tuOFjjJR1qccY0YYSrx+coy5O78m4yVT0J5Pr5lwrUvm7S\/+dPsXg7se8emnSwFvPcufxix764yYygQVd8BiqD5kRWeCTd123mrTEqlHn2fQC809jtUCtjDCIZXwUGFClM\/e873dBe2M+9RWcP6\/O08CjNxWTH4KX1e7HqJ+LVdabEst2aEU86jNasB3tBc5TyYmqJEpAL0XoYdD28P0+hPXSzL5BTOfnCMcuNnyMkfGlGqpX9+gg+m2MtlIJ1GdrQaNukYiVRNoyr7\/FOeOiHjPv0n+1YXiiHKtVjl8U9EeKa2yHuhOpBRuLWsIu\/VtL5qeFDtL38tSBV5yVGMwnz9X7nUw99pIsMAjdegOcWli19MtKYGk74Tj3Ht+L0clP7sEjcfcT60e11LOvefkcQtzaJrwoctl6c+cbYNAfyYDmzqWmhcYLtqOGNiSUlxNauHUhHpp3b0MTXgy3Sg9d2tmFl5\/I5C+4CvW9qMTjgQ+OauMzQoX2PnlESxlhDaTz7+PQ3LwO+K4804t+sU3C+Th+qsaQk4L8puIhL9t\/MZacoq1GKxy\/tg6G3MsPfK5BXyPsKc\/CSmh1kQFispgDq+ldwzxbNDSEhTFNdJw68hRha5b0kg4gAHJPY+8cZTpEkvNZD7ixWc28blPlN1F1MLiPd+5jsHJzs1e4nngjA4h9O7BQR8SnYQLvhF9FvTkPBKFmmTPVhwco8\/MF2pEMykdeBKEWWI0\/VIuw\/HpumHt6rS+mG9w1Y69dDlGWZQfvUwiBtPn0ntrOXalhnBmpPin9pyZCijYkoeXE8+xrS75UpWHC\/7Qqw7lTbyyrFuV3hf33BGNtH+dexfhFQd8ipNGVma9y84c7GAwiNJ4DdK4kEN6p5XlbeE4zVaGmTBkNRR09C5wnwXnEcwn9l7hW3j3ZPzvyH5mw24WMS78HHANtTVnsPmKZZwuWf6sgv3U1eDUXeMVnbY4H3Ap4Bbve9VpoC0Urqrsox7Sg\/svUW1G5tzCvKOcYo94kb92y7TxwrjNT\/J+1dgNRgGSRulygTnxBqOS0v6xsG7Lpd9W9ZqqdJkvmsWy61hxP1G9zp76hhzYk6wqqyljxV88vel95izKD8\/q4Vk3eO5GX3wX7b7C9qrqOVjV+EUIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEELJ6Xn7ExHarsCTyeQ+LgBBCyBoLeQMfR3ar2u91CjsFnRBCyOaJed\/+7WPXod3O7dZm6dzmCYuAEELIGou6E3Mn7Knz0PG39uTTZszSoYdOCCFkM8T8JcR8bAV81\/5NIOov3Jw6S4iCTgghZDOo2W1gt4oV8J720PGXUNAJIYRsABVzE24\/tlsGUa8y5H6b17b1xn7i334l1t8\/+4vvT9Yxnz\/8H\/6Z5DP97X\/+H9lACSHkhgQeestuL\/B3H\/uJx1YtirMiXoEVdwTLTuPE8tQKe2fNBP0lPtasoLORkkfNr37mp6UP79mt+3Mf\/nX2CTLh5UeMG7sH1jPPWBpbLuhWzF0Yxj3OEJWw+A6ssK+FN0xBJ2RGzN2zxm7ArmN3akV9l6VDyHy2IuQOz3ykvPIE3vgQx2J47e5vti5iTgiZ4djcrGJ2oVX3rHH2b\/7TT\/X\/x\/989\/Tjv\/A5LoL6q\/WOi0it5zy06SIYY27cdVEWN9Y+9z1rrFCPUd+uXhuB9GMvrXDLS3cvm8HvZdHcc5tm4KWZXtMeS\/CbqnynoK8PPSXmLSvYJ3IA4j10mxX3Y32MkODg9a9\/xnX0PtpU88nHPjHISScLdl4NMh\/7BA3F5XBG94G5WQTlqH\/nO5MgVv2jv\/LBUzf4WmFPWFQPzrwXuXQxzjYCaV1\/alsBbSqRjZFuD\/2s6l\/PpnfPmqcqrVEOWwaRdr899wQ\/xjH3EpoDtXhOzvO6WjGvz7nxbPwqdyvSkRpUh0WCTTEnCwhLRRmLRYakbHxz1RL86md++hgfxZA6NrPrYCoo4\/4i5\/3u9723Y7eXdrtaZX7t+SK7jex2rvY17PbiPq63BiSBTcisaHa8dF1sJ\/C6J3UbeGVrLF4y0ieqvnvqnN2cfGkxP0FkxzcaQpGgqm8c0ENfD+rqc+uuJ\/nSh36kgYFcKtpZht03\/vNvDXW6b\/7Gd8lg46y\/CI110uC+6ye\/mXrGRh0NSs4pDc397swaGIOcvET4nYSuXIM7tXnZJoOk4nUqTVXdd5nOdtf0qRpsNPocFeuJH1vv+yTnHoyqU7K4kMcYlCuBMg2xaDnvBep0VeNOrMQ89oyNrZoesIJd098Rgpf7b6p0vti7tGf2z5Xqe35\/dyH0pkp\/LuVrP1flnPZz2ztvVeWhZdOdqGNvYwxt5OhC4nnvFPQ1YdphrUBmnqCGQjnaY08goH3l5etB\/9weO7FC2lJiPvLOWZHGZ4\/XRNTttRsBb0Jf47JAzK8CYtGzx55JXraAKspyMg4EPN8YVnmnxLnKpq8jrRaFATr82DMMx6gDd96eFfW3JoPGbFi9qwaUPA8iNnzEpohYt\/UPvPFPzBvf83cnn\/\/wi\/\/VfOkv\/vjWDz76Kx+sLjCfLn31+Yrz7Qz9fSXch8pw2P3aV9\/d2ukXzJO3lRgnBekir2+F+oM\/pnWVoxYXGEd1ZUj4BvcAeXQvpIkDeWxu43Ps2yDolQILXItG0PCEZ95QVtspPotnfWzTXFghTSAG2ts+E7FFPkZW1Hd+6r+9qCgxT9Vg3y4yMCQshXON0dAzFTrSeSGLEcETNAEjyw320wEBoj0ZZDBPfo50VfvdzamnSJfa79PPOcZDRkEv5HX58OF\/1DL\/8O\/85PTAO+9+cSLoX3v3O0WREfGQZT3DPnadQXQl7Rjhcff91AruEL8TcYokEmaPpdjfUOPKIT537XHpk84od2kbyrBzx47tvqknaNMn9ntVCdDJhgu+jG1jX4wRUs97dDhE6gurmze35zElIjbizI1t+tEC+U+39dG3bRD0cYmKL+JIKtkKZU15ym4QvsZ5D61Qp0r4XXh96gnaY5m5WWVfVx6gy9uBRA6s167PmeedT0NINj8DGBx7KtnhIxOIGFtmzMyq1Y4yrHwjTj\/tcMuaN69eG5kpL+MkcA6XfmyF2g38NSvcHaQfQdSH9m9D6tp99hbPVZVIkDke9Pf\/jR+aiPlffuur5kt\/\/sfm9fe+MfHQHd\/+dqmohx85y7yy73nXHFqRrQeMvLrdv2vCi7vEMKwpI77rpYu9z8+QV5lCcwLf2dTKwsrw6RgV8HL1nPYYDk1k8qdKVmHYVLxyL6sZFPQ15Dk6StUtkNNhd4TUZ8K5No0MzGM9oMCin2LFdGzFdABrM\/IGixkRseKeQNSl4YoAp15+xvb6cs48L3L62V7\/2jMOBiqC8JgEvW1u3hhlVLTDF+0jb3B1Zdb0PDWJmsgxf2DwV8y6gdutYG\/BG3feybn9nHn11bf73PWbnrfuzvXSlJ8+eGxUXgn6m6+MWivmn\/ytny\/t1cPLjlX\/PEDdjj0jbqAM7go8+r4XmRMPvuFdo4s+PTEu8VttNI6VwdBE+zpE+gjp66FxZsPEfKbMAo+F6TntrlooJ\/9kZZHrLEJqitdPPZrHHbdB0IdqEG8HBmmf\/YAQ5Flt7yxg4ZW1+t4pma6tPI3JIyHOyNjSdtgpMGwWFoeAQO96nfoa7eYCf7V4a+9ijLxMIjNWqJsQdW1oZSrPVQx4fBHKgh7617\/5FSOeugu9f+Z3e3N\/k4MT0pYLi1shlehbZr833Yp3Jax11V6aSJ+o+p8u2HQetT12HDgm9T9trzbtQBkZfnQok+MbSluXWY7xPUGL+R3QhlhSkO7S3KyST\/lu9y14bM16vamq9AYWowVxz6GrznjhDcj7OYODHtxDDc6F3LUHP1biUcXCvJBBMc9QmPxHISviOy70PvFePvQjlS1th21vi5Y4VwtRmZoqzzaEe6CEvgGxHylBbihv7qnddtTA1QhEak6syO+4zdyE7at4jl0PSE\/ond8Gb4ab8Hv\/5zemC+Bc6P3HPvAvin460z7cHLWqW1f2V\/CKq8rodzxTdTKNomFO3HiRGX+ceKb66NTow2\/fCniCqTqnGBYbG13DS1mOlfedFY1fWBB3l+tUVbQjm\/PCF98Yf\/Rsy39ba6rG1Lci2serYEXInbCeq0pP1SNjEgKrW8HsiHBi5bs0ygusXpfG1bMiHisxP\/ca2YUSjp4TdWz9Iu\/CCnfqeXwG+ZHFfdf2c30L22HibXe1tAdKWBMlxrFqJ\/LvGPXLJo49kWh550zVID+tPxeGD3028xc+Eq+c3Nz5J3\/z582fv\/vFyffve\/pD00Tf+MvvmHkRHOeBq3qreHX13Ptdamansgzm07UwibGReiHzRIl76t1HSNDl+NjcXu+xSWjB3HeL0Lwt9rxpt6+DrUhsq\/Z4H+n6ZvaNn4VP9OClMyLqDfv7a3ctORe+H1PQN89LzzyPzHlTV1ZAX7rNvHoMrK462oH2slTna1vBdOlfKG8tEQ\/ZzD7O5Fa0u7TXqkM3rfBnmLsfqLy88M45zziRQWmE\/FyZ2cVe20bN2+4651XGEBCh31HG056XpjLn+ytv4tUK+FufSWkmZfY97\/1b5mc\/9MmZFe6ab3zj9vSre3RNPlvB7SMkbnKMKt8Df1t70AjF66dSfDHWxv1pQMCr6rxiYIzN7KK8001d2W5FseGVp8yV660Kr72pjCeJuB3PaQMNc\/PMuDzh4x4rG5YcL4fqmsfqXNEWj5lBtubfp7rQuxXvHViSjQIPrqXf5Y7Fb7Wc3zmxnz5f7Lx096y5uf1PYCaPb9jjA5Wfps3P2GvMWZ6HofKTID99L537bct\/0c0jQA\/G8p7mhndcXg\/ZQMQlNTdvFjPKc+hj0O3MuWbf3Cyu6nueXabO655PbwU8mESJB4V+jofuVrT\/9dfeZ2p\/\/19OD\/zvF79TyhhQj5cZzzseK3GVx8b08aESEL1epWlmp9R0vTa9cz3H9UNPVcj5IuRlk18KlcDQLiKF1zywBkBiZtcoyBiZBkLomZldKOi+D3Pmw5vm5oVQ4qVPniRCqL4eyFPijf+heqKgr6moTyw7K6QtZUVKBaZ5\/5QFi82aVkhb2voOLUJD6H3HCvvUY3ar3HOydAaDoIr8JTZvI0+oa36IDs+Z7yDUPrFYEY5\/jAzNzSNCV55YJhgATs3Nq0IljY5onELEZeA\/xDE5fuFdM0ZExc9HpjwI8Sx8MUmefOwTiWpHVeQp8yJDBCvJ\/\/T\/\/c5kEdwH3vjHVtjfPxHz\/\/KH\/37eb10dJVjMdqDKe7LwDIvSukrYx2KcY87dqMfTpkLivGi7vx0QG3dM+mDXE4au34ch+tVN984hmplZ4PFLpC9rwGRlF9D5q+q9Y+m8yB7y1dnmDvWEY8rqsaIdm5sXxNSwcE\/+xau8ArGZ9+rXR4Iro7w3xY3M7JvfYjP7elAZPA\/UQNMws\/+kZxo5MTePLPnPKovV3vTyM\/bO48S8qV4yU\/UMC+3JHODFNP71hhT0WfD+9n0z5xniP\/iDr5u\/+Mqth9FPPv4Ln7uXtyZaMZanGLp3eWYcL5qRtugW3fGpBw+8OnbyOKr\/WllCD33dyJQHOMKz50Z5A\/If4B57GXULIhuXygOaRCzMzUt70kD5DbBP0mT4rj20XRzXIhuy6ne0x+c2K+ZXat\/kP7DZfTNRIO\/58zGiL5KfhN1ilp\/78K+fiCdnxV082rfMbHTNfOvbL32j6fKeyzPyPe4FaatITpM1Teihb76XHvIYZaA\/kPfIk\/WPGFjhnvHerXA\/ZXE9iAc\/edvef7\/66sQgeoj\/h+7NyQ\/UI22LnEP6fWub3+lOD52C\/thE3Q0O\/n9wO\/X\/iQxZb0GHqE+nAaygd1hchCwl6DEE\/XLJl9AQCjohtyj6d66EEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIWZonm34DLysfrNs\/VbVrbLfhk\/HnMlYvIQ\/D3\/7e763YPw277aMPNv\/vn\/3ZWB2r2O\/sk4RQ0INC3rF\/juyWYXtut9ftFtstslvqBhUKOyH3LubOqO47Q9puFxB11w8Tu7ljFSR1fbImQk8IeeSCboXcDQ7nGDA0CYQ88rz1mhX1lFW9Pvzo58cx6tDVZfPr7\/w7JwQj8yrSMvjCR365uYLLuHP1lJC07ul2Huo66yrmPXjmB1aoE3jjx3Zr5\/zEee4D9oL14wefRa4eD+cka\/3R21n6QPnpqHZUs9dN7L6XMt7b7zXW2iyvbWCetZiPMYC6EPsYgl9FIxDPYGT3UdTXiyPltbkBJDM30yaNNz\/9S10r6tmS16gEjL774KGus45i3ke97Tiv236vwlOvFvwsY\/NfW6ISbbnCYqKgr8o7P8ZgMUTjq4mQT0MOr4T7wKZtwHNKYQTszPH6Xfp9ZShc2HMNVJoqjIQTfU3Zb\/d11L5YiZZLe2aPD9U58hi4KYJAfhwXOL4N4crnc8oh4sC\/9mLeQF+sQcwl6pKhzSeoRy3uqfPiWXobQZbTBzldQkFfiZhX4Hl3IZa7TtwC4jkRYrfZY+INpvZzz+5rBc7rBpxRwPKs22NHymio4\/oJtmk6t9+mTWy6BIv0zgPnOsAA1y7qRDZdmuPluPs8dOfZ9HUBv\/njlc6Pfn6cUbg3VsxlmmFXeeYjHK6qfuHTYultDGd\/9HbW8Xf+4LOoYjfx4jObJpP9qu4n+1W6Mfp5jDQuXJ4Ezi0Rgoo3xgbBNSUSm4bOiXRy3THSpYE8j9X+yNxM3U7vkYK+WnqoZCeyTYh5A+JncCyGeO7Z402Iuni5x\/bzqRZDGAki5l3xvu3+CKJclQa4QD6PZPCy5zpRUwCp89LdNXDtDvY7gyHx8jOZS8Y5xtgvc5UuX7ubNDJgzrydY+0PA8aUefPTv1RHWV5+4SO\/3Mk59cTIQecbw\/MflDAS9O9cJz7zBMi\/nkRLKkh\/UaJN+E9flMnXpuD6XMutWsec+WhOepnu2l+wL83lu9\/3Xnf9K9TlUNVj7WtffTcJpB+h\/rv2eEftl\/6Y4rf0RMNo462r+kpo\/0h5+0aJZNuK5qScrViOIaJufDteIBrgrnetxw6cs6mEuYrxMvIEPoFxmaEtR9i\/i30j9ZvaJvXbTRL0OjpsBk84QmVMQuwqVD0RPoh3isbVV2KrvYS2iLkOmUP0d533L2J7B8Y41yR\/JX\/TQEN1awKaKj+Tx4Bwf85gaejpgA3g3BTPvZ3miMZkftqKe2ZF3b\/fY3OzGG0mWjLH4PEHjjgwkOhByh8QJP1JgcdZVfnfKjFHqH2sFrb1AnU71HWKxXJ5Rp0T00gZV5OytoKaQqxdWaYisCqtCQl2wblvpbfH3Lkr3v7JNe0xMUQmnh3yo\/Mp9azFKrPptsVoO7QCt6d3LLEILcrpI64fdbAY7ziQpmjMqBT0u1142aOcdLFyjJrK8OjrNuh0Ic\/rX1feswmZRFi9goK+UOJnRMyV8LUg4pkS1IoK+fgVa8Rr9rmjmMtA1rf5vkIUoSwSTcgTCtl\/aLaHSo5HVylIEykxH6P+EvU9LTAKjxf0RKOcY8cBT17yqgeSFIPGtrCPiIaE3hsBQ9atZE9kg5gfzjFkR9ict31lxfMYHpjbd+3E1G7Xat8I37VgVDzB7uWklz50hf3nXttqq\/yMVH6uJD8YO3SeJV28JfUc4R71tgxudfwTb2zbU46V0ES6nRJGcEulnRpZCLG3tUGNdE9hbMr9NSDYXWUQSHtOQ1MOFPTVhXnkb+qJbgbRj+x2DstrzxtoMnN7gY6cL\/EWuU3OY7cRtt4iGUVY\/cDcrNwWYY8WOEe2yP4NoGlu1h74W8t634kS5ab9PlbHB9jyLP4URlQNHbtIPI+83+3iN8OCaImI1AHSdpXXPSgh5tv2aE1F9cGQx51hXr1vt3OE5DOUYRX74oJ+Plae\/1hds6684wGORQGDwvcA89pNpASjXjI\/M168d84x9re3pJ6zQF+987msOJ7Ayz8xt0PpkRLRAdJlqq+FSNU5\/bSxmZ0bbyLd2DMo9rG\/4+nKeFON8Nc2aBAJenNOKCF0lUDHPCnRaKuBa9W9xrHQYh6I+hCRhZ65eVa5VOjdhdZDq9kRct84Pvkz\/ypRnTiL\/uTjWfYDH50M6vbzpCN99lsXp9OO\/ak3Y\/OtC+mg47\/5T78wDtSbrp9r7JsJ9eaE2oSaypOrl5de2j3PIBHR7+BzGhCJamBQ2La5WHc\/bYhypozlaRng2BnEbWpIW6F\/ipD9ObylUH\/UIdCmuZmuqaA\/xxDxcaCeQtEuMaqkX+v9LVM8\/++n2UVbC7WPPRgQ2+Khn63QQ80C5RrntK2i3xWlHec4gTPnwGK9Mlqwkc7TpnjombkdRhWLsQcBTDFI5IVbk5wOW4Hwihi7xWtP1ICT5RgX\/sA\/fQ5ehBchexGO+gINP8\/raKh8bxI6fNmwYt6R7\/Zz78ufejMyKjTqbVdfdgIfHvjHnpUvYdGoRDnPE9pozoBUpi43NaIyL9oiizYzCLfft84RbnePtLmycp9bJcouy+mjjrdQv1UvMlIpMeDL4ta9AgGYKxoF8+Mu3TsLnHdb2MvpL3elipXnwuECaeNAdEHSTYUa8\/Uz7c3uO\/bGZ3fePgX9\/kjRUcZScRDLASrChbRlbquaY62lgYFHvLlzrEbX9DxDIPUbGYR7cj1nCCCsfpVj9Zfp6OKVtrWRgWvF5iacd7ph7axaMBBUSwwGIWve1b2E2E+UGFQKDKJMDT6Ngvw5LtXno0Bnj+YYCrKgbqvAa1vdfb6NdnjolZXxBNdgNXwVb5VzZeJC8osKQEX1o6qZ\/4KTC1UPI1y3fk\/F0lNtJNlmBfcWicVWDM+xQr23xGmHqo5H7g1xdusX9GNJe6XStj3n7Uw7FEjn5\/MMi+faqm1JXuqe+FPQVwW8b3mhzKHa31SeWmxu5jpPZZDBc+Eyv3XhnTeBGFRgFDhhdx7\/NRrT9FWeCKO773U1t36F354ijXhlVaQRT7RiwvO0\/n2K5ylvuHN56ri\/6jyb+H76geowgxyDrcj7Cf3mCh5bhjo6K5EPPRj11TYqyLNERkYYDKRtXJvbc7SZmZ1WiTfV0i\/jueIlMe7z676hjDn0kWwQPPdY4S76wqLlkpqbxZKRmT8NForinNxTeUTmZuFt9xF45rocZaHpMtOBLc8Qbs8Rc13uflq3Mj3DXPxAiX\/by+cAxol+AufAazM9CP7GsDHvcoc4PkOFuzevnZT4jVjnLVTobs7cdB2DdeQN6C1vwVzoPfIn+oU1uKb\/qJNrOAfeuWLkbdd\/LS3y0\/Y8xxT52UgPIPuBj1aiP\/n4GJ9HqgwTu3+ycOzLn3rT97zc\/HkoRNuYIwiyEG2kyl\/mUa9LDD5PlOd1XCBqck7\/On7+WvcoJg+OepHMKdqlfkTPCf0Tm0bWNVwqo6yO6Izbd+hC8ptaBljNLvVeK\/MI3brjvcv9TBao5aTtmJt3OQxRp\/v6tzaNlI9bwNZSv5V1RdP9ylOO1TkzNQZO3iGvzinRMFksmYTyrO5JHD5JN7TH6iqycilrBtQq+Zn9FPTVCroMnAkGzKEvuAFR7Curfq4RgJB5NE80JdRelE6FzLO7etQqpJ9uyStfTUjQ3\/9rv9tVg+PAivi8FabS+eu+AQDxHJibx4q00IoH0POMssT7rvuF\/KORipe+ZW4W94Su44cMD8pEaTZM1I8CdWDghYtXNNYRMvf8Ojx293ljjRw8ky71O9ii58\/JBrNR\/21NedxiuYnlf+mFbA7N7EsfEv2iFrLWgu7YsaJedoDUXv0iXlJkbh5dyha4Ttn0jwIrzh1z+1GtJM\/7xj90cUbALv8\/+nrx4xf\/K1KRJekfy1L0Xgi99kL3q\/Hn9\/8e\/5nWtgu68qLPze1wtHgBFa8hzrwFjqyFoGsRGFhBd6HbK+nMVsyfspQ2StRH5vbCRXk\/gJ73lsfY+C9U11fUX65p1nasyNMA3DZBV8LeMK\/mbEIrV13FT55J3vR\/ZLLFot7AQD9wc+t4NM1tgwW8c7I+ol603kB7ay2K+Vp76NfrOFxYMd9hDW2xoBNC1k7UnUEmC5Aiz1tPnIHNMPtaC7ozsF+sYdZOrKDzP\/WV4DUWASFkFeAxtoQlQVbMKYuAgk4IIaQ8kTLILu\/5Wu7Nf7LmSf5FdYZjMf66adMq587Lw5A7IYSQtQBh\/5k3N1pBT1gyhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIuU\/+vwADAO+0JlWYt+XBAAAAAElFTkSuQmCC\" \/>",
+            "new_lines": "",
+            "esc_html": 0,
+            "wpml_cf_preferences": 3
+        },
+        {
+            "key": "field_5f19bcc6302ee",
+            "label": "Headline",
+            "name": "headline",
+            "type": "text",
+            "instructions": "Leave blank to omit this item",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Featured In",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wpml_cf_preferences": 2
+        },
+        {
+            "key": "field_5f19bd09302ef",
+            "label": "Logos",
+            "name": "logos",
+            "type": "repeater",
+            "instructions": "Add as many logos as you would like.  SVG logos are preferred.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5f19bd29302f0",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Logo",
+            "wpml_cf_preferences": 3,
+            "sub_fields": [
+                {
+                    "key": "field_5f19bd6f302f1",
+                    "label": "Logo Type",
+                    "name": "logo_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "svg": "Vector Logo (.svg)",
+                        "raster": "Raster Logo (.jpg, .png, .gif)"
+                    },
+                    "default_value": "svg",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f19bd29302f0",
+                    "label": "Logo SVG",
+                    "name": "logo_svg",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f19bd6f302f1",
+                                "operator": "==",
+                                "value": "svg"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "svg",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f19be07302f2",
+                    "label": "Logo Image",
+                    "name": "logo_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f19bd6f302f1",
+                                "operator": "==",
+                                "value": "raster"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f19ce6b302f3",
+                    "label": "Adjust Logo Size",
+                    "name": "adjust_logo_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "-1": "Make Logo Smaller",
+                        "0": "Leave Logo at its Natural Size",
+                        "+1": "Make Logo Larger"
+                    },
+                    "default_value": 0,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "wpml_cf_preferences": 3
+                },
+                {
+                    "key": "field_5f19cecc302f4",
+                    "label": "Decrease Logo Size",
+                    "name": "decrease_logo_size",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f19ce6b302f3",
+                                "operator": "==",
+                                "value": "-1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "min": 0,
+                    "max": 100,
+                    "step": 5,
+                    "prepend": "Make the logo",
+                    "append": "% smaller",
+                    "wpml_cf_preferences": 2
+                },
+                {
+                    "key": "field_5f19cf7f302f5",
+                    "label": "Increase Logo Size",
+                    "name": "increase_logo_size",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f19ce6b302f3",
+                                "operator": "==",
+                                "value": "+1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "min": 0,
+                    "max": 100,
+                    "step": 5,
+                    "prepend": "Make the logo",
+                    "append": "% larger",
+                    "wpml_cf_preferences": 2
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/logo-group"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643308034
+}

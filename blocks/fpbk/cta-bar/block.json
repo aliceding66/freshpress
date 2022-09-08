@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "fpbk/cta-bar",
+  "title": "CTA Bar",
+  "category": "freshblocks",
+  "description": "A CTA bar block.",
+  "textdomain": "fpbk",
+  "supports": {
+    "anchor": true
+  }
+}

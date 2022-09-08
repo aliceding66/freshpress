@@ -1,0 +1,103 @@
+.banner-informational {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.25rem 1.25rem;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  background-color: #0075dd;
+  border: 1px solid transparent;
+  border-color: #0075dd;
+  border-radius: 0;
+}
+.banner-informational__content-mobile > p, .banner-informational__content-desktop > p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.banner-informational__content-mobile > p img, .banner-informational__content-desktop > p img {
+  width: auto;
+  max-height: 26px;
+  margin: 0 6px;
+}
+.banner-informational__content-mobile > p > a, .banner-informational__content-desktop > p > a {
+  text-decoration: underline;
+}
+.banner-informational__content-mobile > p span,
+.banner-informational__content-mobile > p a,
+.banner-informational__content-mobile > p p,
+.banner-informational__content-mobile > p strong, .banner-informational__content-desktop > p span,
+.banner-informational__content-desktop > p a,
+.banner-informational__content-desktop > p p,
+.banner-informational__content-desktop > p strong {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+}
+.banner-informational__content-mobile > p span:first-child,
+.banner-informational__content-mobile > p a:first-child,
+.banner-informational__content-mobile > p p:first-child,
+.banner-informational__content-mobile > p strong:first-child, .banner-informational__content-desktop > p span:first-child,
+.banner-informational__content-desktop > p a:first-child,
+.banner-informational__content-desktop > p p:first-child,
+.banner-informational__content-desktop > p strong:first-child {
+  margin-left: 0;
+}
+.banner-informational__content-mobile > p span:last-child,
+.banner-informational__content-mobile > p a:last-child,
+.banner-informational__content-mobile > p p:last-child,
+.banner-informational__content-mobile > p strong:last-child, .banner-informational__content-desktop > p span:last-child,
+.banner-informational__content-desktop > p a:last-child,
+.banner-informational__content-desktop > p p:last-child,
+.banner-informational__content-desktop > p strong:last-child {
+  margin-right: 0;
+}
+.banner-informational__content-mobile > p strong, .banner-informational__content-desktop > p strong {
+  font-weight: 700;
+}
+.banner-informational__content-mobile {
+  margin: 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .banner-informational__content-mobile {
+    display: none;
+  }
+}
+.banner-informational__content-desktop {
+  display: none;
+  margin: 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .banner-informational__content-desktop {
+    display: block;
+  }
+}
+.banner-informational_mobile-clickable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .banner-informational_mobile-clickable {
+    display: none;
+  }
+}
+
+.editor-styles-wrapper .banner-informational.fixed-top {
+  top: 57px;
+  z-index: 15;
+  max-width: calc(100% - 280px);
+}
+
+/*# sourceMappingURL=templates-common-banner-informational.css.map*/
